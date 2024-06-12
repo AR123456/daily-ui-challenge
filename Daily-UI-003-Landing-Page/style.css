@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
+.libre-bodoni {
+  font-family: "Libre Bodoni", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
+  color: white !important;
+}
+body {
+  background: linear-gradient(
+      to bottom,
+      rgba(9, 9, 9, 0.82),
+      rgba(228, 220, 220, 0.63)
+    ),
+    url(./cool-owl2.jpg);
+  background-position: 10% 10%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.eyes {
+  color: #e0c353;
+}
