@@ -20,6 +20,11 @@ body {
 }
 .eyes {
   color: #e0c353; */
+  font-family: "Libre Bodoni", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
 }
 .col {
   height: 30px;
