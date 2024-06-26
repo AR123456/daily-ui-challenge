@@ -19,19 +19,24 @@ body {
   border-radius: 5%;
   height: 75%;
   background-color: rgb(243, 242, 242);
+ 
 }
 .outline-less {
   outline: grey solid;
   border-radius: 30px;
+  
 }
 td {
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
-}
+ 
 .center {
   text-align: center;
   font-size: large;
+}
+table {
+  border-spacing: 0 10px; /* Adjust the second value to control the gap between rows */
 }
 /* body {
   background: linear-gradient(
