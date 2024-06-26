@@ -22,7 +22,6 @@ body {
 }
 .outline-less {
   outline: grey solid;
-
   border-radius: 30px;
 }
 td {
@@ -30,7 +29,10 @@ td {
   padding-left: 5%;
   padding-right: 5%;
 }
-
+.center {
+  text-align: center;
+  font-size: large;
+}
 /* body {
   background: linear-gradient(
       to bottom,
