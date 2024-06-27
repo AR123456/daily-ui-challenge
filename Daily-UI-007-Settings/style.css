@@ -34,6 +34,7 @@ td {
   font-size: large;
 }
 table {
+  background-color: red;
   border-spacing: 0 10px; /* Adjust the second value to control the gap between rows */
 }
 /* body {
@@ -49,8 +50,4 @@ table {
 } */
 .eyes {
   color: #e0c353;
-}
-.spacer {
-  margin: 50px;
-  padding: 50px;
 }
