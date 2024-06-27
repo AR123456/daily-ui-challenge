@@ -50,3 +50,7 @@ table {
 .eyes {
   color: #e0c353;
 }
+.spacer {
+  margin: 50px;
+  padding: 50px;
+}
