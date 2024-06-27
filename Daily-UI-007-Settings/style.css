@@ -29,13 +29,16 @@ td {
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .center {
   text-align: center;
   font-size: large;
 }
 table {
-  background-color: red;
   border-spacing: 0 10px; /* Adjust the second value to control the gap between rows */
+}
+tr {
+  margin-bottom: 100px;
 }
 /* body {
   background: linear-gradient(
