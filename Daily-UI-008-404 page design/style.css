@@ -15,7 +15,7 @@ body {
       rgba(228, 220, 220, 0.53)
     ),
     url(./cool-owl2.jpg);
-  background-position: 20% 20%;
+  background-position: 0% 15%;
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
@@ -26,4 +26,17 @@ body {
 }
 .eyes {
   color: #e0c353;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  margin-top: 60px;
+  margin-left: 50px;
+  background: linear-gradient(
+    to bottom,
+    rgba(9, 9, 9, 0.32),
+    rgba(228, 220, 220, 0.33)
+  );
+  padding: 10px;
+  border-radius: 10%;
+  width: 45%;
 }
