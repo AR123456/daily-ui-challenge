@@ -23,6 +23,11 @@ body {
   min-height: 100vh;
   overflow: hidden;
 }
+.container {
+  background-color: red;
+  height: 40rem;
+  width: 20rem;
+}
 .eyes {
   color: #e0c353;
 }
