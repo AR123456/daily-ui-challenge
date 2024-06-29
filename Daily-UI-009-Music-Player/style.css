@@ -40,5 +40,10 @@ h1 {
 }
 li {
   border: 2px black solid;
-  margin-right: 10px;
+  padding: 10px;
+  margin: 10px;
+
+  margin-left: 0;
+
+  border-radius: 35px;
 }
