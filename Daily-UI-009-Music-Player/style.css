@@ -38,3 +38,7 @@ h1 {
 .song-list {
   list-style-type: none;
 }
+li {
+  border: 2px black solid;
+  margin-right: 10px;
+}
