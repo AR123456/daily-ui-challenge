@@ -52,7 +52,15 @@ li {
   width: 50px;
   border-radius: 50%;
 }
-.responsive-three-columns {
+.three-columns {
+  display: flex;
 }
-.r-col {
+.r-col,
+.l-col {
+  border: 1px solid teal;
+  width: 20%;
+}
+
+.middle-col {
+  width: 60%;
 }
