@@ -57,10 +57,12 @@ li {
 }
 .r-col,
 .l-col {
-  border: 1px solid teal;
-  width: 20%;
+  width: 100%;
 }
-
+.l-col {
+}
+.r-col {
+}
 .middle-col {
-  width: 60%;
+  flex-shrink: 0;
 }
