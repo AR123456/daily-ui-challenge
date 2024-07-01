@@ -28,6 +28,10 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.socials-row {
+  flex: 1 0 21%;
+}
 .eyes {
   color: #e0c353;
 }
