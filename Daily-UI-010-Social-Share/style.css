@@ -25,14 +25,18 @@ body {
 }
 .container {
   background-color: rgb(248, 244, 244);
+
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .socials-row {
   flex: 1 0 21%;
-  margin: 5px;
-  height: 100px;
+  margin-top: 5rem;
+  margin-left: 10rem;
+
+  height: 10rem;
 }
 .eyes {
   color: #e0c353;
