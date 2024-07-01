@@ -36,7 +36,6 @@ body {
   margin: 5px;
 }
 a {
-  color: blueviolet;
   color: #e0c353;
   height: 50px;
   width: 20px;
@@ -44,4 +43,8 @@ a {
 }
 .eyes {
   color: #e0c353;
+}
+h1 {
+  color: #e0c353;
+  margin-bottom: 5rem;
 }
