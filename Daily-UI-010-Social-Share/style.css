@@ -24,8 +24,6 @@ body {
   overflow: hidden;
 }
 .container {
-  background-color: rgb(248, 244, 244);
-
   width: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -33,10 +31,16 @@ body {
 
 .socials-row {
   flex: 1 0 21%;
-  margin-top: 5rem;
-  margin-left: 10rem;
-
-  height: 10rem;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+}
+a {
+  color: blueviolet;
+  color: #e0c353;
+  height: 50px;
+  width: 20px;
+  text-align: center;
 }
 .eyes {
   color: #e0c353;
