@@ -6,3 +6,12 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.container {
+  background-color: rebeccapurple;
+}
+.success {
+  background-color: green;
+}
+.error {
+  background-color: red;
+}
