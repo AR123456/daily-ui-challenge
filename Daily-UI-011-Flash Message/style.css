@@ -30,8 +30,9 @@ body {
       rgba(9, 9, 9, 0.52),
       rgba(228, 220, 220, 0.53)
     ),
-    url(./cool-owloavatar.jpg);
-  /* background-position: 0% 15%; */
+    url("./cool-owl-avatar.png");
+
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 35px;
   text-align: center;
@@ -44,8 +45,8 @@ body {
       rgba(9, 9, 9, 0.52),
       rgba(228, 220, 220, 0.53)
     ),
-    url(./cool-owloavatar.jpg);
-  /* background-position: 0% 15%; */
+    url("./cool-owl-avatar.png");
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 35px;
   text-align: center;
