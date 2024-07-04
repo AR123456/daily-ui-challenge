@@ -19,6 +19,9 @@ body {
   background: linear-gradient(rgba(216, 241, 216, 0.9), rgba(76, 126, 76, 0.7)),
     url("./nest.jpg");
 }
+h1 {
+  text-align: center;
+}
 .container {
   display: flex;
   align-items: center;
