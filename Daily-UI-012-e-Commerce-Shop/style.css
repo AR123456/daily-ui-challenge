@@ -19,8 +19,21 @@ body {
   background: linear-gradient(rgba(216, 241, 216, 0.9), rgba(76, 126, 76, 0.7)),
     url("./nest.jpg");
 }
-.card {
+.container {
   display: flex;
   align-items: center;
-  background-image: url("tomato.jpg");
 }
+.card {
+  height: 40em;
+  width: 40em;
+  background: url("tomato.jpg") no-repeat center;
+  border-radius: 15%;
+}
+/* When using the shorthand property the order of the property values is:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+It does not matter if one of the property values is missing, as long as the other ones are in this order. */
