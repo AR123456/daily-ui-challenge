@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
-.libre-bodoni {
-  font-family: "Libre Bodoni", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 32px;
-}
-.eyes {
-  color: #e0c353;
-}
+
 body {
   display: flex;
   flex-direction: column;
@@ -19,25 +10,32 @@ body {
   background: linear-gradient(rgba(216, 241, 216, 0.9), rgba(76, 126, 76, 0.7)),
     url("./nest.jpg");
 }
-h1 {
-  text-align: center;
-  color: #d1390d;
-}
+
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
+
 .card {
   height: 40em;
   width: 40em;
   background: url("tomato.jpg") no-repeat center;
+  background-size: cover;
   border-radius: 50%;
+  position: relative;
 }
-/* When using the shorthand property the order of the property values is:
 
-background-color
-background-image
-background-repeat
-background-attachment
-background-position
-It does not matter if one of the property values is missing, as long as the other ones are in this order. */
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+text {
+  fill: #d1390d;
+  font-family: "Libre Bodoni", serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-anchor: middle;
+}
