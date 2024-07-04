@@ -21,10 +21,13 @@ body {
 .card {
   height: 40em;
   width: 40em;
-  background: url("tomato.jpg") no-repeat center;
+  background: linear-gradient(rgba(216, 241, 216, 0.2), rgba(76, 126, 76, 0.1)),
+    url("./tomato.jpg") no-repeat center;
   background-size: cover;
   border-radius: 50%;
   position: relative;
+  /* box-shadow: 10px 5px 5px #c5d588; */
+  box-shadow: 3px 3px #c5d588, -1em 0 0.4em #c5d588;
 }
 
 svg {
