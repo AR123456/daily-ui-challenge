@@ -23,13 +23,6 @@ h1 {
   text-align: center;
   color: #d1390d;
 }
-path {
-  fill: transparent;
-}
-
-text {
-  fill: #d1390d;
-}
 .container {
   display: flex;
   align-items: center;
@@ -40,7 +33,6 @@ text {
   background: url("tomato.jpg") no-repeat center;
   border-radius: 50%;
 }
-
 /* When using the shorthand property the order of the property values is:
 
 background-color
