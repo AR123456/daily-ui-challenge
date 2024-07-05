@@ -37,7 +37,6 @@ body {
   border-radius: 25%;
   padding: 5px;
 }
-.hours {
-}
-.colon {
+.pause {
+  text-align: center;
 }
