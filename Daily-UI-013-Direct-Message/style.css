@@ -16,20 +16,25 @@ body {
 }
 .container {
   background-color: rgb(248, 244, 244);
-  height: 45rem;
-  width: 23rem;
+  height: 40rem;
+  width: 20rem;
   border-radius: 35px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 div {
-  height: 5rem;
-  width: 18rem;
-  margin: 2rem;
-  padding: 1rem;
-  border-radius: 20px;
+  height: 3rem;
+  width: 10rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 25px;
 }
 
 .message-from {
   background-color: rgb(91, 176, 91);
+  margin-left: 8rem;
 }
 .message-to {
   background-color: rgb(179, 176, 176);
