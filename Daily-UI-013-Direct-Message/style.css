@@ -20,3 +20,17 @@ body {
   width: 23rem;
   border-radius: 35px;
 }
+div {
+  height: 5rem;
+  width: 18rem;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.message-from {
+  background-color: rgb(91, 176, 91);
+}
+.message-to {
+  background-color: rgb(179, 176, 176);
+}
