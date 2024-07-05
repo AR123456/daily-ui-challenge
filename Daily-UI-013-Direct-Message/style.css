@@ -33,9 +33,12 @@ div {
 }
 
 .message-from {
-  background-color: rgb(91, 176, 91);
+  background-color: rgb(129, 228, 129);
   margin-left: 8rem;
 }
 .message-to {
-  background-color: rgb(179, 176, 176);
+  background-color: rgb(189, 185, 185);
+}
+.circle {
+  padding: 6rem;
 }
