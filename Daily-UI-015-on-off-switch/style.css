@@ -11,8 +11,12 @@ body {
 }
 .container {
   display: flex;
-
   gap: 1;
+}
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(138, 6, 24);
 }
 .poppins-regular {
   font-family: "Poppins", sans-serif;
