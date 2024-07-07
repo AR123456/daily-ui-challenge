@@ -9,11 +9,12 @@ body {
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(
-      (rgb(255, 254, 141)),
-      rgba(255, 254, 141, 1) 0%,
-      rgba(82, 104, 2, 1) 100%
+      317deg,
+      rgba(255, 254, 141, 0.9) 0%,
+      rgba(82, 104, 2, 0.9) 100%
     ),
-    url("./nest.jpg");
+    url("./nest.jpg") no-repeat center;
+  background-size: cover;
 }
 .container {
   display: flex;
