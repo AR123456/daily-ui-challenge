@@ -53,12 +53,13 @@ body {
   width: 8rem;
   left: 1rem;
   bottom: 0.5rem;
+  background: url("./cool-owl-avatar.png");
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #ddcd8d;
 }
 input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
