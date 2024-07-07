@@ -8,6 +8,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient() url("./nest.jpg");
 }
 .container {
   display: flex;
@@ -53,8 +54,9 @@ body {
   width: 8rem;
   left: 1rem;
   bottom: 0.5rem;
-  background: url("./cool-owl-avatar.png");
+  /* background: url("./cool-owl-avatar.png"); */
   background-color: white;
+  box-shadow: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -68,6 +70,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(15rem);
+  box-shadow: 7.8px 15.5px 15.5px hsl(0deg 0% 0% / 0.26);
 }
 /* Rounded sliders */
 .slider.round {
