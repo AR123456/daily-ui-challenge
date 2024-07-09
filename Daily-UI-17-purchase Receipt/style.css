@@ -21,5 +21,5 @@ body {
   background: url("./receipt-image.jpg") center;
   width: 735px;
   height: 319px;
-  border-radius: ;
+  box-shadow: 2.6px 5.1px 5.1px hsl(0deg 0% 0% / 0.42);
 }
