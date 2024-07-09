@@ -19,7 +19,7 @@ body {
 }
 .card {
   background: url("./receipt-image.jpg") center;
-  width: 735px;
+  width: 730px;
   height: 319px;
   box-shadow: 2.6px 5.1px 5.1px hsl(0deg 0% 0% / 0.42);
 }
