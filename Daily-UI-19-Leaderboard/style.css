@@ -14,5 +14,11 @@ body {
 }
 .container {
   display: flex;
-  gap: 2;
+  gap: 1;
+}
+.card {
+  margin: 1rem;
+  background-color: red;
+  height: 20rem;
+  width: 20rem;
 }
