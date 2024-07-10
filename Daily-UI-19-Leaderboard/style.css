@@ -34,4 +34,6 @@ li {
   margin-top: 1rem;
 }
 .overlay {
+  background: url("./paris.jpg") no-repeat center;
+  background-size: cover;
 }
