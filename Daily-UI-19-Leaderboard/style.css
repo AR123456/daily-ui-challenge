@@ -27,4 +27,9 @@ body {
   background-size: cover;
 }
 .leaders {
+  display: flex;
+  align-items: center;
+}
+li {
+  margin-top: 1rem;
 }
