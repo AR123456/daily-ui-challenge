@@ -11,6 +11,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: rgb(247, 244, 240);
 }
 .container {
   display: flex;
@@ -18,13 +19,32 @@ body {
 }
 .card {
   margin: 1rem;
-  background-color: red;
   height: 40rem;
   width: 20rem;
 }
 .racer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40rem;
+  width: 20rem;
   background: url("./bike-racer.jpg") no-repeat center;
   background-size: cover;
+  border-radius: 3%;
+  box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./paris.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0.5;
+  border-radius: 3%;
 }
 .leaders {
   display: flex;
@@ -32,8 +52,4 @@ body {
 }
 li {
   margin-top: 1rem;
-}
-.overlay {
-  /* background: url("./paris.jpg") no-repeat center;
-  background-size: cover; */
 }
