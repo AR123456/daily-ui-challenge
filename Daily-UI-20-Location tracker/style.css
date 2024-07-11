@@ -19,4 +19,9 @@ body {
   height: 33rem;
   width: 33rem;
   color: #851718;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: #851718 solid;
+  text-align: center;
 }
