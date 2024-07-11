@@ -16,16 +16,18 @@ body {
   background-size: contain;
 }
 .card {
+  padding-right: 100px;
+  margin-right: 100px;
   height: 33rem;
   width: 33rem;
   color: #851718;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  border: #851718 solid;
+
   background: linear-gradient(
     to top,
-    rgba(67, 66, 66, 0.52),
-    rgba(228, 220, 220, 0.53)
+    rgba(194, 189, 189, 0.52),
+    rgba(247, 244, 244, 0.53)
   );
 }
