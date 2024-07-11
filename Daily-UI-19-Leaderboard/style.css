@@ -27,8 +27,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 40rem;
-  width: 20rem;
+  height: 50rem;
+  width: 30rem;
   background: url("./bike-racer.jpg") no-repeat center;
   background-size: cover;
   border-radius: 3%;
