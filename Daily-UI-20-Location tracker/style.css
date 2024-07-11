@@ -11,9 +11,12 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: url("./map-bg.jpg") no-repeat center;
+  background: url("./map-bg.jpg");
+  background-position: center;
+  background-size: contain;
 }
 .card {
   height: 33rem;
   width: 33rem;
+  color: #851718;
 }
