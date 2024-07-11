@@ -23,5 +23,9 @@ body {
   font-weight: 400;
   font-style: normal;
   border: #851718 solid;
-  text-align: center;
+  background: linear-gradient(
+    to top,
+    rgba(67, 66, 66, 0.52),
+    rgba(228, 220, 220, 0.53)
+  );
 }
