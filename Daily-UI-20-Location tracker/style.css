@@ -20,16 +20,20 @@ body {
   flex-direction: row;
 }
 .card {
-  height: 100px;
+  height: 80px;
   width: 33rem;
   color: #851718;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-
+}
+.share {
+  width: 20rem;
   background: linear-gradient(
     to top,
     rgba(194, 189, 189, 0.52),
     rgba(247, 244, 244, 0.53)
   );
+  border-radius: 5%;
+  box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
 }
