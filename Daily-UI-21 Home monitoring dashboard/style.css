@@ -1,0 +1,23 @@
+/* font */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1;
+}
+.card {
+  /* height: 33rem;
+  width: 30rem; */
+}
+.circle {
+  height: 15rem;
+  width: 15rem;
+}
