@@ -15,10 +15,12 @@ body {
   background-position: center;
   background-size: contain;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+}
 .card {
-  padding-right: 100px;
-  margin-right: 100px;
-  height: 33rem;
+  height: 100px;
   width: 33rem;
   color: #851718;
   font-family: "Roboto", sans-serif;
