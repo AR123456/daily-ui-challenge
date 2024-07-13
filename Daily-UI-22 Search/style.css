@@ -1,9 +1,14 @@
 body{
     display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+}
+.card{
+
+background-color: antiquewhite;
+height: 100px;
+width: 100px;
 }
