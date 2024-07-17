@@ -14,8 +14,11 @@ body {
   gap: 2em;
 }
 .card {
-  /* height: 33rem;
-  width: 30rem; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+
   text-align: center;
 }
 .circle {
@@ -24,4 +27,8 @@ body {
   border-radius: 50%;
   box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
   text-align: center;
+}
+.reading {
+  padding-top: 90px;
+  font-size: 80px;
 }
