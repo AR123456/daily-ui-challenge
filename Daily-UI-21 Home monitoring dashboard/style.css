@@ -16,10 +16,12 @@ body {
 .card {
   /* height: 33rem;
   width: 30rem; */
+  text-align: center;
 }
 .circle {
   height: 300px;
   width: 300px;
   border-radius: 50%;
   box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
+  text-align: center;
 }
