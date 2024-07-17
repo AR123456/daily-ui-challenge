@@ -7,7 +7,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -28,7 +28,7 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1em;
 }
 .card {
   /* display: flex;
@@ -39,8 +39,8 @@ h3 {
   text-align: center;
 }
 .circle {
-  height: 300px;
-  width: 300px;
+  height: 20em;
+  width: 20em;
   border-radius: 50%;
   box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
   text-align: center;
