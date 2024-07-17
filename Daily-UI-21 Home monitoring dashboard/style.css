@@ -20,4 +20,5 @@ body {
 .circle {
   height: 15rem;
   width: 15rem;
+  box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
 }
