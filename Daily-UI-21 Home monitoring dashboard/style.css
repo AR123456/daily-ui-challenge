@@ -11,14 +11,15 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1;
+  gap: 2em;
 }
 .card {
   /* height: 33rem;
   width: 30rem; */
 }
 .circle {
-  height: 15rem;
-  width: 15rem;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
   box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
 }
