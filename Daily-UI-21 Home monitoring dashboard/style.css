@@ -40,15 +40,43 @@ h3 {
 }
 .card {
   text-align: center;
+  /*  */
+  flex: 1 1 200px;
+  max-width: 300px;
 }
 .circle {
-  height: 20em;
-  width: 20em;
+  height: 10em;
+  width: 10em;
   border-radius: 50%;
   box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
   text-align: center;
+  margin: 0 auto;
 }
 .reading {
-  padding-top: 90px;
-  font-size: 80px;
+  padding-top: 30px;
+  font-size: 2em;
+}
+/* Responsive Design */
+@media (min-width: 768px) {
+  .circle {
+    height: 15em;
+    width: 15em;
+  }
+
+  .reading {
+    padding-top: 50px;
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle {
+    height: 20em;
+    width: 20em;
+  }
+
+  .reading {
+    padding-top: 90px;
+    font-size: 4em;
+  }
 }
