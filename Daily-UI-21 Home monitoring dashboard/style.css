@@ -33,14 +33,14 @@ h3 {
 }
 .container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
 }
 .card {
   text-align: center;
-  /*  */
+  /* for responsiveness */
   flex: 1 1 200px;
   max-width: 300px;
 }
@@ -67,6 +67,9 @@ h3 {
     padding-top: 50px;
     font-size: 3em;
   }
+  .card {
+    flex: 1 1 300px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -78,5 +81,8 @@ h3 {
   .reading {
     padding-top: 90px;
     font-size: 4em;
+  }
+  .card {
+    flex: 1 1 400px;
   }
 }
