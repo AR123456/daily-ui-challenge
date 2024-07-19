@@ -21,3 +21,13 @@ svg {
   height: 30px;
   fill: #f6f6f6;
 }
+.phone-screen {
+  width: 100%;
+  max-width: 450px;
+  height: 90vh;
+  border: 10px solid blue;
+  margin: 5vh auto;
+  border-radius: 25px;
+  color: #f6f6f6;
+  background-color: #121212;
+}
