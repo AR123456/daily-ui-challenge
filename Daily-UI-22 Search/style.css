@@ -31,3 +31,8 @@ svg {
   color: #f6f6f6;
   background-color: #121212;
 }
+.header,
+.content,
+.footer {
+  padding: 15px;
+}
