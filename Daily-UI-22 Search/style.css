@@ -48,4 +48,45 @@ svg {
 }
 /* the ul of categories */
 .categories {
+  padding-left: 20px;
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.categories li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.categories svg {
+  margin-right: 20px;
+  fill: #7c7d81;
+}
+.recent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* album art cover */
+.cover {
+  width: 60px;
+  height: 60px;
+  background: peachpuff;
+  margin-right: 20px;
+}
+.playlist {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.playlist svg {
+  fill: #7c7d81;
+}
+.info h1 {
+  font-size: 20px;
+}
+.info p {
+  color: #7c7d81;
+  font-size: 16px;
 }
