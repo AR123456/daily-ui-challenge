@@ -43,3 +43,9 @@ svg {
   align-items: center;
   min-height: 24px;
 }
+.content {
+  overflow-y: auto;
+}
+/* the ul of categories */
+.categories {
+}
