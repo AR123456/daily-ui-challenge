@@ -66,3 +66,54 @@ svg {
   text-align: center;
   margin-bottom: 20px;
 }
+/* album art cover */
+.cover {
+  width: 60px;
+  height: 60px;
+  background: peachpuff;
+  margin-right: 20px;
+}
+.playlist {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.playlist svg {
+  fill: #7c7d81;
+}
+.info h1 {
+  font-size: 20px;
+}
+.info p {
+  color: #7c7d81;
+  font-size: 16px;
+}
+.info {
+  flex-grow: 1;
+}
+.footer {
+  background-color: #222327;
+}
+.footer-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.song {
+  font-weight: 700;
+}
+.artist {
+  color: #7c7d81;
+}
+.nav-items svg {
+  width: 28px;
+  margin-bottom: 5px;
+  fill: #7c7d81;
+}
+.library {
+  color: #f7f7f7;
+}
+.library svg {
+  fill: #f7f7f7;
+}
