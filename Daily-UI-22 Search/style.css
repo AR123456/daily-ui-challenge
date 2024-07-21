@@ -25,13 +25,13 @@ svg {
   width: 100%;
   max-width: 450px;
   height: 90vh;
-  border: 10px solid blue;
+  border: 10px solid rgb(244, 244, 245);
   margin: 5vh auto;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   color: #f6f6f6;
-  background-color: #121212;
+  background-color: #f3eff6;
 }
 .header,
 .content,
@@ -39,11 +39,12 @@ svg {
   padding: 15px;
 }
 .header {
-  background-color: #222327;
+  background-color: #f3eff6;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 24px;
+  color: black;
 }
 .content {
   overflow-y: auto;
@@ -96,7 +97,7 @@ svg {
   flex-grow: 1;
 }
 .footer {
-  background-color: #222327;
+  background-color: #f3eff6;
 }
 .footer-nav {
   padding-top: 10px;
