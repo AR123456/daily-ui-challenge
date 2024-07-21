@@ -19,19 +19,17 @@ body {
 svg {
   width: 30px;
   height: 30px;
-  fill: #7c7d81;
+  fill: #f6f6f6;
 }
 .phone-screen {
   width: 100%;
   max-width: 450px;
   height: 90vh;
-  border: 10px solid rgb(244, 244, 245);
+  border: 10px solid blue;
   margin: 5vh auto;
   border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  color: black;
-  background-color: #f3eff6;
+  color: #f6f6f6;
+  background-color: #121212;
 }
 .header,
 .content,
@@ -39,12 +37,11 @@ svg {
   padding: 15px;
 }
 .header {
-  background-color: #f3eff6;
+  background-color: #222327;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 24px;
-  color: black;
 }
 .content {
   overflow-y: auto;
@@ -54,7 +51,7 @@ svg {
   padding-left: 20px;
   list-style: none;
   font-size: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .categories li {
   display: flex;
@@ -64,82 +61,4 @@ svg {
 .categories svg {
   margin-right: 20px;
   fill: #7c7d81;
-}
-.recent h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-/* album art cover */
-.cover {
-  width: 60px;
-  height: 60px;
-  background: peachpuff;
-  margin-right: 20px;
-}
-.playlist {
-  padding-left: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.playlist svg {
-  fill: #7c7d81;
-}
-.info h1 {
-  font-size: 20px;
-}
-.info p {
-  color: #7c7d81;
-  font-size: 16px;
-}
-.info {
-  flex-grow: 1;
-}
-.footer {
-  background-color: #f3eff6;
-}
-.footer-nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.song {
-  font-weight: 700;
-}
-.artist {
-  color: #7c7d81;
-}
-.nav-items svg {
-  width: 28px;
-  margin-bottom: 5px;
-  fill: #7c7d81;
-}
-.library {
-  color: #7c7d81;
-}
-.library svg {
-  fill: #7c7d81;
-}
-.now-playing {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-items {
-  display: flex;
-  list-style-type: none;
-  padding-left: 50px;
-  padding-right: 50px;
-  justify-content: space-between;
-  color: #7c7d81;
-}
-.nav-items li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-input {
-  height: 30px;
-  width: 230px;
-  border-radius: 5px;
 }
