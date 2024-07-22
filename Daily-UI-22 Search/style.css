@@ -19,7 +19,7 @@ body {
 svg {
   width: 30px;
   height: 30px;
-  fill: #f6f6f6;
+  fill: #7c7d81;
 }
 .phone-screen {
   width: 100%;
@@ -115,10 +115,10 @@ svg {
   fill: #7c7d81;
 }
 .library {
-  color: #f7f7f7;
+  color: #7c7d81;
 }
 .library svg {
-  fill: #f7f7f7;
+  fill: #7c7d81;
 }
 .now-playing {
   display: flex;
@@ -137,4 +137,9 @@ svg {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+input {
+  height: 30px;
+  width: 230px;
+  border-radius: 5px;
 }
