@@ -30,7 +30,7 @@ svg {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  color: #f6f6f6;
+  color: black;
   background-color: #f3eff6;
 }
 .header,
