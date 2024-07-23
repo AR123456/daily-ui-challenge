@@ -23,7 +23,14 @@ body {
   gap: 100px;
 }
 .card {
+  display: flex;
   width: 33em;
   height: 33em;
-  background-color: red;
+  background-color: #57bb86;
+  border-radius: 50%;
+
+  align-items: center;
+}
+.card:hover {
+  background-color: #ff3796;
 }
