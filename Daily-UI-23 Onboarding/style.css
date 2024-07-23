@@ -17,3 +17,13 @@ body {
 .copy {
   color: #57bb86;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.card {
+  width: 33em;
+  height: 33em;
+  background-color: red;
+}
