@@ -24,8 +24,8 @@ body {
 }
 .card {
   display: flex;
-  width: 33em;
-  height: 33em;
+  width: 25em;
+  height: 25em;
   background-color: #57bb86;
   border-radius: 50%;
 
@@ -33,4 +33,9 @@ body {
 }
 .card:hover {
   background-color: #ff3796;
+}
+h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
