@@ -40,7 +40,13 @@ body {
 .aside-1 {
   background: gold;
 }
-
+.group {
+  font-size: 20em;
+}
+.group-text {
+  font-size: 2em;
+  border-bottom: 1em solid black;
+}
 .aside-2 {
   background: hotpink;
 }
