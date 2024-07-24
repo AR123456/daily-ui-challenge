@@ -27,6 +27,9 @@ body {
   width: 25em;
   height: 25em;
   background-color: #57bb86;
+  filter: drop-shadow(0 0 0.95rem white);
+  box-shadow: 8px 16px 16px hsla(0, 17%, 98%, 0.25);
+  /* box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4); */
   border-radius: 50%;
 
   align-items: center;
