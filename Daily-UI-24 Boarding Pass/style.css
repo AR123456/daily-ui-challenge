@@ -14,65 +14,28 @@ body {
   justify-content: center;
   height: 100vh;
 }
-.card {
-  border: 10px bold;
-}
-.wrapper {
+.container {
+  height: 500px;
+  width: 500px;
   display: flex;
-  flex-flow: row wrap;
-  text-align: center;
+  flex-direction: row;
+  gap: 20px;
 }
-/* items to be 100% width, via flex-basis */
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
+.card {
+  height: 100px;
+  width: 100px;
 }
-.header {
-  background: red;
-}
-.main {
-  text-align: left;
-  background: blue;
-}
-.footer {
-  background-color: seagreen;
-}
-
-.group {
-  font-size: 20em;
-}
-.group-text {
-  font-size: 2em;
-  border-bottom: 1em solid black;
-}
-.left {
-  width: 1em;
+.card-left {
   background-color: yellow;
-  /* vertically stack letters */
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  font-size: 2em;
+  height: 200px;
+  width: 20px;
+  border: solid black;
 }
-
-.aside-2 {
-  background: hotpink;
+.card-r-top {
+  background-color: green;
+  border: solid black;
 }
-
-.main {
-  flex: 3 0px;
-}
-.left {
-  order: 1;
-}
-.main {
-  order: 2;
-}
-.aside-2 {
-  order: 3;
-}
-.footer {
-  order: 4;
-}
-.aside {
-  flex: 1 0 0;
+.card-r-bottom {
+  background-color: blue;
+  border: solid black;
 }
