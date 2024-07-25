@@ -47,6 +47,13 @@ body {
   font-size: 2em;
   border-bottom: 1em solid black;
 }
+.group-text-narrow {
+  width: 10px;
+  background-color: red;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 2em;
+}
 .aside-2 {
   background: hotpink;
 }
