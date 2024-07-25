@@ -50,6 +50,7 @@ body {
 .group-text-narrow {
   width: 10px;
   background-color: red;
+  /* vertically stack letters */
   writing-mode: vertical-lr;
   text-orientation: upright;
   font-size: 2em;
