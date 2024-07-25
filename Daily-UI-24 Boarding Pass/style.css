@@ -45,18 +45,15 @@ body {
   font-size: 2em;
   border-bottom: 1em solid black;
 }
-.aside-1 {
-  background: gold;
-  width: 2em;
-}
-.group-text-narrow {
-  width: 2em;
-  background-color: red;
+.left {
+  width: 1em;
+  background-color: yellow;
   /* vertically stack letters */
   writing-mode: vertical-lr;
   text-orientation: upright;
   font-size: 2em;
 }
+
 .aside-2 {
   background: hotpink;
 }
@@ -64,7 +61,7 @@ body {
 .main {
   flex: 3 0px;
 }
-.aside-1 {
+.left {
   order: 1;
 }
 .main {
