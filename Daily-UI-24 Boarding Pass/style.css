@@ -22,12 +22,15 @@ body {
   gap: 20px;
 }
 .card {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
 }
 .card-left {
   background-color: yellow;
-  height: 200px;
+  /* vertically stack letters */
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  height: 400px;
   width: 20px;
   border: solid black;
 }
