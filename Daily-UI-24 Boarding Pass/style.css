@@ -22,23 +22,39 @@ body {
   gap: 20px;
 }
 .card {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 .card-left {
   background-color: yellow;
   /* vertically stack letters */
   writing-mode: vertical-lr;
   text-orientation: upright;
-  height: 400px;
-  width: 20px;
+  height: 600px;
+  width: 30px;
   border: solid black;
+  font-size: 30px;
 }
 .card-r-top {
+  text-align: center;
   background-color: green;
   border: solid black;
+  margin-left: 30px;
 }
 .card-r-bottom {
   background-color: blue;
   border: solid black;
+  margin-right: 30px;
+}
+.info {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 30px;
+}
+.large {
+  font-size: 80px;
+}
+.stack {
+  font-size: 40px;
 }
