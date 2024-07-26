@@ -26,25 +26,25 @@ body {
   width: 300px;
 }
 .card-left {
-  background-color: yellow;
+  /* background-color: yellow; */
   /* vertically stack letters */
   writing-mode: vertical-lr;
   text-orientation: upright;
   height: 600px;
   width: 30px;
-  border: solid black;
+  /* border: solid black; */
   font-size: 30px;
 }
 .card-r-top {
   text-align: center;
-  background-color: green;
-  border: solid black;
+  /* background-color: green; */
+  /* border: solid black; */
   margin-left: 50px;
   width: 200px;
 }
 .card-r-bottom {
-  background-color: blue;
-  border: solid black;
+  /* background-color: blue; */
+  /* border: solid black; */
   margin-right: 30px;
 }
 .info {
@@ -58,7 +58,7 @@ body {
 }
 .stack {
   font-size: 40px;
-  border-bottom: 10px solid black;
+  /* border-bottom: 10px solid black; */
   padding-bottom: 5px;
   line-height: 35px;
 }
