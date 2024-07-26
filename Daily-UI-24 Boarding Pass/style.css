@@ -14,6 +14,9 @@ body {
   justify-content: center;
   height: 100vh;
 }
+.boarder {
+  border: solid black;
+}
 .container {
   height: 500px;
   width: 500px;
