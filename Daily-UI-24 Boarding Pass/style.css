@@ -39,7 +39,8 @@ body {
   text-align: center;
   background-color: green;
   border: solid black;
-  margin-left: 30px;
+  margin-left: 50px;
+  width: 200px;
 }
 .card-r-bottom {
   background-color: blue;
@@ -50,11 +51,14 @@ body {
   font-size: 12px;
   text-align: center;
   padding: 10px;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 .large {
   font-size: 80px;
 }
 .stack {
   font-size: 40px;
+  border-bottom: 10px solid black;
+  padding-bottom: 5px;
+  line-height: 35px;
 }
