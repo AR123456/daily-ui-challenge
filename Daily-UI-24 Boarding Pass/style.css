@@ -34,7 +34,7 @@ body {
   width: 300px;
 }
 .card-left {
-  background-color: rgb(65, 84, 100);
+  background-color: rgba(64, 83, 99, 0.5);
   /* vertically stack letters */
   writing-mode: vertical-lr;
   text-orientation: upright;
