@@ -19,7 +19,7 @@ body {
   height: 600px;
   width: 350px;
   border: solid black;
-  background-color: aliceblue;
+  background-color: #f0f8ff;
   border-radius: 5%;
 }
 .container {
@@ -77,6 +77,6 @@ body {
   margin-right: 5px;
 }
 img {
-  height: 90px;
-  width: 90px;
+  height: 150px;
+  width: 150px;
 }
