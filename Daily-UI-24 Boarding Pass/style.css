@@ -13,9 +13,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #637fbe;
 }
 .boarder {
+  height: 600px;
+  width: 350px;
   border: solid black;
+  background-color: aliceblue;
+  border-radius: 5%;
 }
 .container {
   height: 500px;
@@ -29,20 +34,24 @@ body {
   width: 300px;
 }
 .card-left {
-  /* background-color: yellow; */
+  background-color: rgb(65, 84, 100);
   /* vertically stack letters */
   writing-mode: vertical-lr;
   text-orientation: upright;
-  height: 600px;
+  height: 580px;
   width: 30px;
   /* border: solid black; */
   font-size: 30px;
+  border-radius: 25px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .card-r-top {
   text-align: center;
-  /* background-color: green; */
+  background-color: green;
   /* border: solid black; */
-  margin-left: 50px;
+  margin-left: 80px;
   width: 200px;
 }
 .card-r-bottom {
