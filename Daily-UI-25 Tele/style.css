@@ -1,6 +1,8 @@
 *,
 html {
   box-sizing: border-box;
+  background: center / cover no-repeat url("./The-terminator.jpg");
+  background-color: transparent;
 }
 body {
   display: flex;
@@ -18,4 +20,9 @@ body {
   background-color: red;
   height: 40em;
   width: 30em;
+}
+.card {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
 }
