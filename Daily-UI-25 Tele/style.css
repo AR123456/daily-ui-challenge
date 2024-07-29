@@ -6,18 +6,31 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: rgb(8, 158, 46);
-  background: transparent;
 }
+/* wrapper  */
 .backdrop {
+  position: relative;
 }
-
+.backdrop:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url("./The-terminator.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  /* background-color: red; */
   height: 40em;
   width: 30em;
 }
@@ -26,3 +39,5 @@ body {
   width: 50px;
   background-color: blue;
 }
+
+/* look at this   https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
