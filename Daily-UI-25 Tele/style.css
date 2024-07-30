@@ -1,80 +1,34 @@
 body {
-  /* box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden; */
-}
-/* wrapper  */
-.demo-wrap {
   overflow: hidden;
-  position: relative;
 }
 
-.demo-bg {
-  opacity: 0.6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100rem;
-}
-
-.demo-content {
-  position: relative;
-}
-.wrap:before {
-  /* content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6; */
-  /* background-image: url("./The-terminator.jpg"); */
-  /* background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover; */
-}
 .container {
-  position: relative;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: red;
-  height: 40em;
-  width: 30em; */
-}
-.card {
-  height: 50px;
-  width: 50px;
-  background-color: blue;
-}
-
-/* look at this   https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
-.demo-wrap {
-  position: relative;
-}
-
-.demo-wrap:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  background-image: url("./The-terminator.jpg");
+  height: 50em;
+  width: 50em;
+  background-image: url("/The-terminator.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: 50% 0;
   background-size: cover;
+  position: relative;
 }
 
-.demo-content {
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4); /* White overlay */
+  z-index: 1;
+}
+
+.card {
   position: relative;
+  z-index: 2; /* Ensure the card is above the overlay */
 }
