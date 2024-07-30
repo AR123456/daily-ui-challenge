@@ -33,24 +33,45 @@ body {
   background-image: url("/The-terminator.jpg"); /* Only the image */
   background-position: center;
   background-repeat: no-repeat;
+  display: flex; /* Enable flexbox for card content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
   /* Background Size Calculation: Since the .card is 60% of the container's width, set the background-size to 166.67% (100 / 60 * 100) to align it perfectly with the container's background image. */
   background-size: 166.67%; /* Match .container size */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.7); /* Optional border */
-  /* position: relative;
-  overflow: hidden; */
 }
-
+.card .content {
+  text-align: center;
+  color: white;
+}
+.card h2 {
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.card p {
+  font-size: 1em;
+  margin-top: 10px;
+}
+.card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 @media (max-width: 768px) {
   .container {
     height: 70vh;
     width: 90vw;
   }
-
   .card {
     height: 50%;
     width: 70%;
