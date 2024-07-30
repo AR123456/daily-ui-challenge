@@ -28,17 +28,16 @@ body {
 }
 
 .card {
+  border: 2px solid rgba(255, 255, 255, 0.7); /* White border with transparency */
   height: 30em; /* Set a height for the card */
   width: 30em; /* Set a width for the card */
   display: flex; /* Enable flexbox for card content */
   justify-content: center; /* Horizontally center content */
   align-items: center; /* Vertically center content */
-  background-image: url("./terminator.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: transparent;
   border-radius: 10px; /* Rounded corners */
   position: relative;
   overflow: hidden; /* Clip any overflow */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some depth with shadow */
+  backdrop-filter: none;
 }
