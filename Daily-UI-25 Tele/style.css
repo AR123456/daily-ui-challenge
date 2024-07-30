@@ -35,19 +35,16 @@ body {
   background-repeat: no-repeat;
   /* Background Size Calculation: Since the .card is 60% of the container's width, set the background-size to 166.67% (100 / 60 * 100) to align it perfectly with the container's background image. */
   background-size: 166.67%; /* Match .container size */
-  /* when I remove this the window still works */
-  background-color: transparent; /* Ensure transparency */
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.7); /* Optional border */
-  position: relative;
-  overflow: hidden;
-  z-index: 10; /* Ensure it's above the container's gradient */
-  mix-blend-mode: normal; /* Ensure proper blending */
+  /* position: relative;
+  overflow: hidden; */
 }
+
 @media (max-width: 768px) {
   .container {
     height: 70vh;
