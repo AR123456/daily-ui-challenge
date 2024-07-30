@@ -5,23 +5,40 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  margin: 0; /* Remove default body margin */
+  background-color: #f0f0f0; /* Optional background color */
 }
 .container {
   height: 50em;
   width: 50em;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.8)
     ),
     url("/The-terminator.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex; /* Enable flexbox for container */
+  align-items: center; /* Vertically center the card */
+  justify-content: center; /* Horizontally center the card */
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  border-radius: 10px; /* Optional rounded corners */
 }
-/* 
-
 
 .card {
+  height: 30em; /* Set a height for the card */
+  width: 30em; /* Set a width for the card */
+  display: flex; /* Enable flexbox for card content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  background-image: url("./terminator.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px; /* Rounded corners */
   position: relative;
-  z-index: 2; /* Ensure the card is above the overlay */
+  overflow: hidden; /* Clip any overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some depth with shadow */
 }
