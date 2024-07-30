@@ -6,7 +6,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0; /* Remove default body margin */
-  background-color: #f0f0f0; /* Optional background color */
+  background-color: #c5c5c5; /* Optional background color */
 }
 .container {
   height: 50em;
@@ -28,16 +28,35 @@ body {
 }
 
 .card {
-  border: 2px solid rgba(255, 255, 255, 0.7); /* White border with transparency */
-  height: 30em; /* Set a height for the card */
-  width: 30em; /* Set a width for the card */
-  display: flex; /* Enable flexbox for card content */
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content */
-  background-color: transparent;
-  border-radius: 10px; /* Rounded corners */
+  height: 40em; /* Height of the card */
+  width: 30em; /* Width of the card */
+  background-image: url("/The-terminator.jpg"); /* Only the image */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Background Size Calculation: Since the .card is 60% of the container's width, set the background-size to 166.67% (100 / 60 * 100) to align it perfectly with the container's background image. */
+  background-size: 166.67%; /* Match .container size */
+  /* when I remove this the window still works */
+  background-color: transparent; /* Ensure transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.7); /* Optional border */
   position: relative;
-  overflow: hidden; /* Clip any overflow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some depth with shadow */
-  backdrop-filter: none;
+  overflow: hidden;
+  z-index: 10; /* Ensure it's above the container's gradient */
+  mix-blend-mode: normal; /* Ensure proper blending */
+}
+@media (max-width: 768px) {
+  .container {
+    height: 70vh;
+    width: 90vw;
+  }
+
+  .card {
+    height: 50%;
+    width: 70%;
+    background-size: calc(100% / 0.7); /* Adjust for new card size */
+  }
 }
