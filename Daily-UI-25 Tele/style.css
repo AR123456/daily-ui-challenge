@@ -26,19 +26,19 @@ body {
 }
 
 .card {
-  height: 20em; /* Size of the card window */
+  height: 45em; /* Size of the card window */
   width: 30em; /* Size of the card window */
   background-image: url("/The-terminator.jpg"); /* Use the same image */
   background-position: center; /* Align background with container */
   background-repeat: no-repeat;
-  background-size: 166.67%; /* Align background size with container */
+  background-size: 166.67%; /* Adjust to align with container size */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  position: relative; /* Allow positioning of the button container */
+  position: absolute; /* Position relative to the container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Translate to center the card */
   overflow: hidden; /* Hide overflow */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .button-container {
   height: 5em; /* Size of the button's clear window */
@@ -46,12 +46,12 @@ body {
   background-image: url("/The-terminator.jpg"); /* Use the same image */
   background-position: bottom right; /* Align background with container */
   background-repeat: no-repeat;
-  background-size: 500%; /* Align background size with container */
+  background-size: 500%; /* Adjust to match container size */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  position: absolute; /* Position relative to the card */
-  bottom: 10px; /* 10px from the bottom of the card */
-  right: 10px; /* 10px from the right of the card */
+  position: absolute; /* Position relative to the container */
+  bottom: 20px; /* 20px from the bottom of the container */
+  right: 20px; /* 20px from the right of the container */
   display: flex; /* Center button in the clear window */
   justify-content: center;
   align-items: center;
