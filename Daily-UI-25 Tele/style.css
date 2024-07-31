@@ -12,35 +12,49 @@ body {
   height: 50em;
   width: 50em;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.8)
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
     ),
-    url("/The-terminator.jpg");
+    url("/The-terminator.jpg"); /* Background with gradient */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; /* Needed for positioning the card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-  border-radius: 10px; /* Optional rounded corners */
+  border-radius: 10px; /* Rounded corners for container */
   overflow: hidden;
 }
 
 .card {
-  height: 10em; /* Size of the clear window */
-  width: 15em; /* Size of the clear window */
+  height: 20em; /* Size of the card window */
+  width: 30em; /* Size of the card window */
+  background-image: url("/The-terminator.jpg"); /* Use the same image */
+  background-position: center; /* Align background with container */
+  background-repeat: no-repeat;
+  background-size: 166.67%; /* Align background size with container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  position: relative; /* Allow positioning of the button container */
+  overflow: hidden; /* Hide overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  height: 5em; /* Size of the button's clear window */
+  width: 10em; /* Size of the button's clear window */
   background-image: url("/The-terminator.jpg"); /* Use the same image */
   background-position: bottom right; /* Align background with container */
   background-repeat: no-repeat;
-  background-size: 333.33%; /* Align background size with container */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  position: absolute; /* Position relative to the container */
-  bottom: 20px; /* 20px from the bottom */
-  right: 20px; /* 20px from the right */
-  overflow: hidden;
-  display: flex; /* Align button within the card */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  background-size: 500%; /* Align background size with container */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  position: absolute; /* Position relative to the card */
+  bottom: 10px; /* 10px from the bottom of the card */
+  right: 10px; /* 10px from the right of the card */
+  display: flex; /* Center button in the clear window */
+  justify-content: center;
+  align-items: center;
 }
 .action-button {
   padding: 10px 20px;
