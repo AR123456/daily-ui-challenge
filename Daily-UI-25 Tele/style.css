@@ -24,14 +24,13 @@ body {
   border-radius: 10px; /* Rounded corners for container */
   overflow: hidden;
 }
-
 .card {
   height: 45em; /* Size of the card window */
   width: 30em; /* Size of the card window */
   background-image: url("/The-terminator.jpg"); /* Use the same image */
   background-position: center; /* Align background with container */
   background-repeat: no-repeat;
-  background-size: 166.67%; /* Adjust to align with container size */
+  background-size: 166.67%; /* Align background size with container */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
   position: absolute; /* Position relative to the container */
@@ -40,13 +39,15 @@ body {
   transform: translate(-50%, -50%); /* Translate to center the card */
   overflow: hidden; /* Hide overflow */
 }
+
 .button-container {
   height: 5em; /* Size of the button's clear window */
   width: 10em; /* Size of the button's clear window */
   background-image: url("/The-terminator.jpg"); /* Use the same image */
-  background-position: bottom right; /* Align background with container */
+  /* background-position: right top;  Adjust to align with the intended area */
+  background-position: 190% 95%; /* Custom position */
   background-repeat: no-repeat;
-  background-size: 500%; /* Adjust to match container size */
+  background-size: 500%; /* Align background size with container */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
   position: absolute; /* Position relative to the container */
@@ -68,15 +69,4 @@ body {
 
 .action-button:hover {
   background-color: rgba(0, 0, 0, 0.9);
-}
-@media (max-width: 768px) {
-  .container {
-    height: 70vh;
-    width: 90vw;
-  }
-  .card {
-    height: 50%;
-    width: 70%;
-    background-size: calc(100% / 0.7); /* Adjust for new card size */
-  }
 }
