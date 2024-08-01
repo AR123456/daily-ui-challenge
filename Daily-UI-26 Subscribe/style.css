@@ -35,7 +35,7 @@ body {
     #5bb6c7 80%,
     #18373c 90%
   );
-
+  border-radius: 5px;
   /* background  4 rows #A3D5D6, #62C1D5,#5BB6C7, and #18373C */
   /* cloud color #E9E2D8  */
   /* CSS gradient */
