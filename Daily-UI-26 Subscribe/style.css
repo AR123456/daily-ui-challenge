@@ -14,6 +14,11 @@ body {
 }
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
   height: 66%;
   width: 88%;
   /* background: linear-gradient(
@@ -25,13 +30,40 @@ body {
   ); */
   background: linear-gradient(
     #a3d5d6 0%,
-    #a3d5d6 25%,
-    #62c1d5 50%,
-    #5bb6c7 75%,
+    #a3d5d6 66%,
+    #62c1d5 77%,
+    #5bb6c7 80%,
     #18373c 100%
   );
 
   /* background  4 rows #A3D5D6, #62C1D5,#5BB6C7, and #18373C */
   /* cloud color #E9E2D8  */
   /* CSS gradient */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sports {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: auto;
+  margin-bottom: 5%;
+}
+.swim,
+.bike,
+.run {
+  padding: 50px;
+  /* display: flex;
+  flex-direction: row;
+  margin-top: auto; */
+}
+.card-footer {
+  background-color: #18373c;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 2%;
 }
