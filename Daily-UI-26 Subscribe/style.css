@@ -8,9 +8,30 @@ body {
   overflow: hidden;
   /* color gradient top lighter than bottom */
   /* rgb(155, 205, 206) to rgb(75, 171, 187) */
-  background-image: url("./subscribe\ inspiration.jpg");
+  /* blend-mode */
+
+  background: linear-gradient(rgb(155, 205, 206), rgb(75, 171, 187));
 }
 .container {
+  display: flex;
+  height: 66%;
+  width: 88%;
+  /* background: linear-gradient(
+    #a3d5d6 0%,
+    #a3d5d6 25%,
+    #62c1d5 50%,
+    #5bb6c7 75%,
+    #18373c 100%
+  ); */
+  background: linear-gradient(
+    #a3d5d6 0%,
+    #a3d5d6 25%,
+    #62c1d5 50%,
+    #5bb6c7 75%,
+    #18373c 100%
+  );
+
   /* background  4 rows #A3D5D6, #62C1D5,#5BB6C7, and #18373C */
   /* cloud color #E9E2D8  */
+  /* CSS gradient */
 }
