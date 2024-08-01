@@ -79,4 +79,23 @@ button {
   margin: 2em;
   padding: 0.5em;
   border-radius: 5px;
+  border: none;
+  transition: transform 0.03s;
+}
+button:hover {
+  background-color: #a3d5d6;
+
+  animation: engage 0.4s ease-out;
+}
+/* button animation sequence  */
+@keyframes engage {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
