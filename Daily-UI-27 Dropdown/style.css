@@ -7,7 +7,46 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.nav-bar {
+.nav-collapsed {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.nav-collapsed.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.nav-menu-expanded {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu-expanded ul {
+  position: relative;
+}
+.nav-menu-expanded ul li {
+  list-style: none;
+}
+.nav-menu-expanded ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.nav-menu-expanded ul li a:hover {
+  color: #03a9f4;
 }
 .container {
 }
