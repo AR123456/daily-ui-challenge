@@ -20,8 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #000204; */
-  background: grey;
+  background-color: #000204;
   color: #fff;
   z-index: 2;
   /* transition the on click menu open */
@@ -32,30 +31,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.showcase.active {
-  right: 300px;
-}
-.toggle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url("./menu-up.svg");
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-}
-.toggle.active {
-  background: url("./menu-down.svg");
-
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
 }
 .overlay {
   position: absolute;
@@ -67,80 +42,4 @@
   makes the video "pop" */
   background: var(--overlay-color);
   mix-blend-mode: overlay;
-}
-.text {
-  position: relative;
-  z-index: 10;
-}
-.text h2 {
-  font-size: 5em;
-  font-weight: 800;
-  line-height: 1em;
-}
-.text p {
-  font-size: 1.1em;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
-.text a {
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-decoration: none;
-  color: #111;
-  margin-top: 10px;
-  /* letter-spacing: 2px; */
-  transition: 0.2s;
-}
-.text a:hover {
-  letter-spacing: 1px;
-}
-
-.nav-menu-expanded {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--overlay-color);
-}
-.nav-menu-expanded ul {
-  position: relative;
-  /* change the color of li svgs */
-  filter: invert(1);
-}
-.nav-menu-expanded ul li {
-  text-align: right;
-  direction: rtl;
-  padding-right: 30px;
-}
-
-/* list style type should be an icon representing the text  */
-.nav-menu-expanded ul li:nth-child(1) {
-  list-style: url("./svgResources/envelope.svg");
-}
-.nav-menu-expanded ul li:nth-child(2) {
-  list-style: url("./svgResources/calendar2-event.svg");
-}
-.nav-menu-expanded ul li:nth-child(3) {
-  list-style: url("./svgResources/speedometer.svg");
-}
-.nav-menu-expanded ul li:nth-child(4) {
-  list-style: url("./svgResources/person-bounding-box.svg");
-}
-.nav-menu-expanded ul li:nth-child(5) {
-  list-style: url("./svgResources/gear.svg");
-}
-.nav-menu-expanded ul li:nth-child(6) {
-  list-style: url("./svgResources/file-earmark-person-fill.svg");
-}
-
-.nav-menu-expanded ul li a {
-  text-decoration: none;
-  font-size: 24px;
 }
