@@ -46,7 +46,6 @@
   width: 60px;
   height: 60px;
   background: url("./menu-up.svg");
-
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -121,7 +120,7 @@
   /* scale and move up a little */
   transform: scale(0.5) translateY(-15px);
 }
-.menu {
+.nav-menu-expanded {
   position: absolute;
   top: 0;
   right: 0;
@@ -130,4 +129,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--overlay-color);
+}
+.nav-menu-expanded ul {
+  position: relative;
+  /* change the color of li svgs */
+  filter: invert(1);
+}
+.nav-menu-expanded ul li {
+  text-align: right;
+  direction: rtl;
+  padding-right: 30px;
+}
+
+/* list style type should be an icon representing the text  */
+.nav-menu-expanded ul li:nth-child(1) {
+  list-style: url("./svgResources/envelope.svg");
+}
+.nav-menu-expanded ul li:nth-child(2) {
+  list-style: url("./svgResources/calendar2-event.svg");
+}
+.nav-menu-expanded ul li:nth-child(3) {
+  list-style: url("./svgResources/speedometer.svg");
+}
+.nav-menu-expanded ul li:nth-child(4) {
+  list-style: url("./svgResources/person-bounding-box.svg");
+}
+.nav-menu-expanded ul li:nth-child(5) {
+  list-style: url("./svgResources/gear.svg");
+}
+.nav-menu-expanded ul li:nth-child(6) {
+  list-style: url("./svgResources/file-earmark-person-fill.svg");
+}
+
+.nav-menu-expanded ul li a {
+  text-decoration: none;
+  font-size: 24px;
 }
