@@ -41,7 +41,21 @@
 .showcase .active {
   right: 300px;
 }
-
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url("./menu-down.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+}
+.toggle .active {
+  background: url("./menu-up.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -52,4 +66,33 @@
   makes the video "pop" */
   background: var(--overlay-color);
   mix-blend-mode: overlay;
+}
+.text {
+  position: relative;
+  z-index: 10;
+}
+.text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+}
+.text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  /* letter-spacing: 2px; */
+  transition: 0.2s;
+}
+.text a:hover {
+  letter-spacing: 1px;
 }
