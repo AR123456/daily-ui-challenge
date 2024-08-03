@@ -96,3 +96,26 @@
 .text a:hover {
   letter-spacing: 1px;
 }
+.social {
+  position: absolute;
+  bottom: 10px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  /* change the color of image from black to white */
+  filter: invert(1);
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover {
+  /* scale and move up a little */
+  transform: scale(0.5) translateY(-15px);
+}
