@@ -7,8 +7,8 @@
 //   expanded.classList.toggle("active");
 // });
 const menuToggle = document.querySelector(".toggle");
-const showcase = document.querySelector(".showcase");
+const container = document.querySelector(".container");
 menuToggle.addEventListener("click", () => {
   menuToggle.classList.toggle("active");
-  showcase.classList.toggle("active");
+  container.classList.toggle("active");
 });

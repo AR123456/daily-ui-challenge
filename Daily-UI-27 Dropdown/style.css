@@ -6,12 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* css var */
-:root {
-  /* --overlay-color: #03a9f4; */
-  --overlay-color: #57bb86;
-}
-.showcase {
+.container {
   position: absolute;
   right: 0;
   width: 100%;
@@ -21,13 +16,13 @@
   justify-content: space-between;
   align-items: center;
   /* background-color: #000204; */
-  background: grey;
+  background: #57bb86;
   color: #fff;
   z-index: 2;
   /* transition the on click menu open */
   transition: 0.5s;
 }
-.showcase header {
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,11 +30,11 @@
   padding: 40px 100px;
   z-index: 1000;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: end;
+  justify-content: end;
 }
-.showcase.active {
-  right: 300px;
+.container.active {
+  right: 200px;
 }
 .toggle {
   position: relative;
@@ -52,54 +47,42 @@
 }
 .toggle.active {
   background: url("./menu-down.svg");
-
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* this is an alternaive to using rgba
-  makes the video "pop" */
-  background: var(--overlay-color);
-  mix-blend-mode: overlay;
-}
-.text {
+
+.card {
   position: relative;
   z-index: 10;
 }
-.text h2 {
-  font-size: 5em;
-  font-weight: 800;
-  line-height: 1em;
-}
-.text p {
+
+.card p {
   font-size: 1.1em;
-  margin: 20px 0;
+  margin-left: 120px;
+  padding-left: 50px;
   font-weight: 400;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .nav-menu-expanded {
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 200px;
   height: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: var(--overlay-color);
+  justify-content: left;
+  background: #57bb86;
 }
 .nav-menu-expanded ul {
   position: relative;
   /* change the color of li svgs */
   filter: invert(1);
 }
+/* put the text in front of the li */
 .nav-menu-expanded ul li {
   text-align: right;
   direction: rtl;
