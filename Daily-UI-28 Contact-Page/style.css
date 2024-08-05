@@ -35,5 +35,6 @@ input {
   border: none;
 }
 label {
-  filter: invert(1);
+  /* change the black svg color to grey  */
+  filter: invert(75%);
 }
