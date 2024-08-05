@@ -34,7 +34,7 @@ header {
   justify-content: end;
 }
 .container.active {
-  right: 300px;
+  right: 200px;
 }
 .toggle {
   position: relative;
@@ -56,27 +56,25 @@ header {
   position: relative;
   z-index: 10;
 }
-.card h2 {
-  font-size: 5em;
-  font-weight: 800;
-  line-height: 1em;
-}
+
 .card p {
   font-size: 1.1em;
-  margin: 20px 0;
+  margin-left: 120px;
+  padding-left: 50px;
   font-weight: 400;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .nav-menu-expanded {
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 200px;
   height: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   background: #57bb86;
 }
 .nav-menu-expanded ul {
