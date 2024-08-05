@@ -29,14 +29,6 @@ body {
   border: 1em solid white;
   background-color: rgb(235, 232, 232);
   box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
-  transform: scaleX(1) scaleY(1) scaleZ(0.9) rotateX(20deg) rotateY(-11deg)
-    rotateZ(16deg) translateX(2px) translateY(0px) translateZ(0px) skewX(0deg)
-    skewY(0deg);
-  background-color: pink;
-}
-.wrap {
-  perspective: 1777px;
-  perspective-origin: 75% 15%;
 }
 input {
   padding: 10px;
