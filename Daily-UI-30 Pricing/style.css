@@ -1,0 +1,26 @@
+/* font for trust humanist type  */
+* html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #3dcc97;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+}
+.card {
+  height: 25em;
+  width: 20em;
+  background-color: mintcream;
+  color: #6bdab5;
+}
