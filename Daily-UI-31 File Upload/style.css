@@ -12,10 +12,17 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  /* background: rgb(249, 210, 193); */
+  background: linear-gradient(
+    317deg,
+    rgba(249, 210, 193, 1) 0%,
+    rgba(252, 235, 209, 1) 100%
+  );
 }
 
 .container {
   background-color: rgb(248, 244, 244);
+
   height: 42rem;
   width: 20rem;
   border-radius: 35px;
@@ -30,16 +37,17 @@ body {
   box-shadow: 1px 1px 5px #555 inset;
 
   /* transform and filter  */
-  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
-  rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
-  skewX(0deg) skewY(0deg);
-filter: drop-shadow(40px 31px 15px #000000); */
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg);
+  filter: drop-shadow(40px 31px 15px #7c7b7b);
 }
 /* perspecrtive */
-/* .wrapper {
+.wrapper {
   perspective: 1474px;
   perspective-origin: 54% 192%;
-} */
+}
+
 .card {
   display: flex;
   flex-direction: column;
