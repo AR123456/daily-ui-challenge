@@ -24,8 +24,8 @@ body {
   align-items: center;
   padding-top: 1em;
   margin-top: 30px;
-  border: 10px solid black;
-  border-bottom-style: groove;
+  border: 5px solid black;
+  border-style: groove;
   /* sunken effect around edge of phone screen */
   box-shadow: 1px 1px 5px #555 inset;
 
@@ -41,6 +41,10 @@ filter: drop-shadow(40px 31px 15px #000000); */
   perspective-origin: 54% 192%;
 } */
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
@@ -49,5 +53,6 @@ filter: drop-shadow(40px 31px 15px #000000); */
   border-radius: 25px;
 }
 .circle {
+  margin-top: 20px;
   margin-bottom: 25px;
 }
