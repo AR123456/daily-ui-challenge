@@ -1,0 +1,28 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(249, 247, 249, 0.9),
+      rgba(242, 221, 244, 0.7)
+    ),
+    url(./45-degree-fabric-light.png);
+  /* background-color: rgb(245, 203, 245); */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 20em;
+  width: 20em;
+  background-image: url("./pineapple-2881250_1280.png");
+}
