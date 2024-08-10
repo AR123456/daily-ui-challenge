@@ -27,6 +27,17 @@ body {
   text-align: center;
   padding: 2em;
 }
+.size {
+  text-align: left;
+  display: flex;
+  align-items: left;
+  margin-left: 30px;
+}
+.color-pick {
+  display: flex;
+
+  align-items: left;
+}
 svg {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
