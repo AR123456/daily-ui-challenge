@@ -11,7 +11,17 @@
       <h1>Pick your Pineapple</h1>
       <div class="color-pick">
         <label for="colorpicker">Color Picker:</label>
-        <input type="color" id="colorpicker" value="#eeff00" />
+        <input
+          type="color"
+          id="colorpicker"
+          list="presetColors"
+          value="#eeff00"
+        />
+        <datalist id="presetColors">
+          <option>#ff0000</option>
+          <option>#00ff00</option>
+          <option>#0000ff</option>
+        </datalist>
       </div>
 
       <div class="card">
