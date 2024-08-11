@@ -9,9 +9,10 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: black;
 }
 .container {
-  background-color: red;
+  background: url(./dashbackground.jpg);
   height: 40em;
   width: 60em;
   /* border-radius: 52% 48% 50% 50% / 69% 67% 33% 31%; */
