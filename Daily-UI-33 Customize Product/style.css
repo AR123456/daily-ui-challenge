@@ -8,6 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: linear-gradient(
       rgba(249, 247, 249, 0.9),
       rgba(242, 221, 244, 0.7)
@@ -20,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 10em;
 }
 .card {
   height: 40em;
@@ -48,4 +50,22 @@ svg {
 }
 .menu-color {
   display: flex;
+}
+label {
+  margin-top: 2px;
+}
+input,
+select {
+  margin-left: 5px;
+
+  border-radius: 5px;
+  border: solid 1px white;
+  height: 20px;
+  width: 80px;
+  background-image: linear-gradient(
+      rgba(249, 247, 249, 0.9),
+      rgba(242, 221, 244, 0.7)
+    ),
+    url(./45-degree-fabric-light.png);
+  filter: drop-shadow(3px 5px 2px rgba(173, 171, 171, 0.4));
 }
