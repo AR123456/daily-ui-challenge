@@ -10,9 +10,11 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: black;
+  /* gradiant top to bottom #1A1A1A to #0A0A0A */
+  background: linear-gradient(to bottom, #1e1e1e, #000000);
 }
 .container {
-  background: url(./dashbackground.jpg);
+  background: url(./dashbackground.jpg) center no-repeat;
   height: 40em;
   width: 60em;
   /* border-radius: 52% 48% 50% 50% / 69% 67% 33% 31%; */
