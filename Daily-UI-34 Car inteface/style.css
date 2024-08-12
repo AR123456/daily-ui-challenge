@@ -27,3 +27,21 @@ body {
   justify-content: center;
   color: #57a594;
 }
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  margin-top: 3em;
+
+  height: 20em;
+  width: 45em;
+}
+.gage {
+  height: 15em;
+  width: 15em;
+  border-radius: 50%;
+
+  background-color: blue;
+}
