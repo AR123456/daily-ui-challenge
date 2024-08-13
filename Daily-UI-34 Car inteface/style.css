@@ -59,10 +59,3 @@ body {
   width: 13em;
   margin-top: 5rem;
 }
-.right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
