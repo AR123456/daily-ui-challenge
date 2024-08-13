@@ -1,0 +1,12 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Guardian Text Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #232a31;
+}
+.headline {
+  font-family: "Guardian TextEgyp", serif;
+}
