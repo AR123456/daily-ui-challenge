@@ -24,3 +24,8 @@ body {
 .nav-item.dropdown:hover .nav-link {
   color: #000; /* Optional: adjust as needed */
 }
+button {
+  background: url("./search.svg") center no-repeat;
+
+  filter: invert();
+}
