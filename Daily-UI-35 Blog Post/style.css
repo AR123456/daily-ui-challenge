@@ -10,3 +10,17 @@ body {
 .headline {
   font-family: "Guardian TextEgyp", serif;
 }
+/* Remove the click behavior on the dropdown */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Add hover behavior for the dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: adjust as needed */
+}
+
+.nav-item.dropdown:hover .nav-link {
+  color: #000; /* Optional: adjust as needed */
+}
