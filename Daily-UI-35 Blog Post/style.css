@@ -31,10 +31,34 @@ button {
 
   filter: invert();
 }
+ul {
+  list-style-type: none;
+}
+.inner-header,
+.outer-header {
+  margin-left: 2em;
+}
 .horizontal-card {
   display: flex;
   flex-direction: row;
+  gap: 1em;
+}
+
+.bold {
+  font-weight: bold;
 }
 .blog-pic {
+  width: 20em;
+  background-color: blue;
+}
+.blog-text {
+  width: 40em;
+  background-color: green;
+}
+.ad-holder {
+  width: 30em;
+  background-color: red;
+}
+img {
   border-radius: 8px;
 }
