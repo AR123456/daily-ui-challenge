@@ -3,12 +3,14 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Guardian Text Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
   color: #232a31;
 }
+.blog-name {
+}
 .headline {
-  font-family: "Guardian TextEgyp", serif;
 }
 /* Remove the click behavior on the dropdown */
 .dropdown-toggle::after {
@@ -30,4 +32,9 @@ button {
   filter: invert();
 }
 .horizontal-card {
+  display: flex;
+  flex-direction: row;
+}
+.blog-pic {
+  border-radius: 8px;
 }
