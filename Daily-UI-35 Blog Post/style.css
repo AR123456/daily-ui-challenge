@@ -36,7 +36,7 @@ ul {
 }
 .inner-header,
 .outer-header {
-  margin-left: 2em;
+  margin: 2em;
 }
 .horizontal-card {
   display: flex;
@@ -49,16 +49,19 @@ ul {
 }
 .blog-pic {
   width: 20em;
-  background-color: blue;
 }
 .blog-text {
-  width: 40em;
-  background-color: green;
+  width: 30em;
 }
 .ad-holder {
   width: 30em;
-  background-color: red;
 }
 img {
   border-radius: 8px;
+}
+.blog-title {
+  margin-bottom: 1em;
+}
+.author {
+  margin-bottom: 1em;
 }
