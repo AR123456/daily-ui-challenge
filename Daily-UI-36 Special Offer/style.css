@@ -22,7 +22,7 @@ body {
   width: 33em;
   color: blue;
 }
-.divDate {
+.div-date {
   width: 22em;
   text-align: center;
   margin: 3em;
@@ -32,6 +32,8 @@ body {
 .sale-percent {
   /* 50% */
   font-size: 12em;
+  position: relative;
+  z-index: 1;
 }
 .text-small {
   /* % off */
@@ -47,8 +49,25 @@ body {
 .mid-wrap {
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+.streaks::before,
+.streaks::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, transparent, blue);
+  transform: translateY(-50%);
+  z-index: 0;
 }
 
+.streaks::after {
+  top: 60%;
+  height: 5px;
+}
 button {
   background-color: blue;
   color: white;
