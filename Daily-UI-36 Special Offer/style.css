@@ -23,15 +23,28 @@ body {
   color: blue;
 }
 .divDate {
+  width: 22em;
+  text-align: center;
   margin: 3em;
+  border-bottom: 4px solid blue;
+  padding-bottom: 8px;
 }
 .sale-percent {
-  font-size: 6em;
+  /* 50% */
+  font-size: 12em;
 }
 .text-small {
+  /* % off */
+  margin-top: 5em;
 }
 .text-med {
+  /* entire store large spaces between */
 }
+.mid-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
 button {
   background-color: blue;
   color: white;
