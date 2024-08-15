@@ -16,7 +16,28 @@ body {
 }
 .card {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 33em;
   width: 33em;
+  color: blue;
+}
+.divDate {
+  margin: 3em;
+}
+.sale-percent {
+  font-size: 6em;
+}
+.text-small {
+}
+.text-med {
+}
+button {
   background-color: blue;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-radius: 25px;
+  border: none;
+  /* shadow same as care */
 }
