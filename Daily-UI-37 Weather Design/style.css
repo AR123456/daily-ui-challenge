@@ -1,0 +1,27 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  /* background: rgba(195, 241, 240,1); */
+  background: linear-gradient(
+    317deg,
+    rgba(195, 241, 240, 1) 0%,
+    rgba(224, 255, 243, 1) 100%
+  );
+}
+.container {
+}
+.card {
+  /*  top #004E4D */
+  /* bottom  #6BD2CC */
+}
