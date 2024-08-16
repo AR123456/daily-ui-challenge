@@ -31,15 +31,15 @@ body {
 }
 
 .sale-percent {
-  color: yellow;
+  color: blue;
   /* 50% */
   font-size: 12em;
   transform: rotate(8deg);
 }
 .wrapper {
-  background: url("./streaks.jpg") no-repeat center;
+  /* background: url("./streaks.jpg") no-repeat center;
   background-size: cover;
-  filter: invert();
+  filter: invert(); */
 }
 .text-small {
   /* % off */
