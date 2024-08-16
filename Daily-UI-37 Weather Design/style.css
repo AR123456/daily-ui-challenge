@@ -60,3 +60,27 @@ body {
 .forcast {
   margin-bottom: 2em;
 }
+.list-row {
+  width: 17em;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 3px;
+  border-bottom: black 1px solid;
+}
+.day {
+  width: 40%;
+}
+.day-deg {
+  width: 30%;
+  text-align: end;
+}
+.day-icon {
+  width: 10%;
+  text-align: end;
+}
