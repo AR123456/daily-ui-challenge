@@ -71,10 +71,12 @@ ul {
 }
 li {
   padding-bottom: 3px;
+
   border-bottom: black 1px solid;
 }
 .day {
-  width: 40%;
+  padding-left: 10px;
+  width: 45%;
 }
 .day-deg {
   width: 30%;
