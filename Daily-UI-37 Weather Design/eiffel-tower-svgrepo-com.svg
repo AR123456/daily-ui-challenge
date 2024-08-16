@@ -1,46 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="wrapper"></div>
-    <div class="container">
-      <header>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="10"
-          height="10"
-          fill="black"
-          class="bi bi-circle"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
-          />
-        </svg>
-      </header>
-      <div class="card">
-        <div class="forcast">
-          <h1>Clear</h1>
-          <h2>74 deg</h2>
-        </div>
-        <svg
-          fill="#e0fff3"
-          height="300px"
-          width="300px"
-          version="1.1"
-          id="#"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 372 572"
-          xml:space="preserve"
-        >
-          <path
-            d="M396.625,456h-4.638c-27.449-32.71-51.398-68.051-71.627-105.655c1.859-1.465,3.057-3.731,3.057-6.282c0-4.418-3.582-8-8-8
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 472 472" xml:space="preserve">
+<path d="M396.625,456h-4.638c-27.449-32.71-51.398-68.051-71.627-105.655c1.859-1.465,3.057-3.731,3.057-6.282c0-4.418-3.582-8-8-8
 	h-2.511c-9.981-19.746-18.961-40.084-26.907-60.966c-0.386-1.015-0.761-2.035-1.142-3.052c4.255-0.184,7.651-3.682,7.651-7.982
 	c0-4.418-3.582-8-8-8H279.1c-20.342-58.98-31.997-120.634-34.743-183.76c4.137-0.308,7.399-3.754,7.399-7.97V40.25
 	c0-4.391-3.539-7.952-7.919-7.996V8c0-4.418-3.582-8-8-8s-8,3.582-8,8v24.254c-4.381,0.044-7.92,3.605-7.92,7.996v24.082
@@ -57,24 +19,5 @@
 	c6.331,0,16.845,0,23.173,0C252.003,314.833,256.911,325.539,262.071,336.063z M331.569,456
 	c-4.078-49.241-45.457-88.063-95.732-88.063S144.182,406.759,140.104,456h-39.7c26.026-32.357,48.783-67.116,68.106-103.938h28.289
 	c0.001,0,0.002,0,0.003,0h78.22c0.007,0,0.014,0.001,0.022,0.001c0.008,0,0.017-0.001,0.025-0.001h28.094
-	c19.323,36.822,42.08,71.58,68.106,103.938H331.569z"
-          />
-        </svg>
-      </div>
-      <footer>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="80"
-          height="80"
-          fill="currentColor"
-          class="bi bi-circle circle"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
-          />
-        </svg>
-      </footer>
-    </div>
-  </body>
-</html>
+	c19.323,36.822,42.08,71.58,68.106,103.938H331.569z"/>
+</svg>

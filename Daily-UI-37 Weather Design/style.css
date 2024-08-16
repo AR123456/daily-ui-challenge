@@ -16,12 +16,47 @@ body {
   background: linear-gradient(
     317deg,
     rgba(195, 241, 240, 1) 0%,
-    rgba(224, 255, 243, 1) 100%
+    rgb(224, 255, 243) 100%
   );
 }
 .container {
+  background-color: #004e4d;
+  height: 42em;
+  width: 20em;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  margin-top: 30px;
+  border: 5px solid black;
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  /* transform and filter  */
+  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg); */
+  /* filter: drop-shadow(40px 31px 15px #7c7b7b); */
 }
+/* perspecrtive */
+.wrapper {
+  /* perspective: 1474px;
+  perspective-origin: 54% 192%; */
+}
+
 .card {
   /*  top #004E4D */
   /* bottom  #6BD2CC */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45em;
+  width: 18em;
+  border-radius: 25px;
+  border-style: groove;
+  color: #e0fff3;
+}
+.forcast {
+  margin-bottom: 2em;
 }
