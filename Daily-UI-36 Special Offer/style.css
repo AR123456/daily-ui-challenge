@@ -21,6 +21,7 @@ body {
   height: 33em;
   width: 33em;
   color: blue;
+  box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
 }
 .divDate {
   width: 22em;
@@ -34,7 +35,6 @@ body {
   color: blue;
   /* 50% */
   font-size: 12em;
-  transform: rotate(8deg);
 }
 .wrapper {
   /* background: url("./streaks.jpg") no-repeat center;
@@ -65,4 +65,5 @@ button {
   border-radius: 25px;
   border: none;
   /* shadow same as care */
+  box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
 }
