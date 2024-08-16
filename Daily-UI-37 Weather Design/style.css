@@ -56,6 +56,7 @@ body {
   border-radius: 25px;
   border-style: groove;
   color: #e0fff3;
+  background: url("./day.svg");
 }
 .forcast {
   margin-bottom: 2em;
