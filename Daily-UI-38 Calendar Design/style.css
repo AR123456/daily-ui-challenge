@@ -1,0 +1,52 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #3a3a3a;
+  color: white;
+}
+.month-name {
+  font-size: 1.2em;
+}
+.weekdays {
+  display: flex;
+  background-color: #ddd;
+}
+.weekdays div {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
