@@ -55,7 +55,7 @@ body {
   width: 18em;
   border-radius: 25px;
   border-style: groove;
-  color: #222926;
+  color: #004e4d;
   background: url("./day.svg");
 }
 .inner-card {
@@ -88,4 +88,5 @@ li {
 .day-icon {
   width: 10%;
   text-align: end;
+  color: #004e4d;
 }
