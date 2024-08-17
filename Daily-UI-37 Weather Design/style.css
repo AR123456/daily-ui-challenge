@@ -55,8 +55,10 @@ body {
   width: 18em;
   border-radius: 25px;
   border-style: groove;
-  color: #e0fff3;
+  color: #222926;
   background: url("./day.svg");
+}
+.inner-card {
 }
 .forcast {
   margin-bottom: 2em;
