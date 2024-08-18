@@ -11,7 +11,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: #f4f4f4;
-  background-image: url("./1997.108_full.jpg");
+  background-image: url("./matching-background.jpg");
 }
 .container {
   background-color: white;
@@ -19,7 +19,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 50em;
   height: 50em;
-  background-image: url("./1997.108_full.jpg");
+
+  background: url("./1997.108_bird2.jpg") no-repeat bottom right;
 }
 .month {
   display: flex;
