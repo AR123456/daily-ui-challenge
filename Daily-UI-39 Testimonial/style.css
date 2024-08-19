@@ -17,8 +17,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40em;
+  height: 35em;
   width: 50em;
   background-color: ivory;
   border-radius: 25px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  margin: 2em;
+}
+.flip {
+  transform: rotate(180deg);
 }
