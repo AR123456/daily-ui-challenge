@@ -10,12 +10,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: #ee6f2a;
-  background: linear-gradient(
-    262deg,
-    rgba(238, 111, 42, 1) 0%,
-    rgba(236, 167, 130, 1) 100%
-  );
+  background-color: rgb(238, 111, 42);
 }
 .container {
   display: flex;
@@ -26,7 +21,6 @@ body {
   width: 50em;
   background-color: ivory;
   border-radius: 25px;
-  box-shadow: 7.4px 14.9px 14.9px hsl(0deg 0% 0% / 0.27);
 }
 .card {
   display: flex;
@@ -48,7 +42,4 @@ body {
 .peep {
   height: 4em;
   width: 4em;
-}
-h1 {
-  margin-bottom: 20px;
 }
