@@ -47,10 +47,61 @@ body {
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
   /* can add an image here  */
-  background: url("./estes.jpg");
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
+}
+.pic {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center; */
+}
+img {
+  margin-left: 4px;
+  border-radius: 25px 25px 0px 0px;
+  height: 276px;
+  width: 276px;
+}
+.info {
+  margin-left: 4px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.ingredients {
+  margin-left: 8px;
+  font-size: 13px;
+  line-height: 13px;
+}
+.prep {
+  display: none;
+  margin-left: 4px;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 5px;
+}
+.toggle-prep {
+  width: 100%;
+  margin-left: 8px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.ing-icon {
+  background-image: url("./fish-outline.svg");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 30px;
+}
+.pre-icon {
+  background-image: url("./hammer-outline.svg");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 30px;
 }
 .circle {
   padding: 2rem;
