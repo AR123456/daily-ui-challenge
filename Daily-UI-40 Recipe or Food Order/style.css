@@ -25,24 +25,10 @@ body {
   margin-top: 30px;
   /* groove and box shadow for roundish outer edge */
   box-shadow: 1px 1px 5px #555;
-  /* tilt and shadow around phone */
-  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
-    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
-    skewX(0deg) skewY(0deg);
-  filter: drop-shadow(40px 31px 15px #000000); */
 }
-/* this will kick out the bottom of the phone a bit */
-.wrapper {
-  /* perspective: 1474px;
-  perspective-origin: 54% 192%; */
-}
+
 /* phone screen */
 .card {
-  /* making the card flex box for stuff withing it */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   /* groove and box shadow for  sunken effect around edge of phone screen */
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
@@ -51,12 +37,7 @@ body {
   width: 18rem;
   border-radius: 25px;
 }
-.pic {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: center; */
-}
+
 .centered {
   font-weight: bold;
   position: absolute;
