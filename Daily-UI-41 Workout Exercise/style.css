@@ -24,5 +24,7 @@ body {
 .card {
 }
 .more {
+}
+.hide {
   display: none;
 }
