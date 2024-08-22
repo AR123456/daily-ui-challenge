@@ -10,7 +10,6 @@ body {
   margin: 30px;
   background-color: #69d4cf;
   color: white;
-  overflow: hidden;
 }
 .image {
   display: flex;
@@ -52,11 +51,11 @@ body {
 .footer {
   margin-bottom: 2em;
 }
-/* .header,
+.header,
 .footer {
   flex-grow: 0;
   flex-shrink: 0;
 }
 .container {
   flex-grow: 1;
-} */
+}
