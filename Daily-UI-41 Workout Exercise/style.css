@@ -52,7 +52,7 @@ body {
 .card {
   flex-grow: 1;
   width: 100%;
-  min-height: 400px; /* Ensures all cards have a minimum height */
+  min-height: 380px; /* Ensures all cards have a minimum height */
   box-sizing: border-box; /* Prevents padding from increasing card height */
   padding: 20px; /* Adjust padding as necessary */
   display: flex;
@@ -74,7 +74,4 @@ body {
 .footer {
   margin-top: 20px;
   margin-bottom: 2em;
-}
-button {
-  margin-bottom: 30px;
 }
