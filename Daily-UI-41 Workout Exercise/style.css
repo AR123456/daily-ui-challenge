@@ -9,7 +9,7 @@ body {
   min-height: 100%;
   margin: 30px;
   background-color: #69d4cf;
-  color: white;
+  color: #407f7b;
 }
 .image {
   display: flex;
@@ -21,7 +21,7 @@ body {
 .image img {
   height: 420px;
   width: 420px;
-  margin-bottom: 20px;
+  z-index: -2;
 }
 .container {
   /* background: url("./lotus-yoga.svg") bottom no-repeat; */
@@ -51,7 +51,7 @@ body {
 .footer {
   margin-bottom: 2em;
 }
-.header,
+
 .footer {
   flex-grow: 0;
   flex-shrink: 0;
