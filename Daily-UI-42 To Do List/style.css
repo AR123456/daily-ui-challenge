@@ -59,11 +59,10 @@ body {
 .circle-small {
 }
 ul {
-  list-style: url("./feather2.svg");
 }
 li {
   /* list-style: url("./feather2.svg"); */
-
+  list-style: none;
   height: 60px;
   width: 220px;
   line-height: 15px;
