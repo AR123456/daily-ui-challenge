@@ -25,10 +25,10 @@ body {
   /* groove and box shadow for roundish outer edge */
   box-shadow: 1px 1px 5px #555;
   /* shadow around phone */
-  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
     rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
     skewX(0deg) skewY(0deg);
-  filter: drop-shadow(40px 31px 15px #000000);
+  filter: drop-shadow(40px 31px 15px #000000); */
 }
 /* this will kick out the bottom of the phone a bit */
 .wrapper {
