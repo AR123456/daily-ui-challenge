@@ -80,12 +80,13 @@ ul {
 }
 li {
   height: 50px;
-  width: 280px;
+  width: 230px;
   line-height: 16px;
   font-size: 16px;
+
+  margin-right: 20px;
 }
 .feather {
-  margin-top: 5px;
   height: 30px;
   width: 30px;
 }
@@ -99,8 +100,12 @@ li {
 }
 .middle-col {
   flex-shrink: 0.2;
-
+  margin-right: 100px;
+  margin-bottom: 3px;
+  padding-top: 5px;
   width: 260px;
+  border-radius: 1px;
+  border-bottom: 1px rgb(216, 218, 220) solid;
 }
 .middle-col,
 .r-col {
