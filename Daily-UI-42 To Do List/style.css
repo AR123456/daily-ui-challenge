@@ -6,7 +6,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
@@ -18,7 +18,7 @@ body {
       rgba(228, 220, 220, 0.63)
     ),
     url("./cool-owl2.jpg");
-  background-position: 10% 10%;
+  background-position: 10% 5%;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
@@ -36,7 +36,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-left: 320px;
+
   /* groove and box shadow for roundish outer edge */
   box-shadow: 1px 1px 5px #555;
   /* shadow around phone */
@@ -61,7 +62,7 @@ body {
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
   /* can add an image here  */
-  background: url("./estes.jpg");
+
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
