@@ -59,12 +59,32 @@ body {
 .circle-small {
 }
 ul {
+  text-align: center;
+  list-style: none;
 }
 li {
-  /* list-style: url("./feather2.svg"); */
-  list-style: none;
-  height: 60px;
-  width: 220px;
-  line-height: 15px;
-  font-size: 12px;
+  border: 2px black solid;
+  padding: 3px;
+  margin: 3px;
+  margin-left: 0;
+  border-radius: 35px;
+  height: 50px;
+}
+.feather {
+  height: 30px;
+  width: 30px;
+}
+.three-columns {
+  display: flex;
+}
+.r-col,
+.l-col {
+  width: 100%;
+}
+.middle-col {
+  flex-shrink: 0;
+}
+.middle-col,
+.r-col {
+  margin-top: 8px;
 }
