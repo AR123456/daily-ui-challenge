@@ -5,9 +5,10 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100vh;
   overflow: hidden;
 }
