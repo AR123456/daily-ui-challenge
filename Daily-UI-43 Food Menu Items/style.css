@@ -49,4 +49,45 @@ body {
   margin-bottom: 5px;
 }
 ul {
+  /* look at music app */
+  list-style-type: none;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  height: 75px;
+  margin-right: 50px;
+}
+.icon {
+  height: 50px;
+  width: 50px;
+}
+.salad {
+  background: url("./salad.jpg") center/cover no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+}
+.soup {
+  background: url("./soup.jpg") center/cover no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+}
+.pita {
+  background: url("./pita.jpg") center/cover no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+}
+.fish {
+  background: url("./fish.jpg") center/cover no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+}
+.item-title {
+  width: 150px;
+  border-bottom: solid 1px rgb(211, 209, 209);
+}
+.item-more-info {
+  padding: 5px;
 }
