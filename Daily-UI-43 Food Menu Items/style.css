@@ -84,6 +84,16 @@ ul {
   border-radius: 50%;
   box-shadow: 0 0 2px;
 }
+.taco {
+  background: url("./taco.jpg") center/cover no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+}
+.burger {
+  background: url("./burger.jpg") center/cover no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 0 2px;
+}
 .item-title {
   width: 150px;
   border-bottom: solid 1px rgb(211, 209, 209);
