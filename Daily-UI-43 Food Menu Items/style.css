@@ -59,7 +59,8 @@ body {
   background: url("./salad.jpg") center/cover no-repeat;
   width: 200px;
   height: 200px;
-  box-shadow: 0 0 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
 }
 .circle {
   padding: 2rem;
