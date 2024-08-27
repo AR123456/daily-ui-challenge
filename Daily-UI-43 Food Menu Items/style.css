@@ -75,7 +75,12 @@ button {
   height: 200px;
   border-radius: 5px;
   box-shadow: 0 0 5px;
-  /* mask-image: linear-gradient(to bottom, black 0%, transparent 100%); */
+}
+.overlay {
+  mask-image: linear-gradient(black 0%, transparent 100%);
+}
+.price {
+  color: aqua;
 }
 .circle {
   padding: 2rem;
