@@ -78,6 +78,10 @@ button {
 }
 .overlay {
   mask-image: linear-gradient(black 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
 }
 .price {
   color: aqua;
