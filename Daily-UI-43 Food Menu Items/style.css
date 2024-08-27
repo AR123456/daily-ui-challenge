@@ -45,14 +45,17 @@ body {
 .second-screen {
   display: flex;
   flex-direction: column;
-
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
   gap: 10px;
   width: 250px;
-  height: 250px;
-  margin-right: 50px;
 }
-
-.col .picture {
+.description {
+  width: 200px;
+  height: 200px;
+}
+.picture {
   background: url("./salad.jpg") center/cover no-repeat;
   width: 200px;
   height: 200px;
