@@ -42,6 +42,22 @@ body {
   /* mask-image: linear-gradient(to bottom, black 0%, transparent 100%); */
   /* mask-image: linear-gradient(rgb(0 0 0 / 100%), transparent); */
 }
+.second-screen {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+}
+
+.col .picture {
+  background: url("./salad.jpg") center/cover no-repeat;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 2px;
+}
 .circle {
   padding: 2rem;
   padding-top: 0.5rem;
