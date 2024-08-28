@@ -12,6 +12,11 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+ul {
+  list-style-type: none;
+  margin-top: 0;
+}
+
 .container {
   background-color: #f8f4f4;
   height: 42rem;
@@ -24,10 +29,7 @@ body {
   margin-top: 30px;
   box-shadow: 1px 1px 5px #555;
   /* shadow around phone */
-  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
-    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
-    skewX(0deg) skewY(0deg); */
-  /* filter: drop-shadow(40px 31px 15px #000000); */
+  filter: drop-shadow(40px 31px 15px #000000);
 }
 .card {
   display: flex;
@@ -39,8 +41,6 @@ body {
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
-  /* mask-image: linear-gradient(to bottom, black 0%, transparent 100%); */
-  /* mask-image: linear-gradient(rgb(0 0 0 / 100%), transparent); */
 }
 .second-screen {
   display: flex;
@@ -54,6 +54,12 @@ body {
 .description {
   width: 200px;
   height: 200px;
+  line-height: 20px;
+}
+.center {
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
 }
 .picture {
   background: url("./salad.jpg") center/cover no-repeat;
@@ -61,6 +67,19 @@ body {
   height: 200px;
   border-radius: 5px;
   box-shadow: 0 0 5px;
+}
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.price {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-top: 0;
+  color: rgba(0, 255, 51, 0.5);
 }
 .circle {
   padding: 2rem;
@@ -70,10 +89,7 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
-ul {
-  /* look at music app */
-  list-style-type: none;
-}
+
 .menu-item {
   display: flex;
   align-items: center;
@@ -121,7 +137,7 @@ ul {
 }
 .item-title {
   width: 150px;
-  border-bottom: solid 1px rgb(211, 209, 209);
+  border-bottom: solid 1px rgba(0, 255, 51, 0.5);
 }
 .item-more-info {
   padding: 5px;
