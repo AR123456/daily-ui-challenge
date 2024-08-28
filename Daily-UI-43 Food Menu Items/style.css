@@ -12,15 +12,6 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
-ul {
-  /* look at music app */
-  list-style-type: none;
-  margin-top: 0;
-}
-button {
-  margin-top: 10px;
-}
 .container {
   background-color: #f8f4f4;
   height: 42rem;
@@ -63,12 +54,6 @@ button {
 .description {
   width: 200px;
   height: 200px;
-  line-height: 20px;
-}
-.center {
-  margin-bottom: 0;
-  text-align: center;
-  font-weight: bold;
 }
 .picture {
   background: url("./salad.jpg") center/cover no-repeat;
@@ -76,22 +61,6 @@ button {
   height: 200px;
   border-radius: 5px;
   box-shadow: 0 0 5px;
-}
-
-.overlay {
-  /* mask-image: linear-gradient(black 0%, transparent 100%); */
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: end;
-}
-.price {
-  font-size: 40px;
-  font-weight: bold;
-  margin-left: 60px;
-  margin-top: 0;
-
-  color: aqua;
 }
 .circle {
   padding: 2rem;
@@ -101,7 +70,10 @@ button {
 .circle-small {
   margin-bottom: 5px;
 }
-
+ul {
+  /* look at music app */
+  list-style-type: none;
+}
 .menu-item {
   display: flex;
   align-items: center;
