@@ -14,9 +14,16 @@ body {
 .container {
   height: inherit;
   width: inherit;
-  background-color: bisque;
+  /* background-color: bisque; */
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image */
 }
 .card {
   /* https://www.geeksforgeeks.org/how-to-apply-gradient-as-the-mask-using-css/ */
+}
+.image-div {
+  background: url("./bird-2069828_640.png");
+  height: 640px;
+  width: 432px;
+  color: white;
+  mask: url("./bird-2069828_640.png");
 }
