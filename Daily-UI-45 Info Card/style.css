@@ -23,10 +23,10 @@ body {
   width: 500px;
 }
 .image-div {
-  /* background: url("./bird-2069828_640.png"); */
+  background: url("./bird-2069828_640.png");
   height: 640px;
   width: 500px;
 
   /* color: white; */
-  mask: url("./bird-2069828_640.png");
+  /* mask: url("./icons8-owl-64.png"); */
 }
