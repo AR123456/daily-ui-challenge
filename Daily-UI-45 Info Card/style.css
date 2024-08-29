@@ -20,10 +20,15 @@ body {
 .card {
   /* https://www.geeksforgeeks.org/how-to-apply-gradient-as-the-mask-using-css/ */
 }
-.image-div {
-  background: url("./bird-2069828_640.png");
+#myVideo {
   height: 640px;
-  width: 432px;
-  color: white;
+  width: 500px;
+}
+.image-div {
+  /* background: url("./bird-2069828_640.png"); */
+  height: 640px;
+  width: 500px;
+
+  /* color: white; */
   mask: url("./bird-2069828_640.png");
 }
