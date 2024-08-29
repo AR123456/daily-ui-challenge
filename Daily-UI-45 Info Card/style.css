@@ -10,11 +10,9 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-color: #69bbf3;
 }
 .container {
-  height: inherit;
-  width: inherit;
-  /* background-color: bisque; */
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image */
 }
 .card {
