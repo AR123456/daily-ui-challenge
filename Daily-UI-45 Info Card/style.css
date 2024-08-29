@@ -1,0 +1,22 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  height: inherit;
+  width: inherit;
+  background-color: bisque;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image */
+}
+.card {
+  /* https://www.geeksforgeeks.org/how-to-apply-gradient-as-the-mask-using-css/ */
+}
