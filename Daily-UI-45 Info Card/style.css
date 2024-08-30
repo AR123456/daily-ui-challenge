@@ -22,7 +22,7 @@ body {
   height: 600px;
   width: 500px;
   margin-left: 60px;
-  margin-bottom: 160px;
+  margin-bottom: 460px;
 }
 .image-div {
   background: url("./icons8-owl-600.png");
@@ -32,4 +32,6 @@ body {
 
   /* color: white; */
   mask: url("./icons8-owl-600.png");
+  /* source | slice | width | outset | repeat | mode */
+  mask-border: url("./icons8-owl-600.png") 25 / 35px / 12px space alpha;
 }
