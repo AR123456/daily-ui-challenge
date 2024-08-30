@@ -17,21 +17,35 @@ body {
 }
 .card {
   /* https://www.geeksforgeeks.org/how-to-apply-gradient-as-the-mask-using-css/ */
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
 }
 #myVideo {
   height: 600px;
   width: 500px;
-  margin-left: 60px;
+  margin-left: 50px;
   margin-bottom: 460px;
 }
 .image-div {
   background: url("./icons8-owl-600.png");
-
   height: 600px;
   width: 500px;
-
-  /* color: white; */
   mask: url("./icons8-owl-600.png");
-  /* source | slice | width | outset | repeat | mode */
-  mask-border: url("./icons8-owl-600.png") 25 / 35px / 12px space alpha;
+}
+.image-border {
+  background: url("./icons8-owl-600.png");
+  height: 605px;
+  width: 505px;
+}
+.text {
+  background-color: red;
+  height: 600px;
+  width: 500px;
+}
+.narrow-tall {
+  background-color: blue;
+  height: 600px;
+  width: 500px;
 }
