@@ -12,15 +12,15 @@ body {
   overflow: hidden;
   background-color: #69bbf3;
 }
-.container {
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image */
-}
+
 .card {
-  /* https://www.geeksforgeeks.org/how-to-apply-gradient-as-the-mask-using-css/ */
   display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: flex-start;
+  background-color: #dde1e7;
+  border-radius: 5px;
+  box-shadow: 0.8px 1.6px 1.6px hsl(0deg 0% 0% / 0.48);
 }
 #myVideo {
   height: 600px;
@@ -40,9 +40,7 @@ body {
   width: 505px;
 }
 .text {
-  padding-left: 5;
-  margin-left: 50px;
-  background-color: red;
+  margin-right: 30px;
   height: 600px;
-  width: 500px;
+  width: 200px;
 }
