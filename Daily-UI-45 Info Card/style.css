@@ -40,12 +40,9 @@ body {
   width: 505px;
 }
 .text {
+  padding-left: 5;
+  margin-left: 50px;
   background-color: red;
-  height: 600px;
-  width: 500px;
-}
-.narrow-tall {
-  background-color: blue;
   height: 600px;
   width: 500px;
 }
