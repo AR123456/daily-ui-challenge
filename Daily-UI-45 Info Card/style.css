@@ -19,17 +19,17 @@ body {
   /* https://www.geeksforgeeks.org/how-to-apply-gradient-as-the-mask-using-css/ */
 }
 #myVideo {
-  height: 640px;
+  height: 600px;
   width: 500px;
+  margin-left: 60px;
+  margin-bottom: 160px;
 }
 .image-div {
-  background: url("./icons8-owl-100.png") no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 640px;
+  background: url("./icons8-owl-600.png");
+
+  height: 600px;
   width: 500px;
 
   /* color: white; */
-  mask: url("./icons8-owl-100.png");
+  mask: url("./icons8-owl-600.png");
 }
