@@ -2,3 +2,6 @@
 html {
   box-sizing: border-box;
 }
+.room-at-top {
+  margin-top: 10em;
+}
