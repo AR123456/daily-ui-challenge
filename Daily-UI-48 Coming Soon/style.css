@@ -3,5 +3,13 @@ html {
   box-sizing: border-box;
 }
 body {
-  background: url("./sunrise.jpg") cover no-repeat;
+  background: url("./sunrise.jpg") top/cover no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  height: 100vh;
+  overflow: hidden;
 }
