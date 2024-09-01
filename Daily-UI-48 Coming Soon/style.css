@@ -1,0 +1,7 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  background: url("./sunrise.jpg") cover no-repeat;
+}
