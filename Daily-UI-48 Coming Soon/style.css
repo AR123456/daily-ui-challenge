@@ -33,18 +33,28 @@ body {
 }
 .sign-up-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-  align-content: stretch;
+  /* justify-content: flex-end; */
+  align-items: column;
+  align-content: center;
   background-color: blue;
 }
 input[type="email"] {
-  width: 15%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: 9%;
+  height: 9%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 8px;
+
   background-color: #3cbc8d;
   color: white;
   border-radius: 5px;
+}
+h4 {
+  padding-right: 20px;
+}
+button {
+  margin-top: 12px;
+  margin-right: 50px;
 }
