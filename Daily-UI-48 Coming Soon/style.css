@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
 }
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: url("./sunrise.jpg") top/cover no-repeat;
 }
 .container {
@@ -17,4 +18,19 @@ body {
   height: 33em;
   width: 100%;
   color: white;
+  margin: 50px;
+}
+.title {
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: 8em;
+  letter-spacing: 0.2em;
+  margin-left: 30px;
+}
+.sign-up-wrapper {
+  background-color: blue;
 }
