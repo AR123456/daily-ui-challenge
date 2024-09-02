@@ -40,7 +40,7 @@ body {
   align-content: stretch;
   background-color: blue;
 }
-input[type="text"] {
+input[type="email"] {
   width: 15%;
   padding: 12px 20px;
   margin: 8px 0;
