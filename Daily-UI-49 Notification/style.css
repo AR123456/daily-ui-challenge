@@ -61,12 +61,14 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
+/*  med div */
+
 /*  Bell animations css  */
 
 .bell .material-icons {
   /* font-size:12rem !important; */
   /* font-size:36px !important; */
-  font-size: 4rem !important;
+  font-size: 1rem !important;
 }
 
 .bell {
