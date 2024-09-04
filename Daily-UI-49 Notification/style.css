@@ -46,7 +46,9 @@ body {
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
   /* can add an image here  */
-  background: url("./estes.jpg");
+
+  background: linear-gradient(rgba(216, 241, 216, 0.9), rgba(76, 126, 76, 0.7));
+
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
@@ -70,7 +72,7 @@ body {
 .bell {
   position: relative;
   display: inline-block;
-  /* border:dashed 1px rgba(0,0,0,.25); */
+  /* border: dashed 1px rgba(0, 0, 0, 0.25); */
   margin: 0;
   padding: 0;
 }
