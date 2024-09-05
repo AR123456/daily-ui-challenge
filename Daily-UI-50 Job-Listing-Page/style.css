@@ -31,11 +31,18 @@ body {
   font-size: 100px;
   font-weight: 700;
   height: 33rem;
+  margin-top: 8rem;
+  color: rgba(133, 224, 203, 0.9);
 }
 .footer {
   height: 8rem;
   font-size: 30px;
   text-align: right;
   padding-right: 50px;
-  background-color: yellow;
+  color: rgba(133, 224, 203, 0.9);
+}
+.more {
+  font-size: 30px;
+  margin-left: 60rem;
+  margin-bottom: 90px;
 }
