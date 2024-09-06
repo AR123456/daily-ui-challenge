@@ -8,7 +8,13 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5em;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  gap: 12em;
+}
+.header a {
+  height: 3em;
+  width: 8em;
+  background-color: rgb(208, 255, 0);
 }
