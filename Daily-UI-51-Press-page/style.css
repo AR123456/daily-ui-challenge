@@ -39,4 +39,14 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1em;
+  background-color: aquamarine;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  gap: 12em;
 }
