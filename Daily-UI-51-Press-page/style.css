@@ -5,7 +5,7 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.container {
+/* .container {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -57,4 +57,4 @@ body {
   height: 50px;
   background-color: red;
   gap: 12em;
-}
+} */
