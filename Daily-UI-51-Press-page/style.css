@@ -50,6 +50,22 @@ tr {
 tbody:not(:empty) {
   margin: 0 0 1px 1px;
 }
+.headline {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.date {
+  border-top: 1px solid rgb(232, 230, 230);
+  border-bottom: 1px solid rgb(232, 230, 230);
+}
+.article-preview {
+  margin-top: 10px;
+}
+.more {
+  margin-top: 10px;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
