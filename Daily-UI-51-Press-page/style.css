@@ -34,20 +34,7 @@ body {
   justify-content: center;
   height: 15em;
 }
-.storys {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-/* .story {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1em;
-  background-color: aquamarine;
-} */
+
 /* https://stackoverflow.com/questions/73184993/how-to-make-a-table-display-rows-in-two-columns */
 tbody {
   display: flex;
@@ -57,7 +44,8 @@ tbody {
 /* Borders */
 tr {
   margin: 0 0 -1px -1px;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 tbody:not(:empty) {
   margin: 0 0 1px 1px;
@@ -69,6 +57,7 @@ tbody:not(:empty) {
   align-items: flex-start;
   justify-content: flex-end;
   height: 50px;
+  margin-top: 50px;
   background-color: red;
   gap: 12em;
 }
