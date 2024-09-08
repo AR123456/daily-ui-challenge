@@ -50,6 +50,11 @@ tr {
 tbody:not(:empty) {
   margin: 0 0 1px 1px;
 }
+td,
+img {
+  border-radius: 5px;
+  margin-right: 20px;
+}
 .headline {
   font-size: 25px;
   margin-top: 0;
@@ -58,14 +63,18 @@ tbody:not(:empty) {
 .date {
   border-top: 1px solid rgb(232, 230, 230);
   border-bottom: 1px solid rgb(232, 230, 230);
+  font-style: oblique;
 }
 .article-preview {
   margin-top: 10px;
 }
 .more {
   margin-top: 10px;
+  font-style: oblique;
 }
-
+a {
+  text-decoration: none;
+}
 .footer {
   display: flex;
   flex-direction: row;
