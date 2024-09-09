@@ -4,7 +4,11 @@ html {
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("./images/sydney-rae.jpg");
+  background: linear-gradient(
+      rgba(253, 251, 251, 0.9),
+      rgba(174, 173, 173, 0.9)
+    ),
+    url("./images/sydney-rae.jpg") center/cover no-repeat;
 }
 .container {
   flex-direction: column;
