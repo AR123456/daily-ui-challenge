@@ -6,10 +6,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(
       rgba(253, 251, 251, 0.9),
-      rgba(174, 173, 173, 0.9)
+      rgba(174, 173, 173, 0.8)
     ),
     url("./images/sydney-rae.jpg") center/cover no-repeat;
 }
+
 .container {
   flex-direction: column;
   flex-wrap: nowrap;
@@ -29,7 +30,6 @@ body {
 .header a {
   height: 3em;
   width: 8em;
-
   text-align: center;
 }
 .header img {
@@ -83,6 +83,7 @@ img {
   font-style: oblique;
 }
 a {
+  color: black;
   text-decoration: none;
 }
 .footer {
