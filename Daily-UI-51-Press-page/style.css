@@ -24,13 +24,18 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-end;
-  color: orange;
+
   gap: 12em;
 }
 .header a {
   height: 3em;
   width: 8em;
-  background-color: rgb(208, 255, 0);
+
+  text-align: center;
+}
+.header img {
+  height: 3em;
+  width: 8em;
 }
 .landing-branding {
   display: flex;
@@ -92,4 +97,14 @@ a {
   gap: 8em;
   margin: 1em;
   padding-right: 1em;
+}
+.footer a {
+  height: 3em;
+  width: 8em;
+
+  text-align: center;
+}
+.footer img {
+  height: 3em;
+  width: 8em;
 }
