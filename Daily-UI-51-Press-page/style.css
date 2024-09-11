@@ -17,7 +17,6 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
-  height: 100vh;
 }
 .header {
   display: flex;
@@ -94,12 +93,15 @@ a {
   flex-wrap: wrap;
   align-items: flex-start;
   /* justify-content: flex-end; */
-
   margin-top: 50px;
-
   gap: 4em;
-
   padding-right: 4em;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #bcb8b5;
+  height: 6em;
 }
 .footer a {
   height: 3em;
