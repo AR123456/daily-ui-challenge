@@ -100,7 +100,8 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: rgba(187, 183, 180, 0.9);
   height: 6em;
 }
 
