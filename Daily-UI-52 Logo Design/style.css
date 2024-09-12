@@ -16,3 +16,8 @@ img {
   height: 10em;
   width: 10em;
 }
+#start,
+#up,
+#start-up {
+  transition: fill 2s ease;
+}
