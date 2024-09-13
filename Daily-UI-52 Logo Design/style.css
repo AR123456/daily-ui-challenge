@@ -19,6 +19,6 @@ svg {
 #start,
 #up,
 #start-up {
-  /* transition: fill 2s ease; */
   transition: opacity 0.5s ease;
+  transition: fill 2s ease;
 }
