@@ -10,8 +10,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-.logo {
-}
+
 .logo {
   position: relative;
   width: 10em; /* Keep it the same as the SVG width */

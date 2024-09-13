@@ -13,38 +13,40 @@ start.addEventListener("click", function () {
 
   // Show the first SVG after 0.5s
   setTimeout(() => {
-    start.style.display = "block"; // Ensure it's visible
+    start.style.display = "block";
     setTimeout(() => {
-      start.style.opacity = "1"; // Then fade it in
-    }, 50); // Small delay to allow the display change to take effect
+      start.style.opacity = "1"; // Fade in the first SVG
+    }, 50);
     start.setAttribute("fill", "red");
   }, 500);
 
-  // Show the second SVG after 2s
+  // Show the second SVG with overlap after 1.5s
   setTimeout(() => {
-    start.style.opacity = "0"; // Fade out the first
-    setTimeout(() => {
-      start.style.display = "none"; // Hide the first after the fade-out
-    }, 500);
-
-    up.style.display = "block"; // Make the second visible
+    up.style.display = "block"; // Make the second SVG visible
     setTimeout(() => {
       up.style.opacity = "1"; // Fade in the second SVG
-      up.setAttribute("fill", "blue");
-    }, 50);
-  }, 2000);
+    }, 50); // Small delay after displaying it
 
-  // Hide both and show the third SVG after 4s
-  setTimeout(() => {
-    up.style.opacity = "0"; // Fade out the second
     setTimeout(() => {
-      up.style.display = "none"; // Hide the second after the fade-out
-    }, 500);
+      start.style.opacity = "0"; // Fade out the first SVG
+      setTimeout(() => {
+        start.style.display = "none"; // Hide it after fading out
+      }, 500); // Delay long enough for the fade-out transition to complete
+    }, 300); // Overlap the fade-in and fade-out by starting the fade-out after a short delay
+  }, 1500);
 
-    startUp.style.display = "block"; // Make the third visible
+  // Show the third SVG with overlap after 3s
+  setTimeout(() => {
+    startUp.style.display = "block"; // Make the third SVG visible
     setTimeout(() => {
       startUp.style.opacity = "1"; // Fade in the third SVG
-      startUp.setAttribute("fill", "purple");
     }, 50);
-  }, 4000);
+
+    setTimeout(() => {
+      up.style.opacity = "0"; // Fade out the second SVG
+      setTimeout(() => {
+        up.style.display = "none"; // Hide it after fading out
+      }, 500); // Delay long enough for the fade-out transition to complete
+    }, 300); // Overlap the fade-in and fade-out
+  }, 3000);
 });
