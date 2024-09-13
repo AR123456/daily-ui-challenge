@@ -16,9 +16,13 @@ svg {
   height: 10em;
   width: 10em;
 }
-#start,
+
+#start {
+  transition: opacity 0.5s ease; /* Smooth opacity transitions */
+}
 #up,
 #start-up {
-  transition: opacity 0.5s ease;
-  transition: fill 2s ease;
+  transition: opacity 0.5s ease; /* Smooth opacity transitions */
+  opacity: 0; /* Initially hidden */
+  display: none; /* Initially not shown */
 }
