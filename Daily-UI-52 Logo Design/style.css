@@ -12,6 +12,19 @@ body {
 }
 .logo {
 }
+.logo {
+  position: relative;
+  width: 10em; /* Keep it the same as the SVG width */
+  height: 10em; /* Same height as the SVGs */
+}
+
+.logo svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 svg {
   height: 10em;
   width: 10em;
