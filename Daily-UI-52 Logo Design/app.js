@@ -17,7 +17,7 @@ start.addEventListener("click", function () {
     setTimeout(() => {
       start.style.opacity = "1"; // Fade in the first SVG
     }, 50);
-    start.setAttribute("fill", "red");
+    // start.setAttribute("fill", "red");
   }, 500);
 
   // Show the second SVG with overlap after 1.5s
