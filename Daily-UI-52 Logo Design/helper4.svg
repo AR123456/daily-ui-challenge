@@ -1,0 +1,22 @@
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#5f6368"
+        version="1.1"
+        id="start-up"
+      >
+        <!-- Vertical line (left part of the "L") -->
+        <path d="M80-240V-720h80v480H80Z" />
+        <!-- Horizontal line (bottom part of the "L") -->
+        <path d="M160-240h520v-80H160Z" />
+        <!-- Arrow shape path -->
+        <path
+          d="M640.654-240l-57.066-55.891 144.168-143.72H240v-79.844h487.569L584.402-663.719l56.065-55.891 240.28 239.533Z"
+        />
+        <!-- Roof structure path -->
+        <path
+          d="M440-320v-327l-104 103-56-56 200-200 200 200-56 56-104-103v327h-80Z"
+        />
+      </svg>
