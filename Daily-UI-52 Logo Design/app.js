@@ -2,7 +2,7 @@ const start = document.getElementById("start");
 const up = document.getElementById("up");
 const startUp = document.getElementById("start-up");
 
-start.addEventListener("click", function () {
+window.onload = function () {
   // Initially hide all SVGs
   start.style.opacity = "0";
   up.style.opacity = "0";
@@ -49,4 +49,4 @@ start.addEventListener("click", function () {
       }, 500); // Delay long enough for the fade-out transition to complete
     }, 300); // Overlap the fade-in and fade-out
   }, 3000);
-});
+};
