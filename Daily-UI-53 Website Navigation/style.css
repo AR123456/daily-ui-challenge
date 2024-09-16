@@ -24,6 +24,7 @@ header {
 }
 button {
   width: 8%;
+  background-color: blue;
 }
 .container {
   background-color: orange;
