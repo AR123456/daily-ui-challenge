@@ -23,6 +23,7 @@ header {
   height: 15em;
 }
 /* https://www.w3schools.com/css/css_tooltip.asp */
+
 .hide {
   visibility: hidden;
   margin: 0;
@@ -31,9 +32,39 @@ header {
 button {
   width: 8%;
   background-color: grey;
+  /* background-image: url(./images/add-recipe.svg);
+  background-size: cover;
+  background-position: center; */
+  /* position: relative; */
 }
 .tool-tip:hover .hide {
   visibility: visible;
+}
+/* https://www.youtube.com/watch?v=ujlpzTyJp-M */
+.add-recipe {
+  position: relative;
+}
+.add-recipe::before,
+.add-recipe::after {
+  --scale: 0;
+  position: absolute;
+
+  top: -0.25rem;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-100%);
+}
+.add-recipe::before {
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  background-color: black;
+}
+.add-recipe:hover::before {
+  /* content: attr(data-tooltip); */
 }
 
 .container {
