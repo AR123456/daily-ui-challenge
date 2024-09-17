@@ -22,10 +22,20 @@ header {
   width: 100%;
   height: 15em;
 }
+.hide {
+  display: none;
+}
 button {
   width: 8%;
   background-color: grey;
+  /* display: block;
+  color: red; */
 }
+button:hover + .hide {
+  display: block;
+  color: red;
+}
+
 .container {
   background-color: orange;
   height: 40em;
