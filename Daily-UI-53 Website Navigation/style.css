@@ -25,6 +25,9 @@ header {
 img {
   height: 50px;
 }
+.logo {
+  font-size: large;
+}
 button {
   /* width: 8%; */
   background-color: transparent;
