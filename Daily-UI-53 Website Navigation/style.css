@@ -24,11 +24,6 @@ header {
 }
 /* https://www.w3schools.com/css/css_tooltip.asp */
 
-.hide {
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-}
 button {
   width: 8%;
   background-color: grey;
@@ -37,15 +32,13 @@ button {
   background-position: center; */
   /* position: relative; */
 }
-.tool-tip:hover .hide {
-  visibility: visible;
-}
+
 /* https://www.youtube.com/watch?v=ujlpzTyJp-M */
-.add-recipe {
+.tool-tip {
   position: relative;
 }
-.add-recipe::before,
-.add-recipe::after {
+.tool-tip::before,
+.tool-tip::after {
   --scale: 0;
   position: absolute;
   top: -0.25rem;
@@ -54,28 +47,17 @@ button {
   transition: 150ms transform;
   transform-origin: bottom center;
 }
-.add-recipe::before {
+.tool-tip::before {
   content: attr(data-tooltip);
   color: white;
   padding: 0.5rem;
   text-align: center;
   width: max-content;
   max-width: 100%;
-  background-color: var(--tooltip-color);
+  background-color: #333;
 }
-.add-recipe:hover::before,
-.add-recipe:hover::after {
-  /* content: attr(data-tooltip); */
+.tool-tip:hover::before {
   --scale: 1;
-  --tooltip-color: #333;
-  --arrow-size: 10px;
-}
-/* pointer */
-.add-recipe::after {
-  content: "";
-  /* make this look like a pointer */
-  border: var(--arrow-size) solid transparent;
-  border-top-color: var(--tooltip-color);
 }
 
 .container {
