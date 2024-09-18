@@ -22,10 +22,13 @@ header {
   width: 100%;
   height: 15em;
 }
-
+img {
+  height: 50px;
+}
 button {
-  width: 8%;
-  background-color: grey;
+  /* width: 8%; */
+  background-color: transparent;
+  border: none;
 }
 /* https://www.youtube.com/watch?v=ujlpzTyJp-M */
 .tool-tip {
@@ -43,12 +46,12 @@ button {
 }
 .tool-tip::before {
   content: attr(data-tooltip);
-  color: white;
+  /* color: white; */
   padding: 0.5rem;
   text-align: center;
   width: max-content;
   max-width: 100%;
-  background-color: #333;
+  /* background-color: #333; */
 }
 .tool-tip:hover::before {
   --scale: 1;
