@@ -24,10 +24,11 @@ body {
   margin-top: 30px;
   /* groove and box shadow for roundish outer edge */
   box-shadow: 1px 1px 5px #555;
-  /* shadow around phone */
-  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+  /* this tilts phone  */
+  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
     rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
-    skewX(0deg) skewY(0deg);
+    skewX(0deg) skewY(0deg); */
+  /* shadow around phone */
   filter: drop-shadow(40px 31px 15px #000000);
 }
 /* this will kick out the bottom of the phone a bit */
@@ -38,23 +39,24 @@ body {
 /* phone screen */
 .card {
   /* making the card flex box for stuff withing it */
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   /* groove and box shadow for  sunken effect around edge of phone screen */
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
   /* can add an image here  */
-  background: url("./estes.jpg");
+  /* background: url("./estes.jpg"); */
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
+  margin-bottom: 1em;
 }
-.circle {
-  padding: 2rem;
+.line {
+  /* padding: 2rem;
   padding-top: 0.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; */
 }
 .circle-small {
   margin-bottom: 5px;
