@@ -66,3 +66,10 @@ body {
   height: 75px;
   width: 75px;
 }
+.name {
+  /* border: 4mm ridge rgba(0, 0, 0, 0.6); */
+  /* https://css-tricks.com/almanac/properties/b/border-image/#:~:text=This%20property%20specifies%20the%20source,The%20initial%20value%20is%20none%20. */
+  border: 30px solid hsl(213, 5%, 39%);
+  /* height: 40vh; */
+  border-image: url("./black-doily-bdr.png") 30;
+}
