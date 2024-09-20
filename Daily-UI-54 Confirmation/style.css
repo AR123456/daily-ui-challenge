@@ -47,8 +47,8 @@ body {
   /* groove and box shadow for  sunken effect around edge of phone screen */
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
-  /* can add an image here  */
-  background: url("./estes.jpg");
+  background: radial-gradient(#f0cad0 0%, #ffffff 100%);
+
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
@@ -103,4 +103,7 @@ body {
   width: 9em;
   border-radius: 25px;
   font-size: 20px;
+  background: #ddd0d2;
+}
+.num-guests {
 }
