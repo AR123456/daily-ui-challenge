@@ -98,12 +98,17 @@ body {
 }
 
 .confirm {
-  margin-top: 3em;
+  margin-top: 1em;
   height: 4em;
   width: 9em;
   border-radius: 25px;
   font-size: 20px;
-  background: #ddd0d2;
+  background: #dcbec2;
 }
-.num-guests {
+.num-guests,
+.when {
+  margin-top: 2em;
+}
+.date-time {
+  margin-top: 1em;
 }
