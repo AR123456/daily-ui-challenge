@@ -43,6 +43,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   /* groove and box shadow for  sunken effect around edge of phone screen */
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
@@ -66,10 +67,18 @@ body {
   height: 75px;
   width: 75px;
 }
+.inner {
+  border-radius: 25px;
+}
 .name {
+  padding: 5px;
   /* border: 4mm ridge rgba(0, 0, 0, 0.6); */
   /* https://css-tricks.com/almanac/properties/b/border-image/#:~:text=This%20property%20specifies%20the%20source,The%20initial%20value%20is%20none%20. */
-  border: 30px solid hsl(213, 5%, 39%);
-  /* height: 40vh; */
-  border-image: url("./black-doily-bdr.png") 30;
+
+  border: 40px solid hsl(213, 5%, 39%);
+
+  border-image: url("./black-doily-bdr.png") 50;
+}
+.date-time {
+  font-size: small;
 }
