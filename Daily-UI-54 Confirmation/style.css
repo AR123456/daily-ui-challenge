@@ -43,12 +43,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   /* groove and box shadow for  sunken effect around edge of phone screen */
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
   background: radial-gradient(#f0cad0 0%, #ffffff 100%);
-
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
@@ -68,13 +66,6 @@ body {
   width: 75px;
 }
 
-.name {
-  /* padding: 5px; */
-  /* border: 4mm ridge rgba(0, 0, 0, 0.6); */
-  /* https://css-tricks.com/almanac/properties/b/border-image/#:~:text=This%20property%20specifies%20the%20source,The%20initial%20value%20is%20none%20. */
-  /* border: 40px solid hsl(213, 5%, 39%); */
-  /* border-image: url("./black-doily-bdr.png") 50 round; */
-}
 .date-time {
   font-size: small;
 }
