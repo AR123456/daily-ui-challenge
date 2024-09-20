@@ -48,7 +48,7 @@ body {
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
   /* can add an image here  */
-  /* background: url("./estes.jpg"); */
+  background: url("./estes.jpg");
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
@@ -95,4 +95,12 @@ body {
   padding: 15px;
   border: 5px solid hsl(213, 5%, 50%); /* Change this to the desired inner edge style */
   pointer-events: none; /* Prevents it from interfering with other content */
+}
+
+.confirm {
+  margin-top: 3em;
+  height: 4em;
+  width: 9em;
+  border-radius: 25px;
+  font-size: 20px;
 }
