@@ -10,6 +10,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: url("./nasa.jpg") center / cover no-repeat;
 }
 .card {
   display: flex;
@@ -22,4 +23,10 @@ body {
 img {
   height: 20em;
   width: 20em;
+}
+svg {
+  fill: "#0B2F9F";
+}
+path {
+  fill: "#0B2F9F";
 }
