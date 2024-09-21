@@ -8,6 +8,7 @@ const imageDiv = document.querySelector(".image-div");
 
 const swap = () => {
   const imageNum = Math.floor(Math.random() * (44 - 1) + 1);
-  imageDiv.innerHTML = ;
+  console.log(`<img src="./weather-icons/${imageNum}.svg" alt="icon/>`);
+  imageDiv.innerHTML = `<img src="./weather-icons/${imageNum}.svg" alt="icon" />`;
 };
 imageDiv.addEventListener("click", swap);
