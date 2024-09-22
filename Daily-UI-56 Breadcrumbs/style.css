@@ -32,10 +32,30 @@ body {
   content: "→";
 }
 li {
-  margin: 0.5em;
+  /* margin: 0.5em;
   padding: 0.5em;
   border: 3px solid black;
   outline: 3px solid #ff0000;
   outline-offset: 3px;
+  transform: skew(-20deg); */
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: beige;
+  border: 1px solid red;
+  border-left-width: 0px;
+  margin-left: 50px;
+}
+li:before {
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: -1px;
+  height: 100px;
+  width: 50px;
+  background: beige;
+  border: 1px solid red;
+  z-index: -1;
+
   transform: skew(-20deg);
 }
