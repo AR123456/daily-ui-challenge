@@ -4,6 +4,9 @@ html {
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,19 +16,23 @@ body {
 }
 .breadcrumb {
   padding: 0 0.5rem;
+  margin-top: 1em;
 }
 .breadcrumb ul {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2em;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
-/* .breadcrumb li:not(:last-child)::after {
-  display: inline-block;
-  margin: 0 0.25rem;
-  content: "→";
-} */
+
 .breadcrumb li:not(:first-child)::before {
   content: "→";
+}
+li {
+  background-color: red;
+  margin: 0.5em;
+  padding: 0.5em;
 }
