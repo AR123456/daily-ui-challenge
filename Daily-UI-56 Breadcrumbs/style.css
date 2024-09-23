@@ -31,20 +31,88 @@ body {
 /* .breadcrumb li:not(:first-child)::before {
   content: "→";
 } */
-/* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
 li {
-  margin: 0.5em;
+  /* margin: 0.5em;
   padding: 0.5em;
   border: 3px solid black;
   outline: 3px solid #ff0000;
   outline-offset: 3px;
-  transform: skew(-20deg);
+  transform: skew(-20deg); */
 }
 li a {
-  display: inline-block; /* block or inline-block is needed */
-  text-decoration: none;
+  /* display: inline-block;  
+  text-decoration: none; */
   /* padding: 5px 10px;
   font: 30px/1 sans-serif; */
-  transform: skew(20deg); /* UNSKEW */
+  /* UNSKEW */
+  /* transform: skew(20deg); */
   /* color: inherit; */
+}
+/* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
+li {
+  position: relative;
+  background: #008dd0;
+  width: 100px;
+  border: none;
+  display: inline-block;
+  height: 90px;
+  padding: 0px;
+  margin: 0 1px;
+}
+li:nth-child(1) {
+}
+li:nth-child(2) {
+  transform-origin: bottom left;
+  -ms-transform: skew(-28deg, 0deg);
+  -webkit-transform: skew(-28deg, 0deg);
+  transform: skew(-28deg, 0deg);
+  margin-left: 1px;
+}
+li:nth-child(1)::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #008dd0;
+  transform-origin: bottom left;
+  -ms-transform: skew(-28deg, 0deg);
+  -webkit-transform: skew(-28deg, 0deg);
+  transform: skew(-28deg, 0deg);
+}
+.btn::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: -51px;
+  z-index: -1;
+  background: #ffa008;
+  transform-origin: bottom left;
+  -ms-transform: skew(-28deg, 0deg);
+  -webkit-transform: skew(-28deg, 0deg);
+  transform: skew(-28deg, 0deg);
+}
+li:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.btn {
+  width: 60px;
+  position: relative;
+  background: #ffa008;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  height: 90px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0px;
+  margin-left: 51px;
+  font-weight: 700;
+  cursor: pointer;
 }
