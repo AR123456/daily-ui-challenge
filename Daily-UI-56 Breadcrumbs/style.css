@@ -28,9 +28,10 @@ body {
   list-style: none;
 }
 
-.breadcrumb li:not(:first-child)::before {
+/* .breadcrumb li:not(:first-child)::before {
   content: "→";
-}
+} */
+/* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
 li {
   margin: 0.5em;
   padding: 0.5em;
