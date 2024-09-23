@@ -48,3 +48,38 @@ li a {
   transform: skew(20deg);
 }
 /* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
+.home {
+  position: relative;
+}
+.home:after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  top: 0;
+  transform: skew(-20deg);
+}
+.shape {
+  background: green;
+  border-bottom: 5px solid #da3629;
+  box-sizing: border-box;
+  color: #636363;
+  font-size: 1.125em; /*18/16*/
+  height: 52px;
+  padding: 13px 36px;
+  position: relative;
+  width: 200px;
+}
+
+.shape:after {
+  background: #fff;
+  border-bottom: 5px solid #da3629;
+  content: "";
+  height: 47px;
+  position: absolute;
+  right: -13px;
+  top: 0;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  transform: skew(-20deg);
+  width: 23px;
+}
