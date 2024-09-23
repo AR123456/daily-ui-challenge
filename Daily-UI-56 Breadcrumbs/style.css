@@ -48,7 +48,7 @@ li a {
   transform: skew(20deg);
 }
 /* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
-.home {
+li a .home {
   position: relative;
 }
 .home:after {
