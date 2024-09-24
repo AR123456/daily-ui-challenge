@@ -32,10 +32,11 @@ body {
   content: "→";
 } */
 li {
-  background: #cddf2e;
+  /* background: #cddf2e; */
+  background: hsl(261, 45%, 90%);
   margin: 0.5em;
   padding: 0.5em;
-  border: 3px solid black;
+  border-top: 3px solid black;
   /* outline: 3px solid #ff0000; */
   outline-offset: 3px;
   transform: skew(-20deg);
@@ -53,13 +54,12 @@ li a {
 .shape {
   background: hsl(260, 57%, 83%);
   border-top: 3px solid black;
-  border-bottom: 3px solid black;
   border-left: 3px solid black;
-  /* outline: 3px solid #ff0000; */
   box-sizing: border-box;
   margin-top: 7px;
-  height: 66px;
-  padding: 13px 36px;
+
+  height: 60px;
+  padding: 12px 36px;
   position: relative;
   width: 200px;
   font: 30px/1 sans-serif;
@@ -67,17 +67,11 @@ li a {
 
 .shape:after {
   background: hsl(260, 57%, 83%);
-  /* border-right: 3px solid black; */
-  /* border-top: 3px solid black;
-  border-bottom: 3px solid black; */
   content: "";
   height: 48px;
-  /* padding-bottom: 1px; */
-  padding-top: 10px;
   position: absolute;
   right: -13px;
   top: 0;
-
   transform: skew(-20deg);
   width: 23px;
 }
