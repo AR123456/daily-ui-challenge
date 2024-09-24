@@ -28,17 +28,12 @@ body {
   list-style: none;
 }
 
-/* .breadcrumb li:not(:first-child)::before {
-  content: "→";
-} */
 li {
-  /* background: #cddf2e; */
   background: hsl(261, 45%, 90%);
-  margin: 0.5em;
+  margin: 0.44em;
   padding: 0.5em;
-  border-top: 3px solid black;
-  /* outline: 3px solid #ff0000; */
-  outline-offset: 3px;
+  height: 60px;
+  /* outline-offset: 3px; */
   transform: skew(-20deg);
 }
 li a {
@@ -50,14 +45,13 @@ li a {
   transform: skew(20deg);
 }
 /* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
-
+.home {
+  background: hsl(260, 57%, 83%);
+}
 .shape {
   background: hsl(260, 57%, 83%);
-  border-top: 3px solid black;
-  border-left: 3px solid black;
   box-sizing: border-box;
   margin-top: 7px;
-
   height: 60px;
   padding: 12px 36px;
   position: relative;
