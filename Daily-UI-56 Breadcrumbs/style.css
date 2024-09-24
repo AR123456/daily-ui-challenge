@@ -36,7 +36,7 @@ li {
   margin: 0.5em;
   padding: 0.5em;
   border: 3px solid black;
-  outline: 3px solid #ff0000;
+  /* outline: 3px solid #ff0000; */
   outline-offset: 3px;
   transform: skew(-20deg);
 }
@@ -51,11 +51,11 @@ li a {
 /* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
 
 .shape {
-  background: #cddf2e;
+  background: hsl(260, 57%, 83%);
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   border-left: 3px solid black;
-  outline: 3px solid #ff0000;
+  /* outline: 3px solid #ff0000; */
   box-sizing: border-box;
   margin-top: 7px;
   height: 66px;
@@ -66,7 +66,7 @@ li a {
 }
 
 .shape:after {
-  background: #cddf2e;
+  background: hsl(260, 57%, 83%);
   /* border-right: 3px solid black; */
   /* border-top: 3px solid black;
   border-bottom: 3px solid black; */
