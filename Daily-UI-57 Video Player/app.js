@@ -14,6 +14,11 @@ media.removeAttribute("controls");
 controls.style.visibility = "visible";
 play.addEventListener("click", playPauseMedia);
 function playPauseMedia() {
+  rwd.classList.remove("active");
+  fwd.classList.remove("active");
+  clearInterval(intervalRwd);
+  clearInterval(intervalFwd);
+
   if (media.paused) {
     play.setAttribute("data-icon", "u");
     media.play();
@@ -24,10 +29,15 @@ function playPauseMedia() {
 }
 stop.addEventListener("click", stopMedia);
 media.addEventListener("ended", stopMedia);
+
 function stopMedia() {
   media.pause();
   media.currentTime = 0;
   play.setAttribute("data-icon", "P");
+  rwd.classList.remove("active");
+  fwd.classList.remove("active");
+  clearInterval(intervalRwd);
+  clearInterval(intervalFwd);
 }
 rwd.addEventListener("click", mediaBackward);
 fwd.addEventListener("click", mediaForward);
@@ -60,4 +70,34 @@ function mediaForward() {
     media.pause();
     intervalFwd = setInterval(windForward, 200);
   }
+}
+function windBackward() {
+  if (media.currentTime <= 3) {
+    stopMedia();
+  } else {
+    media.currentTime -= 3;
+  }
+}
+function windForward() {
+  if (media.currentTime >= media.duration - 3) {
+    stopMedia();
+  } else {
+    media.currentTime += 3;
+  }
+}
+
+media.addEventListener("timeupdate", setTime);
+function setTime() {
+  const minutes = Math.floor(media.currentTime / 60);
+  const seconds = Math.floor(media.currentTime - minutes * 60);
+
+  const minuteValue = minutes.toString().padStart(2, "0");
+  const secondValue = seconds.toString().padStart(2, "0");
+
+  const mediaTime = `${minuteValue}:${secondValue}`;
+  timer.textContent = mediaTime;
+
+  const barLength =
+    timerWrapper.clientWidth * (media.currentTime / media.duration);
+  timerBar.style.width = `${barLength}px`;
 }
