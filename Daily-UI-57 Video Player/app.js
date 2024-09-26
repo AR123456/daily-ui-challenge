@@ -20,10 +20,3 @@ function playPauseMedia() {
     media.pause();
   }
 }
-stop.addEventListener("click", stopMedia);
-media.addEventListener("ended", stopMedia);
-function stopMedia() {
-  media.pause();
-  media.currentTime = 0;
-  play.setAttribute("data-icon", "P");
-}
