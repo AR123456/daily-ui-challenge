@@ -10,3 +10,20 @@ const timerBar = document.querySelector(".timer div");
 
 media.removeAttribute("controls");
 controls.style.visibility = "visible";
+play.addEventListener("click", playPauseMedia);
+function playPauseMedia() {
+  if (media.paused) {
+    play.setAttribute("data-icon", "u");
+    media.play();
+  } else {
+    play.setAttribute("data-icon", "P");
+    media.pause();
+  }
+}
+stop.addEventListener("click", stopMedia);
+media.addEventListener("ended", stopMedia);
+function stopMedia() {
+  media.pause();
+  media.currentTime = 0;
+  play.setAttribute("data-icon", "P");
+}
