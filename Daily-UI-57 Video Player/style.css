@@ -15,10 +15,13 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-color: #a869a8;
+  background-image: url("./45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 video {
   border: 1px solid black;
-  border-radius: 35px;
+  border-radius: 5px;
 }
 
 p {
