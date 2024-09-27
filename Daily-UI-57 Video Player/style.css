@@ -15,8 +15,9 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background-color: #a869a8;
-  background-image: url("./45-degree-fabric-light.png");
+
+  background: linear-gradient(0deg, #a869a8 11%, #efd8ef 100%),
+    url("./45-degree-fabric-light.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 video {
