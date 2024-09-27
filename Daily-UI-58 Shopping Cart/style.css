@@ -59,3 +59,26 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+  background-color: red;
+  height: 3em;
+  width: 16em;
+  margin-bottom: 1em;
+}
+
+.phone-main {
+  height: 28em;
+  width: 16em;
+  background-color: green;
+  margin-bottom: 1em;
+}
+.phone-bottom {
+  height: 3em;
+  width: 16em;
+}
