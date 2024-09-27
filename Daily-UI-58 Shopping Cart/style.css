@@ -29,22 +29,33 @@ body {
     skewX(0deg) skewY(0deg); */
   /* filter: drop-shadow(40px 31px 15px #000000); */
 }
+.wrapper {
+  /* perspective: 1474px;
+  perspective-origin: 54% 192%; */
+}
 .card {
+  /* making the card flex box for stuff withing it */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* groove and box shadow for  sunken effect around edge of phone screen */
   border-style: groove;
   box-shadow: 1px 1px 5px #555 inset;
+  /* can add an image here  */
+  /* background: url("./estes.jpg"); */
   height: 45rem;
   width: 18rem;
   border-radius: 25px;
+  margin-bottom: 1em;
+  position: relative;
 }
-.circle {
-  padding: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
+.line {
+  /* push to bottom of the card  */
+  position: absolute;
+  bottom: 0;
 }
+
 .circle-small {
   margin-bottom: 5px;
 }
