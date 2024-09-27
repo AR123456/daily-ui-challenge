@@ -79,7 +79,7 @@ body {
 .phone-main {
   height: 28em;
   width: 16em;
-  background-color: green;
+  background: url("./images/apple.jpg") center/cover no-repeat;
   margin-bottom: 1em;
 }
 .phone-bottom {
