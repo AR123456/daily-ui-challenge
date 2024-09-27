@@ -66,10 +66,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   align-content: stretch;
-  background-color: red;
+
   height: 3em;
   width: 16em;
   margin-bottom: 1em;
+}
+.nav svg {
+  height: 50px;
+  width: 50px;
 }
 
 .phone-main {
