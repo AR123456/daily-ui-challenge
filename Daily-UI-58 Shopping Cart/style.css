@@ -77,12 +77,19 @@ body {
 }
 
 .phone-main {
-  height: 28em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 26em;
   width: 16em;
-  background: url("./images/apple.jpg") center/cover no-repeat;
+  background: url("./images/apple-small.jpg") center/cover no-repeat;
   margin-bottom: 1em;
 }
 .phone-bottom {
   height: 3em;
   width: 16em;
+}
+.phone-main,
+h1 {
+  margin-top: 3em;
 }
