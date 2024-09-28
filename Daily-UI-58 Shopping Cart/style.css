@@ -73,12 +73,25 @@ body {
   width: 16em;
   margin-top: 1em;
 }
-.nav svg {
-  height: 50px;
-  width: 50px;
+
+.nav img {
+  background-color: rgb(28, 30, 28);
   border-radius: 5px;
 }
-
+.cart {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
+.hamburger {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
 .phone-main {
   display: flex;
   flex-direction: column;
@@ -106,8 +119,11 @@ body {
   display: flex;
   align-items: center;
   border-radius: 5px;
-  width: 8em;
-  height: 4em;
+  width: 150px;
+  height: 3em;
+  font-size: 16px;
+  color: rgb(117, 223, 117);
+  background-color: rgb(28, 30, 28);
 }
 .phone-main,
 h1 {
