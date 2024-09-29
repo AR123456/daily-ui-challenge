@@ -8,6 +8,38 @@ body {
   height: 100vh;
   background-color: #637fbe;
 }
+.container {
+}
+
+.card {
+  height: 60em;
+  width: 60em;
+  background: linear-gradient(
+      -90deg,
+      transparent 0 38%,
+      47%,
+      rgb(0 0 0 / 0.7) 50%,
+      white 50% 100%
+    ),
+    conic-gradient(
+      black 0 90deg,
+      transparent 90deg 180deg,
+      black 180deg 270deg,
+      transparent 270deg 360deg
+    );
+  background-size: 100% 100%, 20px 20px;
+  padding: 0;
+  margin: 0;
+}
+dialog {
+  height: 30em;
+  width: 30em;
+  margin-top: 5em;
+  border: 10px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  background-color: white;
+}
 th p {
   font-size: 12px;
   display: none;
@@ -17,22 +49,17 @@ th p:hover {
   /* font-size: 12px;
   display: visible; */
 }
-.card {
-  height: 60em;
-  width: 60em;
-}
-dialog {
-  height: 30em;
-  width: 30em;
-  margin-top: 5em;
-  border: 10px solid black;
-  border-radius: 5px;
-  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
-  background-color: yellow;
-}
 table {
   width: 100%;
+  background-color: brown;
 }
 td,
 th {
+  padding: 3px 15px;
+}
+th {
+  background-color: #ededed;
+}
+td {
+  background-color: #dedede;
 }
