@@ -1,12 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -19,6 +12,11 @@ th p {
   font-size: 12px;
   display: none;
 }
+th p:hover {
+  /* may need some help from javascript here  */
+  /* font-size: 12px;
+  display: visible; */
+}
 .card {
   height: 60em;
   width: 60em;
@@ -26,4 +24,15 @@ th p {
 dialog {
   height: 30em;
   width: 30em;
+  margin-top: 5em;
+  border: 10px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  background-color: yellow;
+}
+table {
+  width: 100%;
+}
+td,
+th {
 }
