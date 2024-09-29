@@ -16,9 +16,14 @@ body {
   background-color: #637fbe;
 }
 th p {
-  font-size: 15px;
+  font-size: 12px;
+  display: none;
 }
 .card {
-  height: 80em;
-  width: 80em;
+  height: 60em;
+  width: 60em;
+}
+dialog {
+  height: 30em;
+  width: 30em;
 }
