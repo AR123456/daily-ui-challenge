@@ -9,7 +9,50 @@
   <body>
     <div class="container">
       <div class="card" style="background-color: rgb(186, 218, 85)"></div>
-      <dialog open=""></dialog>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog -->
+      <dialog open="">
+        <table>
+          <caption>
+            Color Picker
+          </caption>
+          <tbody>
+            <tr id="RGB">
+              <th>
+                RGB- <p>defines a given color according to its red, green, blue and
+                  alpha (transparency) components.</p>
+              </th>
+              <td>rgb(186 218 85)</td>
+            </tr>
+            <tr id="HEX">
+              <th>
+                HEX- <p>hexadecimal color representation of an sRGB color using its
+                  primary color components (red, green, blue) written as
+                  hexadecimal numbers, as well as its transparency.</p>
+              </th>
+              <td>#bada55</td>
+            </tr>
+            <tr id="HSL">
+              <th>
+                HSL-<p> defines a given color according to its hue, saturation,
+                  lightness and alpha (transparency) components.</p>
+              </th>
+              <td>hsl(74 64.3% 59.4%)</td>
+            </tr>
+            <tr id="HWB">
+              <th>
+                HWB- <p>defines a given color according to its hue, whiteness,
+                  blackness and alpha (transparency) components.</p>
+              </th>
+              <td>hwb(74 33.3% 14.5%)</td>
+            </tr>
+            <tr id="colorfunc">
+              <th>color()- <p>defines a color in the given color space.</p></th>
+              <td>color(srgb 0.73 0.85 0.33)</td>
+            </tr>
+          </tbody>
+          </tbody>
+        </table>
+      </dialog>
     </div>
   </body>
 </html>

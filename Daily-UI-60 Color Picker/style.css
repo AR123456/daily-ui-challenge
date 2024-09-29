@@ -15,3 +15,6 @@ body {
   height: 100vh;
   background-color: #637fbe;
 }
+p {
+  font-size: 15px;
+}
