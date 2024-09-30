@@ -2,7 +2,14 @@ const colorPicker = document.getElementById("color");
 const opacityPicker = document.getElementById("opacity");
 
 document.addEventListener("readystatechange", () => {
+  // The show() method of the HTMLDialogElement interface displays the dialog modelessly, i.e. still allowing interaction with content outside of the dialog.
   document.querySelector("dialog").show();
+  createColor();
+});
+colorPicker.addEventListener("change", () => {
+  createColor();
+});
+opacityPicker.addEventListener("change", () => {
   createColor();
 });
 
@@ -14,9 +21,6 @@ function createColor() {
   createRGB(currentColor, currentOpacity);
 }
 
-function setBackgroundColor(color, opacity) {
-  console.log(color, opacity);
-}
 function createHex(color, opacity) {
   console.log(color, opacity);
 }
