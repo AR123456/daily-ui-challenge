@@ -27,7 +27,7 @@ function createHex(color, opacity) {
   if (opacity === 1) {
     cell.textContent = color;
   } else {
-    hexOpacity(color, opacity);
+    console.log(hexOpacity(color, opacity));
   }
 }
 function createRGB(color, opacity) {
@@ -52,7 +52,9 @@ function hexOpacity(color, opacity) {
   // char holder for converting decimal to hex
   let char = "00";
   if (opacity > 0) {
-    char = Math.floor(opacity * 255);
+    // .toString(16)-Base 16: Hexadecimal, 16 symbols: [0, 9] and [A, F]
+    char = Math.floor(opacity * 255).toString(16);
   }
-  console.log(color, opacity, char);
+  // return the original hex color append to it the hex opacity of char
+  return `${color}${char}`;
 }
