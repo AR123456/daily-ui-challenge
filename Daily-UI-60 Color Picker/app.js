@@ -27,9 +27,8 @@ function createHex(color, opacity) {
   if (opacity === 1) {
     cell.textContent = color;
   } else {
-    console.log("run the hexOpacity function");
+    hexOpacity(color, opacity);
   }
-  console.log(color, opacity);
 }
 function createRGB(color, opacity) {
   console.log(color, opacity);
@@ -48,5 +47,12 @@ function setBackgroundColor(color, opacity) {
   console.log(color, opacity);
 }
 function hexOpacity(color, opacity) {
-  console.log(color, opacity);
+  // 0.0 - 1.0 range is just a percentage format of the 0-255 range. So multiply your value (e.g. 0.5 * 255) then convert to hex yourNum = yourNum.toString(16)
+  // https://stackoverflow.com/questions/2877322/convert-opacity-to-hex-in-javascript
+  // char holder for converting decimal to hex
+  let char = "00";
+  if (opacity > 0) {
+    char = Math.floor(opacity * 255);
+  }
+  console.log(color, opacity, char);
 }
