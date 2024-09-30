@@ -22,6 +22,13 @@ function createColor() {
 }
 
 function createHex(color, opacity) {
+  // get cell is the text in the td  of TR#HEX
+  const cell = document.querySelector("#HEX td");
+  if (opacity === 1) {
+    cell.textContent = color;
+  } else {
+    console.log("run the hexOpacity function");
+  }
   console.log(color, opacity);
 }
 function createRGB(color, opacity) {
