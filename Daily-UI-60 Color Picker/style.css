@@ -51,7 +51,7 @@ th p:hover {
 }
 table {
   width: 100%;
-  background-color: brown;
+  /* background-color: brown; */
 }
 td,
 th {
