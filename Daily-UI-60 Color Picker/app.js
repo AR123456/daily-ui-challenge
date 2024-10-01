@@ -14,6 +14,7 @@ opacityPicker.addEventListener("change", () => {
 });
 
 function createColor() {
+  // note that the HTML color picker uses hexadecimal notation
   const currentColor = colorPicker.value;
   const currentOpacity = Number(opacityPicker.value);
   setBackgroundColor(currentColor, currentOpacity);
@@ -27,7 +28,7 @@ function createHex(color, opacity) {
   if (opacity === 1) {
     cell.textContent = color;
   } else {
-    console.log(hexOpacity(color, opacity));
+    cell.textContent = hexOpacity(color, opacity);
   }
 }
 function createRGB(color, opacity) {
@@ -44,7 +45,16 @@ function createHWB(h, s, l, opacity) {
   console.log(h, s, l, opacity);
 }
 function setBackgroundColor(color, opacity) {
-  console.log(color, opacity);
+  //set the background color of the card div
+  const card = document.querySelector(".card");
+  if (opacity !== 1) {
+    // run the hexOpacity function on the input
+    color = hexOpacity(color, opacity);
+  }
+  card.style.backgroundColor = color;
+  //css accent color for color and range input
+  opacityPicker.style.accentColor = color;
+  colorPicker.style.accentColor = color;
 }
 function hexOpacity(color, opacity) {
   // 0.0 - 1.0 range is just a percentage format of the 0-255 range. So multiply your value (e.g. 0.5 * 255) then convert to hex yourNum = yourNum.toString(16)
