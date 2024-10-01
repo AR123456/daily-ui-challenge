@@ -49,13 +49,26 @@ function createHex(color, opacity) {
 // }
 // get RGB write to page method mdn uses -MDM method
 function createRGB(color, opacity) {
-  const cell = document.querySelectorAll("#RGB td");
+  const cell = document.querySelector("#RGB td");
   //strip the #
   color = color.substring(1, 7);
   // The regex /.{1,2}/g  to split string into array of pairs of two characters.
   const hexArray = color.match(/.{1,2}/g);
   console.log(hexArray);
   // parseInt the values in each of the indexes
+  const R = parseInt(hexArray[0], 16);
+  const G = parseInt(hexArray[1], 16);
+  const B = parseInt(hexArray[2], 16);
+  console.log(R, G, B);
+  if (opacity === 1) {
+    cell.textContent = `rgb(${R} ${G} ${B})`;
+  } else {
+    cell.textContent = `rgb(${R} ${G} ${B} / ${opacity})`;
+  }
+  // pass calculated values to other color functions
+  createHSL(R, G, B, opacity);
+  createColorFunc(R, G, B, opacity);
+  console.log(cell);
 }
 
 function createColorFunc(r, g, b, opacity) {
