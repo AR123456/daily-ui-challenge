@@ -32,10 +32,11 @@ function createHex(color, opacity) {
   }
 }
 // get RGB write to page
+// convert hex to rgb Method 1
+// https://stackoverflow.com/questions/75218925/i-want-to-convert-hex-color-to-rgb-color-with-input-type-color-in-react-js
 function createRGB(color, opacity) {
+  const cell = document.querySelector("#RGB td");
   if (opacity === 1) {
-    // convert hex to rgb
-    // https://stackoverflow.com/questions/75218925/i-want-to-convert-hex-color-to-rgb-color-with-input-type-color-in-react-js
     numericValue = parseInt(color.slice(1), 16);
     const r = (numericValue >> 16) & 0xff;
     const g = (numericValue >> 8) & 0xff;
@@ -51,6 +52,7 @@ function createRGB(color, opacity) {
     console.log(r, g, b, a);
   }
 }
+// get RGB write to page method mdn uses
 
 function createColorFunc(r, g, b, opacity) {
   console.log(r, g, b, opacity);
