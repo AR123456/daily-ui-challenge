@@ -21,7 +21,7 @@ function createColor() {
   createHex(currentColor, currentOpacity);
   createRGB(currentColor, currentOpacity);
 }
-
+// get HEX color write to page
 function createHex(color, opacity) {
   // get cell is the text in the td  of TR#HEX
   const cell = document.querySelector("#HEX td");
@@ -31,8 +31,25 @@ function createHex(color, opacity) {
     cell.textContent = hexOpacity(color, opacity);
   }
 }
+// get RGB write to page
 function createRGB(color, opacity) {
-  console.log(color, opacity);
+  if (opacity === 1) {
+    // convert hex to rgb
+    // https://stackoverflow.com/questions/75218925/i-want-to-convert-hex-color-to-rgb-color-with-input-type-color-in-react-js
+    numericValue = parseInt(color.slice(1), 16);
+    const r = (numericValue >> 16) & 0xff;
+    const g = (numericValue >> 8) & 0xff;
+    const b = numericValue & 0xff;
+    console.log(r, g, b);
+    return `[${r}, ${g}, ${b}]`;
+  } else {
+    numericValAlpha = parseInt(hexOpacity(color, opacity).slice(1), 16);
+    const r = (numericValAlpha >> 16) & 0xff;
+    const g = (numericValAlpha >> 8) & 0xff;
+    const b = (numericValAlpha >> 4) & 0xff;
+    const a = numericValAlpha & 0xff;
+    console.log(r, g, b, a);
+  }
 }
 
 function createColorFunc(r, g, b, opacity) {
@@ -52,6 +69,7 @@ function setBackgroundColor(color, opacity) {
     color = hexOpacity(color, opacity);
   }
   card.style.backgroundColor = color;
+
   //css accent color for color and range input
   opacityPicker.style.accentColor = color;
   colorPicker.style.accentColor = color;
