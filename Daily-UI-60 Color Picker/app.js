@@ -34,25 +34,29 @@ function createHex(color, opacity) {
 // get RGB write to page
 // convert hex to rgb Method 1
 // https://stackoverflow.com/questions/75218925/i-want-to-convert-hex-color-to-rgb-color-with-input-type-color-in-react-js
+// function createRGB(color, opacity) {
+//   const cell = document.querySelector("#RGB td");
+//   if (opacity === 1) {
+//     numericValue = parseInt(color.slice(1), 16);
+//     const r = (numericValue >> 16) & 0xff;
+//     const g = (numericValue >> 8) & 0xff;
+//     const b = numericValue & 0xff;
+//     console.log(r, g, b);
+//     return `[${r}, ${g}, ${b}]`;
+//   } else {
+
+//   }
+// }
+// get RGB write to page method mdn uses -MDM method
 function createRGB(color, opacity) {
-  const cell = document.querySelector("#RGB td");
-  if (opacity === 1) {
-    numericValue = parseInt(color.slice(1), 16);
-    const r = (numericValue >> 16) & 0xff;
-    const g = (numericValue >> 8) & 0xff;
-    const b = numericValue & 0xff;
-    console.log(r, g, b);
-    return `[${r}, ${g}, ${b}]`;
-  } else {
-    numericValAlpha = parseInt(hexOpacity(color, opacity).slice(1), 16);
-    const r = (numericValAlpha >> 16) & 0xff;
-    const g = (numericValAlpha >> 8) & 0xff;
-    const b = (numericValAlpha >> 4) & 0xff;
-    const a = numericValAlpha & 0xff;
-    console.log(r, g, b, a);
-  }
+  const cell = document.querySelectorAll("#RGB td");
+  //strip the #
+  color = color.substring(1, 7);
+  // The regex /.{1,2}/g  to split string into array of pairs of two characters.
+  const hexArray = color.match(/.{1,2}/g);
+  console.log(hexArray);
+  // parseInt the values in each of the indexes
 }
-// get RGB write to page method mdn uses
 
 function createColorFunc(r, g, b, opacity) {
   console.log(r, g, b, opacity);
