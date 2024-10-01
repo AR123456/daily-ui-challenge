@@ -54,31 +54,40 @@ function createRGB(color, opacity) {
   color = color.substring(1, 7);
   // The regex /.{1,2}/g  to split string into array of pairs of two characters.
   const hexArray = color.match(/.{1,2}/g);
-  console.log(hexArray);
+  // console.log(hexArray);
   // parseInt the values in each of the indexes
   const R = parseInt(hexArray[0], 16);
   const G = parseInt(hexArray[1], 16);
   const B = parseInt(hexArray[2], 16);
-  console.log(R, G, B);
+
   if (opacity === 1) {
     cell.textContent = `rgb(${R} ${G} ${B})`;
   } else {
     cell.textContent = `rgb(${R} ${G} ${B} / ${opacity})`;
   }
-  // pass calculated values to other color functions
   createHSL(R, G, B, opacity);
   createColorFunc(R, G, B, opacity);
-  console.log(cell);
+  // console.log(R, G, B);
 }
-
+// to create sRGB is a standard RGB (red, green, blue) color space
 function createColorFunc(r, g, b, opacity) {
+  const cell = document.querySelector("#colorfunc td");
   console.log(r, g, b, opacity);
+  const R = Number(r / 255).toFixed(2);
+  const G = Number(g / 255).toFixed(2);
+  const B = Number(b / 255).toFixed(2);
+  if (opacity === 1) {
+    cell.textContent = `color(srgb ${R} ${G} ${B})`;
+  } else {
+    cell.textContent = `color(srgb ${R} ${G} ${B} / ${opacity})`;
+  }
+  console.log(`color(srgb ${R} ${G} ${B} / ${opacity})`);
 }
 function createHSL(r, g, b, opacity) {
-  console.log(r, g, b, opacity);
+  // console.log(r, g, b, opacity);
 }
 function createHWB(h, s, l, opacity) {
-  console.log(h, s, l, opacity);
+  // console.log(h, s, l, opacity);
 }
 function setBackgroundColor(color, opacity) {
   //set the background color of the card div
