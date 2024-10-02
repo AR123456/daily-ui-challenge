@@ -81,21 +81,10 @@ function createColorFunc(r, g, b, opacity) {
   } else {
     cell.textContent = `color(srgb ${R} ${G} ${B} / ${opacity})`;
   }
-  // console.log(`color(srgb ${R} ${G} ${B} / ${opacity})`);
+  console.log(`color(srgb ${R} ${G} ${B} / ${opacity})`);
 }
 function createHSL(r, g, b, opacity) {
-  const cell = document.querySelector("#HSL td");
-  console.log(r, g, b, opacity);
-  r = r / 255;
-  g = g / 255;
-  b = b / 255;
-  //  get min , max and diff or delta
-  const cmin = Math.min(r, g, b);
-  const cmax = Math.max(r, g, b);
-  const delta = cmax - cmin;
-  let h = 0;
-  let s = 0;
-  let l = 0;
+  // console.log(r, g, b, opacity);
 }
 function createHWB(h, s, l, opacity) {
   // console.log(h, s, l, opacity);
