@@ -123,8 +123,20 @@ function createHSL(r, g, b, opacity) {
   }
   createHWB(h, s, l, opacity);
 }
+// https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hwb
 function createHWB(h, s, l, opacity) {
   // console.log(h, s, l, opacity);
+  const cell = document.querySelector("#HWB td");
+  const chroma = s * (1 - Math.abs(l / 50 - 1));
+  let W = l - chroma / 2;
+  let B = 100 - l - chroma / 2;
+  W = W.toFixed(1);
+  B = B.toFixed(1);
+  if (opacity === 1) {
+    cell.textContent = `hwb(${h} ${W}% ${B}%)`;
+  } else {
+    cell.textContent = `hwb(${h} ${W}% ${B}% / ${opacity})`;
+  }
 }
 function setBackgroundColor(color, opacity) {
   //set the background color of the card div
