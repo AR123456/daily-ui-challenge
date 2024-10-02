@@ -81,10 +81,47 @@ function createColorFunc(r, g, b, opacity) {
   } else {
     cell.textContent = `color(srgb ${R} ${G} ${B} / ${opacity})`;
   }
-  console.log(`color(srgb ${R} ${G} ${B} / ${opacity})`);
+  // console.log(`color(srgb ${R} ${G} ${B} / ${opacity})`);
 }
 function createHSL(r, g, b, opacity) {
-  // console.log(r, g, b, opacity);
+  const cell = document.querySelector("#HSL td");
+  // Let's have r, g, b in the range [0, 1]
+  r = r / 255;
+  g = g / 255;
+  b = b / 255;
+  const cmin = Math.min(r, g, b);
+  const cmax = Math.max(r, g, b);
+  const delta = cmax - cmin;
+  let h = 0,
+    s = 0,
+    l = 0;
+
+  if (delta === 0) {
+    h = 0;
+  } else if (cmax === r) {
+    h = ((g - b) / delta) % 6;
+  } else if (cmax === g) {
+    h = (b - r) / delta + 2;
+  } else h = (r - g) / delta + 4;
+
+  h = Math.round(h * 60);
+
+  // We want an angle between 0 and 360°
+  if (h < 0) {
+    h += 360;
+  }
+
+  l = (cmax + cmin) / 2;
+  s = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
+  s = Number((s * 100).toFixed(1));
+  l = Number((l * 100).toFixed(1));
+
+  if (opacity === 1) {
+    cell.textContent = `hsl(${h} ${s}% ${l}%)`;
+  } else {
+    cell.textContent = `hsl(${h} ${s}% ${l}% / ${opacity})`;
+  }
+  createHWB(h, s, l, opacity);
 }
 function createHWB(h, s, l, opacity) {
   // console.log(h, s, l, opacity);
