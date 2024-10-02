@@ -1,20 +1,37 @@
-body {
+dialog {
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  background-color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  height: 100vh;
-  background-color: #637fbe;
+  margin-top: 5vh;
 }
-.container {
+th p {
+  font-size: 12px;
+  display: none;
+}
+th p:hover {
+  /* may need some help from javascript here  */
+  /* font-size: 12px;
+  display: visible; */
+}
+table {
+  width: 100%;
 }
 
-.card {
-  height: 60em;
-  width: 60em;
-  background: linear-gradient(
+td,
+th {
+  padding: 3px 15px;
+}
+th {
+  background-color: #ededed;
+}
+td {
+  background-color: #dedede;
+  font-family: monospace;
+}
+body {
+  /* background: linear-gradient(
       -90deg,
       transparent 0 38%,
       47%,
@@ -29,37 +46,9 @@ body {
     );
   background-size: 100% 100%, 20px 20px;
   padding: 0;
-  margin: 0;
+  margin: 0; */
 }
-dialog {
-  height: 30em;
-  width: 30em;
-  margin-top: 5em;
-  border: 10px solid black;
-  border-radius: 5px;
-  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
-  background-color: white;
-}
-th p {
-  font-size: 12px;
-  display: none;
-}
-th p:hover {
-  /* may need some help from javascript here  */
-  /* font-size: 12px;
-  display: visible; */
-}
-table {
-  width: 100%;
-  /* background-color: brown; */
-}
-td,
-th {
-  padding: 3px 15px;
-}
-th {
-  background-color: #ededed;
-}
-td {
-  background-color: #dedede;
+div {
+  width: 100vw;
+  height: 100vh;
 }
