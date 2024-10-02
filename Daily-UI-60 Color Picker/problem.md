@@ -12,3 +12,5 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool
 https://stackoverflow.com/questions/75218925/i-want-to-convert-hex-color-to-rgb-color-with-input-type-color-in-react-js
 
 https://css-tricks.com/the-expanding-gamut-of-color-on-the-web/
+
+// https://stackoverflow.com/questions/2877322/convert-opacity-to-hex-in-javascript
