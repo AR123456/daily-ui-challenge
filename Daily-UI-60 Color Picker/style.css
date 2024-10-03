@@ -11,14 +11,7 @@ div {
   width: 100vw;
   height: 100vh;
 }
-/* dialog {
-  border: 1px solid;
-  border-radius: 5px;
-  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
-  background-color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 25vh;
-} */
+
 .picker-div {
   border: 1px solid;
   border-radius: 5px;
@@ -26,6 +19,9 @@ div {
   background-color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 25vh;
+  margin-left: 10em;
+  height: 20em;
+  width: 25em;
 }
 .more-info {
   font-size: 12px;
