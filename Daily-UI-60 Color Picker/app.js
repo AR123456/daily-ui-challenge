@@ -21,9 +21,8 @@ function createColor() {
   createHex(currentColor, currentOpacity);
   createRGB(currentColor, currentOpacity);
 }
-// get HEX color write to page
+
 function createHex(color, opacity) {
-  // get cell is the text in the td  of TR#HEX
   const cell = document.querySelector("#HEX td");
   if (opacity === 1) {
     cell.textContent = color;
