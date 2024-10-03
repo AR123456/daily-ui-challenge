@@ -14,7 +14,9 @@ opacityPicker.addEventListener("change", () => {
   createColor();
 });
 TH.addEventListener("mouseover", () => {
+  const p = document.querySelector("p");
   // https://www.geeksforgeeks.org/how-to-display-element-on-hover-using-css/#
+  p.style.color = "red";
 });
 
 function createColor() {
