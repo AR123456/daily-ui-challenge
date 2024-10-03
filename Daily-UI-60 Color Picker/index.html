@@ -6,9 +6,60 @@
     <link rel="stylesheet" href="style.css" />
     <title>Color Picker</title>
   </head>
-  <body>
-    <div class="container" style="background-color: rgb(218, 85, 216)">
-      <div class="card">Picker table here</div>
+  <body style="background-color: rgb(218, 85, 216)">
+    <div class="container">
+      <div class="card"> 
+
+        <table>
+          <caption>
+            Color Picker
+          </caption>
+          <tbody>
+            <tr id="RGB">
+              <th>
+                RGB:<p class="more-info">defines a given color according to its red, green, blue and alpha (transparency) components.</p>
+              </th>
+              <td>rgb(218, 85, 216)</td>
+            </tr>
+            <tr id="HEX">
+              <th>
+                HEX:<p class="more-info">hexadecimal color representation of an sRGB color using its
+                  primary color components (red, green, blue) written as
+                  hexadecimal numbers, as well as its transparency.</p>
+              </th>
+              <td>#da55d8</td>
+            </tr>
+            <tr id="HSL">
+              <th>
+                HSL:<p class="more-info"> defines a given color according to its hue, saturation,
+                  lightness and alpha (transparency) components.</p>
+              </th>
+              <td>hsl(301 64.3% 59.4%)</td>
+            </tr>
+            <tr id="HWB">
+              <th>
+                HWB:<p class="more-info">defines a given color according to its hue, whiteness,
+                  blackness and alpha (transparency) components.</p>
+              </th>
+              <td>hwb(301 33.3% 14.5%)</td>
+            </tr>
+            <tr id="colorfunc">
+              <th>color():<p class="more-info">defines a color in the given color space.</p></th>
+              <td>color(srgb 0.85 0.33 0.85)</td>
+            </tr>
+          </tbody>
+          </tbody>
+        </table>
+        <p>
+        <label for="color">Pick a color:</label>
+        <input type="color" name="color" id="color" value="#da55d8" style="accent-color: rgb(218, 85, 216)">
+        </p>
+        <p>
+        <label for="opacity">Opacity</label>
+        <input type="range" name="opacity" id="opacity" value="1" style="accent-color: rgb(218, 85, 216)"min="0"max=1 step="0.1" >
+        </p>
+
+      </div>
     </div>
     <!-- <script src="app.js"></script> -->
   </body>

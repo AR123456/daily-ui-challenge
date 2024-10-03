@@ -13,4 +13,5 @@ body {
 .container {
   height: 30em;
   width: 30em;
+  background-color: white;
 }
