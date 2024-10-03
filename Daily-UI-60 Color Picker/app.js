@@ -1,9 +1,10 @@
 const colorPicker = document.getElementById("color");
 const opacityPicker = document.getElementById("opacity");
-
+const TH = document.querySelector("th");
+const moreInfo = document.querySelector(".more-info");
 document.addEventListener("readystatechange", () => {
   // The show() method of the HTMLDialogElement interface displays the dialog modelessly, i.e. still allowing interaction with content outside of the dialog.
-  document.querySelector("dialog").show();
+  // document.querySelector("dialog").show();
   createColor();
 });
 colorPicker.addEventListener("change", () => {
@@ -11,6 +12,9 @@ colorPicker.addEventListener("change", () => {
 });
 opacityPicker.addEventListener("change", () => {
   createColor();
+});
+TH.addEventListener("mouseover", () => {
+  // https://www.geeksforgeeks.org/how-to-display-element-on-hover-using-css/#
 });
 
 function createColor() {
