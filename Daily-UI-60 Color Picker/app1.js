@@ -1,11 +1,24 @@
 const colorPicker = document.getElementById("color");
 const opacityPicker = document.getElementById("opacity");
+const TH = document.querySelector("th");
+const moreInfo = document.querySelector(".more-info");
+document.addEventListener("readystatechange", () => {
+  // The show() method of the HTMLDialogElement interface displays the dialog modelessly, i.e. still allowing interaction with content outside of the dialog.
+  // document.querySelector("dialog").show();
+  createColor();
+});
 colorPicker.addEventListener("change", () => {
   createColor();
 });
 opacityPicker.addEventListener("change", () => {
   createColor();
 });
+TH.addEventListener("mouseover", () => {
+  const p = document.querySelector("p");
+  // https://www.geeksforgeeks.org/how-to-display-element-on-hover-using-css/#
+  p.style.color = "red";
+});
+
 function createColor() {
   // note that the HTML color picker uses hexadecimal notation
   const currentColor = colorPicker.value;
@@ -14,6 +27,7 @@ function createColor() {
   createHex(currentColor, currentOpacity);
   createRGB(currentColor, currentOpacity);
 }
+
 function createHex(color, opacity) {
   const cell = document.querySelector("#HEX td");
   if (opacity === 1) {
@@ -109,11 +123,11 @@ function createHWB(h, s, l, opacity) {
   }
 }
 function setBackgroundColor(color, opacity) {
-  const bod = document.querySelector("body");
+  const card = document.querySelector(".card");
   if (opacity !== 1) {
     color = hexOpacity(color, opacity);
   }
-  bod.style.backgroundColor = color;
+  card.style.backgroundColor = color;
   //css accent color for color and range input
   opacityPicker.style.accentColor = color;
   colorPicker.style.accentColor = color;
