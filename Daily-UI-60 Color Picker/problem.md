@@ -14,3 +14,7 @@ https://stackoverflow.com/questions/75218925/i-want-to-convert-hex-color-to-rgb-
 https://css-tricks.com/the-expanding-gamut-of-color-on-the-web/
 
 // https://stackoverflow.com/questions/2877322/convert-opacity-to-hex-in-javascript
+
+## CSS tool tip
+
+https://stackoverflow.com/questions/78018238/how-can-i-add-a-tooltip-to-an-element-using-javascript
