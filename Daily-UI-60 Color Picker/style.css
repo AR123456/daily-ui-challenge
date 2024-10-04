@@ -18,7 +18,7 @@ body {
   background-color: white; */
 }
 .card {
-  height: 30em;
+  height: 25em;
   width: 30em;
   background-color: white;
   border: 5px solid;
@@ -27,6 +27,24 @@ body {
 }
 caption {
   padding-top: 10px;
+}
+table {
+  width: 100%;
+  padding: 10px;
+}
+td,
+th {
+  padding: 3px 15px;
+}
+th {
+  width: 100%;
+  background-color: #ededed;
+}
+td {
+  background-color: #dedede;
+}
+.card p {
+  padding-left: 15px;
 }
 /* https://stackoverflow.com/questions/78018238/how-can-i-add-a-tooltip-to-an-element-using-javascript */
 .tooltip {
