@@ -60,7 +60,7 @@ td {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 300px;
-  background-color: #e60c0c;
+  background-color: #636060;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -88,4 +88,13 @@ td {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+#red svg {
+  fill: #540000;
+}
+#green svg {
+  fill: #00d900;
+}
+#blue svg {
+  fill: #0000b8;
 }
