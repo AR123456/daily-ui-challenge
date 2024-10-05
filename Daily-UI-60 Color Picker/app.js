@@ -4,9 +4,6 @@ const red = document.querySelector("#red img");
 const green = document.querySelector("#green img");
 const blue = document.querySelector("#blue img");
 
-// colorPicker.addEventListener("change", () => {
-//   createColor();
-// });
 colorPicker.addEventListener("input", () => {
   createColor();
 });
@@ -36,6 +33,8 @@ function createRGB(color, opacity) {
   color = color.substring(1, 7);
   // The regex /.{1,2}/g  to split string into array of pairs of two characters.
   const hexArray = color.match(/.{1,2}/g);
+  // pass the array to fillDrops to display colors r,g,b parts
+  fillDrops(hexArray);
   // parseInt the values in each of the indexes
   const R = parseInt(hexArray[0], 16);
   const G = parseInt(hexArray[1], 16);
@@ -46,14 +45,17 @@ function createRGB(color, opacity) {
   } else {
     cell.textContent = `rgb(${R} ${G} ${B} / ${opacity})`;
   }
-
   createHSL(R, G, B, opacity);
   createColorFunc(R, G, B, opacity);
-  fillDrops(R, G, B, opacity);
 }
-function fillDrops(R, G, B) {
-  console.log(R, G, B);
-  console.log(red);
+function fillDrops(arr) {
+  const red = document.querySelector("#red svg");
+  const green = document.querySelector("#green svg");
+  const blue = document.querySelector("#blue svg");
+  // fill the drops with just the hex for red green or blue
+  red.style.fill = `#${arr[0]}0000`;
+  green.style.fill = `#00${arr[1]}00`;
+  blue.style.fill = `#0000${arr[2]}`;
 }
 // to create sRGB is a standard RGB (red, green, blue) color space
 function createColorFunc(r, g, b, opacity) {
