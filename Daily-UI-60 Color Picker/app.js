@@ -1,5 +1,8 @@
 const colorPicker = document.getElementById("color");
 const opacityPicker = document.getElementById("opacity");
+const red = document.querySelector("#red img");
+const green = document.querySelector("#green img");
+const blue = document.querySelector("#blue img");
 
 // colorPicker.addEventListener("change", () => {
 //   createColor();
@@ -43,8 +46,14 @@ function createRGB(color, opacity) {
   } else {
     cell.textContent = `rgb(${R} ${G} ${B} / ${opacity})`;
   }
+
   createHSL(R, G, B, opacity);
   createColorFunc(R, G, B, opacity);
+  fillDrops(R, G, B, opacity);
+}
+function fillDrops(R, G, B) {
+  console.log(R, G, B);
+  console.log(red);
 }
 // to create sRGB is a standard RGB (red, green, blue) color space
 function createColorFunc(r, g, b, opacity) {
@@ -58,6 +67,7 @@ function createColorFunc(r, g, b, opacity) {
     cell.textContent = `color(srgb ${R} ${G} ${B} / ${opacity})`;
   }
 }
+
 function createHSL(r, g, b, opacity) {
   const cell = document.querySelector("#HSL td");
   // Let's have r, g, b in the range [0, 1]

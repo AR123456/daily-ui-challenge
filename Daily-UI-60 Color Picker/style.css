@@ -43,8 +43,16 @@ th {
 td {
   background-color: #dedede;
 }
+
 .card p {
   padding-left: 15px;
+}
+.colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 /* https://stackoverflow.com/questions/78018238/how-can-i-add-a-tooltip-to-an-element-using-javascript */
 .tooltip {
