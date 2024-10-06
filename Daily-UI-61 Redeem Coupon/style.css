@@ -23,9 +23,24 @@ button {
   color: #8eaccd;
 }
 .savings {
+  position: relative;
+  width: 250px;
   height: 350px;
-  background: url("./futuristic_mouse.png") center / contain no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("./futuristic_mouse.png") center / contain no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
   /* https://www.geeksforgeeks.org/how-to-place-text-on-image-using-html-and-css/# */
+}
+.savings-text {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
 }
 /* phone */
 .container {
