@@ -22,6 +22,11 @@ button {
   margin: 0;
   color: #8eaccd;
 }
+.savings {
+  height: 350px;
+  background: url("./futuristic_mouse.png") center / contain no-repeat;
+  /* https://www.geeksforgeeks.org/how-to-place-text-on-image-using-html-and-css/# */
+}
 /* phone */
 .container {
   background-color: rgb(248, 244, 244);
