@@ -11,12 +11,15 @@ body {
   overflow: hidden;
 }
 .container {
-  height: 60em;
-  width: 60em;
-  background: red;
+  position: relative;
+  width: 300px;
+  margin: 20px auto;
+  background-color: aqua;
 }
-.card {
-  height: 45em;
-  width: 45em;
-  background: blue;
+.slide-card {
+  position: absolute;
+  width: 300px;
+  left: 0px;
+  top: 0px;
+  background-color: blue;
 }

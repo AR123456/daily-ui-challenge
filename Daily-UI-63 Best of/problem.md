@@ -5,3 +5,5 @@ Prompt: Best Of
 Some inspirational sites
 https://natashaskitchen.com/top-20-recipes-2023/
 https://www.allrecipes.com/our-20-most-popular-new-recipes-of-2023-8417234
+
+https://www.shecodes.io/athena/5675-creating-a-carousel-with-html-css-javascript
