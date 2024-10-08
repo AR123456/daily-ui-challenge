@@ -20,6 +20,9 @@ body {
   width: 300px;
   left: 0px;
   top: 0px;
+  animation-name: fading;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 @keyframes fading {
   0% {
