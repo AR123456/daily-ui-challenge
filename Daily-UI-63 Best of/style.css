@@ -14,12 +14,21 @@ body {
   position: relative;
   width: 300px;
   margin: 20px auto;
-  background-color: aqua;
 }
 .slide-card {
   position: absolute;
   width: 300px;
   left: 0px;
   top: 0px;
-  background-color: blue;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
