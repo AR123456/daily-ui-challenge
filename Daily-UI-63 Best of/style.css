@@ -1,0 +1,22 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  height: 60em;
+  width: 60em;
+  background: red;
+}
+.card {
+  height: 45em;
+  width: 45em;
+  background: blue;
+}
