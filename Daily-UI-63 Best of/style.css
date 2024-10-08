@@ -3,19 +3,44 @@ html {
   box-sizing: border-box;
 }
 body {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; */
 }
 .container {
+  /* position: relative;
+  width: 300px;
+  margin: 20px auto; */
+}
+.slide-card {
+  /* position: absolute;
+  width: 300px;
+  left: 0px;
+  top: 0px;
+  animation-name: fading;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite; */
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#slider {
   position: relative;
   width: 300px;
   margin: 20px auto;
 }
-.slide-card {
+.slide {
   position: absolute;
   width: 300px;
   left: 0px;
