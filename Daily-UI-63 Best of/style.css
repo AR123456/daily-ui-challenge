@@ -2,8 +2,14 @@
 html {
   box-sizing: border-box;
 }
-img {
-  width: 50%;
+.mySlides img {
+  width: 50em;
+  height: 50em;
+  margin-left: 8em;
+}
+.column img {
+  width: 8em;
+  height: 8em;
 }
 /* Position the image container (needed to position the left and right arrows) */
 .container {
