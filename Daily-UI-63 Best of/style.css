@@ -3,17 +3,21 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: red;
+  background-color: F7EED3;
+  background-image: url("./mooning.png");
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 /* putting image size in style.css */
 .mySlides img {
-  width: 40em;
-  height: 40em;
-  margin-left: 14em;
+  width: 38em;
+  height: 38em;
+  margin-left: 10em;
+  margin-bottom: 1em;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -27,6 +31,8 @@ body {
 }
 /* Position the image container (needed to position the left and right arrows) */
 .container {
+  margin-top: 20px;
+
   position: relative;
 }
 
