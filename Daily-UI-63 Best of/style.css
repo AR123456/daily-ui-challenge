@@ -4,10 +4,6 @@ html {
 }
 body {
   background-color: red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 /* putting image size in style.css */
 .mySlides img {
