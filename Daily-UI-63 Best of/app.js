@@ -14,7 +14,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
+  let dots = document.getElementsByClassName("thumb");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {
     slideIndex = 1;

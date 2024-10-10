@@ -105,11 +105,11 @@ body {
 }
 
 /* Add a transparency effect for thumnbail images */
-.demo {
+.thumb {
   opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.thumb:hover {
   opacity: 1;
 }
