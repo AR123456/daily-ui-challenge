@@ -4,6 +4,10 @@ Create a modal, page, toggle, or some other element to represent the selection o
 
 <!-- https://medium.com/illumination/how-to-build-a-slideshow-using-html-css-and-javascript-977ecbdbf48c -->
 
+CSS tricks slide show
+
+<!-- https://css-tricks.com/css-only-carousel/ -->
+
 Flexbox slide show
 
 <!-- https://stackoverflow.com/questions/71198858/css-slider-with-flex -->

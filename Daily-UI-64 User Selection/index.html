@@ -7,13 +7,19 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <a class="prev" onclick="prevSlide()">&#10094;</a>
-      <div class="bio user-1">One</div>
-      <div class="bio user-2">Two</div>
-      <div class="bio user-3">Three</div>
-
-      <a class="next" onclick="nextSlide()">&#10095;</a>
+    <div class="slider-wrapper" data-items="2">
+      <div class="slider">
+        <div class="item" style="background: #0bf">Item 1</div>
+        <div class="item" style="background: #fb0">Item 2</div>
+        <div class="item" style="background: #f0b">Item 3</div>
+        <div class="item" style="background: #b0f">Item 4</div>
+        <div class="item" style="background: #bf0">Item 5</div>
+        <div class="item" style="background: #0fb">Item 6</div>
+        <!-- Never use inline style. This is just for demo. -->
+      </div>
+      <button class="prev" type="button">&larr;</button>
+      <button class="next" type="button">&rarr;</button>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
