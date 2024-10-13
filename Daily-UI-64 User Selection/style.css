@@ -3,7 +3,7 @@ html {
 }
 body {
   box-sizing: border-box;
-  background: url("./sydney-rae.jpg") center no-repeat;
+  background: url("./sydney-rae.jpg") top/cover no-repeat;
 }
 .carousel-wrapper {
   display: flex;
@@ -26,6 +26,8 @@ body {
   display: none;
 }
 .item {
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+  /* 0 0 auto. It sizes the item according to its width/height properties, but makes it fully inflexible */
   flex: 0 0 auto;
 
   width: calc(
@@ -44,7 +46,7 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: brown;
+  color: white;
   font-size: 5rem;
   overflow: hidden;
   z-index: 100;
