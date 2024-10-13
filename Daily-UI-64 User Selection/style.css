@@ -3,11 +3,14 @@ html {
 }
 body {
   box-sizing: border-box;
+  background: url("./sydney-rae.jpg") center no-repeat;
 }
 .carousel-wrapper {
   display: flex;
+
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 15em;
 }
 .carousel {
   /* width: 90vw; */
@@ -24,6 +27,7 @@ body {
 }
 .item {
   flex: 0 0 auto;
+
   width: calc(
     100% / 3
   ); /* Adjust this for the number of items you want visible */
