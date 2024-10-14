@@ -12,6 +12,6 @@ Flexbox slide show
 
 <!-- https://stackoverflow.com/questions/71198858/css-slider-with-flex -->
 
-another example
+another example - used this but with some help from chat GPT to make it actually work and get rid of IIFE
 
 <!-- https://dev.to/kevinkh89/carousel-with-little-to-zero-javascript-using-flexbox-and-overflow-37il -->
