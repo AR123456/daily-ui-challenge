@@ -69,14 +69,18 @@ button {
   width: 150px;
 }
 table {
-  border: 2px solid blue;
+  border: 2px solid brown;
+  background: yellow;
+  border-radius: 5px;
 }
+
 thead {
-  border: 2px solid rgb(241, 12, 12);
+  background: brown;
+  height: 50px;
 }
 th,
 td {
-  border: 2px solid green;
+  border-bottom: 2px solid green;
   width: 260px;
   height: 26px;
 }
