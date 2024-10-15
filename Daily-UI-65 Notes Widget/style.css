@@ -11,6 +11,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+/* phone */
 .container {
   background-color: rgb(248, 244, 244);
   height: 42rem;
@@ -25,15 +26,16 @@ body {
   box-shadow: 1px 1px 5px #555;
   /* this tilts phone  */
   /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
-      rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
-      skewX(0deg) skewY(0deg); */
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg); */
   /* shadow around phone */
   /* filter: drop-shadow(40px 31px 15px #000000); */
 }
 /* this will kick out the bottom of the phone a bit */
 .wrapper {
   /* perspective: 1474px;
-    perspective-origin: 54% 192%; */
+  perspective-origin: 54% 192%; */
+  margin-bottom: 150px;
 }
 /* phone screen */
 .card {
