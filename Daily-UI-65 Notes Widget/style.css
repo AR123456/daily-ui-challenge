@@ -63,3 +63,20 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
+button {
+  margin-top: 20px;
+  height: 50px;
+  width: 150px;
+}
+table {
+  border: 2px solid blue;
+}
+thead {
+  border: 2px solid rgb(241, 12, 12);
+}
+th,
+td {
+  border: 2px solid green;
+  width: 260px;
+  height: 26px;
+}
