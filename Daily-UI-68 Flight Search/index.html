@@ -9,13 +9,14 @@
   <body>
     <div class="container">
       <div class="card">
+        <h1>Flight search</h1>
         <form action="">
           <label for="depart">Depart</label>
           <input type="text" id="depart" name="depart" />
-          <label for="depart-date">Departure Date</label>
-          <input type="date" id="depart-date" name="depart-date" />
           <label for="arrive">Return</label>
           <input type="text" id="arrive" name="arrive" />
+          <label for="depart-date">Departure Date</label>
+          <input type="date" id="depart-date" name="depart-date" />
           <label for="return-date">Return Date</label>
           <input type="date" id="return-date" name="return-date" />
           <label for="passengers">Passengers</label>
@@ -27,9 +28,10 @@
             min="1"
             max="99"
           />
-
-          <input type="reset" value="Reset" />
-          <input type="submit" value="Submit" />
+          <div class="row">
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     </div>
