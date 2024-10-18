@@ -63,3 +63,17 @@ body {
   height: 170px;
   width: 270px;
 }
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+  height: 48px;
+  width: 256px;
+  margin-top: 1em;
+}
+.nav button {
+  border-radius: 5px;
+}
