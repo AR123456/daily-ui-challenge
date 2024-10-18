@@ -59,10 +59,10 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
-.destination-pic img {
+/* .destination-pic img {
   height: 170px;
   width: 270px;
-}
+} */
 .nav {
   display: flex;
   flex-direction: row;
@@ -76,4 +76,21 @@ body {
 }
 .nav button {
   border-radius: 5px;
+}
+.cart .hamburger {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
+.phone-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20em;
+  width: 16em;
+  background: url("./retreat.jpg") center/cover no-repeat;
+  margin-bottom: 1em;
+  color: white;
 }
