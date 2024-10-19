@@ -139,7 +139,7 @@ h1 {
   font-size: 10px;
   margin: 5px;
 }
-
+.stars,
 .save {
   display: flex;
   flex-direction: column;
@@ -149,21 +149,13 @@ h1 {
   margin: 5px;
 }
 .stars {
+  text-align: center;
 }
 .reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  font-size: 15px;
 }
-.highlights {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.reviews img {
-  height: 24px;
-  width: 24px;
+.stars img {
+  /* height: 15px;
+  padding: 0;
+  margin: 0; */
 }
