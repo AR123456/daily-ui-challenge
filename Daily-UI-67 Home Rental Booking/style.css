@@ -99,6 +99,7 @@ body {
   background: url("./retreat.jpg") center/cover no-repeat;
   margin-bottom: 1em;
   color: white;
+  border-radius: 10px;
 }
 .phone-bottom {
   display: flex;
@@ -109,7 +110,7 @@ body {
   height: 3em;
   width: 16em;
   margin-top: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .phone-bottom img {
   height: 30px;
@@ -159,4 +160,7 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.bookit img {
+  margin-left: 5px;
 }
