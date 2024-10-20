@@ -59,10 +59,7 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
-/* .destination-pic img {
-  height: 170px;
-  width: 270px;
-} */
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -111,7 +108,8 @@ body {
   gap: 2em;
   height: 3em;
   width: 16em;
-  margin-bottom: 3em;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 .phone-bottom img {
   height: 30px;
@@ -148,13 +146,12 @@ h1 {
   font-size: 10px;
   margin: 5px;
 }
-.stars {
-}
+
 .reviews {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  flex-direction: row;
+  justify-content: start;
+  font-size: 10px;
 }
 .highlights {
   display: flex;
@@ -162,8 +159,4 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.reviews img {
-  height: 24px;
-  width: 24px;
 }
