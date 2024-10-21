@@ -144,8 +144,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   margin: 5px;
+  color: green;
 }
 
 .reviews {
