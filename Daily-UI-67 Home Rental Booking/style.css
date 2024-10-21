@@ -161,6 +161,12 @@ h1 {
   justify-content: center;
   text-align: center;
 }
+.bookit {
+  height: 150px;
+  width: 112px;
+}
 .bookit img {
-  margin-left: 5px;
+  margin-left: 8px;
+  height: inherit;
+  width: 50px;
 }
