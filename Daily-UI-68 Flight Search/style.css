@@ -11,3 +11,10 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.card {
+  border: solid 5px black;
+  width: 50em;
+}
+label {
+  font-size: 15px;
+}
