@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flight search</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Flight search</h1>
+        <form action="">
+          <label for="depart">Depart</label>
+          <input type="text" id="depart" name="depart" />
+          <label for="arrive">Return</label>
+          <input type="text" id="arrive" name="arrive" />
+          <label for="depart-date">Departure Date</label>
+          <input type="date" id="depart-date" name="depart-date" />
+          <label for="return-date">Return Date</label>
+          <input type="date" id="return-date" name="return-date" />
+          <label for="passengers">Passengers</label>
+          <input
+            type="number"
+            id="passengers"
+            name="passengers"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <div class="row">
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+    </div>
+    l\
+    <script src="app.js"></script>
+  </body>
+</html>
