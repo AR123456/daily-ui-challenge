@@ -1,5 +1,5 @@
-Prompt: Flight Search
+Prompt: Hotel or Vacation Rental Booking
 
-Design an app or website for either searching for flights or comparing options.
+Create a website, listing page, or booking reservation UI for a vacation property.
 
-Consider the variables: one-way, roundtrip, or multi-stop flight? Baggage fees? Making a lot of data look simple isn't easy, but it's what your users will appreciate. Millions of people travel everyday so every little detail makes a difference.
+Consider extra elements: non-smoking rooms, security deposits, amenities, etc
