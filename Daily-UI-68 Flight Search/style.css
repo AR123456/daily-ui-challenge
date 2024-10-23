@@ -20,6 +20,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  position: relative; /* Makes the form a positioned container */
 }
 
 .form-group {
@@ -39,15 +40,18 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 15px;
 }
-input,
-#passengers {
-  width: 4%;
-  padding: 12px 5px;
+input[type="text"] {
+  font-size: 20px;
+  font-weight: 600;
 }
-
-input[type="submit"] {
+.row {
   width: 100%;
+}
+input[type="reset"],
+input[type="submit"] {
+  width: 48%;
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
@@ -59,4 +63,13 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+.switch {
+  position: absolute; /* Allows the image to be freely positioned */
+  top: 28px; /* Adjust the vertical position of the SVG */
+  left: 138px; /* Adjust the horizontal position of the SVG */
+  width: 40px; /* Adjust width as necessary */
+  height: 40px; /* Adjust height as necessary */
+  cursor: pointer; /* Optional: makes the SVG clickable */
+  z-index: 1; /* Ensures the SVG is above other elements */
 }
