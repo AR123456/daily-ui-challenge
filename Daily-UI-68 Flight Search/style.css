@@ -16,24 +16,25 @@ body {
   border-radius: 5px;
   width: 65em;
 }
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
 label {
   font-size: 15px;
 }
 input[type="text"],
-select {
-  width: 10%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 input[type="date"],
-select {
-  width: 12%;
-  padding: 12px 5px;
-  margin: 8px 0;
+input[type="number"] {
+  padding: 12px 10px;
+  margin-top: 8px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
