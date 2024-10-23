@@ -7,3 +7,5 @@ function toDateInputValue(dateObject) {
 }
 
 document.getElementById("depart-date").value = toDateInputValue(new Date());
+
+//  some js for the fancy cal
