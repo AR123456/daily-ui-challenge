@@ -78,8 +78,8 @@ input[type="submit"]:hover {
 /* Stack DYI cal icon  https://stackoverflow.com/questions/51945122/how-to-change-the-appearance-of-input-type-date-datepicker */
 [type="date"] {
   background: #fff
-    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
-    97% 50% no-repeat;
+    /* url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) */
+    url("./date_range_red.png") 97% 50% no-repeat;
 }
 
 [type="date"]::-webkit-inner-spin-button {
