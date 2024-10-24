@@ -90,5 +90,5 @@ input[type="submit"]:hover {
   opacity: 0;
 }
 input[type="number"] {
-  background: #fff url("./person.svg") 97% 50% no-repeat;
+  background: #fff url("./person.svg") 67% 50% no-repeat;
 }
