@@ -95,3 +95,9 @@ input[type="number"] {
 input[type="text"] {
   background: #fff url("./airplane-engines.svg") 77% 50% no-repeat;
 }
+
+path {
+  transform: rotate(90deg);
+  transform-box: fill-box;
+  transform-origin: center;
+}
