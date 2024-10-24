@@ -92,3 +92,6 @@ input[type="submit"]:hover {
 input[type="number"] {
   background: #fff url("./person.svg") 67% 50% no-repeat;
 }
+input[type="text"] {
+  background: #fff url("./airplane-engines.svg") 77% 50% no-repeat;
+}
