@@ -20,7 +20,8 @@ form {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  position: relative; /* Makes the form a positioned container */
+  /* postion relative so the double cir icon can be over the input divs */
+  position: relative;
 }
 
 .form-group {
@@ -65,6 +66,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+/* double circle overairport divs */
 .switch {
   position: absolute; /* Allows the image to be freely positioned */
   top: 28px; /* Adjust the vertical position of the SVG */
