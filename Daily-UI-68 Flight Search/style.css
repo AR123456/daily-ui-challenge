@@ -14,12 +14,16 @@ body {
 .card {
   border: solid 5px black;
   border-radius: 5px;
-  width: 65em;
+  width: 900px;
+}
+h1 {
+  text-align: center;
 }
 form {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  margin-left: 20px;
   /* postion relative so the double cir icon can be over the input divs */
   position: relative;
 }
@@ -27,7 +31,7 @@ form {
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 155px;
 }
 label {
   font-size: 15px;
@@ -49,6 +53,10 @@ input[type="text"] {
 }
 
 .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 input[type="reset"],
