@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Trending</title>
   </head>
@@ -17,15 +18,19 @@
               <th>Search Volume</th>
               <th>Started</th>
               <th>Treand breakdown</th>
-              <th>Past t days</th>
+              <th>Past 7 days trend line</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>ghost ship washed ashore st augustine td 20L+ 1,000%</td>
+              <td>50 M</td>
               <td>13 hours ago active</td>
               <td>td St augustine gohst shipwashes ashore</td>
-              <td>Trending graph</td>
+              <td>
+                <!-- https://css-tricks.com/how-to-make-a-line-chart-with-css/ -->
+                chart
+              </td>
             </tr>
           </tbody>
         </table>
@@ -34,45 +39,5 @@
         rows per page and arrows to go forward back to start or finish
       </footer>
     </div>
-    <table>
-      <caption>
-        Front-end web developer course 2021
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">Person</th>
-          <th scope="col">Most interest in</th>
-          <th scope="col">Age</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Chris</th>
-          <td>HTML tables</td>
-          <td>22</td>
-        </tr>
-        <tr>
-          <th scope="row">Dennis</th>
-          <td>Web accessibility</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <th scope="row">Sarah</th>
-          <td>JavaScript frameworks</td>
-          <td>29</td>
-        </tr>
-        <tr>
-          <th scope="row">Karen</th>
-          <td>Web performance</td>
-          <td>36</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th scope="row" colspan="2">Average age</th>
-          <td>33</td>
-        </tr>
-      </tfoot>
-    </table>
   </body>
 </html>
