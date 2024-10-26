@@ -27,16 +27,30 @@ header {
   display: flex;
   flex-direction: row;
   align-items: start;
-  /* gap: 10%; */
   width: 100%;
-  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
-.tabs {
-  padding: 2rem 0 0 0;
-  margin: 0 0.5rem;
-  overflow-x: auto;
-  /* width: calc(100% - 1rem); */
-  white-space: nowrap;
+.tab {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-right: 2px;
+  position: relative;
+  top: 5px;
+}
+.tab:hover {
+  background-color: #e0e0e0;
+}
+.active {
+  background-color: white;
+  border-bottom: 2px solid white;
+  top: 0;
+  z-index: 1;
 }
 
 table {
