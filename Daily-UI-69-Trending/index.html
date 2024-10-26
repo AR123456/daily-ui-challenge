@@ -8,18 +8,21 @@
     <title>Trending</title>
   </head>
   <body>
-    <header>
-      <div class="row-1">
-        <div class="hamburger">burger</div>
-        <div class="home">home</div>
-        <div class="explore">Explore</div>
-        <div class="now">Trending now</div>
+    <header class="active">
+      <div class="row-tabs tabs">
+        <button class="tab">
+          <img src="./hamburger-menu.svg" alt="menu" />
+        </button>
+        <button class="tab">Home</button>
+        <button class="tab">Explore</button>
+        <button class="tab active">Trending Now</button>
       </div>
-      <div class="row-2 tabs">
-        <button class="tab">United States</button>
-        <button class="tab">Past 7 Days</button>
-        <button class="tab">Active Only</button>
-        <button class="tab">By Search Volume</button>
+
+      <div class="row-buttons">
+        <button class="button">United States</button>
+        <button class="button">Past 7 Days</button>
+        <button class="button">Active Only</button>
+        <button class="button">By Search Volume</button>
       </div>
     </header>
     <div class="container">
@@ -44,7 +47,6 @@
                 at the age of 88
               </td>
               <td>
-                <!-- https://css-tricks.com/how-to-make-a-line-chart-with-css/ -->
                 <div id="chart1"></div>
               </td>
             </tr>
@@ -57,17 +59,40 @@
                 first former president to reach the age of 100
               </td>
               <td>
-                <!-- https://css-tricks.com/how-to-make-a-line-chart-with-css/ -->
                 <div id="chart2"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Roswell New Mexico + 10%</td>
+              <td>5 M</td>
+              <td>3 Days ago</td>
+              <td>Flooding in historic Roswell New Mexico</td>
+              <td>
+                <div id="chart3"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>IBM AI Model + 12%</td>
+              <td>7 M</td>
+              <td>1 Days ago</td>
+              <td>
+                IBM Releases New AI Models for Businesses as GenAI Competition
+                Heats Up
+              </td>
+              <td>
+                <div id="chart4"></div>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <footer>
-        rows per page and arrows to go forward back to start or finish
-      </footer>
     </div>
+    <footer>
+      <label for="pages">Rows per page</label>
+      <input type="number" name="pages" id="pages" value="4" />
+      <p>4 of 10</p>
+      rows per page and arrows to go forward back to start or finish
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
