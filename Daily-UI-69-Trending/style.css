@@ -15,26 +15,25 @@ header {
   flex-direction: column;
   width: 100%;
 }
-.row-buttons {
+.row-1 {
   display: flex;
   flex-direction: row;
   align-items: start;
-  gap: 5%;
+  gap: 10%;
   width: 100%;
+  margin-bottom: 100px;
 }
-.row-tabs {
+.row-2 {
   display: flex;
   flex-direction: row;
   align-items: start;
   width: 100%;
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
-  margin-bottom: 100px;
-  background: white;
 }
 .tab {
-  background-color: #fefbfb;
-  border: 1px solid #080808;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
   border-bottom: none;
   padding: 10px 15px;
   cursor: pointer;
@@ -44,7 +43,6 @@ header {
   position: relative;
   top: 5px;
   font-size: 20px;
-  height: 50px;
 }
 .tab:hover {
   background-color: #e0e0e0;
@@ -52,11 +50,6 @@ header {
 .active {
   font-weight: bold;
   text-decoration: underline;
-  background-color: #e0e0e0;
-}
-.button {
-  height: 3em;
-  width: 9em;
 }
 table {
   /* share border  */
