@@ -8,23 +8,7 @@
     <title>Trending</title>
   </head>
   <body>
-    <header class="active">
-      <div class="row-tabs tabs">
-        <button class="tab">
-          <img src="./hamburger-menu.svg" alt="menu" />
-        </button>
-        <button class="tab">Home</button>
-        <button class="tab">Explore</button>
-        <button class="tab active">Trending Now</button>
-      </div>
-
-      <div class="row-buttons">
-        <button class="button">United States</button>
-        <button class="button">Past 7 Days</button>
-        <button class="button">Active Only</button>
-        <button class="button">By Search Volume</button>
-      </div>
-    </header>
+    <header>Header row 4 filter buttons</header>
     <div class="container">
       <div class="card">
         <table>
@@ -33,66 +17,28 @@
               <th>Trends</th>
               <th>Search Volume</th>
               <th>Started</th>
-              <th>Trend Breakdown</th>
+              <th>Treand breakdown</th>
               <th>Past 7 days trend line</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Kris Kerstofferson+ 1,000%</td>
+              <td>ghost ship washed ashore st augustine td 20L+ 1,000%</td>
               <td>50 M</td>
-              <td>13 days ago active</td>
+              <td>13 hours ago active</td>
+              <td>td St augustine gohst shipwashes ashore</td>
               <td>
-                The American country music star and actor died on September 28th
-                at the age of 88
-              </td>
-              <td>
-                <div id="chart1"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Jimmy Carther+ 1,000%</td>
-              <td>50 M</td>
-              <td>19 Days ago</td>
-              <td>
-                Carter celebrated his 100th birthday on October 1, becoming the
-                first former president to reach the age of 100
-              </td>
-              <td>
-                <div id="chart2"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Roswell New Mexico + 10%</td>
-              <td>5 M</td>
-              <td>3 Days ago</td>
-              <td>Flooding in historic Roswell New Mexico</td>
-              <td>
-                <div id="chart3"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>IBM AI Model + 12%</td>
-              <td>7 M</td>
-              <td>1 Days ago</td>
-              <td>
-                IBM Releases New AI Models for Businesses as GenAI Competition
-                Heats Up
-              </td>
-              <td>
-                <div id="chart4"></div>
+                <!-- https://css-tricks.com/how-to-make-a-line-chart-with-css/ -->
+                <div id="chart"></div>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+      <footer>
+        rows per page and arrows to go forward back to start or finish
+      </footer>
     </div>
-    <footer>
-      <label for="pages">Rows per page</label>
-      <input type="number" name="pages" id="pages" value="4" />
-      <p>4 of 10</p>
-      rows per page and arrows to go forward back to start or finish
-    </footer>
     <script src="app.js"></script>
   </body>
 </html>
