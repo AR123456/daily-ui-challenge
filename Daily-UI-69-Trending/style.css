@@ -38,6 +38,7 @@ header {
   /* width: calc(100% - 1rem); */
   white-space: nowrap;
 }
+
 table {
   /* share border  */
   border-collapse: collapse;
