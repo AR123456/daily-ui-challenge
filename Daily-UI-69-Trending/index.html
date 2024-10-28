@@ -88,10 +88,21 @@
       </div>
     </div>
     <footer>
-      <label for="pages">Rows per page</label>
-      <input type="number" name="pages" id="pages" value="4" />
-      <p>4 of 10</p>
-      rows per page and arrows to go forward back to start or finish
+      <div>
+        <label for="pages">Rows per page</label>
+        <input type="number" name="pages" id="pages" value="4" />
+      </div>
+      <div>1-5 of 10</div>
+      <button class="start">
+        <img src="./first_page.svg" alt="first page" />
+      </button>
+      <button class="forward">
+        <img src="./arrow_forward_ios.svg " alt="forward" />
+      </button>
+      <button class="back">
+        <img src="./arrow_back_ios.svg" alt="back" />
+      </button>
+      <button class="end"><img src="./last_page.svg" alt="last page" /></button>
     </footer>
     <script src="app.js"></script>
   </body>
