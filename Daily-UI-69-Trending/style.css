@@ -93,5 +93,11 @@ input {
 }
 footer button {
   border: none;
+  background: transparent;
+  border-radius: 5px;
+  height: 39px;
+}
+footer button:hover {
+  border: 2px solid black;
   background: rgb(247, 247, 249);
 }
