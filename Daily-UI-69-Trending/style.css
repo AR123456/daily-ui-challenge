@@ -101,3 +101,7 @@ footer button:hover {
   border: 2px solid black;
   background: rgb(247, 247, 249);
 }
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
