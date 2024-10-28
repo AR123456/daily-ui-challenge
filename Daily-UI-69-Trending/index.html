@@ -10,7 +10,9 @@
   <body>
     <header class="active">
       <div class="row-tabs tabs">
-        <button class="tab">burger menu</button>
+        <button class="tab">
+          <img src="./hamburger-menu.svg" alt="menu" />
+        </button>
         <button class="tab">Home</button>
         <button class="tab">Explore</button>
         <button class="tab active">Trending Now</button>
@@ -84,10 +86,13 @@
           </tbody>
         </table>
       </div>
-      <footer>
-        rows per page and arrows to go forward back to start or finish
-      </footer>
     </div>
+    <footer>
+      <label for="pages">Rows per page</label>
+      <input type="number" name="pages" id="pages" value="4" />
+      <p>4 of 10</p>
+      rows per page and arrows to go forward back to start or finish
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

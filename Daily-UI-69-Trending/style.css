@@ -30,9 +30,10 @@ header {
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 100px;
+  background: white;
 }
 .tab {
-  background-color: #f0f0f0;
+  background-color: #fefbfb;
   border: 1px solid #080808;
   border-bottom: none;
   padding: 10px 15px;
@@ -43,6 +44,7 @@ header {
   position: relative;
   top: 5px;
   font-size: 20px;
+  height: 50px;
 }
 .tab:hover {
   background-color: #e0e0e0;
