@@ -89,5 +89,9 @@ footer {
   height: 100px;
 }
 input {
-  width: 30px;
+  width: 40px;
+}
+footer button {
+  border: none;
+  background: rgb(247, 247, 249);
 }
