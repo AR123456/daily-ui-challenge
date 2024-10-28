@@ -21,6 +21,7 @@ header {
   align-items: start;
   gap: 5%;
   width: 100%;
+  margin-bottom: 10px;
 }
 .row-tabs {
   display: flex;
@@ -51,7 +52,7 @@ header {
 }
 .active {
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   background-color: #e0e0e0;
 }
 .button {
@@ -104,4 +105,11 @@ footer button:hover {
 
 input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
+}
+.row-buttons button {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 18px;
 }
