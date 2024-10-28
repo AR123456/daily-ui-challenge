@@ -48,7 +48,14 @@ const data4 = [
   { x: 40, y: 25 },
   { x: 50, y: 35 },
 ];
-
+const data5 = [
+  { x: 0, y: 0 },
+  { x: 10, y: 15 },
+  { x: 20, y: 10 },
+  { x: 30, y: 20 },
+  { x: 40, y: 25 },
+  { x: 50, y: 35 },
+];
 // Function to create the graph
 function createGraph(container, data, strokeColor) {
   // Create SVG element
@@ -96,3 +103,5 @@ createGraph("#chart2", data2, "red");
 createGraph("#chart3", data3, "green");
 // Create the second graph (with red line)
 createGraph("#chart4", data4, "purple");
+// Create the second graph (with red line)
+createGraph("#chart5", data5, "brown");
