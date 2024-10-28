@@ -28,6 +28,18 @@ const data2 = [
   { x: 70, y: 25 },
   { x: 80, y: 30 },
 ];
+// Data for the second line chart
+const data3 = [
+  { x: 0, y: 0 },
+  { x: 10, y: 15 },
+  { x: 20, y: 10 },
+  { x: 30, y: 20 },
+  { x: 40, y: 25 },
+  { x: 50, y: 35 },
+  { x: 60, y: 20 },
+  { x: 70, y: 10 },
+  { x: 80, y: 5 },
+];
 
 // Function to create the graph
 function createGraph(container, data, strokeColor) {
@@ -72,4 +84,6 @@ function createGraph(container, data, strokeColor) {
 createGraph("#chart1", data1, "blue");
 
 // Create the second graph (with red line)
-createGraph("#chart2", data2, "red");
+createGraph("#chart2", data2, "blue");
+// Create the second graph (with red line)
+createGraph("#chart3", data2, "blue");
