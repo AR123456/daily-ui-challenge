@@ -9,12 +9,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #f8fbff;
 }
 header {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 .row-buttons {
   display: flex;
   flex-direction: row;
@@ -31,7 +33,7 @@ header {
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 100px;
-  background: white;
+  background: #f8fbff;
 }
 .tab {
   background-color: #fefbfb;
@@ -53,7 +55,7 @@ header {
 .active {
   font-weight: bold;
   /* text-decoration: underline; */
-  background-color: #e0e0e0;
+  background: #f8fbff;
 }
 .button {
   height: 3em;
@@ -66,7 +68,7 @@ table {
   font-size: 20px;
 }
 thead {
-  background: rgb(242, 242, 243);
+  background: #ffffff;
 }
 th,
 td {
@@ -74,7 +76,7 @@ td {
   border: 1px solid black;
 }
 tbody > tr:nth-of-type(even) {
-  background: rgb(242, 242, 243);
+  background: #e9eef5;
 }
 
 svg {
@@ -100,7 +102,7 @@ footer button {
 }
 footer button:hover {
   border: 2px solid black;
-  background: rgb(247, 247, 249);
+  background: #ecf2fc;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
