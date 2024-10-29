@@ -32,7 +32,7 @@ header {
   width: 100%;
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   background: #f8fbff;
 }
 .tab {
@@ -60,6 +60,7 @@ header {
 .button {
   height: 3em;
   width: 9em;
+  background: #e9eef5;
 }
 table {
   /* share border  */
