@@ -25,6 +25,7 @@ header {
   width: 100%;
   margin-bottom: 10px;
 }
+
 .row-tabs {
   display: flex;
   flex-direction: row;
@@ -59,8 +60,11 @@ header {
 }
 .button {
   height: 3em;
-  width: 9em;
+  width: 8em;
   background: #e9eef5;
+}
+.button img {
+  margin-right: 15px;
 }
 table {
   /* share border  */
