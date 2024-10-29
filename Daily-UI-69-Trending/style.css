@@ -59,12 +59,12 @@ header {
   background: #f8fbff;
 }
 .button {
-  height: 3em;
-  width: 8em;
   background: #e9eef5;
 }
 .button img {
   margin-right: 15px;
+  height: 24px;
+  width: 24px;
 }
 table {
   /* share border  */
