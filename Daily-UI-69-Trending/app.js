@@ -28,7 +28,34 @@ const data2 = [
   { x: 70, y: 25 },
   { x: 80, y: 30 },
 ];
-
+// Data for the second line chart
+const data3 = [
+  { x: 0, y: 5 },
+  { x: 10, y: 10 },
+  { x: 20, y: 15 },
+  { x: 30, y: 10 },
+  { x: 40, y: 5 },
+  { x: 50, y: 10 },
+  { x: 60, y: 15 },
+  { x: 70, y: 20 },
+  { x: 80, y: 25 },
+];
+const data4 = [
+  { x: 0, y: 0 },
+  { x: 10, y: 15 },
+  { x: 20, y: 10 },
+  { x: 30, y: 20 },
+  { x: 40, y: 25 },
+  { x: 50, y: 35 },
+];
+const data5 = [
+  { x: 0, y: 0 },
+  { x: 10, y: 15 },
+  { x: 20, y: 10 },
+  { x: 30, y: 20 },
+  { x: 40, y: 25 },
+  { x: 50, y: 35 },
+];
 // Function to create the graph
 function createGraph(container, data, strokeColor) {
   // Create SVG element
@@ -68,8 +95,13 @@ function createGraph(container, data, strokeColor) {
     .attr("stroke-width", 1);
 }
 
-// Create the first graph (with blue line)
+// Create the graphs with different color lines
 createGraph("#chart1", data1, "blue");
-
 // Create the second graph (with red line)
 createGraph("#chart2", data2, "red");
+// Create the second graph (with red line)
+createGraph("#chart3", data3, "green");
+// Create the second graph (with red line)
+createGraph("#chart4", data4, "purple");
+// Create the second graph (with red line)
+createGraph("#chart5", data5, "brown");
