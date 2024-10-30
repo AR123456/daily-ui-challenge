@@ -10,7 +10,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: url("./Translucent-Man_Torso.jpg") center;
+  background: url("./Translucent-Man_Torso.jpg") center/cover no-repeat;
 }
 /* phone */
 .container {
@@ -39,6 +39,7 @@ body {
 }
 /* phone screen */
 .card {
+  background: url("./Translucent-Man_Torso.jpg") center/cover no-repeat;
   /* making the card flex box for stuff withing it */
   display: flex;
   flex-direction: column;
