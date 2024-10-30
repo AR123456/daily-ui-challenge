@@ -1,0 +1,130 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8fbff;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 5%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  background: #f8fbff;
+}
+.tab {
+  background-color: #fefbfb;
+  border: 1px solid #080808;
+  border-bottom: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-right: 2px;
+  position: relative;
+  top: 5px;
+  font-size: 20px;
+  height: 50px;
+}
+.tab:hover {
+  background-color: #e0e0e0;
+}
+.active {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  background: #f8fbff;
+}
+.button {
+  background: #e9eef5;
+}
+.button img {
+  margin-right: 15px;
+  height: 24px;
+  width: 24px;
+}
+table {
+  /* share border  */
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+thead {
+  background: #ffffff;
+}
+
+th,
+td {
+  height: 90px;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+tbody > tr:nth-of-type(even) {
+  background: #e9eef5;
+}
+
+svg {
+  margin-left: 30px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+  height: 100px;
+}
+input {
+  width: 40px;
+}
+footer button {
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  height: 39px;
+}
+footer button:hover {
+  border: 2px solid black;
+  background: #ecf2fc;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+.row-buttons button {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+td div {
+  margin-right: 25px;
+}
