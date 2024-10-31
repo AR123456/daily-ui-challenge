@@ -10,8 +10,16 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  /* background: url("./Translucent-Man_Torso.jpg") center/cover no-repeat; */
+  color: white;
+  background: url("./Translucent-Man_Torso.jpg") center/cover no-repeat;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* phone */
 .container {
   background-color: rgb(248, 244, 244);
@@ -39,7 +47,7 @@ body {
 }
 /* phone screen */
 .card {
-  /* background: url("./Translucent-Man_Torso.jpg") center/cover no-repeat; */
+  background: url("./Translucent-Man_Torso.jpg") center/cover no-repeat;
   /* making the card flex box for stuff withing it */
   display: flex;
   flex-direction: column;
