@@ -84,13 +84,18 @@ header img {
   justify-content: center;
   height: 320px;
   width: 250px;
+  background: linear-gradient(
+    135deg,
+    rgb(238, 238, 238, 0.2) 0%,
+    rgb(169, 184, 195, 0.2) 100%
+  );
   color: white;
 }
 .detail-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* text-align: center; */
+  text-align: center;
   font-size: 10px;
   margin: 5px;
 }
