@@ -40,8 +40,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5px;
-
+  margin-top: 30px;
   /* groove and box shadow for roundish outer edge */
   box-shadow: 1px 1px 5px #555;
   /* this tilts phone  */
@@ -53,7 +52,8 @@ header img {
 }
 /* this will kick out the bottom of the phone a bit */
 .wrapper {
-  margin-top: 0;
+  /* perspective: 1474px;
+  perspective-origin: 54% 192%; */
 }
 /* phone screen */
 .card {
@@ -140,5 +140,5 @@ header img {
   );
 }
 .footer {
-  margin-top: 80px;
+  height: 80px;
 }
