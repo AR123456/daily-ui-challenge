@@ -108,16 +108,26 @@ header img {
   text-align: center;
   font-size: 10px;
   margin: 5px;
+  width: 300px;
   background: linear-gradient(
     135deg,
     rgba(6, 147, 227, 0.5) 0%,
     rgba(155, 81, 224, 0.3) 100%
   );
 }
+.detail-row div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
 .detail-row img {
   height: 50px;
   width: 50px;
 }
+
 .line {
   /* push to bottom of the card  */
   position: absolute;
