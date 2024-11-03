@@ -22,10 +22,17 @@ header {
 header img {
   height: 80px;
 }
-.announcement {
+.wrapper {
+  margin-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.announcement {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left; */
   height: 80px;
   /* align-items: flex-end; */
   /* width: 100%; */
@@ -49,12 +56,9 @@ header img {
     rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
     skewX(0deg) skewY(0deg); */
   /* shadow around phone */
-  /* filter: drop-shadow(40px 31px 15px #000000); */
+  /* filter: drop-shadow(40px 31px 15px #666565); */
 }
-/* this will kick out the bottom of the phone a bit */
-.wrapper {
-  margin-top: 0;
-}
+
 /* phone screen */
 .card {
   background: url("./Translucent-Man_Torso.jpg") center/cover no-repeat;
