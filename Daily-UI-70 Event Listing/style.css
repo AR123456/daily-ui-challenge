@@ -104,8 +104,7 @@ header img {
 .detail-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-evenly;
   font-size: 10px;
   margin: 5px;
   width: 300px;
@@ -116,12 +115,8 @@ header img {
   );
 }
 .detail-row div {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  gap: 10px;
 }
 .detail-row img {
   height: 50px;
