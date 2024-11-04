@@ -16,20 +16,13 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
-  margin-top: 170px;
+  margin-top: 100px;
 }
 header img {
-  height: 70px;
-  /* margin-left: 20px;
-  margin-top: 40px; */
-}
-.text {
-  width: 15em;
-  height: 70px;
-  margin-right: 20px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 40px;
 }
 .wrapper {
   margin-top: 0;
