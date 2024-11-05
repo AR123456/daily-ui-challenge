@@ -31,20 +31,3 @@ By setting margin to auto horizontally, the container aligns itself centrally on
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: -1px -1px #f9a440, inset -1px -1px 0 0 #f9a440;
 }
-/* Move the first day to start on Wednesday */
-.day:nth-child(1) {
-  grid-column: 3; /* Start day 1 in the 3rd  column (Tuesday) */
-}
-@media (max-width: 600px) {
-  .month {
-    max-width: 100%; /* Makes calendar width responsive */
-    transform: scale(0.8); /* Shrinks the entire calendar to 80% */
-    transform-origin: top center; /* Centers the scale transformation */
-  }
-}
-
-@media (max-width: 400px) {
-  .month {
-    transform: scale(0.6); /* Shrinks further on very small screens */
-  }
-}
