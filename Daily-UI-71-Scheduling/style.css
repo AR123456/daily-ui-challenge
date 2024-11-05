@@ -5,7 +5,8 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-h1{}
+h1 {
+}
 .week {
   display: flex;
 }
@@ -26,23 +27,19 @@ h1{}
 
 /* OTHER STYLES */
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   background: linear-gradient(top, #fad961, #f76d1d);
   background-attachment: fixed;
 }
 
 .month {
-  max-width: 560px;
+  max-width: 840 px;
+  /* max-width: 560px; */
   margin: 20px auto;
 }
 
 .week {
-  height: 80px;
+  height: 7em;
 }
 
 .day {
