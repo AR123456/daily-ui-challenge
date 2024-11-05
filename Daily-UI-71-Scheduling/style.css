@@ -1,45 +1,45 @@
 *,
 html {
+  /* ets all elements and the HTML root element to border-box sizing, which makes width and height properties include padding and border. This simplifies layout calculations by preventing elements from overflowing their containers when padding or borders are added. */
   box-sizing: border-box;
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(top, #fad961, #f76d1d);
+  /* background-attachment: fixed keeps the background in place when scrolling. */
+  background-attachment: fixed;
 }
-
+/* Sets each .week element as a flex container, aligning child .day elements horizontally. */
 .week {
   display: flex;
 }
-
+/* flex-grow: 1 and flex-shrink: 1 allow each .day element to expand or shrink as needed, while flex-basis: 0 allows all .day elements to share space evenly. */
 .day {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
 }
-
+/* Adds left margin to the first day of the first week, simulating the placement of dates according to the starting day of the month (e.g., starting on a Wednesday). */
 .week:first-of-type .day:first-of-type {
   margin-left: 42.85714%;
 }
-
+/* Adds right margin to the last day of the last week to align with the calendar layout and maintain consistent spacing. */
 .week:last-of-type .day:last-of-type {
   margin-right: 14.285%;
 }
 
 /* OTHER STYLES */
-
-body {
-  background: linear-gradient(top, #fad961, #f76d1d);
-  background-attachment: fixed;
-}
-
+/* Centers the .month container and limits its width to 560px, giving the calendar a compact look */
 .month {
   max-width: 560px;
   margin: 20px auto;
 }
-
+/* Sets each .week container’s height to 80px for a uniform row height. */
 .week {
   height: 80px;
 }
-
+/* A translucent white background color with opacity(white, 0.3).
+A shadow that gives the day boxes a subtle 3D look with an external shadow (-1px -1px #f9a440) and an inner shadow (inset -1px -1px 0 0 #f9a440). */
 .day {
   color: #f98909;
   padding: 5px;
