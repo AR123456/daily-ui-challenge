@@ -9,40 +9,42 @@ body {
   /* background-attachment: fixed keeps the background in place when scrolling. */
   background-attachment: fixed;
 }
-/* Sets each .week element as a flex container, aligning child .day elements horizontally. */
-.week {
-  display: flex;
-}
-/* flex-grow: 1 and flex-shrink: 1 allow each .day element to expand or shrink as needed, while flex-basis: 0 allows all .day elements to share space evenly. */
-.day {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-}
-/* Adds left margin to the first day of the first week, simulating the placement of dates according to the starting day of the month (e.g., starting on a Wednesday). */
-.week:first-of-type .day:first-of-type {
-  margin-left: 42.85714%;
-}
-/* Adds right margin to the last day of the last week to align with the calendar layout and maintain consistent spacing. */
-.week:last-of-type .day:last-of-type {
-  margin-right: 14.285%;
-}
-
-/* OTHER STYLES */
-/* Centers the .month container and limits its width to 560px, giving the calendar a compact look */
+/* 7 equal columns for each day of the week */
 .month {
+  /* makes .month a grid container, allowing it to control the layout of its direct child elements (the .day elements) in rows and columns. */
+  display: grid;
+  /* This defines the structure of the columns within the grid container. */
+  /* repeat(7, 1fr) means the grid will have 7 equal-width columns, with each column taking up 1fr (one fraction of the available space). */
+  grid-template-columns: repeat(7, 1fr);
+  /* his constrains the width of the .month container to 560 pixels, ensuring that the calendar doesn’t stretch too wide on larger screens, keeping it compact and centered.
+The choice of 560px makes each day cell roughly 80px wide, given 7 columns, which balances readability with a manageable size for a calendar. */
   max-width: 560px;
+  /* This centers the .month container horizontally within its parent and provides a top and bottom margin of 20px.
+By setting margin to auto horizontally, the container aligns itself centrally on the page, keeping the layout clean and balanced. */
   margin: 20px auto;
 }
-/* Sets each .week container’s height to 80px for a uniform row height. */
-.week {
-  height: 80px;
-}
-/* A translucent white background color with opacity(white, 0.3).
-A shadow that gives the day boxes a subtle 3D look with an external shadow (-1px -1px #f9a440) and an inner shadow (inset -1px -1px 0 0 #f9a440). */
+
 .day {
-  color: #f98909;
+  height: 80px;
   padding: 5px;
-  background-color: opacity(white, 0.3);
+  color: #f98909;
+  background-color: rgba(255, 255, 255, 0.3);
   box-shadow: -1px -1px #f9a440, inset -1px -1px 0 0 #f9a440;
+}
+/* Move the first day to start on Wednesday */
+.day:nth-child(1) {
+  grid-column: 3; /* Start day 1 in the 3rd  column (Tuesday) */
+}
+@media (max-width: 600px) {
+  .month {
+    max-width: 100%; /* Makes calendar width responsive */
+    transform: scale(0.8); /* Shrinks the entire calendar to 80% */
+    transform-origin: top center; /* Centers the scale transformation */
+  }
+}
+
+@media (max-width: 400px) {
+  .month {
+    transform: scale(0.6); /* Shrinks further on very small screens */
+  }
 }
