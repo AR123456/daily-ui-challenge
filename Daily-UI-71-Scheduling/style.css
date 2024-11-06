@@ -5,7 +5,8 @@ html {
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(top, #fad961, #f76d1d);
+  background: url("./jackolanterns.jpg") center/cover no-repeat;
+  /* background: linear-gradient(top, #fad961, #f76d1d); */
   /* background-attachment: fixed keeps the background in place when scrolling. */
   background-attachment: fixed;
 }
