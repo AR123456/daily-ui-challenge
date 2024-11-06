@@ -5,7 +5,8 @@ html {
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: url("./jackolanterns.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(251, 227, 200, 0.2), rgba(249, 137, 9, 0.7)),
+    url("./jackolanterns.jpg") center/cover no-repeat;
   /* background: linear-gradient(top, #fad961, #f76d1d); */
   /* background-attachment: fixed keeps the background in place when scrolling. */
   background-attachment: fixed;
@@ -28,7 +29,7 @@ By setting margin to auto horizontally, the container aligns itself centrally on
 .day {
   height: 80px;
   padding: 5px;
-  color: #f98909;
+  color: rgb(249, 137, 9);
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: -1px -1px #f9a440, inset -1px -1px 0 0 #f9a440;
 }
