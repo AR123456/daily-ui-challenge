@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   color: #3c3c3c;
+  overflow: hidden;
 }
 a:hover {
   text-decoration: none;

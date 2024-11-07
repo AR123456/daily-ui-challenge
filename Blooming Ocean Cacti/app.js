@@ -1,7 +1,7 @@
 const TAU = Math.PI * 2;
 
-const W = 1000;
-const H = W;
+const W = 2000;
+const H = 1000;
 const getPixelIndex = (x, y, imageData) =>
   (Math.floor(x) + Math.floor(y) * imageData.width) * 4;
 
