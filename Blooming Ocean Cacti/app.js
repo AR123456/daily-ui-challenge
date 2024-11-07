@@ -1,16 +1,16 @@
 const TAU = Math.PI * 2;
 
 const W = 1000;
-
 const H = W;
 const getPixelIndex = (x, y, imageData) =>
   (Math.floor(x) + Math.floor(y) * imageData.width) * 4;
+
 const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
 let points = [];
 
 const ctx = document.querySelector(".js-lines").getContext("2d");
 const ctxGhost = document.createElement("canvas").getContext("2d");
-const imageUrl = "./Ocean-Cactus.jpg";
+const imageUrl = "./Ocean-Cactus2.jpg";
 
 const loadImage = () => {
   const img = new Image();
@@ -34,15 +34,12 @@ const setupCanvas = (width, height) => {
 
 const getImageData = (ctxDest, image) => {
   ctxDest.drawImage(image, 0, 0, ctxDest.canvas.width, ctxDest.canvas.height);
-
   const imageData = ctxDest.getImageData(0, 0, W, H);
-
   return imageData;
 };
 
 const getColorFromPosition = ({ x, y }, imageData) => {
   const pixelIndex = getPixelIndex(x, y, imageData);
-
   return {
     r: imageData.data[pixelIndex],
     g: imageData.data[pixelIndex + 1],
@@ -93,30 +90,38 @@ const draw = (point) => {
 
 const clear = () => ctx.clearRect(0, 0, W, H);
 
+const MAX_FRAMES = 400; // Set when to stop the animation
+let frameCount = 0;
+
 const loop = () => {
+  if (frameCount >= MAX_FRAMES) {
+    return; // Stop the animation once we reach the maximum frame count
+  }
+
   points.forEach((point) => {
     update(point);
     draw(point);
   });
 
+  // Add new points
   for (let i = 0; i < 10; i++) {
     points.push(getPoint(W, H));
     points.push(getPoint(W, H));
     points.push(getPoint(W, H));
   }
 
+  // Filter out points that are nearly "dead"
   points = points.filter((p) => p.life > 0.01);
 
-  requestAnimationFrame(loop);
+  frameCount++; // Increment the frame count
+  requestAnimationFrame(loop); // Continue the loop
 };
 
 const start = async () => {
   const image = await loadImage();
-
   const { width, height } = image;
 
   setupCanvas(W, H);
-
   imageData = getImageData(ctxGhost, image);
 
   ctx.canvas.addEventListener("click", () => {
@@ -124,7 +129,7 @@ const start = async () => {
     ctx.clearRect(0, 0, width, height);
   });
 
-  loop();
+  loop(); // Start the animation loop
 };
 
 start();
