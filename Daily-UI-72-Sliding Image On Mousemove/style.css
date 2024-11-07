@@ -39,7 +39,9 @@ body {
 }
 
 #left-side {
-  background-color: var(--left-color);
+  /* night */
+  /* background-color: var(--left-color); */
+  background-image: ("./night-beach.jpg");
   width: 60%;
   z-index: 2;
 }
@@ -53,6 +55,7 @@ body {
 }
 
 #right-side {
+  /* day */
   background-color: var(--right-color);
 }
 
