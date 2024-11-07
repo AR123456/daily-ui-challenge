@@ -90,7 +90,7 @@ const draw = (point) => {
 
 const clear = () => ctx.clearRect(0, 0, W, H);
 
-const MAX_FRAMES = 400; // Set when to stop the animation
+const MAX_FRAMES = 600; // Set when to stop the animation
 let frameCount = 0;
 
 const loop = () => {
