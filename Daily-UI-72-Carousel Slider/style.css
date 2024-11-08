@@ -15,7 +15,11 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
+.card {
+  height: 30em;
+  width: 60em;
+  background: url("./sand-pipers.jpg") center/cover no-repeat;
+}
 /* class to hide content visually leaving it available to screenreaders.
   See notes in cookbook recipe.
   https://github.com/h5bp/html5-boilerplate/issues/1985#issuecomment-394096182
