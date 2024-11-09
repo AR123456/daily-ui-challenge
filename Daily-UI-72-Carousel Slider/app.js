@@ -1,3 +1,10 @@
 // a node list
 const slides = document.querySelectorAll(".slide");
-console.log(slides);
+let index = 0;
+
+function prevSlide() {
+  slides[index].classList.remove("active");
+  index--;
+  if (index < 0) index = slides.length - 1;
+  slides[index].classList.add("active");
+}
