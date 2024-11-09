@@ -16,6 +16,10 @@ body {
   overflow: hidden;
 }
 .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   height: 30em;
   width: 60em;
   background: url("./sand-pipers.jpg") center/cover no-repeat;
