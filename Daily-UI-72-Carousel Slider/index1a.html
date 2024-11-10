@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image slider / carousel</title>
+  </head>
+  <body>
+    <div class="slideshow">
+      <div class="slides fade">
+        <div class="number-text">
+          1
+          <img src="./sand-pipers.jpg" alt="sand-pipers" style="width: 100%" />
+          <div class="text">Sand Pipers</div>
+        </div>
+      </div>
+      <div class="slides fade">
+        <div class="number-text">
+          2
+          <img src="./Kayakers.jpg" alt="sand-pipers" style="width: 100%" />
+          <div class="text">Kayakers</div>
+        </div>
+      </div>
+      <div class="slides fade">
+        <div class="number-text">
+          3
+          <img src="./pelican.jpg" alt="sand-pipers" style="width: 100%" />
+          <div class="text">Pelican</div>
+        </div>
+      </div>
+      <!-- prev and next -->
+      <div class="prev" onclick="plusSlides(-1)">&#10094</div>
+      <div class="next" onclick="plusSlides(1)">&#10095</div>
+    </div>
+    <br>
+    <footer>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
