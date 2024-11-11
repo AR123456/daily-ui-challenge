@@ -4,14 +4,14 @@ html {
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
-.mySlides {
+.my-slides {
   display: none;
 }
 
@@ -55,7 +55,7 @@ html {
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.number-text {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
