@@ -1,17 +1,5 @@
-:root {
-  --dark: rgb(20, 20, 20);
-  --yellow: rgb(253, 216, 53);
-  --blue: rgb(98, 0, 234);
-
-  --c1: rgb(3, 7, 18);
-  --c2: rgb(163, 230, 53);
-
-  --left-color: var(--c1);
-  --right-color: var(--c2);
-}
-
 body {
-  background-color: var(--dark);
+  background-color: rgb(20, 20, 20);
   margin: 0px;
 }
 
