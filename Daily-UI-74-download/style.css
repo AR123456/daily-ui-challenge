@@ -23,3 +23,14 @@ body {
   height: 33em;
   width: 20em;
 }
+button {
+  height: 24px;
+  width: 24px;
+  border: none;
+}
+.upload {
+  background: url("./upload_24.svg");
+}
+.download {
+  background: url("./download_24.svg ");
+}
