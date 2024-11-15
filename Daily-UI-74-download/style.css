@@ -24,13 +24,13 @@ body {
   width: 20em;
 }
 button {
-  height: 24px;
-  width: 24px;
+  height: 48px;
+  width: 48px;
   border: none;
 }
 .upload {
-  background: url("./upload_24.svg");
+  background: url("./upload_24.svg") center/cover no-repeat;
 }
 .download {
-  background: url("./download_24.svg ");
+  background: url("./download_24.svg ") center/cover no-repeat;
 }
