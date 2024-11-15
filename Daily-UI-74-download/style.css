@@ -9,6 +9,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: rgb(244, 239, 234);
 }
 .container {
   display: flex;
@@ -22,10 +23,12 @@ body {
 .card {
   height: 33em;
   width: 20em;
+  background-color: rgb(220, 233, 237);
+  border-radius: 5px;
 }
 button {
-  height: 48px;
-  width: 48px;
+  height: 100px;
+  width: 100px;
   border: none;
 }
 .upload {
