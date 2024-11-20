@@ -10,20 +10,22 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.header {
+}
 .container {
-  height: 60em;
-  width: 60em;
+  height: 30em;
+  width: 30em;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
 }
 .card img {
-  height: 25em;
-  width: 25em;
+  height: 15em;
+  width: 15em;
   border-radius: 5px;
+}
+.footer {
 }
