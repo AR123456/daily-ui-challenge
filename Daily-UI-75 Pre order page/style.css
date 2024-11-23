@@ -36,5 +36,11 @@ a {
   width: 15em;
   border-radius: 5px;
 }
-.footer {
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+  list-style-type: none;
 }
