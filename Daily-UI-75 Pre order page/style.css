@@ -48,6 +48,7 @@ a {
   border-radius: 5px;
 }
 .footer ul {
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
