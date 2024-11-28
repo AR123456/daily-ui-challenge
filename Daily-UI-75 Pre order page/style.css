@@ -9,6 +9,10 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: rgba(115, 177, 191, 0.5);
+}
+.navbar {
+  padding-bottom: 80px;
 }
 .navbar ul {
   display: flex;
@@ -27,7 +31,10 @@ body {
   border-radius: 15px;
 }
 .navbar ul li:hover {
-  background-color: rgb(183, 180, 180);
+  background-color: #2383ac;
+}
+.navbar ul li a:hover {
+  color: white;
 }
 a {
   text-decoration: none;
