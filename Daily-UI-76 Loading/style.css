@@ -10,3 +10,18 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+img {
+  height: 30em;
+  width: 30em;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+img:hover {
+  animation: rotating 2s linear infinite;
+}
