@@ -31,7 +31,7 @@ body {
   border-radius: 15px;
 }
 .navbar ul li:hover {
-  background-color: #2383ac;
+  background-color: rgb(35, 131, 172);
 }
 .navbar ul li a:hover {
   color: white;
@@ -62,4 +62,17 @@ a {
   gap: 1em;
   justify-content: space-between;
   list-style-type: none;
+}
+.soc-link img {
+  transition: filter 0.3 ease;
+}
+.soc-link:hover img {
+  /* invert: Adjusts the color to its opposite.
+sepia: Applies a brownish tone, useful for color adjustment.
+saturate: Increases or decreases the intensity of the color.
+hue-rotate: Rotates the hue of the color wheel to match the desired tone.
+brightness: Adjusts the lightness or darkness of the color.
+contrast: Modifies the contrast for finer tuning. */
+  filter: invert(40%) sepia(56%) saturate(396%) hue-rotate(173deg)
+    brightness(92%) contrast(93%);
 }
