@@ -10,6 +10,9 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+h1 {
+  color: #0091ff;
+}
 img {
   height: 30em;
   width: 30em;
