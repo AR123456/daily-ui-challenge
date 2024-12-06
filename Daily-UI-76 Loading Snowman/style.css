@@ -24,8 +24,8 @@ h1 {
 
 .snowman {
   display: block;
-  margin: auto;
-  width: 12em;
+  margin: 0 auto;
+  width: 20em;
   height: auto;
 }
 .top,
