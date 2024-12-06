@@ -22,17 +22,17 @@ h1 {
   color: #0091ff;
 }
 
-.pl {
+.snowman {
   display: block;
   margin: auto;
   width: 12em;
   height: auto;
 }
-.pl__worm1,
-.pl__worm2 {
+.top,
+.bottom {
   animation: worm1-move 1.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
-.pl__worm2 {
+.bottom {
   animation-name: worm2-move;
 }
 
