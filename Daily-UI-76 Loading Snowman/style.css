@@ -21,3 +21,26 @@ svg {
   width: 20em;
   height: auto;
 }
+.top,
+.bottom {
+  animation: top-move 1.5 cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+.bottom {
+  animation: bottom-move;
+}
+@keyframes top-move {
+  from {
+    stroke-dashoffset: -2.355;
+  }
+  to {
+    stroke-dashoffset: 77.185;
+  }
+}
+@keyframes bottom-move {
+  from {
+    stroke-dashoffset: 16.492;
+  }
+  to {
+    stroke-dashoffset: -62.045;
+  }
+}
