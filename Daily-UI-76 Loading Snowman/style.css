@@ -1,9 +1,8 @@
 :root {
   --hue: 223;
-  --bg: hsl(var(--hue), 10%, 90%);
+
   --fg: hsl(var(--hue), 10%, 10%);
   --trans-dur: 0.3s;
-  font-size: clamp(16px, 0.95rem + 0.25vw, 20px);
 }
 *,
 html {
@@ -30,21 +29,14 @@ h1 {
 }
 .top,
 .bottom {
-  animation: worm1-move 1.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation: top-move 1.5s linear infinite;
 }
 .bottom {
-  animation-name: worm2-move;
+  animation-name: bottom-move;
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: hsl(var(--hue), 10%, 10%);
-    --fg: hsl(var(--hue), 10%, 90%);
-  }
-}
 /* Animation */
-@keyframes worm1-move {
+@keyframes top-move {
   from {
     stroke-dashoffset: -2.355;
   }
@@ -52,7 +44,7 @@ h1 {
     stroke-dashoffset: 76.185;
   }
 }
-@keyframes worm2-move {
+@keyframes bottom-move {
   from {
     stroke-dashoffset: 16.492;
   }
