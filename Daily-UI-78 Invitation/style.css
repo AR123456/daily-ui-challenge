@@ -10,4 +10,5 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: url("./orange-marble.jpg") bottom / cover no-repeat;
 }
