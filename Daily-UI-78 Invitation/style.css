@@ -12,3 +12,8 @@ body {
   overflow: hidden;
   background: url("./orange-marble.jpg") bottom / cover no-repeat;
 }
+.container {
+  height: 33em;
+  width: 33em;
+  background: url("./textured-paper.jpg") bottom / cover no-repeat;
+}
