@@ -10,10 +10,33 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: url("./orange-marble.jpg") bottom / cover no-repeat;
+  background: linear-gradient(
+      rgba(241, 236, 235, 0.9),
+      rgba(241, 236, 235, 0.7)
+    ),
+    url("./orange-marble.jpg") bottom / cover no-repeat;
+  /* background: url("./orange-marble.jpg") bottom / cover no-repeat; */
 }
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 33em;
   width: 33em;
   background: url("./textured-paper.jpg") bottom / cover no-repeat;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25em;
+  width: 25em;
+  border-radius: 50%;
+  background: rgb(239, 220, 208);
+}
+button {
+  background: #663830;
+  color: rgb(239, 220, 208);
 }
