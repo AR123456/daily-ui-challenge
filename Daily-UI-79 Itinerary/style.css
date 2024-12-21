@@ -75,18 +75,20 @@ body {
   margin-bottom: 10px;
 }
 .text-left {
-  text-align: left;
-  margin-left: 35px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 10px;
+  columns: 2;
+  column-gap: 0;
+  column-fill: balance;
+  column-rule: 2px solid #ff44cc;
+
+  text-align: center;
+  padding: 10px;
 }
 .text-right {
-  text-align: right;
-  margin-right: 35px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
+  columns: 2;
+  column-gap: 0;
+  column-fill: balance;
+  column-rule: 2px solid #ff44cc;
+
+  text-align: center;
+  padding: 10px;
 }
