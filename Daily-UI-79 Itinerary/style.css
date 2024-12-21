@@ -77,8 +77,16 @@ body {
 .text-left {
   text-align: left;
   margin-left: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
 }
 .text-right {
   text-align: right;
-  margin-right: 65px;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
 }
