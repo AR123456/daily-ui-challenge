@@ -63,27 +63,27 @@ body {
   margin-bottom: 5px;
 }
 
-/* for this project with vertical lines  */
-/* using border property */
-/* .vertical {
-  border-left: 5px solid black;
-  height: 200px;
-} */
+.schd-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
 
-/* using rotate function  */
-/* .vertical {
-  height: 100px;
-  width: 2px;
-  background-color: #000;
-  margin: 0 auto;
-  transform: rotate(180deg);
-} */
-
-/* using border property with centering */
+.words {
+  text-align: left;
+  margin-right: 10px; /* Creates space between the text and the vertical line */
+}
 
 .vertical {
-  border-left: 6px solid black;
-  height: 200px;
-  position: absolute;
-  left: 50%;
+  border-left: 2px solid black;
+  height: 20px;
+  margin-right: 10px; /* Adds space after the vertical line */
+}
+
+.time {
+  position: relative; /* Change to relative for proper placement */
+  margin-left: auto; /* Pushes the time to the end of the row */
+  text-align: center;
+  top: 5px; /* Adjust alignment with the vertical line */
 }
