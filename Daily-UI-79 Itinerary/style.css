@@ -75,19 +75,21 @@ body {
   margin-bottom: 10px;
 }
 .text-left {
+  height: 50px;
   columns: 2;
   column-gap: 0;
   column-fill: balance;
-  column-rule: 2px solid #ff44cc;
+  column-rule: 2px solid #060606;
 
   text-align: center;
   padding: 10px;
 }
 .text-right {
+  height: 50px;
   columns: 2;
   column-gap: 0;
   column-fill: balance;
-  column-rule: 2px solid #ff44cc;
+  column-rule: 2px solid #060606;
 
   text-align: center;
   padding: 10px;
