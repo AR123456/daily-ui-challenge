@@ -62,3 +62,28 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
+
+/* for this project with vertical lines  */
+/* using border property */
+/* .vertical {
+  border-left: 5px solid black;
+  height: 200px;
+} */
+
+/* using rotate function  */
+/* .vertical {
+  height: 100px;
+  width: 2px;
+  background-color: #000;
+  margin: 0 auto;
+  transform: rotate(180deg);
+} */
+
+/* using border property with centering */
+
+.vertical {
+  border-left: 6px solid black;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+}
