@@ -62,35 +62,3 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
-.middle,
-.text-left,
-.text-right {
-  width: 18rem;
-  height: 2rem;
-}
-.middle {
-  width: 9rem;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.text-left {
-  height: 50px;
-  columns: 2;
-  column-gap: 0;
-  column-fill: balance;
-  column-rule: 2px solid #060606;
-
-  text-align: center;
-  padding: 10px;
-}
-.text-right {
-  height: 50px;
-  columns: 2;
-  column-gap: 0;
-  column-fill: balance;
-  column-rule: 2px solid #060606;
-
-  text-align: center;
-  padding: 10px;
-}
