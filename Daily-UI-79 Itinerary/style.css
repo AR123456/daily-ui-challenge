@@ -3,12 +3,22 @@ html {
   box-sizing: border-box;
 }
 .container {
-  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .card-right,
 .card-left,
@@ -27,7 +37,7 @@ html {
   justify-content: flex-start;
 }
 .col {
-  height: 30px;
+  height: 50px;
   width: 300px;
 }
 .col-middle {
@@ -35,4 +45,13 @@ html {
 }
 .time {
   text-align: center;
+}
+.text {
+  border: 2px solid red;
+}
+.class {
+  border: 2px solid black;
+}
+.location {
+  border: 2px solid black;
 }

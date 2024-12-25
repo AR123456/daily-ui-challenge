@@ -9,4 +9,5 @@ https://www.geeksforgeeks.org/how-to-make-a-vertical-line-using-html/#
 Some ideas from LogRocket
 https://blog.logrocket.com/17-implement-vertical-alignment-css/#classic-top-50-translate-y-50
 
-? dispaly grid ?
+more from slack
+https://stackoverflow.com/questions/72217589/html-css-vertical-line-with-exact-height-of-a-div
