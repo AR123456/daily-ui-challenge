@@ -29,8 +29,10 @@ html {
 .col {
   height: 30px;
   width: 300px;
-  border: 3px solid red;
 }
 .col-middle {
   font-size: 20px;
+}
+.time {
+  text-align: center;
 }
