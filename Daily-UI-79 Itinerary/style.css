@@ -10,7 +10,9 @@ html {
   height: 100vh;
   overflow: hidden;
 }
-.card {
+.card-right,
+.card-left,
+.card-middle {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -28,4 +30,7 @@ html {
   height: 30px;
   width: 300px;
   border: 3px solid red;
+}
+.col-middle {
+  font-size: 20px;
 }
