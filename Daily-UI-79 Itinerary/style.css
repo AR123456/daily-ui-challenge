@@ -26,27 +26,23 @@ html {
   display: flex;
   flex-direction: row;
   width: 90%;
+  height: 10%;
+  border: 2px solid green;
 }
-.row {
-  height: 20px;
-  width: 95px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+
 .col {
   height: 50px;
-  width: 300px;
+  width: 90%;
 }
 .col-middle {
   font-size: 20px;
+  border: 2px solid blue;
 }
 .time {
   text-align: center;
 }
 .text {
+  height: 10%;
   border: 2px solid red;
 }
 .class {
