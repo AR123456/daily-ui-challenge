@@ -15,7 +15,7 @@ body {
 }
 /* phone */
 .container {
-  background-color: rgb(248, 244, 244);
+  /* background-color: rgb(248, 244, 244); */
   height: 42rem;
   width: 20rem;
   border-radius: 35px;
@@ -25,7 +25,7 @@ body {
   align-items: center;
   margin-top: 30px;
   /* groove and box shadow for roundish outer edge */
-  box-shadow: 1px 1px 5px #555;
+  box-shadow: 2px 2px 10px #555;
   /* this tilts phone  */
   /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
       rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
@@ -50,7 +50,7 @@ body {
   box-shadow: 1px 1px 5px #555 inset;
   /* can add an image here  */
   /* background: url("./estes.jpg"); */
-  height: 45rem;
+  height: 40rem;
   width: 18rem;
   border-radius: 25px;
   margin-bottom: 1em;
