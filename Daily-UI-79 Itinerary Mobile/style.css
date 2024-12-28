@@ -71,9 +71,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 60%;
+  width: 95%;
   overflow: hidden;
-  margin-left: 20%;
+  margin-left: 2em;
 }
 .header {
   display: flex;
@@ -93,7 +93,7 @@ body {
   flex-direction: row;
   width: 90%;
   height: 8%;
-  font-size: 1.5em;
+  font-size: 0.75em;
 }
 
 .col {
@@ -108,6 +108,9 @@ body {
 .time {
   font-size: 1.5em;
   text-align: center;
+  width: 4em;
+  margin-left: 0.85em;
+  margin-right: 0.85em;
 }
 .text {
   text-align: right;
