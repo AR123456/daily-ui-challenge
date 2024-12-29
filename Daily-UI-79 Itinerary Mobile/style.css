@@ -15,7 +15,6 @@ body {
 }
 /* phone */
 .container {
-  /* background-color: rgb(248, 244, 244); */
   height: 42rem;
   width: 20rem;
   border-radius: 35px;
@@ -25,13 +24,7 @@ body {
   align-items: center;
   margin-top: 30px;
   /* groove and box shadow for roundish outer edge */
-  box-shadow: 2px 2px 10px #555;
-  /* this tilts phone  */
-  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
-      rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
-      skewX(0deg) skewY(0deg); */
-  /* shadow around phone */
-  /* filter: drop-shadow(40px 31px 15px #000000); */
+  box-shadow: 2px 2px 10px #c6c2c2;
 }
 /* this will kick out the bottom of the phone a bit */
 .wrapper {
