@@ -11,3 +11,27 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 70%;
+}
+.row {
+  height: 33%;
+  width: 100%;
+  border: 2px solid red;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  height: 33%;
+  width: 100%;
+  border: 2px solid blue;
+  margin: 2px;
+}
