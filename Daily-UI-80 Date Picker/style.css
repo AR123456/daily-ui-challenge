@@ -13,25 +13,25 @@ body {
 }
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60%;
-  width: 70%;
+  height: 90em;
+  width: 60em;
 }
 .row {
-  height: 33%;
-  width: 100%;
+  height: 12em;
+  width: 60em;
   border: 2px solid red;
   margin: 2px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .col {
-  height: 33%;
-  width: 100%;
+  height: 10em;
+  width: 20em;
   border: 2px solid blue;
   margin: 2px;
 }
