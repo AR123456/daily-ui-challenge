@@ -41,9 +41,7 @@ body {
     97% 50% no-repeat;
 }
 [type="date"]#date-feb {
-  background: red
-    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
-    97% 50% no-repeat;
+  background: #fff url("./severe_cold24.svg") 97% 50% no-repeat;
 }
 /* remove default */
 [type="date"]::-webkit-inner-spin-button {
