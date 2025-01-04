@@ -44,6 +44,21 @@ body {
 [type="date"]#date-mar {
   background: #fff url("./clover-solid.svg") 97% 50% no-repeat;
 }
+[type="date"]#date-apr {
+  background: #fff url("./egg_24.svg") 97% 50% no-repeat;
+}
+[type="date"]#date-may {
+  background: #fff url("./jet-fighter-up-solid.svg") 97% 50% no-repeat;
+}
+[type="date"]#date-jun {
+  background: #fff url("./emoji_nature_24.svg") 97% 50% no-repeat;
+}
+[type="date"]#date-jul {
+  background: #fff url("./flag-usa-solid.svg") 97% 50% no-repeat;
+}
+[type="date"]#date-aug {
+  background: #fff url("./umbrella-beach-solid.svg") 97% 50% no-repeat;
+}
 /* remove default */
 [type="date"]::-webkit-inner-spin-button {
   display: none;
