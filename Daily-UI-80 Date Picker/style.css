@@ -19,6 +19,12 @@ body {
   height: 90em;
   width: 60em;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .row {
   height: 12em;
   width: 60em;
@@ -81,6 +87,7 @@ body {
 }
 label {
   display: block;
+  margin-bottom: 15px;
 }
 
 input {
