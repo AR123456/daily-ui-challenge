@@ -10,6 +10,8 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: black;
+  color: white;
 }
 .container {
   display: flex;
@@ -28,7 +30,7 @@ body {
 .row {
   height: 12em;
   width: 60em;
-  border: 2px solid red;
+
   margin: 2px;
   display: flex;
   flex-direction: row;
@@ -38,10 +40,11 @@ body {
 .col {
   height: 10em;
   width: 20em;
-  border: 2px solid blue;
+  border-radius: 5px;
+  box-shadow: inset 0 3px 6px rgba(250, 250, 250, 0.373);
   margin: 2px;
 }
-[type="date"] {
+[type="date"]#date-jan {
   background: #fff url("./images/snowman-solid.svg") 97% 50% no-repeat;
 }
 [type="date"]#date-feb {
