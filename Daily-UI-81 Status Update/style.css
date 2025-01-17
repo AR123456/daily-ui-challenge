@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,11 +10,9 @@ html {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: center/contain no-repeat url("./409-error.jpg");
 }
 .card {
   height: 30em;
   width: 30em;
-}
-.hidden {
-  visibility: hidden;
 }
