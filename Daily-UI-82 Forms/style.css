@@ -3,10 +3,14 @@ html {
   box-sizing: border-box;
 }
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   overflow: hidden;
   height: 100vh;
+}
+.container {
 }
