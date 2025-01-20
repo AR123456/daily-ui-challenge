@@ -30,7 +30,17 @@ body {
     skewX(0deg) skewY(0deg); */
   /* filter: drop-shadow(40px 31px 15px #000000); */
 }
-.wrapper {
-  perspective: 1474px;
-  perspective-origin: 54% 192%;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  /* can add image here */
+  height: 45rem;
+  width: 18rem;
+  border-radius: 25px;
+  margin-bottom: 1em;
+  position: relative;
 }
