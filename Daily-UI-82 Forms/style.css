@@ -44,3 +44,11 @@ body {
   margin-bottom: 1em;
   position: relative;
 }
+
+.line {
+  position: absolute;
+  bottom: 0;
+}
+.circle-small {
+  margin-bottom: 5px;
+}
