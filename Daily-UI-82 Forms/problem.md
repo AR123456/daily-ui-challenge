@@ -12,3 +12,6 @@ light purple #C2A3F9
 blue #6BBFD7
 light blue #6CBED5
 green #50F3B0
+
+login - register inspiration
+https://mdbootstrap.com/docs/standard/forms/overview/
