@@ -52,3 +52,14 @@ body {
 .circle-small {
   margin-bottom: 5px;
 }
+.button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.button {
+  height: 40px;
+  width: 100px;
+  margin: 0 10px;
+}
