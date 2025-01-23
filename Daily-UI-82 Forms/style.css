@@ -85,3 +85,15 @@ input {
   width: 90%;
   height: 30px;
 }
+.forgot {
+  text-decoration: none;
+  color: blue;
+}
+.pref-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.pref-div {
+}
