@@ -86,14 +86,16 @@ input {
   height: 30px;
 }
 .forgot {
+  margin-top: 10px;
   text-decoration: none;
   color: blue;
 }
-.pref-row {
+
+.row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-}
-.pref-div {
+  gap: 25px;
+  font-size: 10px;
 }
