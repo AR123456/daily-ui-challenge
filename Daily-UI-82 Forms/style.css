@@ -59,7 +59,7 @@ body {
   align-items: start;
 }
 .button {
-  height: 40px;
+  height: 30px;
   width: 100px;
   margin: 0 10px;
 }
@@ -87,8 +87,11 @@ input {
 }
 .forgot {
   margin-top: 10px;
-  text-decoration: none;
+
   color: blue;
+}
+.forgot a {
+  text-decoration: none;
 }
 
 .row {
@@ -98,4 +101,8 @@ input {
   align-items: start;
   gap: 25px;
   font-size: 10px;
+}
+.button-wide {
+  width: 16em;
+  height: 30px;
 }
