@@ -63,6 +63,8 @@ body {
   height: 30px;
   width: 100px;
   margin: 0 10px;
+  background-color: #9a55ff;
+  color: #f1f3ff;
 }
 .main {
   display: flex;
@@ -106,4 +108,6 @@ input {
 .button-wide {
   width: 16em;
   height: 30px;
+  background-color: #9a55ff;
+  color: #f1f3ff;
 }
