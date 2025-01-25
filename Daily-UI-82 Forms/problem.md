@@ -6,7 +6,7 @@ Making the forms beautiful will help encourage people to complete them. Don't ov
 
 background: #F1F3FF to #D5D7E4
 purple blue #6A6BDF
-pruple #9A55FF
+purple #9A55FF
 light purple #B296ED
 light purple #C2A3F9
 blue #6BBFD7
