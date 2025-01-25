@@ -141,12 +141,28 @@
       <!-- the phone screen -->
       <div class="card">
         <form action="">
-          <div class="button-div">
-            <input class="button" type="button" value="Login" />
-            <input class="button" type="button" value="Register" />
-          </div>
           <div class="main">
-            <h4>Sign in with</h4>
+            <h4>Register and get Newsletter</h4>
+
+            <input type="email" id="username" name="username" value="Email" />
+
+            <input type="text" id="pwd" name="pwd" value="Password" />
+            <input type="text" id="pwd" name="pwd" value="Re EnterPassword" />
+
+            <div class="#">
+              <input class="button-wide" type="button" value="Sign Up" />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+                value="Subscribe"
+                checked
+              />
+              <label for="subscribe">Subscribe to our newsletter</label>
+            </div>
+            <h4>or sign up with</h4>
             <div class="icons">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -198,32 +214,6 @@
                 />
               </svg>
             </div>
-            <h4>or:</h4>
-
-            <input type="email" id="username" name="username" value="Email" />
-
-            <input type="text" id="pwd" name="pwd" value="Password" />
-            <div class="row">
-              <div>
-                <input
-                  type="checkbox"
-                  id="remember"
-                  name="remember"
-                  value="Remember"
-                  checked
-                />
-                <label for="remember">Remember Me</label>
-              </div>
-
-              <div class="forgot">
-                <a href="#">Forgot password?</a>
-              </div>
-            </div>
-            <div class="#">
-              <input class="button-wide" type="button" value="Sign In" />
-            </div>
-
-            <div class="link-to-reg">Not a member? Register</div>
           </div>
         </form>
 
