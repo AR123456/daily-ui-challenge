@@ -31,7 +31,7 @@ body {
   /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
     rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
     skewX(0deg) skewY(0deg); */
-  /* filter: drop-shadow(40px 31px 15px #000000); */
+  filter: drop-shadow(15px  20px  9px #686868);
 }
 .card {
   display: flex;
