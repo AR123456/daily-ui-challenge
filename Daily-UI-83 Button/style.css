@@ -15,8 +15,15 @@ form {
   height: 30em;
   width: 30em;
   background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
 }
 
 input[type="text"] {
   background: #ee0a0a url("./airplane-engines.svg") 77% 50% no-repeat;
+  height: 8em;
+  width: 20em;
 }
