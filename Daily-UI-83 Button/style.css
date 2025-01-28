@@ -11,3 +11,12 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+form {
+  height: 30em;
+  width: 30em;
+  background-color: bisque;
+}
+
+input[type="text"] {
+  background: #ee0a0a url("./airplane-engines.svg") 77% 50% no-repeat;
+}
