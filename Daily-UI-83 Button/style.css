@@ -1,6 +1,7 @@
 *,
 html {
   box-sizing: border-box;
+  background-color: hsl(192, 88%, 90%);
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -20,10 +21,12 @@ form {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
 }
 
 input[type="text"] {
   background: #ee0a0a url("./airplane-engines.svg") 77% 50% no-repeat;
   height: 8em;
   width: 20em;
+  box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.25);
 }
