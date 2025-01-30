@@ -25,7 +25,7 @@ form {
 }
 
 input[type="text"] {
-  background: hsl(192, 88%, 90%) url("./flatware.svg") 77% 50% no-repeat;
+  background: hsl(192, 88%, 90%) url("./flatware.svg") 97% 50% no-repeat;
   height: 106px;
   width: 260px;
   font-size: 20px;
