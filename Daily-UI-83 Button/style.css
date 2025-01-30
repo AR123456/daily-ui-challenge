@@ -15,19 +15,20 @@ body {
 form {
   height: 30em;
   width: 30em;
-  background-color: bisque;
+  background-color: hsl(192, 88%, 90%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.25);
 }
 
 input[type="text"] {
-  background: #ee0a0a url("./flatware.svg") 77% 50% no-repeat;
-  height: 8em;
-  width: 20em;
-
+  background: hsl(192, 88%, 90%) url("./flatware.svg") 77% 50% no-repeat;
+  height: 106px;
+  width: 260px;
+  font-size: 20px;
+  border-radius: 25px;
   box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.25);
 }
