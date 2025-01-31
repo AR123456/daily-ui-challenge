@@ -50,3 +50,10 @@ body {
 .badge:hover {
   top: -4px;
 }
+.badge::before {
+  background: rgba(255, 223, 0, 0.6); /* Yellow tint */
+}
+
+.badge::after {
+  background: rgba(255, 0, 0, 0.6); /* Red tint */
+}
