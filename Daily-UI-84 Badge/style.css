@@ -20,24 +20,30 @@ body {
   width: 4em;
   height: 6.2em;
   border-radius: 10px;
-  /* try using flexbox row */
+  /* Allows the badge to behave like a block-level element, while still being inline with other elements. */
   display: inline-block;
   top: 0;
+  /* for hover animation */
   transition: all 0.2s ease;
   background: teal;
 }
 /*  set up to make rectangle  */
 .badge:before,
 .badge:after {
+  /* Positions the pseudo-elements relative to the .badge itself (as it is relative). */
   position: absolute;
+  /* to match badge - could also just repeat */
   width: inherit;
   height: inherit;
   border-radius: inherit;
   background: inherit;
+  /* Ensures the pseudo-elements render even though they don't have any textual content. */
   content: "";
+  /* Ensures the pseudo-elements stretch to cover the .badge. */
   top: 0;
   left: 0;
   right: 0;
+  /* centers the pseudo-elements within the .badge. */
   margin: auto;
 }
 /* rotating rectangle to make a pentagon  */
