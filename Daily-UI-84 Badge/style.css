@@ -15,4 +15,28 @@ body {
 
 /* Badge container */
 .badge {
+  position: relative;
+  margin: 1.5em 3em;
+  width: 4em;
+  height: 6.2em;
+  border-radius: 10px;
+  /* try using flexbox row */
+  display: inline-block;
+  top: 0;
+  transition: all 0.2s ease;
+  background: teal;
+}
+
+.badge:before,
+.badge:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
