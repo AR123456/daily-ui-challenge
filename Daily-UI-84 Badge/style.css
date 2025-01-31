@@ -47,3 +47,6 @@ body {
 .badge:after {
   transform: rotate(-60deg);
 }
+.badge:hover {
+  top: -4px;
+}
