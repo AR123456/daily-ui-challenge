@@ -56,6 +56,16 @@ body {
 .badge:hover {
   top: -4px;
 }
+.ribbon {
+  position: absolute;
+  background: linear-gradient(to bottom right, #555 0%, #333 100%);
+  color: #fff;
+  height: 15px;
+  width: 100px;
+  border-radius: 4px;
+  padding: 5px 5px 4px;
+  z-index: 12;
+}
 /* for visibility positioning the pentagon */
 /* .badge::before {
   background: rgba(255, 223, 0, 0.6);
