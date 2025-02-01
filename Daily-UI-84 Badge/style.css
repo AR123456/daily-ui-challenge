@@ -58,12 +58,16 @@ body {
 }
 .ribbon {
   position: absolute;
+  bottom: 12px;
+  left: 50%;
+  margin-left: -55px;
   background: linear-gradient(to bottom right, #555 0%, #333 100%);
   color: #fff;
   height: 15px;
   width: 100px;
   border-radius: 4px;
   padding: 5px 5px 4px;
+  font-size: 14px;
   z-index: 12;
 }
 /* for visibility positioning the pentagon */
