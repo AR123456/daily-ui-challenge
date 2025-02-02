@@ -1,9 +1,14 @@
+*,
+html {
+  /* box-sizing: border-box; */
+}
+
 body {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #111;
 }
 
-.main-wrapper {
+.container {
   width: 90%;
   max-width: 900px;
   margin: 3em auto;
