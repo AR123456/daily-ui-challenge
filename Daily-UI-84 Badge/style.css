@@ -12,7 +12,12 @@ body {
   overflow: hidden;
   background-color: #f4f4f9;
 }
-
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 3em auto;
+  text-align: center;
+}
 /* Badge container */
 .badge {
   position: relative;
@@ -56,6 +61,24 @@ body {
 .badge:hover {
   top: -4px;
 }
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  height: 60px;
+  width: 60px;
+  z-index: 10;
+  border-radius: 50%;
+  margin: auto;
+}
+img {
+  height: 2em;
+  width: 2em;
+  margin-top: 1em;
+}
 .ribbon {
   position: absolute;
   border-radius: 4px;
@@ -63,10 +86,11 @@ body {
   width: 100px;
   z-index: 11;
   color: #fff;
-  bottom: 12px;
+  /* bottom: 20px; */
   left: 50%;
-  margin-left: -55px;
-  height: 15px;
+  margin-left: -50px;
+
+  height: 30px;
   font-size: 14px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -81,26 +105,9 @@ body {
 .badge::after {
   background: rgba(255, 0, 0, 0.6);
 } */
-.circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  height: 60px;
-  width: 60px;
-  z-index: 10;
-  border-radius: 50%;
-  margin: auto;
-}
+
 /*  add the color to the badge */
 .teal {
   background: linear-gradient(to bottom right, #4db6ac 0%, #00796b 100%);
   color: #34a297;
-}
-img {
-  height: 2em;
-  width: 2em;
-  margin-top: 1em;
 }
