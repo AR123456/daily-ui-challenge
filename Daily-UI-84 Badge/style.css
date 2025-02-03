@@ -98,15 +98,27 @@ img {
   cursor: default;
 }
 /* for visibility positioning the pentagon */
-.badge::before {
+/* .badge::before {
   background: rgba(255, 223, 0, 0.6);
 }
 .badge::after {
   background: rgba(255, 0, 0, 0.6);
-}
+} */
 
 /*  add the color to the badge */
 .teal {
   background: linear-gradient(to bottom right, #4db6ac 0%, #00796b 100%);
-  color: #34a297;
+  /* color: #34a297; */
+}
+.pink {
+  background: linear-gradient(to bottom right, #fa8fb1 0%, #d81b60 100%);
+  /* color: #dc306f; */
+}
+.blue {
+  background: linear-gradient(to bottom right, #4fc3f7 0%, #2196f3 100%);
+  /* color: #259af3; */
+}
+.purple {
+  background: linear-gradient(to bottom right, #ab47bc 0%, #4527a0 100%);
+  color: #7127a8;
 }
