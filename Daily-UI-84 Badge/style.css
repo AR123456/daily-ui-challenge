@@ -108,7 +108,6 @@ img {
 /*  add the color to the badge */
 .teal {
   background: linear-gradient(to bottom right, #4db6ac 0%, #00796b 100%);
-  /* color: #34a297; */
 }
 .pink {
   background: linear-gradient(to bottom right, #fa8fb1 0%, #d81b60 100%);
