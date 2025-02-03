@@ -75,8 +75,8 @@ body {
   margin: auto;
 }
 img {
-  height: 5em;
-  width: 5em;
+  height: 5.5em;
+  width: 5.5em;
   margin-top: 0.5em;
 }
 .ribbon {
@@ -120,5 +120,5 @@ img {
 }
 .purple {
   background: linear-gradient(to bottom right, #ab47bc 0%, #4527a0 100%);
-  color: #7127a8;
+  /* color: #7127a8; */
 }
