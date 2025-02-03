@@ -106,7 +106,7 @@ img {
 }
 
 /*  add the color to the badge */
-.badge {
+.teal {
   background: linear-gradient(to bottom right, #4db6ac 0%, #00796b 100%);
   color: #34a297;
 }
