@@ -75,9 +75,9 @@ body {
   margin: auto;
 }
 img {
-  height: 4em;
-  width: 4em;
-  margin-top: 1em;
+  height: 5em;
+  width: 5em;
+  margin-top: 0.5em;
 }
 .ribbon {
   position: absolute;
