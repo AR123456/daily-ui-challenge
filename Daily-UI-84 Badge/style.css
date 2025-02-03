@@ -30,7 +30,7 @@ body {
   top: 0;
   /* for hover animation */
   transition: all 0.2s ease;
-  background: teal;
+  /* background: teal; */
 }
 /*  set up to make rectangle  */
 .badge:before,
@@ -106,7 +106,7 @@ img {
 } */
 
 /*  add the color to the badge */
-.teal {
+.badge {
   background: linear-gradient(to bottom right, #4db6ac 0%, #00796b 100%);
   color: #34a297;
 }
