@@ -10,7 +10,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: #111;
+  background-color: #070000;
 }
 .container {
   width: 90%;
@@ -88,10 +88,11 @@ img {
   /* bottom: 20px; */
   left: 50%;
   margin-left: -100px;
+
   height: 40px;
   font-size: 28px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
   text-transform: uppercase;
   background: linear-gradient(to bottom right, #555 0%, #333 100%);
   cursor: default;
