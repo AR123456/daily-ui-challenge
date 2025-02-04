@@ -58,9 +58,9 @@ body {
 .badge:after {
   transform: rotate(-60deg);
 }
-.badge:hover {
+/* .badge:hover {
   top: -4px;
-}
+} */
 .circle {
   position: absolute;
   top: 0;
