@@ -15,36 +15,58 @@ body {
   height: 100vh;
   overflow: hidden;
 } */
+.text {
+  position: relative;
+  left: 110px;
+  top: 10px;
+  font-family: "Baskerville", Georgia, serif;
+  font-size: 17px;
+}
+
+a {
+  color: inherit;
+}
+
 .dots {
   list-style-type: none;
   background: white;
-  filter: blur(5px) contrast(10);
-  padding: 20px 10px;
+  -webkit-filter: blur(5px) contrast(10);
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: -10px;
+  padding-right: 10px;
   position: relative;
   left: 100px;
   top: 30px;
-  display: flex;
-  gap: 10px;
 }
+
 .dot {
   display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
   width: 30px;
   height: 30px;
   background: black;
-  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
+  color: white;
   position: relative;
   z-index: 2;
 }
+
 .select {
-  position: absolute;
+  display: block;
+  border-radius: 100%;
   width: 40px;
   height: 40px;
   background: black;
-  border-radius: 50%;
-  top: 10px;
-  left: 0;
-  transition: transform 0.3s ease-out;
+  position: absolute;
   z-index: 3;
+  top: 15px;
+  left: 0px;
   pointer-events: none;
 }
