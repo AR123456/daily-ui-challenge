@@ -12,17 +12,6 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-.text {
-  position: relative;
-  left: 110px;
-  top: 10px;
-
-  font-size: 17px;
-}
-
-a {
-  color: inherit;
-}
 
 .dots {
   list-style-type: none;
