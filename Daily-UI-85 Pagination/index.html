@@ -9,14 +9,15 @@
   <body>
     <div class="container">
       <div class="card">
-        <ul class="dots">
-          <li class="select"></li>
-          <li class="dot"></li>
-          <li class="dot"></li>
-          <li class="dot"></li>
-          <li class="dot"></li>
-          <li class="dot"></li>
-        </ul>
+        <div class="square"></div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="blur">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+            </filter>
+          </defs>
+        </svg>
       </div>
     </div>
     <script src="app.js"></script>
