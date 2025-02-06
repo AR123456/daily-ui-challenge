@@ -72,12 +72,13 @@
 
     <div class="dots-container">
       <ul class="dots">
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
         <li class="select"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
       </ul>
     </div>
 
@@ -88,15 +89,9 @@
         const parent = document.querySelector(".dots");
 
         function moveSelector(target) {
-          const rect = target.getBoundingClientRect();
+          const targetRect = target.getBoundingClientRect();
           const parentRect = parent.getBoundingClientRect();
-          let dest = rect.left - parentRect.left;
-
-          // Ensure it does not exceed the last dot
-          if (dest < 0) dest = 0;
-          if (dest > parent.offsetWidth - selector.offsetWidth) {
-            dest = parent.offsetWidth - selector.offsetWidth;
-          }
+          let dest = targetRect.left - parentRect.left;
 
           selector.style.transform = `translateX(${dest}px)`;
         }
@@ -107,7 +102,7 @@
           });
         });
 
-        // Initialize position on first dot
+        // Ensure selector starts at the first dot
         moveSelector(dots[0]);
       });
     </script>
