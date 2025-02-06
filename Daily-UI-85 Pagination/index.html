@@ -4,108 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .text {
+      .dots-container {
         position: relative;
-        left: 110px;
-        top: 10px;
-        font-family: "Baskerville", Georgia, serif;
-        font-size: 17px;
-      }
-
-      a {
-        color: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        filter: url(#goo);
       }
 
       .dots {
         list-style-type: none;
-        background: white;
-        -webkit-filter: blur(5px) contrast(10);
-        padding: 0;
-        margin: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        margin-left: -10px;
-        padding-right: 10px;
+        display: flex;
+        align-items: center;
         position: relative;
-        left: 100px;
-        top: 30px;
+        padding: 20px;
       }
 
       .dot {
         display: inline-block;
-        vertical-align: middle;
-        border-radius: 100%;
+        border-radius: 50%;
         width: 30px;
         height: 30px;
         background: black;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 0 10px;
         cursor: pointer;
-        color: white;
         position: relative;
-        z-index: 2;
       }
 
       .select {
-        display: block;
-        border-radius: 100%;
+        position: absolute;
         width: 40px;
         height: 40px;
         background: black;
-        position: absolute;
-        z-index: 3;
-        top: 15px;
-        left: 0px;
+        border-radius: 50%;
+        transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         pointer-events: none;
       }
+
+      svg {
+        position: absolute;
+        width: 0;
+        height: 0;
+      }
     </style>
-    <title>Document</title>
+    <title>Vanilla JS Dots</title>
   </head>
   <body>
-    <ul class="dots">
-      <li class="select"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-    </ul>
-    <!-- partial -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
-    <script src="./script.js"></script>
+    <svg>
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            type="matrix"
+            values="
+                    1 0 0 0 0  
+                    0 1 0 0 0  
+                    0 0 1 0 0  
+                    0 0 0 20 -10"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+
+    <div class="dots-container">
+      <ul class="dots">
+        <li class="select"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+      </ul>
+    </div>
+
     <script>
-      $(document).ready(function () {
-        $(".dot").hover(function () {
-          var cur = $(this);
-          var dest = cur.position().left;
-          var t = 0.6;
-          TweenMax.to($(".select"), t, { x: dest, ease: Back.easeOut });
-        });
-        var lastPos = $(".select").position().left;
-        function updateScale() {
-          var pos = $(".select").position().left;
+      document.addEventListener("DOMContentLoaded", function () {
+        const dots = document.querySelectorAll(".dot");
+        const selector = document.querySelector(".select");
 
-          var speed = Math.abs(pos - lastPos);
-          var d = 44;
-          var offset = -20;
-          var hd = d / 2;
-          var scale = (offset + pos) % d;
-          if (scale > hd) {
-            scale = hd - (scale - hd);
-          }
-          scale = 1 - (scale / hd) * 0.35;
-          TweenMax.to($(".select"), 0.1, {
-            scaleY: scale,
-            scaleX: 1 + speed * 0.06,
-          });
-
-          lastPos = pos;
-          requestAnimationFrame(updateScale);
+        function moveSelector(target) {
+          const rect = target.getBoundingClientRect();
+          const parentRect = target.parentElement.getBoundingClientRect();
+          const dest = rect.left - parentRect.left;
+          selector.style.transform = `translateX(${dest}px)`;
         }
-        requestAnimationFrame(updateScale);
-        $(".dot:eq(0)").trigger("mouseover");
+
+        dots.forEach((dot) => {
+          dot.addEventListener("mouseenter", function () {
+            moveSelector(this);
+          });
+        });
       });
     </script>
   </body>
