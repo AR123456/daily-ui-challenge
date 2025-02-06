@@ -3,66 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      .dots-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 50px;
-        filter: url(#goo);
-      }
-
-      .dots {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding: 20px;
-      }
-
-      .dot {
-        display: inline-block;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        background: black;
-        margin: 0 10px;
-        cursor: pointer;
-        position: relative;
-      }
-
-      .select {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        background: black;
-        border-radius: 50%;
-        transition: transform 0.4s ease-out;
-        pointer-events: none;
-      }
-
-      svg {
-        position: absolute;
-        width: 0;
-        height: 0;
-      }
-    </style>
-    <title>Vanilla JS Dots</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Pagination</title>
   </head>
   <body>
-    <svg>
+    <div class="container">
+      <div class="card">
+        <ul class="dots">
+          <li class="select"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SVG filter for gooey effect -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
-        <filter id="goo">
+        <filter id="gooey">
           <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
           <feColorMatrix
             in="blur"
-            type="matrix"
+            mode="matrix"
             values="
-                    1 0 0 0 0  
-                    0 1 0 0 0  
-                    0 0 1 0 0  
-                    0 0 0 20 -10"
+            1 0 0 0 0  
+            0 1 0 0 0  
+            0 0 1 0 0  
+            0 0 0 20 -10"
             result="goo"
           />
           <feBlend in="SourceGraphic" in2="goo" />
@@ -70,41 +40,6 @@
       </defs>
     </svg>
 
-    <div class="dots-container">
-      <ul class="dots">
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="select"></li>
-      </ul>
-    </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const dots = document.querySelectorAll(".dot");
-        const selector = document.querySelector(".select");
-        const parent = document.querySelector(".dots");
-
-        function moveSelector(target) {
-          const targetRect = target.getBoundingClientRect();
-          const parentRect = parent.getBoundingClientRect();
-          let dest = targetRect.left - parentRect.left;
-
-          selector.style.transform = `translateX(${dest}px)`;
-        }
-
-        dots.forEach((dot) => {
-          dot.addEventListener("mouseenter", function () {
-            moveSelector(this);
-          });
-        });
-
-        // Ensure selector starts at the first dot
-        moveSelector(dots[0]);
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
