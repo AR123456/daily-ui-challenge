@@ -36,4 +36,9 @@ body {
   font-family: 1.1rem;
   background-color: blueviolet;
   /* background-color: transparent; */
+  border: none;
+  margin: 0.25rem 0.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
 }
