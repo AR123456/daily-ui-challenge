@@ -17,4 +17,7 @@ https://css-tricks.com/gooey-effect/
 little bit of a bounce
 https://codepen.io/MarioD/details/OmWaqz
 
+Pagination with js
+https://codepen.io/tutsplus/pen/poaQEeq
+
 can I incoporate an svg image in the pagination navigation
