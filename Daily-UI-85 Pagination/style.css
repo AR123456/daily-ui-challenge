@@ -34,11 +34,20 @@ body {
 .pagination-number,
 .pagination-button {
   font-family: 1.1rem;
-  background-color: blueviolet;
-  /* background-color: transparent; */
+
+  background-color: transparent;
   border: none;
   margin: 0.25rem 0.25rem;
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.2rem;
+}
+/* hover effect  */
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+.pagination-number.active {
+  color: #fff;
+  background: #0085b6;
 }
