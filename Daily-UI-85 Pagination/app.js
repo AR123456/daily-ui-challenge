@@ -47,3 +47,15 @@ const appendPageNumber = () => {
   pageNumber.setAttribute("page-index", index);
   paginationNumbers.appendChild(pageNumber);
 };
+const getPaginationNumbers = () => {
+  for (let i = 1; i < pageCount.length; i++) {
+    appendPageNumber(i);
+  }
+};
+const setCurrentPage = (pageNum) => {
+  currentPage = pageNum;
+  handleActivePageNumber();
+  handlePageButtonStatus();
+  const prevRange = (pageNum - 1) * paginationLimit;
+  const currRange = pageNum * paginationLimit;
+};
