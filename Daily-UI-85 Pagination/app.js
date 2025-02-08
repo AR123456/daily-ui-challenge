@@ -40,3 +40,10 @@ const handleActivePageNumber = () => {
     }
   });
 };
+const appendPageNumber = () => {
+  const pageNumber = document.createElement("button");
+  pageNumber.className = "pagination-number";
+  pageNumber.innerHTML = index;
+  pageNumber.setAttribute("page-index", index);
+  paginationNumbers.appendChild(pageNumber);
+};
