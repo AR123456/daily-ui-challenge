@@ -1,7 +1,6 @@
 const paginationNumbers = document.getElementById("pagination-numbers");
 const paginatedList = document.getElementById("paginated-list");
 const listItems = paginatedList.querySelectorAll("li");
-
 const nextButton = document.getElementById("next-button");
 const prevButton = document.getElementById("prev-button");
 
@@ -18,12 +17,14 @@ const enableButton = (button) => {
   button.classList.remove("disabled");
   button.removeAttribute("disabled");
 };
-const handlePageButtonStatus = () => {
+
+const handlePageButtonsStatus = () => {
   if (currentPage === 1) {
     disableButton(prevButton);
   } else {
     enableButton(prevButton);
   }
+
   if (pageCount === currentPage) {
     disableButton(nextButton);
   } else {
@@ -40,24 +41,32 @@ const handleActivePageNumber = () => {
     }
   });
 };
-const appendPageNumber = () => {
+
+const appendPageNumber = (index) => {
   const pageNumber = document.createElement("button");
   pageNumber.className = "pagination-number";
   pageNumber.innerHTML = index;
   pageNumber.setAttribute("page-index", index);
+  pageNumber.setAttribute("aria-label", "Page " + index);
+
   paginationNumbers.appendChild(pageNumber);
 };
+
 const getPaginationNumbers = () => {
-  for (let i = 1; i < pageCount.length; i++) {
+  for (let i = 1; i <= pageCount; i++) {
     appendPageNumber(i);
   }
 };
+
 const setCurrentPage = (pageNum) => {
   currentPage = pageNum;
+
   handleActivePageNumber();
-  handlePageButtonStatus();
+  handlePageButtonsStatus();
+
   const prevRange = (pageNum - 1) * paginationLimit;
   const currRange = pageNum * paginationLimit;
+
   listItems.forEach((item, index) => {
     item.classList.add("hidden");
     if (index >= prevRange && index < currRange) {
@@ -65,6 +74,7 @@ const setCurrentPage = (pageNum) => {
     }
   });
 };
+
 window.addEventListener("load", () => {
   getPaginationNumbers();
   setCurrentPage(1);
