@@ -21,7 +21,6 @@ body {
   padding: 1rem 1rem 3rem;
   height: 50rem;
   width: 40rem;
-  background-color: red;
 }
 
 .hidden {
@@ -36,7 +35,6 @@ body {
   bottom: 0;
   padding: 1rem 0;
   justify-content: center;
-  background-color: blue;
 }
 
 .nav-number,
@@ -58,5 +56,5 @@ body {
 
 .nav-number.active {
   color: #fff;
-  background: #0085b6;
+  background: #067fab;
 }
