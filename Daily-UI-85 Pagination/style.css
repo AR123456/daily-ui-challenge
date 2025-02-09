@@ -16,14 +16,13 @@ body {
   position: relative;
   padding: 1rem 1rem 3rem;
   min-height: calc(100vh - 4rem);
-  background-color: blue;
 }
 .hidden {
   display: none;
 }
 .pagination-container {
   width: calc(100%-2rem);
-  background-color: red;
+
   display: flex;
   align-items: center;
   position: absolute;
