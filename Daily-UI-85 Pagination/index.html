@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Example of pagination</title>
+    <title>Pagination</title>
   </head>
   <body>
-    <main>
-      <h1>Pagination with Vanilla JavaScript</h1>
-      <ul id="paginated-list" data-current-page="1">
+    <div class="container">
+      <ul id="paginated-list">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -62,28 +61,18 @@
         <li>Item 50</li>
       </ul>
 
-      <nav class="pagination-container">
-        <button
-          class="pagination-button"
-          id="prev-button"
-          aria-label="Previous page"
-          title="Previous page"
-        >
+      <nav class="nav-container">
+        <button class="nav-button" id="prev-button" title="Previous page">
           &lt;
         </button>
 
-        <div id="pagination-numbers"></div>
+        <div id="nav-numbers"></div>
 
-        <button
-          class="pagination-button"
-          id="next-button"
-          aria-label="Next page"
-          title="Next page"
-        >
+        <button class="nav-button" id="next-button" title="Next page">
           &gt;
         </button>
       </nav>
-    </main>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-const paginationNumbers = document.getElementById("pagination-numbers");
+const paginationNumbers = document.getElementById("nav-numbers");
 const paginatedList = document.getElementById("paginated-list");
 const listItems = paginatedList.querySelectorAll("li");
 const nextButton = document.getElementById("next-button");
@@ -33,7 +33,7 @@ const handlePageButtonsStatus = () => {
 };
 
 const handleActivePageNumber = () => {
-  document.querySelectorAll(".pagination-number").forEach((button) => {
+  document.querySelectorAll(".nav-number").forEach((button) => {
     button.classList.remove("active");
     const pageIndex = Number(button.getAttribute("page-index"));
     if (pageIndex == currentPage) {
@@ -44,7 +44,7 @@ const handleActivePageNumber = () => {
 
 const appendPageNumber = (index) => {
   const pageNumber = document.createElement("button");
-  pageNumber.className = "pagination-number";
+  pageNumber.className = "nav-number";
   pageNumber.innerHTML = index;
   pageNumber.setAttribute("page-index", index);
   pageNumber.setAttribute("aria-label", "Page " + index);
@@ -87,7 +87,7 @@ window.addEventListener("load", () => {
     setCurrentPage(currentPage + 1);
   });
 
-  document.querySelectorAll(".pagination-number").forEach((button) => {
+  document.querySelectorAll(".nav-number").forEach((button) => {
     const pageIndex = Number(button.getAttribute("page-index"));
 
     if (pageIndex) {

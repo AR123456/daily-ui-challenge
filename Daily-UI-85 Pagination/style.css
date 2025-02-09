@@ -10,42 +10,37 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-}
-/* question what this is doing  */
-body {
   line-height: 1.7;
   font-size: 1.1rem;
-
   color: #27253d;
   background: #e6f3f8;
 }
 
-main {
+.container {
   position: relative;
   padding: 1rem 1rem 3rem;
-  min-height: calc(100vh - 4rem);
-}
-
-h1 {
-  margin-top: 0;
+  height: 50rem;
+  width: 40rem;
+  background-color: red;
 }
 
 .hidden {
   display: none;
 }
 
-.pagination-container {
-  width: calc(100% - 2rem);
+.nav-container {
+  width: 35rem;
   display: flex;
   align-items: center;
   position: absolute;
   bottom: 0;
   padding: 1rem 0;
   justify-content: center;
+  background-color: blue;
 }
 
-.pagination-number,
-.pagination-button {
+.nav-number,
+.nav-button {
   font-size: 1.1rem;
   background-color: transparent;
   border: none;
@@ -56,12 +51,12 @@ h1 {
   border-radius: 0.2rem;
 }
 
-.pagination-number:hover,
-.pagination-button:not(.disabled):hover {
+.nav-number:hover,
+.nav-button:not(.disabled):hover {
   background: #fff;
 }
 
-.pagination-number.active {
+.nav-number.active {
   color: #fff;
   background: #0085b6;
 }
