@@ -47,8 +47,6 @@ const appendPageNumber = (index) => {
   pageNumber.className = "nav-number";
   pageNumber.innerHTML = index;
   pageNumber.setAttribute("page-index", index);
-  pageNumber.setAttribute("aria-label", "Page " + index);
-
   paginationNumbers.appendChild(pageNumber);
 };
 
