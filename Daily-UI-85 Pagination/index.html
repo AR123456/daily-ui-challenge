@@ -9,13 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <ul id="paginated-list">
-        <script>
-          document.write(
-            [...Array(50)].map((_, i) => `<li>Item ${i + 1}</li>`).join("")
-          );
-        </script>
-      </ul>
+      <ul id="paginated-list"></ul>
 
       <nav class="nav-container">
         <button class="nav-button" id="prev-button" title="Previous page">

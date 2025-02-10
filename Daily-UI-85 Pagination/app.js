@@ -1,9 +1,16 @@
 const paginationNumbers = document.getElementById("nav-numbers");
 const paginatedList = document.getElementById("paginated-list");
-const listItems = paginatedList.querySelectorAll("li");
+
 const nextButton = document.getElementById("next-button");
 const prevButton = document.getElementById("prev-button");
-
+// Generate list items dynamically
+const totalItems = 50;
+for (let i = 1; i <= totalItems; i++) {
+  const listItem = document.createElement("li");
+  listItem.textContent = `Item ${i}`;
+  paginatedList.appendChild(listItem);
+}
+const listItems = paginatedList.querySelectorAll("li");
 const paginationLimit = 10;
 const pageCount = Math.ceil(listItems.length / paginationLimit);
 let currentPage = 1;
