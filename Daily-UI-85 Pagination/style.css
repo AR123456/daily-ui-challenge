@@ -67,7 +67,7 @@ body {
   position: absolute;
 }
 
-.blob {
+/* .blob {
   width: 100px;
   height: 100px;
   background: black;
@@ -76,8 +76,16 @@ body {
   top: 50%;
   margin-top: -50px;
   margin-left: -50px;
+} */
+.blob {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: blob-anim-left ease-in-out 2s infinite alternate;
 }
-
 @-webkit-keyframes blob-anim-left {
   0% {
     transform: translateX(-10px);
