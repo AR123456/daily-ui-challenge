@@ -67,7 +67,7 @@ body {
   position: absolute;
 }
 
-.rect {
+.blob {
   width: 100px;
   height: 100px;
   background: black;
@@ -78,7 +78,7 @@ body {
   margin-left: -50px;
 }
 
-@-webkit-keyframes rect-anim-left {
+@-webkit-keyframes blob-anim-left {
   0% {
     transform: translateX(-10px);
   }
@@ -87,7 +87,7 @@ body {
   }
 }
 
-@keyframes rect-anim-left {
+@keyframes blob-anim-left {
   0% {
     transform: translateX(-10px);
   }
@@ -95,12 +95,12 @@ body {
     transform: translateX(-60px);
   }
 }
-.rect {
-  -webkit-animation: rect-anim-left ease-in-out 2s infinite alternate;
-  animation: rect-anim-left ease-in-out 2s infinite alternate;
+.blob {
+  -webkit-animation: blob-anim-left ease-in-out 2s infinite alternate;
+  animation: blob-anim-left ease-in-out 2s infinite alternate;
 }
 
-@-webkit-keyframes rect-anim-right {
+@-webkit-keyframes blob-anim-right {
   0% {
     transform: translateX(10px);
   }
@@ -109,7 +109,7 @@ body {
   }
 }
 
-@keyframes rect-anim-right {
+@keyframes blob-anim-right {
   0% {
     transform: translateX(10px);
   }
@@ -117,21 +117,9 @@ body {
     transform: translateX(60px);
   }
 }
-.rect + .rect {
+.blob + .blob {
   height: 150px;
   margin-top: -75px;
-  -webkit-animation: rect-anim-right ease-in-out 2s infinite alternate;
-  animation: rect-anim-right ease-in-out 2s infinite alternate;
-}
-
-.label {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 50%;
-  text-align: center;
-}
-
-.label-new {
-  left: 50%;
+  -webkit-animation: blob-anim-right ease-in-out 2s infinite alternate;
+  animation: blob-anim-right ease-in-out 2s infinite alternate;
 }
