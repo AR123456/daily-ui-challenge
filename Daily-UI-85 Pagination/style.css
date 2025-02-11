@@ -49,6 +49,7 @@ body {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.2rem;
+  filter: url("#drop-shadow");
 }
 
 .nav-number:hover,
@@ -60,4 +61,15 @@ body {
 .nav-number.active {
   color: #fff;
   background: #067fab;
+}
+.square {
+  position: absolute;
+  /* background: #fc5667; */
+  /* left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px; */
+  /* filter: url("#drop-shadow"); */
 }
