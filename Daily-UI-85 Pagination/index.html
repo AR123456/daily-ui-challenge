@@ -16,30 +16,22 @@
           &lt;
         </button>
 
-        <div id="nav-numbers" class="square"></div>
+        <div id="nav-numbers" class="blobs"></div>
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
           <defs>
-            <filter id="drop-shadow">
-              <!-- Get the element's graphic,  throught the SourceGraphic keyword in the 'in' attribute, apply a blur filter, and name the output through the 'result' attr -->
+            <filter id="fancy-goo">
               <feGaussianBlur
                 in="SourceGraphic"
-                stdDeviation="7"
-                result="shadow"
+                stdDeviation="10"
+                result="blur"
               />
-
-              <!-- Get the previous output, shift its position, and output with the same name -->
-              <feOffset in="shadow" dx="3" dy="4" result="shadow" />
-
-              <!-- Darken the result of the previous filters -->
               <feColorMatrix
-                in="shadow"
-                mode="matrix"
-                values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0"
-                result="shadow"
+                in="blur"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                result="goo"
               />
-
-              <!-- Put the original graphics atop the shadow we made -->
-              <feBlend in="SourceGraphic" in2="shadow" />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop" />
             </filter>
           </defs>
         </svg>
