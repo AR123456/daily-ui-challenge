@@ -49,7 +49,6 @@ body {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.2rem;
-  filter: url("#fancy-goo");
 }
 
 .nav-number:hover,
@@ -61,73 +60,4 @@ body {
 .nav-number.active {
   color: #fff;
   background: #067fab;
-}
-
-.blobs {
-  position: absolute;
-}
-
-/* .blob {
-  width: 100px;
-  height: 100px;
-  background: black;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-} */
-.blob {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: blob-anim-left ease-in-out 2s infinite alternate;
-}
-@-webkit-keyframes blob-anim-left {
-  0% {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
-
-@keyframes blob-anim-left {
-  0% {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
-.blob {
-  -webkit-animation: blob-anim-left ease-in-out 2s infinite alternate;
-  animation: blob-anim-left ease-in-out 2s infinite alternate;
-}
-
-@-webkit-keyframes blob-anim-right {
-  0% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(60px);
-  }
-}
-
-@keyframes blob-anim-right {
-  0% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(60px);
-  }
-}
-.blob + .blob {
-  height: 150px;
-  margin-top: -75px;
-  -webkit-animation: blob-anim-right ease-in-out 2s infinite alternate;
-  animation: blob-anim-right ease-in-out 2s infinite alternate;
 }

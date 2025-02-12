@@ -61,34 +61,7 @@ const createPagination = () => {
     paginationNumbers.appendChild(pageNumber);
   }
 };
-//  ///////////////////blob effect
-document.getElementById("nav-numbers").addEventListener("click", (event) => {
-  if (event.target.classList.contains("nav-number")) {
-    createBlobEffect(event.target);
-  }
-});
 
-const createBlobEffect = (button) => {
-  const blob = document.createElement("div");
-  blob.classList.add("blob");
-
-  // Get button position relative to its parent (.nav-container)
-  const rect = button.getBoundingClientRect();
-  const parentRect = document
-    .querySelector(".nav-container")
-    .getBoundingClientRect();
-
-  blob.style.left = `${rect.left - parentRect.left + rect.width / 2}px`;
-  blob.style.top = `${rect.top - parentRect.top + rect.height / 2}px`;
-
-  document.querySelector(".blobs").appendChild(blob);
-
-  // Remove blob after animation completes
-  setTimeout(() => {
-    blob.remove();
-  }, 2000); // Matches animation duration
-};
-/////////////////////////////////////
 window.addEventListener("DOMContentLoaded", () => {
   createPagination();
   setCurrentPage(1);
