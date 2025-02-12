@@ -60,7 +60,12 @@ body {
 
 .nav-number.active {
   color: #fff;
-  background: #067fab;
+  background: url("./chick.svg") center / cover no-repeat;
+
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 2px solid;
+  color: pink;
 }
 .nav-number {
   background: url("./egg_24.svg") center / cover no-repeat;
