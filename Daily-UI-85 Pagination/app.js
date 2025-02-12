@@ -7,14 +7,14 @@ const prevButton = document.getElementById("prev-button");
 const totalItems = 50;
 for (let i = 1; i <= totalItems; i++) {
   const listItem = document.createElement("li");
-  listItem.textContent = `Item ${i}`;
-  listItem.style.background = `url(https://picsum.photos/200)`;
+  listItem.textContent = `${i}`;
+  listItem.style.background = `url(https://picsum.photos/100)`;
   paginatedList.appendChild(listItem);
 }
 // listItems stores all the <li> elements inside paginatedList
 const listItems = paginatedList.querySelectorAll("li");
 //  sets the number of items displayed per page.
-const paginationLimit = 10;
+const paginationLimit = 12;
 //  calculates how many pages are needed (totalItems / paginationLimit).
 const pageCount = Math.ceil(listItems.length / paginationLimit);
 // initializes the pagination at page 1.
