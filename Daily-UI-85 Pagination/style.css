@@ -46,9 +46,10 @@ body {
   border: none;
   margin: 0.25rem 0.25rem;
   cursor: pointer;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 0.2rem;
+  color: green;
 }
 
 .nav-number:hover,
@@ -61,10 +62,9 @@ body {
 .nav-number.active {
   color: #fff;
   background: url("./chick.svg") center / cover no-repeat;
-
-  height: 2.5rem;
-  width: 2.5rem;
-  border: 2px solid;
+  height: 3rem;
+  width: 3rem;
+  /* border: 2px solid; */
   color: pink;
 }
 .nav-number {
