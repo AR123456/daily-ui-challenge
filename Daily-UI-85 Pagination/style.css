@@ -61,3 +61,6 @@ body {
   color: #fff;
   background: #067fab;
 }
+.nav-number {
+  background: url("./egg_24.svg") center / cover no-repeat;
+}
