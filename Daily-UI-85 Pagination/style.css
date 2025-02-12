@@ -52,6 +52,7 @@ body {
 }
 
 .nav-number:hover,
+
 /* :not(.disabled) ensures that the rule only applies to .nav-button elements that do not have the .disabled class */
 .nav-button:not(.disabled):hover {
   background: #fff;
@@ -63,4 +64,7 @@ body {
 }
 .nav-number {
   background: url("./egg_24.svg") center / cover no-repeat;
+}
+.nav-number:hover {
+  background: url("./chick.svg") center / cover no-repeat;
 }
