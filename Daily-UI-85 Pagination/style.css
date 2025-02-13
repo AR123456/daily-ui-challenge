@@ -32,6 +32,7 @@ body {
 
 .nav-container {
   width: 35rem;
+  height: 50px;
   display: flex;
   align-items: center;
   position: absolute;
@@ -84,4 +85,6 @@ li {
   font-size: 2rem;
   text-align: center;
   padding-top: 40px;
+  border-radius: 25px;
+  color: #e6f3f8;
 }
