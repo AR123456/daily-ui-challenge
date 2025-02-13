@@ -109,12 +109,13 @@ function updateTextColor(imageUrl, element) {
     }
 
     const averageBrightness = brightnessSum / pixelCount;
-    console.log(averageBrightness);
 
-    if (averageBrightness < 128) {
-      element.style.color = "white"; // Dark background → White text
+    if (averageBrightness < 105) {
+      // Dark background → White text
+      element.style.color = "white";
     } else {
-      element.style.color = "black"; // Light background → Black text
+      // Light background → Black text
+      element.style.color = "black";
     }
   };
 }
