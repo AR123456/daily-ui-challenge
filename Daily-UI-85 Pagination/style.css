@@ -74,9 +74,12 @@ body {
 .nav-number:hover {
   background: url("./chick.svg") center / cover no-repeat;
 }
+
 ul {
   list-style-type: none;
+  padding: 0;
 }
+
 li {
   display: inline-block;
   height: 150px;
@@ -86,7 +89,14 @@ li {
   text-align: center;
   padding-top: 40px;
   border-radius: 25px;
-  color: #e6f3f8;
+  color: #e6f3f8; /* Default text color */
+  font-weight: bold;
 
-  /* background: url(https://picsum.photos/150) center / cover no-repeat; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Enhancing readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
 }

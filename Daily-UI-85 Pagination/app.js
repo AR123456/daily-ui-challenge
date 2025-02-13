@@ -9,10 +9,15 @@ for (let i = 1; i <= totalItems; i++) {
   const listItem = document.createElement("li");
 
   listItem.textContent = `${i}`;
+  listItem.classList.add("dynamic-text"); // Add class for text color adjustment
 
   // really only would set in js if image was to be dynamically generated like looping through a list
-  listItem.style.background = `url(https://picsum.photos/150)`;
+  // listItem.style.background = `url(https://picsum.photos/150)`;
+  const imageUrl = `https://picsum.photos/150?random=${i}`;
+  listItem.style.backgroundImage = `url(${imageUrl})`;
   paginatedList.appendChild(listItem);
+  // Adjust text color dynamically
+  updateTextColor(imageUrl, listItem);
 }
 // listItems stores all the <li> elements inside paginatedList
 const listItems = paginatedList.querySelectorAll("li");
@@ -73,3 +78,43 @@ window.addEventListener("DOMContentLoaded", () => {
   prevButton.addEventListener("click", () => setCurrentPage(currentPage - 1));
   nextButton.addEventListener("click", () => setCurrentPage(currentPage + 1));
 });
+// Function to analyze brightness and adjust text color
+function updateTextColor(imageUrl, element) {
+  const img = new Image();
+  img.crossOrigin = "Anonymous";
+  img.src = imageUrl;
+
+  img.onload = function () {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0, img.width, img.height);
+
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const data = imageData.data;
+
+    let brightnessSum = 0,
+      pixelCount = 0;
+
+    for (let i = 0; i < data.length; i += 4 * 100) {
+      const r = data[i];
+      const g = data[i + 1];
+      const b = data[i + 2];
+
+      const brightness = 0.299 * r + 0.587 * g + 0.114 * b;
+      brightnessSum += brightness;
+      pixelCount++;
+    }
+
+    const averageBrightness = brightnessSum / pixelCount;
+    console.log(averageBrightness);
+
+    if (averageBrightness < 128) {
+      element.style.color = "white"; // Dark background → White text
+    } else {
+      element.style.color = "black"; // Light background → Black text
+    }
+  };
+}
