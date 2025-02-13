@@ -8,7 +8,7 @@ const totalItems = 50;
 for (let i = 1; i <= totalItems; i++) {
   const listItem = document.createElement("li");
   listItem.textContent = `${i}`;
-  listItem.style.background = `url(https://picsum.photos/100)`;
+  listItem.style.background = `url(https://picsum.photos/150)`;
   paginatedList.appendChild(listItem);
 }
 // listItems stores all the <li> elements inside paginatedList
