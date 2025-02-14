@@ -82,11 +82,9 @@ function updateTextColor(imageUrl, element) {
   img.onload = function () {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
-    const width = img.width;
-    const height = img.height;
-    canvas.width = width;
-    canvas.height = height;
-    ctx.drawImage(img, 0, 0, width, height);
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0, img.width, img.height);
     // Define a smaller sampling box (center area)
     const centerX = Math.floor(width / 2);
     const centerY = Math.floor(height / 2);
@@ -121,7 +119,6 @@ function updateTextColor(imageUrl, element) {
       element.style.color = "white";
     } else {
       // Light background → Black text
-      console.log("black");
       element.style.color = "black";
     }
   };
