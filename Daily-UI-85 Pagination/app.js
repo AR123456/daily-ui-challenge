@@ -82,14 +82,16 @@ function updateTextColor(imageUrl, element) {
   img.onload = function () {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
-    canvas.width = img.width;
-    canvas.height = img.height;
-    ctx.drawImage(img, 0, 0, img.width, img.height);
+    const width = img.width;
+    const height = img.height;
+    canvas.width = width;
+    canvas.height = height;
+    ctx.drawImage(img, 0, 0, width, height);
     // Define a smaller sampling box (center area)
     const centerX = Math.floor(width / 2);
     const centerY = Math.floor(height / 2);
-    // 40% of image size
-    const boxSize = Math.floor(Math.min(width, height) * 0.4);
+    // 30% of image size
+    const boxSize = Math.floor(Math.min(width, height) * 0.3);
     const startX = Math.max(0, centerX - boxSize / 2);
     const startY = Math.max(0, centerY - boxSize / 2);
 
@@ -98,9 +100,9 @@ function updateTextColor(imageUrl, element) {
 
     let brightnessSum = 0,
       pixelCount = 0;
-    // Sample every 4 th pixel for better accuracy without full scan
-    // for (let i = 0; i < data.length; i += 5 * 100) {
-    for (let i = 0; i < data.length; i += 4 * 5) {
+    // Sample every 10 th pixel for better accuracy without full scan
+
+    for (let i = 0; i < data.length; i += 4 * 10) {
       const r = data[i];
       const g = data[i + 1];
       const b = data[i + 2];
@@ -112,13 +114,14 @@ function updateTextColor(imageUrl, element) {
 
     const averageBrightness = brightnessSum / pixelCount;
     // Adjustable threshold for better detection
-    const brightnessThreshold = 130;
+    const brightnessThreshold = 150;
 
     if (averageBrightness < brightnessThreshold) {
       // Dark background → White text
       element.style.color = "white";
     } else {
       // Light background → Black text
+      console.log("black");
       element.style.color = "black";
     }
   };
