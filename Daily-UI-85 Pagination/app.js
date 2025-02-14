@@ -79,22 +79,27 @@ function updateTextColor(imageUrl, element) {
   const img = new Image();
   img.crossOrigin = "Anonymous";
   img.src = imageUrl;
-
   img.onload = function () {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
-
     canvas.width = img.width;
     canvas.height = img.height;
     ctx.drawImage(img, 0, 0, img.width, img.height);
+    // Define a smaller sampling box (center area)
+    const centerX = Math.floor(width / 2);
+    const centerY = Math.floor(height / 2);
+    const boxSize = Math.floor(Math.min(width, height) * 0.4); // 40% of image size
 
-    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const startX = Math.max(0, centerX - boxSize / 2);
+    const startY = Math.max(0, centerY - boxSize / 2);
+
+    const imageData = ctx.getImageData(startX, startY, boxSize, boxSize);
     const data = imageData.data;
 
     let brightnessSum = 0,
       pixelCount = 0;
-
-    for (let i = 0; i < data.length; i += 4 * 100) {
+    // Sample every 5th pixel for better accuracy without full scan
+    for (let i = 0; i < data.length; i += 5 * 100) {
       const r = data[i];
       const g = data[i + 1];
       const b = data[i + 2];
@@ -105,13 +110,17 @@ function updateTextColor(imageUrl, element) {
     }
 
     const averageBrightness = brightnessSum / pixelCount;
+    // Adjustable threshold for better detection
+    const brightnessThreshold = 110;
 
-    if (averageBrightness < 105) {
+    if (averageBrightness < brightnessThreshold) {
       // Dark background → White text
       element.style.color = "white";
+      element.style.textShadow = "2px 2px 5px rgba(0, 0, 0, 0.8)"; // Add contrast
     } else {
       // Light background → Black text
       element.style.color = "black";
+      element.style.textShadow = "2px 2px 5px rgba(255, 255, 255, 0.6)";
     }
   };
 }
