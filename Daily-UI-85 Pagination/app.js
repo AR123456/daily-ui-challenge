@@ -113,7 +113,7 @@ function updateTextColor(imageUrl, element) {
     }
 
     const averageBrightness = brightnessSum / pixelCount;
-    console.log(`Image Brightness: ${averageBrightness}, URL: ${imageUrl}`);
+    console.log(averageBrightness);
     // Adjustable threshold for better detection
     const brightnessThreshold = 150;
 
@@ -125,7 +125,7 @@ function updateTextColor(imageUrl, element) {
       // Light background → Black text
 
       element.style.color = "black";
-      element.style.textShadow = "2px 2px 4px rgba(100, 100, 100, 0.4)";
+      element.style.textShadow = "2px 2px 4px rgba(212, 206, 206, 0.4)";
     }
   };
 }
