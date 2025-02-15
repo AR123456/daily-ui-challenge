@@ -90,8 +90,8 @@ function updateTextColor(imageUrl, element) {
     // Define a smaller sampling box (center area)
     const centerX = Math.floor(width / 2);
     const centerY = Math.floor(height / 2);
-    // 30% of image size
-    const boxSize = Math.floor(Math.min(width, height) * 0.3);
+    // 40% of image size
+    const boxSize = Math.floor(Math.min(width, height) * 0.4);
     const startX = Math.max(0, centerX - boxSize / 2);
     const startY = Math.max(0, centerY - boxSize / 2);
 
@@ -119,10 +119,12 @@ function updateTextColor(imageUrl, element) {
     if (averageBrightness < brightnessThreshold) {
       // Dark background → White text
       element.style.color = "white";
+      element.style.textShadow = "2px 2px 4px rgba(0, 0, 0, 0.7)";
     } else {
       // Light background → Black text
-      console.log("black");
+
       element.style.color = "black";
+      element.style.textShadow = "2px 2px 4px rgba(255,255,255,0.6)";
     }
   };
 }
