@@ -91,7 +91,7 @@ function updateTextColor(imageUrl, element) {
     const centerX = Math.floor(width / 2);
     const centerY = Math.floor(height / 2);
     // 40% of image size
-    const boxSize = Math.floor(Math.min(width, height) * 0.4);
+    const boxSize = Math.floor(Math.min(width, height) * 0.3);
     const startX = Math.max(0, centerX - boxSize / 2);
     const startY = Math.max(0, centerY - boxSize / 2);
 
@@ -102,7 +102,7 @@ function updateTextColor(imageUrl, element) {
       pixelCount = 0;
     // Sample every 10 th pixel for better accuracy without full scan
 
-    for (let i = 0; i < data.length; i += 4 * 10) {
+    for (let i = 0; i < data.length; i += 4 * 5) {
       const r = data[i];
       const g = data[i + 1];
       const b = data[i + 2];
@@ -113,7 +113,7 @@ function updateTextColor(imageUrl, element) {
     }
 
     const averageBrightness = brightnessSum / pixelCount;
-    console.log(averageBrightness);
+
     // Adjustable threshold for better detection
     const brightnessThreshold = 150;
 
@@ -125,7 +125,7 @@ function updateTextColor(imageUrl, element) {
       // Light background → Black text
 
       element.style.color = "black";
-      element.style.textShadow = "2px 2px 4px rgba(212, 206, 206, 0.4)";
+      element.style.textShadow = "2px 2px 4px rgba(100, 100, 100, 0.4)";
     }
   };
 }
