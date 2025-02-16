@@ -9,10 +9,9 @@ for (let i = 1; i <= totalItems; i++) {
   const listItem = document.createElement("li");
 
   listItem.textContent = `${i}`;
-  listItem.classList.add("dynamic-text"); // Add class for text color adjustment
+  // Add class for text color adjustment
+  listItem.classList.add("dynamic-text");
 
-  // really only would set in js if image was to be dynamically generated like looping through a list
-  // listItem.style.background = `url(https://picsum.photos/150)`;
   const imageUrl = `https://picsum.photos/150?random=${i}`;
   listItem.style.backgroundImage = `url(${imageUrl})`;
   paginatedList.appendChild(listItem);
@@ -111,9 +110,7 @@ function updateTextColor(imageUrl, element) {
       brightnessSum += brightness;
       pixelCount++;
     }
-
     const averageBrightness = brightnessSum / pixelCount;
-    console.log(averageBrightness);
     // Adjustable threshold for better detection
     const brightnessThreshold = 150;
 
