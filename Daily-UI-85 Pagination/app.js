@@ -129,11 +129,11 @@ function updateTextColor(imageUrl, element) {
 
     if (averageBrightness < brightnessThreshold) {
       // Dark background → Light circle, white text
-      circle.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
+      circle.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
       circle.style.color = "black";
     } else {
       // Light background → Dark circle, black text
-      circle.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+      circle.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
       circle.style.color = "white";
     }
     // Update text inside the circle
