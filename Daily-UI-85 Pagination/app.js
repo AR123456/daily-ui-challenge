@@ -115,27 +115,29 @@ function updateTextColor(imageUrl, element) {
       pixelCount++;
     }
     const averageBrightness = brightnessSum / pixelCount;
+    // trouble shooting
+    console.log(`Image Brightness: ${averageBrightness}, URL: ${imageUrl}`);
     // Adjustable threshold for better detection
     const brightnessThreshold = 150;
-    // Create and style the circle behind the text
-    const circle = document.createElement("span");
-    circle.classList.add("text-background");
-
-    if (averageBrightness < brightnessThreshold) {
-      // Dark background → White text
-      element.style.color = "white";
-      circle.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
-    } else {
-      // Light background → Black text
-
-      element.style.color = "black";
-      circle.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
-    }
-    // Ensure we only add the background circle once
-    if (!element.querySelector(".text-background")) {
-      element.innerHTML = "";
-      circle.textContent = element.dataset.number;
+    // Ensure a wrapper span exists
+    let circle = element.querySelector(".text-background");
+    if (!circle) {
+      circle = document.createElement("span");
+      circle.classList.add("text-background");
       element.appendChild(circle);
     }
+
+    if (averageBrightness < brightnessThreshold) {
+      // Dark background → Light circle, white text
+      circle.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
+      circle.style.color = "black";
+    } else {
+      // Light background → Dark circle, black text
+      circle.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+      circle.style.color = "white";
+    }
+    // Update text inside the circle
+    // Update text inside the circle
+    circle.textContent = element.textContent;
   };
 }
