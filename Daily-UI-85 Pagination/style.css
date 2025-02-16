@@ -90,9 +90,7 @@ li {
   padding-top: 40px;
   border-radius: 25px;
   color: #e6f3f8; /* Default text color */
- 
   font-weight: bold;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,4 +99,12 @@ li {
   /* Dark shadow for contrast */
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
   transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+.text-background {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  backdrop-filter: blur(5px); /* Softens the edges */
 }

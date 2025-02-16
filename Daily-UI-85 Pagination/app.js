@@ -131,5 +131,11 @@ function updateTextColor(imageUrl, element) {
       element.style.color = "black";
       circle.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
     }
+    // Ensure we only add the background circle once
+    if (!element.querySelector(".text-background")) {
+      element.innerHTML = "";
+      circle.textContent = element.dataset.number;
+      element.appendChild(circle);
+    }
   };
 }
