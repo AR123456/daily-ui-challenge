@@ -109,7 +109,7 @@ function updateTextColor(imageUrl, element) {
       const r = data[i];
       const g = data[i + 1];
       const b = data[i + 2];
-
+      // calculate brightness
       const brightness = 0.299 * r + 0.587 * g + 0.114 * b;
       brightnessSum += brightness;
       pixelCount++;
@@ -117,16 +117,19 @@ function updateTextColor(imageUrl, element) {
     const averageBrightness = brightnessSum / pixelCount;
     // Adjustable threshold for better detection
     const brightnessThreshold = 150;
+    // Create and style the circle behind the text
+    const circle = document.createElement("span");
+    circle.classList.add("text-background");
 
     if (averageBrightness < brightnessThreshold) {
       // Dark background → White text
       element.style.color = "white";
-      element.style.textShadow = "2px 2px 4px rgba(0, 0, 0, 0.7)";
+      circle.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
     } else {
       // Light background → Black text
 
       element.style.color = "black";
-      element.style.textShadow = "2px 2px 4px rgba(212, 206, 206, 0.4)";
+      circle.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
     }
   };
 }
