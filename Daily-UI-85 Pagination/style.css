@@ -123,3 +123,18 @@ li {
     rgba(0, 0, 0, 0) 80%
   );
 }
+/* Extra blur effect using a pseudo-element */
+.text-background::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: blur(6px);
+  z-index: -1;
+}
