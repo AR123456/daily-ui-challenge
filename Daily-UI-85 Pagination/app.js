@@ -9,7 +9,6 @@ for (let i = 1; i <= totalItems; i++) {
   const listItem = document.createElement("li");
 
   listItem.textContent = `${i}`;
-  console.log(listItem.textContent);
   // Add class for text color adjustment
   listItem.classList.add("dynamic-text");
 
@@ -130,7 +129,7 @@ function updateTextColor(imageUrl, element) {
       circle.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
       circle.style.color = "white";
     }
-
+    // Update text inside the circle
     // Update text inside the circle
     circle.textContent = element.textContent;
   };
