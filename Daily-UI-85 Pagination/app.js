@@ -86,14 +86,7 @@ function updateTextColor(imageUrl, element) {
     canvas.width = width;
     canvas.height = height;
     ctx.drawImage(img, 0, 0, width, height);
-    // // Define a smaller sampling box (center area)
-    // const centerX = Math.floor(width / 2);
-    // const centerY = Math.floor(height / 2);
-    // // 40% of image size
-    // const boxSize = Math.floor(Math.min(width, height) * 0.4);
-    // const startX = Math.max(0, centerX - boxSize / 2);
-    // const startY = Math.max(0, centerY - boxSize / 2);
-    // Define a smaller center box (where text is placed)
+
     ////////////// make a small box around the number
     const boxSize = Math.floor(Math.min(width, height) * 0.3); // 30% of image size
     const startX = Math.floor(width / 2 - boxSize / 2);

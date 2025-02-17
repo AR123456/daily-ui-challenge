@@ -111,6 +111,15 @@ li {
   font-size: 2rem;
   font-weight: bold;
   /* Increased blur for softer effect */
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
   padding: 0.5rem;
+
+  /* Soft shadow to create a blurred edge */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Subtle background gradient for smooth blending */
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.15) 30%,
+    rgba(0, 0, 0, 0) 80%
+  );
 }
