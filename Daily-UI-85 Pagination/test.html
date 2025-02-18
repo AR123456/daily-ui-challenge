@@ -160,7 +160,7 @@
       // Generate list items dynamically
       for (let i = 1; i <= totalItems; i++) {
         const listItem = document.createElement("li");
-        listItem.dataset.index = i;
+        listItem.dataset.index = i; // Store index
         listItem.style.backgroundImage = `url(https://picsum.photos/150?random=${i})`;
 
         const circle = document.createElement("span");
@@ -170,7 +170,7 @@
         listItem.appendChild(circle);
         paginatedList.appendChild(listItem);
 
-        updateTextColor(listItem.style.backgroundImage, circle);
+        updateTextColor(listItem.style.backgroundImage, listItem);
       }
 
       const listItems = paginatedList.querySelectorAll("li");
@@ -228,26 +228,28 @@
       });
 
       // Function to analyze brightness and adjust text color
-      function updateTextColor(imageUrl, circleElement) {
+      function updateTextColor(imageUrl, element) {
         const img = new Image();
         img.crossOrigin = "Anonymous";
-        img.src = imageUrl.match(/\bhttps?:\/\/\S+/gi)[0]; // Extracts URL properly
+        img.src = imageUrl.slice(4, -1); // Extract actual URL from background-image format
         img.onload = function () {
           const canvas = document.createElement("canvas");
           const ctx = canvas.getContext("2d");
-          canvas.width = img.width;
-          canvas.height = img.height;
-          ctx.drawImage(img, 0, 0, img.width, img.height);
+          const width = img.width;
+          const height = img.height;
+          canvas.width = width;
+          canvas.height = height;
+          ctx.drawImage(img, 0, 0, width, height);
 
           // Define area to check brightness
-          const boxSize = Math.floor(Math.min(img.width, img.height) * 0.3);
-          const startX = Math.floor(img.width / 2 - boxSize / 2);
-          const startY = Math.floor(img.height / 2 - boxSize / 2);
+          const boxSize = Math.floor(Math.min(width, height) * 0.3);
+          const startX = Math.floor(width / 2 - boxSize / 2);
+          const startY = Math.floor(height / 2 - boxSize / 2);
           const imageData = ctx.getImageData(startX, startY, boxSize, boxSize);
           const data = imageData.data;
 
-          let brightnessSum = 0;
-          let pixelCount = 0;
+          let brightnessSum = 0,
+            pixelCount = 0;
 
           for (let i = 0; i < data.length; i += 4 * 10) {
             const r = data[i];
@@ -257,21 +259,17 @@
             brightnessSum += brightness;
             pixelCount++;
           }
-
           const averageBrightness = brightnessSum / pixelCount;
-          console.log(`Image Brightness: ${averageBrightness}`); // Debugging
+          const brightnessThreshold = 150;
 
-          const brightnessThreshold = 140;
+          let circle = element.querySelector(".text-background");
 
-          if (averageBrightness < brightnessThreshold) {
-            // Dark background → Light circle, Black text
-            circleElement.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
-            circleElement.style.color = "black";
-          } else {
-            // Light background → Dark circle, White text
-            circleElement.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
-            circleElement.style.color = "white";
-          }
+          circle.style.backgroundColor =
+            averageBrightness < brightnessThreshold
+              ? "rgba(255, 255, 255, 0.7)" // Light circle for dark backgrounds
+              : "rgba(0, 0, 0, 0.7)"; // Dark circle for light backgrounds
+          circle.style.color =
+            averageBrightness < brightnessThreshold ? "black" : "white";
         };
       }
     </script>
