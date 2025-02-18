@@ -102,28 +102,36 @@ li {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+
+  /* Fix font size to match original text */
   font-size: 2rem;
   font-weight: bold;
-  /* Increased blur for softer effect */
+  line-height: 1; /* Prevents vertical misalignment */
+  text-align: center;
+
+  /* Subtle blur effect */
   backdrop-filter: blur(6px);
   padding: 0.5rem;
 
-  /* Soft shadow to create a blurred edge */
+  /* Soft blurred shadow */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  /* Subtle background gradient for smooth blending */
+
+  /* Background gradient for smooth blending */
   background: radial-gradient(
     circle,
     rgba(0, 0, 0, 0.15) 30%,
     rgba(0, 0, 0, 0) 80%
   );
 }
-/* Extra blur effect using a pseudo-element */
+
 .text-background::before {
   content: "";
   position: absolute;
