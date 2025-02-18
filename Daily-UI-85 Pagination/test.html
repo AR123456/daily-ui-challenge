@@ -231,23 +231,25 @@
       function updateTextColor(imageUrl, circleElement) {
         const img = new Image();
         img.crossOrigin = "Anonymous";
-        img.src = imageUrl.match(/\bhttps?:\/\/\S+/gi)[0]; // Extracts URL properly
+        img.src = imageUrl.slice(4, -1);
         img.onload = function () {
           const canvas = document.createElement("canvas");
           const ctx = canvas.getContext("2d");
-          canvas.width = img.width;
-          canvas.height = img.height;
-          ctx.drawImage(img, 0, 0, img.width, img.height);
+          const width = img.width;
+          const height = img.height;
+          canvas.width = width;
+          canvas.height = height;
+          ctx.drawImage(img, 0, 0, width, height);
 
           // Define area to check brightness
-          const boxSize = Math.floor(Math.min(img.width, img.height) * 0.3);
-          const startX = Math.floor(img.width / 2 - boxSize / 2);
-          const startY = Math.floor(img.height / 2 - boxSize / 2);
+          const boxSize = Math.floor(Math.min(width, height) * 0.3);
+          const startX = Math.floor(width / 2 - boxSize / 2);
+          const startY = Math.floor(height / 2 - boxSize / 2);
           const imageData = ctx.getImageData(startX, startY, boxSize, boxSize);
           const data = imageData.data;
 
-          let brightnessSum = 0;
-          let pixelCount = 0;
+          let brightnessSum = 0,
+            pixelCount = 0;
 
           for (let i = 0; i < data.length; i += 4 * 10) {
             const r = data[i];
@@ -257,18 +259,15 @@
             brightnessSum += brightness;
             pixelCount++;
           }
-
           const averageBrightness = brightnessSum / pixelCount;
-          console.log(`Image Brightness: ${averageBrightness}`); // Debugging
-
-          const brightnessThreshold = 140;
+          const brightnessThreshold = 140; // Adjusted for better detection
 
           if (averageBrightness < brightnessThreshold) {
-            // Dark background → Light circle, Black text
-            circleElement.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            // Dark background → Light circle & black text
+            circleElement.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
             circleElement.style.color = "black";
           } else {
-            // Light background → Dark circle, White text
+            // Light background → Dark circle & white text
             circleElement.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
             circleElement.style.color = "white";
           }
