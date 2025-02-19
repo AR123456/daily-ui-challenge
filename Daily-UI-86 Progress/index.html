@@ -9,10 +9,31 @@
   <body>
     <div class="container">
       <div class="card">
-        <div class="progress-bar">This is the progress bar</div>
+        <div class="progress-bar">
+          <!-- https://www.youtube.com/watch?v=jA4XQbD9REE -->
+          <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress -->
+          <label for="">
+            Uploading: <progress value="70" max="100">70%</progress>
+          </label>
+          <div aria-busy="true" aria-describedby="progress-bar">
+            <!-- content is for this region is loading -->
+          </div>
+
+          <!-- ... -->
+
+          <progress id="progress-bar" aria-label="Content loading…"></progress>
+        </div>
       </div>
       <div class="card">
+        <!-- https://www.youtube.com/watch?v=GFkorypkXsQ -->
+        <!-- https://www.youtube.com/watch?v=mqPbfNwUJRI -->
         <div class="progress-circle">This is the progress circle</div>
+      </div>
+      <div class="card">
+        <!-- https://www.youtube.com/watch?v=ZVug65gW-fc -->
+        <div class="progress-skeleton">
+          This is the progress skeleton screen
+        </div>
       </div>
     </div>
   </body>

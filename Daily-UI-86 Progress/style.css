@@ -14,12 +14,12 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  height: 50em;
-  width: 66em;
+  /* height: 50em; */
+  width: 80rem;
 }
 .card {
-  height: 30em;
-  width: 30em;
-  margin: 3em;
+  height: 30rem;
+  width: 30rem;
+  margin: 20px;
   outline: 2px solid black;
 }
