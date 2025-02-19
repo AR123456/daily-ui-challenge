@@ -1,5 +1,7 @@
 *,
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -22,4 +24,17 @@ body {
   width: 30rem;
   margin: 20px;
   outline: 2px solid black;
+}
+.progress-bar {
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ddd;
+  height: 30px;
+  width: 400px;
+  border-radius: 20px;
 }
