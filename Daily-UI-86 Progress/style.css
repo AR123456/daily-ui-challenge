@@ -50,10 +50,8 @@ body {
   left: 0.5em;
   top: 0.5em;
   bottom: 0.5em;
-  /* using width of actual element as a % */
-  /* width: calc(var(--width, 0) * 1%); */
-
-  min-width: 10%;
+  min-width: 2em;
+  /* 100% less the offset of .5 + .5  ems above */
   max-width: calc(100% - 1em);
   background-color: #069;
   border-radius: 1em;

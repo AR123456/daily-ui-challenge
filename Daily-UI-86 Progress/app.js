@@ -1,4 +1,4 @@
-const progressBar = document.getElementsByClassName("progress-bar")[0];
+// const progressBar = document.getElementsByClassName("progress-bar")[0];
 
 // setInterval(() => {
 //   const computedStyle = getComputedStyle(progressBar);
