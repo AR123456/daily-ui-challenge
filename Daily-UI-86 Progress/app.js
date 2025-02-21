@@ -1,5 +1,5 @@
 // getting first ele of this array - why not just get it since there is only one  in this case?
-// re code to run on page load
+
 const progressBar = document.getElementsByClassName("progress-bar")[0];
 // call the function within at particular interval
 let interval = setInterval(() => {
