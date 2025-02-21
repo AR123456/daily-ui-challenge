@@ -50,9 +50,10 @@ body {
   left: 0.5em;
   top: 0.5em;
   bottom: 0.5em;
+
   min-width: 2em;
   /* 100% less the offset of .5 + .5  ems above */
-  max-width: calc(100% - 1em);
+  max-width: calc(100% - 3em);
   background-color: #069;
   border-radius: 1em;
   padding: 1em;
