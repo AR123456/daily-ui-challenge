@@ -1,20 +1,20 @@
-// getting first ele of this array - why not just get it since there is only one  in this case?
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBar = document.querySelector(".progress-bar");
+  let progress = 0;
+  let startTime;
 
-const progressBar = document.getElementsByClassName("progress-bar")[0];
-// call the function within at particular interval
-let interval = setInterval(() => {
-  // get current width of progress bar
-  const computedStyle = getComputedStyle(progressBar);
-  // increment width
-  // get string and make into num with parseFloat
-  // if it does not exist set to 0
-  const width = parseFloat(computedStyle.getPropertyValue("--width")) || 0;
-  // now set the width to the calculated width and increment 0.1 every 5 sec
-  progressBar.style.setProperty("--width", width + 0.1);
-  // every 5 mili sec
-}, 5);
-// Clear interval after 3 seconds
-setTimeout(() => {
-  clearInterval(interval);
-  console.log("Interval cleared after 3 seconds");
-}, 3000);
+  function animateProgressBar(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+
+    if (elapsed < 3000) {
+      progress = Math.min(100, elapsed / 30);
+      progressBar.style.setProperty("--width", progress);
+      requestAnimationFrame(animateProgressBar);
+    } else {
+      console.log("Animation completed");
+    }
+  }
+
+  requestAnimationFrame(animateProgressBar);
+});

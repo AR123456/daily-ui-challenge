@@ -1,0 +1,62 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  /* height: 50em; */
+  width: 80rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  width: 30rem;
+
+  outline: 2px solid black;
+}
+.progress-bar {
+  position: relative;
+  width: 80%;
+  /* height to scale with size of text within it  */
+  height: 3em;
+  background-color: #111;
+  border-radius: 1.5em;
+  color: white;
+}
+/* psudo to add new el brefore progress bar  */
+.progress-bar::before {
+  /* psudo elememnt must have content to be seen could use empty string.  */
+  /* here using css attr() function and the data label from html */
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  /* position the text in center  */
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  bottom: 0.5em;
+  /*  width cal made to %  */
+  /* will manipulate this with JS  */
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2em;
+  /* 100% less the offset of .5 + .5  ems above */
+  max-width: calc(100% - 3em);
+  background-color: #069;
+  border-radius: 1em;
+  padding: 1em;
+}
