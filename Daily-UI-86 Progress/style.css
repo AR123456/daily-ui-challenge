@@ -60,3 +60,6 @@ body {
   border-radius: 1em;
   padding: 1em;
 }
+.progress-bar::before {
+  transition: width 1s linear;
+}
