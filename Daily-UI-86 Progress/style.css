@@ -16,6 +16,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   /* height: 50em; */
   width: 80rem;
 }
@@ -26,40 +27,36 @@ body {
   justify-content: center;
   height: 30rem;
   width: 30rem;
-
   outline: 2px solid black;
+  margin: 30px;
 }
 .progress-bar {
   position: relative;
   width: 80%;
-  /* height to scale with size of text within it  */
   height: 3em;
   background-color: #111;
   border-radius: 1.5em;
   color: white;
 }
-/* psudo to add new el brefore progress bar  */
 .progress-bar::before {
-  /* psudo elememnt must have content to be seen could use empty string.  */
-  /* here using css attr() function and the data label from html */
+  transition: width 1s linear;
   content: attr(data-label);
   display: flex;
   align-items: center;
-  /* position the text in center  */
   position: absolute;
   left: 0.5em;
   top: 0.5em;
   bottom: 0.5em;
-  /*  width cal made to %  */
-  /* will manipulate this with JS  */
   width: calc(var(--width, 0) * 1%);
   min-width: 2em;
-  /* 100% less the offset of .5 + .5  ems above */
   max-width: calc(100% - 3em);
   background-color: #069;
   border-radius: 1em;
   padding: 1em;
 }
-.progress-bar::before {
-  transition: width 1s linear;
+.progress-circle {
+  height: 20rem;
+  width: 20rem;
+  background-color: orange;
+  border-radius: 50%;
 }
