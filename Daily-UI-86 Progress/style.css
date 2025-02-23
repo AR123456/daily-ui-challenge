@@ -61,6 +61,7 @@ body {
   /* conic-gradient */
   background: conic-gradient(#3dffc9, #f7c723, #eb0ea5, #3dffc9);
   border-radius: 50%;
+  animation: spin 2.4s linear infinite;
 }
 .progress-circle::before {
   content: "";
@@ -74,4 +75,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+/* animation  */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
