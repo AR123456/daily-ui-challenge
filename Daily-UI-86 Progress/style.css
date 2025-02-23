@@ -58,7 +58,8 @@ body {
   position: relative;
   height: 20rem;
   width: 20rem;
-  background-color: orange;
+  /* conic-gradient */
+  background: conic-gradient(#3dffc9, #f7c723, #eb0ea5, #3dffc9);
   border-radius: 50%;
 }
 .progress-circle::before {
