@@ -10,8 +10,7 @@ kyle https://www.youtube.com/watch?v=basf1lH1H-E&t=17s
 https://codepen.io/WebDevSimplified/pen/oVXKQx
 
 circle
-https://www.youtube.com/watch?v=GFkorypkXsQ
-https://www.youtube.com/watch?v=mqPbfNwUJRI
+Steel a good one
 https://www.youtube.com/watch?v=jA4XQbD9REE
 skelleton
 https://www.youtube.com/watch?v=ZVug65gW-fc
