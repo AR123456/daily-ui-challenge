@@ -55,6 +55,7 @@ body {
   padding: 1em;
 }
 .progress-circle {
+  position: relative;
   height: 20rem;
   width: 20rem;
   background-color: orange;
@@ -62,4 +63,14 @@ body {
 }
 .progress-circle::before {
   content: "";
+  background-color: white;
+  position: absolute;
+  /* position in middle 80% of circle  */
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  /* position in middle of circle  */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
