@@ -89,3 +89,8 @@ body {
     transform: rotate(360deg);
   }
 }
+.progress-skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes progress-skeleton {
+}
