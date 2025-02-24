@@ -89,8 +89,14 @@ body {
     transform: rotate(360deg);
   }
 }
-.progress-skeleton {
-  animation: skeleton-loading 1s linear infinite alternate;
+.progress-skeleton:hover {
+  animation: skeleton-loading 3s linear infinite alternate;
 }
-@keyframes progress-skeleton {
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 98%);
+  }
 }
