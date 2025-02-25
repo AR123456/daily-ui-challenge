@@ -90,6 +90,7 @@ body {
   }
 }
 .progress-skeleton:hover {
+  opacity: 0.7;
   animation: skeleton-loading 3s linear infinite alternate;
 }
 @keyframes skeleton-loading {
