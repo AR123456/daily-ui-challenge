@@ -89,3 +89,22 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 1rem;
+}
+.skeleton-card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 16px;
+  border-radius: 4px;
+}
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}

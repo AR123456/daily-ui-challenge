@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   for (let i = 0; i < 10; i++) {
     grid.append(cardTemplate.content.cloneNode(true));
   }
+
   progressBar.addEventListener("mouseenter", () => {
     progressBar.style.setProperty("--width", "100");
   });
