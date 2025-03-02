@@ -145,3 +145,17 @@ body {
   overflow: hidden;
   flex-grow: 1;
 }
+.grid:hover .skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    /* light color match what is on page  */
+    background-color: hsl(200, 20%, 95%);
+  }
+  100% {
+    /* darken with animation  */
+    background-color: hsl(200, 20%, 70%);
+  }
+}
