@@ -108,7 +108,6 @@ body {
 .skelton-header {
   margin-bottom: 1rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .skeleton {
