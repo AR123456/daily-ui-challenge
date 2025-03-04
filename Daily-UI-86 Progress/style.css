@@ -109,7 +109,7 @@ body {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+  align-items: center;
 }
 .skeleton {
   /* Always visible */
@@ -134,13 +134,14 @@ body {
   /* adjust size for smaller screen */
   width: 20px;
   height: 20px;
-  /* object-fit: cover; */
+  object-fit: cover;
   border-radius: 100%;
-  /* margin-right: 1rem; */
+  margin-right: 1rem;
   flex-shrink: 0;
 }
 .title {
-  width: 3rem;
+  margin-left: 2rem;
+  width: 5rem;
   font-weight: bold;
   font-size: 0.3rem;
   text-transform: capitalize;
