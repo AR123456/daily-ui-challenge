@@ -10,10 +10,6 @@ body {
   overflow: hidden;
   height: 100vh;
 }
-.avatar {
-  width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-  background: url("./snowflake2.jpg") center / cover no-repeat;
-  position: relative;
+button:hover::first-line {
+  content: "Look at that a tool tip! ";
 }
