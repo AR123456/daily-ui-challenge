@@ -18,6 +18,17 @@ body {
   position: relative;
 }
 /* psudo element can before or after   */
-.avatar:hover::before {
-  content: attr(data-tooltip);
+.avatar::before,
+.avatar::after {
+  position: absolute;
+  content: "";
+  /*  position the tooltip */
+  top: -0.25rem;
+  height: 25px;
+  width: 25px;
+  background-color: red;
 }
+/* psudo element can before or after   */
+/* .avatar:hover::before {
+  content: attr(data-tooltip);
+} */
