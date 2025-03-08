@@ -23,10 +23,14 @@ body {
   position: absolute;
   content: "";
   /*  position the tooltip */
-  top: 11.5em;
-  left: 11.5em;
-  height: 25px;
-  width: 25px;
+  top: -0.25rem;
+  /* positions left edge at horizontal midpoint of the .avatar container. */
+  left: 50%;
+  /* left edge is at the center, but its width extends to the right. */
+  /* moves back to the left by half of its own width to center horizontally  */
+  transform: translateX(-50%);
+  height: 50px;
+  width: 50px;
   background-color: red;
 }
 /* psudo element can before or after   */
