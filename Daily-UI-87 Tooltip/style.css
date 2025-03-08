@@ -28,6 +28,7 @@ body {
   left: 50%;
   /* left edge is at the center, but its width extends to the right. */
   /* moves back to the left by half of its own width to center horizontally  */
+  /* percentage refers to the element's own size, not the available space within the parent container. */
   /* transform: translateX(-50%) translateY(-100%); */
   transform: translate(-50%, -100%);
 
