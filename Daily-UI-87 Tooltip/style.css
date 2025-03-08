@@ -35,9 +35,14 @@ body {
 /* just the before  */
 .avatar::before {
   content: attr(data-tooltip);
+  color: white;
   /* text will determine size of div but add some padding */
   padding: 0.5rem;
-  background-color: red;
+  /* make the div wider if a lot of content  */
+  width: max-content;
+  /* dont let the content push the width beyond the avatar image */
+  max-width: 100%;
+  background-color: black;
 }
 
 /* psudo element can before or after   */
