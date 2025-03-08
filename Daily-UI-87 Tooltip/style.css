@@ -28,12 +28,15 @@ body {
   left: 50%;
   /* left edge is at the center, but its width extends to the right. */
   /* moves back to the left by half of its own width to center horizontally  */
-  transform: translateX(-50%);
-  height: 50px;
-  width: 50px;
+  /* transform: translateX(-50%) translateY(-100%); */
+  transform: translate(-50%, -100%);
+
+  height: 150px;
+  width: 150px;
   background-color: red;
 }
 /* psudo element can before or after   */
 /* .avatar:hover::before {
   content: attr(data-tooltip);
+ 
 } */
