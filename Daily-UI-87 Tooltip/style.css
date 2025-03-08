@@ -17,11 +17,11 @@ body {
   background: url("./snowflake2.jpg") center / cover no-repeat;
   position: relative;
 }
-/* psudo element can before or after   */
+/* psudo element can before or after this style will be for both   */
 .avatar::before,
 .avatar::after {
   position: absolute;
-  content: "";
+
   /*  position the tooltip */
   top: -0.25rem;
   /* positions left edge at horizontal midpoint of the .avatar container. */
@@ -31,11 +31,15 @@ body {
   /* percentage refers to the element's own size, not the available space within the parent container. */
   /* transform: translateX(-50%) translateY(-100%); */
   transform: translate(-50%, -100%);
-
-  height: 150px;
-  width: 150px;
+}
+/* just the before  */
+.avatar::before {
+  content: attr(data-tooltip);
+  /* text will determine size of div but add some padding */
+  padding: 0.5rem;
   background-color: red;
 }
+
 /* psudo element can before or after   */
 /* .avatar:hover::before {
   content: attr(data-tooltip);
