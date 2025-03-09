@@ -30,10 +30,13 @@ body {
   /* moves back to the left by half of its own width to center horizontally  */
   /* percentage refers to the element's own size, not the available space within the parent container. */
   /* transform: translateX(-50%) translateY(-100%); */
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%) scale(var(--scale));
+  /* animate the scale */
+  transition: 50ms;
 }
 /* just the before  */
 .avatar::before {
+  --scale: 0;
   content: attr(data-tooltip);
   color: white;
   /* text will determine size of div but add some padding */
@@ -42,11 +45,13 @@ body {
   width: max-content;
   /* dont let the content push the width beyond the avatar image */
   max-width: 100%;
-  background-color: black;
+  text-align: center;
+  background-color: #333;
+  border-radius: 0.3rem;
 }
 
 /* psudo element can before or after   */
-/* .avatar:hover::before {
+.avatar:hover::before {
   content: attr(data-tooltip);
- 
-} */
+  --scale: 1;
+}
