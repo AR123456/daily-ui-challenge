@@ -59,7 +59,9 @@ body {
 /* make it look more like a speech  bubble  */
 .avatar::after {
   content: "";
-  height: 10px;
+  /* height: 10px;
   width: 10px;
-  background: red;
+  background: red; */
+  border: 10px solid transparent;
+  border-top-color: black;
 }
