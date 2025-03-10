@@ -20,24 +20,27 @@ body {
 /* psudo element can before or after this style will be for both   */
 .avatar::before,
 .avatar::after {
+  --scale: 0;
+  --tooltip-color: #333;
+  --arrow-size: 10px;
   position: absolute;
 
   /*  position the tooltip */
   top: -0.25rem;
   /* positions left edge at horizontal midpoint of the .avatar container. */
   left: 50%;
-  /* left edge is at the center, but its width extends to the right. */
-  /* moves back to the left by half of its own width to center horizontally  */
-  /* percentage refers to the element's own size, not the available space within the parent container. */
-  /* transform: translateX(-50%) translateY(-100%); */
-  transform: translate(-50%, -100%) scale(var(--scale));
+  /* define the var for translate y here with fall back of 0 */
+  transform: translate(-50%, var(--translate-y, 0)) scale(var(--scale));
   /* animate the scale */
   transition: 250ms transform;
 }
 /* just the before  */
 .avatar::before {
-  --scale: 0;
-  --tooltip-color: #333;
+  /* set translate y to 100% here, the calc is used to keep arrow or boarder in syc with rest of tooltip */
+
+  /* --translate-y: -100%; */
+  /* calc for arrow size  */
+  --translate-y: calc(-100% - var(--arrow-size));
   content: attr(data-tooltip);
   color: white;
   /* text will determine size of div but add some padding */
@@ -60,9 +63,7 @@ body {
 /* make it look more like a speech  bubble  */
 .avatar::after {
   content: "";
-  /* height: 10px;
-  width: 10px;
-  background: red; */
-  border: 10px solid transparent;
+
+  border: var(--arrow-size) solid transparent;
   border-top-color: var(--tooltip-color);
 }
