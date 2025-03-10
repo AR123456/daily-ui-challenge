@@ -37,10 +37,7 @@ body {
 /* just the before  */
 .avatar::before {
   /* set translate y to 100% here, the calc is used to keep arrow or boarder in syc with rest of tooltip */
-
-  /* --translate-y: -100%; */
-  /* calc for arrow size  */
-  --translate-y: calc(-100% - var(--arrow-size));
+  --translate-y: -100%;
   content: attr(data-tooltip);
   color: white;
   /* text will determine size of div but add some padding */
