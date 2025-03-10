@@ -37,6 +37,7 @@ body {
 /* just the before  */
 .avatar::before {
   --scale: 0;
+  --tooltip-color: #333;
   content: attr(data-tooltip);
   color: white;
   /* text will determine size of div but add some padding */
@@ -46,7 +47,7 @@ body {
   /* dont let the content push the width beyond the avatar image */
   max-width: 100%;
   text-align: center;
-  background-color: #333;
+  background-color: var(--tooltip-color);
   border-radius: 0.3rem;
 }
 
@@ -63,5 +64,5 @@ body {
   width: 10px;
   background: red; */
   border: 10px solid transparent;
-  border-top-color: black;
+  border-top-color: var(--tooltip-color);
 }
