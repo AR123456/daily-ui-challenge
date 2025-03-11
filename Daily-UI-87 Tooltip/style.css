@@ -22,7 +22,7 @@ body {
 .avatar::after {
   --scale: 0;
   --tooltip-color: #333;
-  --arrow-size: 30px;
+  --arrow-size: 10px;
   position: absolute;
 
   /*  position the tooltip */
@@ -33,6 +33,7 @@ body {
   transform: translate(-50%, var(--translate-y, 0)) scale(var(--scale));
   /* animate the scale */
   transition: 250ms transform;
+  transform-origin: bottom center;
 }
 /* just the before  */
 .avatar::before {
@@ -67,4 +68,5 @@ body {
   content: "";
   border: var(--arrow-size) solid transparent;
   border-top-color: var(--tooltip-color);
+  transform-origin: top center;
 }
