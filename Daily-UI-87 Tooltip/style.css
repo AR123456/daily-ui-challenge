@@ -33,11 +33,15 @@ body {
   transform: translate(-50%, var(--translate-y, 0)) scale(var(--scale));
   /* animate the scale */
   transition: 250ms transform;
+  transform-origin: bottom center;
 }
 /* just the before  */
 .avatar::before {
   /* set translate y to 100% here, the calc is used to keep arrow or boarder in syc with rest of tooltip */
-  --translate-y: -100%;
+
+  /* --translate-y: -100%; */
+  /* calc for arrow size  */
+  --translate-y: calc(-100% - var(--arrow-size));
   content: attr(data-tooltip);
   color: white;
   /* text will determine size of div but add some padding */
@@ -59,8 +63,10 @@ body {
 }
 /* make it look more like a speech  bubble  */
 .avatar::after {
+  /* translate the arrow in opposite direction  */
+  --translate-y: calc(-1 * var(--arrow-size));
   content: "";
-
   border: var(--arrow-size) solid transparent;
   border-top-color: var(--tooltip-color);
+  transform-origin: top center;
 }
