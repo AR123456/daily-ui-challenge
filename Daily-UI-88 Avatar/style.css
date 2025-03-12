@@ -24,7 +24,7 @@
   left: 10%;
   height: 81%;
   width: 81%;
-  background-color: #6e7376;
+  background: url("./person.svg") center no-repeat, #6e7376;
 
   border-radius: 50%;
   z-index: 3;
