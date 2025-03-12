@@ -20,11 +20,12 @@
 }
 .avatar {
   position: relative;
-  top: 10%;
-  left: 11%;
-  height: 80%;
-  width: 80%;
-  background-color: white;
+  top: 9.3%;
+  left: 10%;
+  height: 81%;
+  width: 81%;
+  background-color: #6e7376;
+
   border-radius: 50%;
   z-index: 3;
 }
