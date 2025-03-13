@@ -8,5 +8,31 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80rem;
+  width: 60rem;
+}
+.text-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card {
+  position: absolute;
+  top: 20rem;
+  height: 20rem;
+  width: 40rem;
+  background: rgb(220, 213, 213);
+}
+h2 {
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+input {
+  margin-left: 3rem;
 }
