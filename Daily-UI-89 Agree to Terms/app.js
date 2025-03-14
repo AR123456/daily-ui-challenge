@@ -2,6 +2,10 @@ const checkBox = document.getElementById("checkbox");
 const card = document.querySelector(".card");
 
 function agree() {
-  console.log(checkBox);
+  if (checkBox.checked == true) {
+    card.style.display = "none";
+  } else {
+    card.style.display = "block";
+  }
 }
-agree();
+checkBox.addEventListener("click", agree);
