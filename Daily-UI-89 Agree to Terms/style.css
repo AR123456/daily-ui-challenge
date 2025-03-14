@@ -28,6 +28,9 @@ body {
   height: 20rem;
   width: 40rem;
   background: rgb(220, 213, 213);
+  border-radius: 5px;
+  box-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.46);
+  filter: drop-shadow(-2px 5px 100px #000000);
 }
 h2 {
   margin-left: 5rem;
