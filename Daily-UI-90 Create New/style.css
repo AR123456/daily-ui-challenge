@@ -10,6 +10,8 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  color: #3b4fd2;
+  background: #eef1da;
 }
 /* phone */
 .container {
@@ -82,10 +84,13 @@ img {
   height: 60px;
   width: 60px;
   margin-top: 10px;
+  fill: #c7d9dd;
 }
 button {
   margin: 40px;
   font-size: 30px;
   border-radius: 5px;
   padding: 5px;
+  background: #eef1da;
+  color: #3b4fd2;
 }
