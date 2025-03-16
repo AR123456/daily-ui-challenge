@@ -67,3 +67,25 @@ this will kick out the bottom of the phone a bit */
 .circle-small {
   margin-bottom: 5px;
 }
+.what,
+.date,
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+img {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+}
+button {
+  margin: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 5px;
+}
