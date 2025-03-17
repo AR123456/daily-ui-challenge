@@ -1,0 +1,22 @@
+*,
+html {
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.card-left {
+  width: 66%;
+  background-color: azure;
+}
+.card-right {
+  width: 33%;
+  background-color: bisque;
+}
