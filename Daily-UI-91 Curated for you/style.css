@@ -2,21 +2,27 @@
 html {
   box-sizing: border-box;
   height: 100vh;
+
   overflow: hidden;
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("./apples.jpg") center/cover no-repeat;
 }
 .container {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  margin-top: 0;
 }
 .card-left {
   width: 66%;
+
   background-color: azure;
+  opacity: 0.7;
 }
 .card-right {
   width: 33%;
   background-color: bisque;
+  opacity: 0.6;
 }
