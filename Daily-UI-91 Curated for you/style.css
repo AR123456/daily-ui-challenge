@@ -4,25 +4,30 @@ html {
   height: 100vh;
 
   overflow: hidden;
+  /* https://css-tricks.com/perfect-full-page-background-image/ */
+  background: url("./apples.jpg") center/cover no-repeat fixed;
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: url("./apples.jpg") center/cover no-repeat;
 }
 .container {
   display: flex;
   flex-direction: row;
   justify-content: left;
   margin-top: 0;
+  overflow: hidden;
+  /* position: relative; */
 }
 .card-left {
+  /* position: absolute; */
   width: 66%;
 
   background-color: azure;
-  opacity: 0.7;
+  /* https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
+  /* opacity: 0.7; */
 }
 .card-right {
   width: 33%;
   background-color: bisque;
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
