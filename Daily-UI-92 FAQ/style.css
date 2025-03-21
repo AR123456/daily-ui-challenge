@@ -15,13 +15,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 50rem;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 .row {
   display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
-  width: 90%;
-  border-radius: 5px;
+  width: 50rem;
+  height: 5rem;
 }
