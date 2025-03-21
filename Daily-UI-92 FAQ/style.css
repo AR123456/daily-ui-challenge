@@ -10,6 +10,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50rem;
+  height: 4rem;
+}
+input {
+  width: 20rem;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -20,12 +30,12 @@ body {
   border: 2px solid black;
 }
 .row {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
   width: 50rem;
-  height: 5rem;
+  height: 5rem; */
 }
 .hidden {
   display: none;
