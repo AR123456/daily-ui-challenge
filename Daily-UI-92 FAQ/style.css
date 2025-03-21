@@ -27,3 +27,6 @@ body {
   width: 50rem;
   height: 5rem;
 }
+.hidden {
+  display: none;
+}
