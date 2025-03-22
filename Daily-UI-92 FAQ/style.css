@@ -18,7 +18,16 @@ header {
   height: 4rem;
 }
 input {
-  width: 20rem;
+  width: 15rem;
+  padding: 25px;
+  border-radius: 5px;
+}
+h1 {
+  margin-left: 20px;
+}
+button {
+  width: 7rem;
+  border-radius: 5px;
 }
 .card {
   display: flex;
