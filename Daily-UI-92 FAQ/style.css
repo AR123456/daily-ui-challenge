@@ -38,13 +38,13 @@ button {
   border-radius: 5px;
   border: 2px solid black;
 }
-.row {
-  /* display: flex;
+.row-question {
+  display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
   width: 50rem;
-  height: 5rem; */
+  height: 5rem;
 }
 .hidden {
   display: none;
