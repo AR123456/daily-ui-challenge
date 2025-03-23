@@ -46,6 +46,9 @@ button {
   width: 50rem;
   height: 5rem;
 }
+.long-answ-container {
+  border: 2px solid black;
+}
 .hidden {
   display: none;
 }
