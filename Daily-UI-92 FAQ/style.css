@@ -44,9 +44,20 @@ button {
   align-items: start;
   justify-content: space-between;
   width: 50rem;
-  height: 5rem;
+  height: 2rem;
+  margin-top: 10px;
 }
-
+.col-question {
+  margin-left: 20px;
+}
+.col-expander {
+  margin-right: 20px;
+}
+.col-ans-long {
+  width: 40rem;
+  /* TRBL */
+  margin-bottom: 10px;
+}
 .hidden {
   display: none;
 }
