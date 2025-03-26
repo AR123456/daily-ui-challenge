@@ -53,6 +53,9 @@ button {
 .col-expander {
   margin-right: 20px;
 }
+.col-contractor {
+  margin-right: 20px;
+}
 .col-ans-long {
   width: 40rem;
   /* TRBL */
