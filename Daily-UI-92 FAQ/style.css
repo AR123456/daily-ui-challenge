@@ -3,8 +3,7 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f3f7fa;
-  color: #4e7491;
+  background: #fffefe;
 }
 .container {
   display: flex;
@@ -42,7 +41,7 @@ h2 {
 }
 .search-btn {
   padding: 10px;
-  background: #4e7491;
+  background: #5d5e5e;
   color: white;
   border: 1px solid grey;
   border-left: none;
@@ -53,7 +52,7 @@ h2 {
   width: 9rem;
   height: 3rem;
   padding: 10px;
-  background: #4e7491;
+  background: #5d5e5e;
   color: white;
   border: 1px solid grey;
   border-radius: 5px;
