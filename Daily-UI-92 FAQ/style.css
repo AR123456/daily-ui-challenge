@@ -3,14 +3,12 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #fffefe;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70%;
 }
 header {
   display: flex;
@@ -18,38 +16,18 @@ header {
   justify-content: space-between;
   width: 50rem;
   height: 4rem;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-form {
-  display: flex;
-  width: 100%;
-  max-width: 400px;
 }
 input {
-  flex: 1;
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  background-color: #f1f1f1;
-  outline: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  width: 15rem;
+  padding: 25px;
+  border-radius: 5px;
 }
-h2 {
-  margin-top: 10px;
+h1 {
+  margin-left: 20px;
 }
 button {
-  padding: 10px;
-  background: #5d5e5e;
-  color: white;
-  border: 1px solid grey;
-  border-left: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-button:hover {
-  background-color: #131313;
+  width: 7rem;
+  border-radius: 5px;
 }
 .card {
   display: flex;
@@ -59,8 +37,6 @@ button:hover {
   width: 50rem;
   border-radius: 5px;
   border: 2px solid black;
-  margin-bottom: 20px;
-  min-height: 4rem;
 }
 .row-question {
   display: flex;
@@ -84,21 +60,7 @@ button:hover {
   width: 40rem;
   /* TRBL */
   margin-bottom: 10px;
-  margin-left: 20px;
-  border-top: grey 1px solid;
 }
-
-.short,
-.long {
-  /* transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out; */
-  transition: opacity 0.5s linear, max-height 0.5s linear;
-  overflow: hidden;
-}
-
 .hidden {
-  opacity: 0;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  pointer-events: none; /* Prevent interaction while hidden */
+  display: none;
 }
