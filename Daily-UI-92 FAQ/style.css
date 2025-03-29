@@ -61,9 +61,7 @@ button {
   /* TRBL */
   margin-bottom: 10px;
 }
-/* .hidden {
-  display: none;
-} */
+
 .short,
 .long {
   /* transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out; */
@@ -73,6 +71,8 @@ button {
 
 .hidden {
   opacity: 0;
-  max-height: 0;
-  pointer-events: none; /* Prevents interactions while hidden */
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  pointer-events: none; /* Prevent interaction while hidden */
 }
