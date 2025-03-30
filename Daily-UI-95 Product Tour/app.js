@@ -20,6 +20,22 @@ d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
     function render() {
       context.clearRect(0, 0, width, height);
       // draw water background sphere
+      context.beginPath();
+      // black baxkground for water
+      context.fillStyle = "#000204";
+      path({ type: "Sphere" });
+      context.fill();
+      // lat/long
+      context.beginPath();
+      context.strokeStyle = "#444";
+      path(graticule);
+      context.stroke();
+      // land
+      context.beginPath();
+      context.fillStyle = "#71b98A";
+      // land
+      path(land);
+      context.fill();
     }
     // rotation function
     function rotate() {
