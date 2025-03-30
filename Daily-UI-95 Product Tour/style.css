@@ -9,3 +9,14 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.container {
+}
+.card {
+}
+h2 {
+  color: white;
+  letter-spacing: 0.25rem;
+}
+#globe {
+  filter: drop-shadow(0 0 0.25rem white);
+}
