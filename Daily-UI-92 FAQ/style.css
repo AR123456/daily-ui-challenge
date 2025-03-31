@@ -17,18 +17,31 @@ header {
   width: 50rem;
   height: 4rem;
 }
+form {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+}
 input {
-  width: 20rem;
-  height: 2rem;
-  padding: 25px;
-  border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background-color: #f1f1f1;
+  outline: none;
 }
 h2 {
   margin-top: 10px;
 }
 button {
-  width: 7rem;
-  border-radius: 5px;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  border: 1px solid grey;
+  border-left: none;
+}
+button:hover {
+  background-color: #0b7dda;
 }
 .card {
   display: flex;
