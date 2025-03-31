@@ -16,6 +16,8 @@ header {
   justify-content: space-between;
   width: 50rem;
   height: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 form {
   display: flex;
