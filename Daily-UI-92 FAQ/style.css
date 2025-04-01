@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   width: 50rem;
   height: 4rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 40px;
 }
 form {
@@ -32,6 +32,8 @@ input {
   border: 1px solid grey;
   background-color: #f1f1f1;
   outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 h2 {
   margin-top: 10px;
@@ -42,6 +44,8 @@ button {
   color: white;
   border: 1px solid grey;
   border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 button:hover {
   background-color: #0b7dda;
@@ -80,6 +84,7 @@ button:hover {
   /* TRBL */
   margin-bottom: 10px;
   margin-left: 20px;
+  border-top: grey 1px solid;
 }
 
 .short,
