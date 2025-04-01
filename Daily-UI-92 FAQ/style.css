@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 70%;
 }
 header {
   display: flex;
@@ -16,6 +17,8 @@ header {
   justify-content: space-between;
   width: 50rem;
   height: 4rem;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 form {
   display: flex;
@@ -51,6 +54,8 @@ button:hover {
   width: 50rem;
   border-radius: 5px;
   border: 2px solid black;
+  margin-bottom: 20px;
+  min-height: 4rem;
 }
 .row-question {
   display: flex;
@@ -74,6 +79,7 @@ button:hover {
   width: 40rem;
   /* TRBL */
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .short,
