@@ -3,6 +3,7 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fffefe;
 }
 .container {
   display: flex;
@@ -40,7 +41,7 @@ h2 {
 }
 button {
   padding: 10px;
-  background: #2196f3;
+  background: #5d5e5e;
   color: white;
   border: 1px solid grey;
   border-left: none;
@@ -48,7 +49,7 @@ button {
   border-bottom-right-radius: 5px;
 }
 button:hover {
-  background-color: #0b7dda;
+  background-color: #131313;
 }
 .card {
   display: flex;
