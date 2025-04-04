@@ -10,8 +10,12 @@ body {
   justify-content: center;
   overflow: hidden;
   height: 100vh;
+  background-color: black;
 }
 .container {
 }
 .card {
+}
+h2 {
+  color: white;
 }
