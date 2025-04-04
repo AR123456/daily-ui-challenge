@@ -60,19 +60,26 @@
       let rotation = [0, 0, 0]; // Initial rotation
       let speed = 0.2; // Rotation speed
 
-      //   d3.json("https://unpkg.com/world-atlas@2.0.2/world/110m.json")
       d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
         .then((world) => {
           const land = topojson.feature(world, world.objects.land);
+          const countries = topojson.feature(world, world.objects.countries);
+          const graticule = d3.geoGraticule10(); // Graticule for lat/lon lines
 
           function render() {
             context.clearRect(0, 0, width, height);
 
             // Draw the water background (sphere)
             context.beginPath();
-            context.fillStyle = "#222"; // Dark blue background for water
+            context.fillStyle = "#222"; // Dark background for water
             path({ type: "Sphere" });
             context.fill();
+
+            // Draw graticule (latitude/longitude lines)
+            context.beginPath();
+            context.strokeStyle = "#444"; // Gray lat/lon lines
+            path(graticule);
+            context.stroke();
 
             // Draw the land
             context.beginPath();
@@ -80,10 +87,10 @@
             path(land);
             context.fill();
 
-            // Draw land stroke
+            // Draw country borders
             context.beginPath();
-            context.strokeStyle = "#ffffff"; // White stroke
-            path(land);
+            context.strokeStyle = "#ffffff"; // White borders
+            path(countries);
             context.stroke();
           }
 
