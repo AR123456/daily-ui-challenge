@@ -1,14 +1,103 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Splash</title>
   </head>
   <body>
     <div class="container">
-      <div class="card">Splash</div>
+      <div class="card">
+        <canvas id="globe"></canvas>
+        Splash
+      </div>
     </div>
+    <script src="app.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinning Globe</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="globe"></canvas>
+
+    <script>
+      const width = 600,
+        height = 600;
+      const canvas = d3
+        .select("#globe")
+        .attr("width", width)
+        .attr("height", height);
+      const context = canvas.node().getContext("2d");
+
+      const projection = d3
+        .geoOrthographic()
+        .scale(250)
+        .translate([width / 2, height / 2]);
+
+      const path = d3.geoPath(projection, context);
+
+      let rotation = [0, 0, 0]; // Initial rotation
+      let speed = 0.2; // Rotation speed
+
+      //   d3.json("https://unpkg.com/world-atlas@2.0.2/world/110m.json")
+      d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
+        .then((world) => {
+          const land = topojson.feature(world, world.objects.land);
+
+          function render() {
+            context.clearRect(0, 0, width, height);
+
+            // Draw the water background (sphere)
+            context.beginPath();
+            context.fillStyle = "#222"; // Dark blue background for water
+            path({ type: "Sphere" });
+            context.fill();
+
+            // Draw the land
+            context.beginPath();
+            context.fillStyle = "#4CAF50"; // Green land
+            path(land);
+            context.fill();
+
+            // Draw land stroke
+            context.beginPath();
+            context.strokeStyle = "#ffffff"; // White stroke
+            path(land);
+            context.stroke();
+          }
+
+          function rotate() {
+            rotation[0] += speed; // Rotate along X-axis
+            projection.rotate(rotation);
+            render();
+            requestAnimationFrame(rotate);
+          }
+
+          render();
+          rotate();
+        })
+        .catch((error) => console.error("Error loading world data:", error));
+    </script>
   </body>
 </html>
