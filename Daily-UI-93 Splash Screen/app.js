@@ -36,7 +36,7 @@ d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
 
       // Draw the land
       context.beginPath();
-      context.fillStyle = "#4CAF50"; // Green land
+      context.fillStyle = "#71B98A"; // Green land
       path(land);
       context.fill();
 
