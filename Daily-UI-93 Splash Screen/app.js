@@ -6,11 +6,12 @@ const context = canvas.node().getContext("2d");
 const projection = d3
   .geoOrthographic()
   .scale(250)
-  .translate([width / 2, height / 2]);
+  .translate([width / 2, height / 2])
+  .rotate([0, 0, 23.5]); // Tilt Earth's axis by -23.5° (negative means tilting towards us)
 
 const path = d3.geoPath(projection, context);
 
-let rotation = [0, 0, 0]; // Initial rotation
+let rotation = [0, 0, 23.5]; // Initial rotation with tilt
 let speed = 0.2; // Rotation speed
 
 d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
