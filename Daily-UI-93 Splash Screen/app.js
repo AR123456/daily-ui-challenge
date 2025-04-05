@@ -25,7 +25,7 @@ d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
 
       // Draw the water background (sphere)
       context.beginPath();
-      context.fillStyle = "#222"; // Dark background for water
+      context.fillStyle = "#000204"; // Dark background for water
       path({ type: "Sphere" });
       context.fill();
 
@@ -37,7 +37,7 @@ d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
 
       // Draw the land
       context.beginPath();
-      context.fillStyle = "#57BB86"; // Green land
+      context.fillStyle = "#71B98A"; // Green land
       path(land);
       context.fill();
 
