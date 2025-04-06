@@ -28,13 +28,18 @@ body {
   justify-content: center;
   height: 19rem;
   width: 19rem;
-  background-color: violet;
+  border: 2px solid black;
 }
-.card-headline {
-  background-color: rgb(155, 150, 160);
-  margin-bottom: 0.5rem;
+.card-header,
+.card-text,
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  border: 1px solid green;
+}
+.headline {
 }
 .card-text {
-  max-height: 80%;
-  width: 80%;
 }
