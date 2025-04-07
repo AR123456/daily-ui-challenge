@@ -32,6 +32,9 @@ body {
 }
 
 .card-header {
+  position: relative;
+  top: -50px;
+  left: 1px;
   width: 18rem;
   height: 2rem;
   display: flex;
@@ -52,16 +55,20 @@ body {
   border: 1px solid green;
 }
 .card-footer {
+  position: relative;
+  top: 50px;
+  left: 1px;
   width: 18rem;
   height: 1rem;
   display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
-  margin: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
   border: 1px solid green;
 }
-p.comment,
-p.heart {
-  margin: 0;
+img {
+  height: 24px;
+  width: 24px;
 }
