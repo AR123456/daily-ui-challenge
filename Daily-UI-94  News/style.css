@@ -30,9 +30,20 @@ body {
   width: 19rem;
   border: 2px solid black;
 }
-.card-header,
-.card-text,
-.card-footer {
+
+.card-header {
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  margin: 0.5rem;
+  border: 1px solid green;
+}
+.headline {
+}
+.card-text {
   width: 18rem;
   display: flex;
   flex-direction: column;
@@ -40,16 +51,19 @@ body {
   margin: 0.5rem;
   border: 1px solid green;
 }
-.card-header {
+.card-footer {
+  width: 18rem;
+  height: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: start;
-  justify-content: flex-start;
-
+  justify-content: space-between;
   margin: 0.5rem;
   border: 1px solid green;
+  background-color: aquamarine;
 }
-.headline {
-}
-.card-text {
+p.comment,
+p.heart {
+  background-color: blue;
+  color: orange;
 }
