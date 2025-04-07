@@ -30,6 +30,10 @@ body {
   width: 19rem;
   border: 2px solid black;
 }
+.card:hover {
+  background-color: #3a8bab;
+  color: white;
+}
 
 .card-header {
   position: relative;
