@@ -32,20 +32,21 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 19rem;
-  width: 19rem;
-  border: 2px solid black;
+  height: 18rem;
+  width: 18rem;
+  border-bottom: 1px #79b9d2 solid;
 }
 .card:hover {
   background-color: #3a8bab;
   color: white;
+  border: 0.25px red dashed;
 }
 
 .card-header {
   position: relative;
   top: -50px;
   left: 1px;
-  width: 18rem;
+  width: 17rem;
   height: 2rem;
   display: flex;
   flex-direction: column;
@@ -57,7 +58,7 @@ header {
 .headline {
 }
 .card-text {
-  width: 18rem;
+  width: 17rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +69,7 @@ header {
   position: relative;
   top: 50px;
   left: 1px;
-  width: 18rem;
+  width: 17rem;
   height: 1rem;
   display: flex;
   flex-direction: row;
