@@ -7,49 +7,57 @@ const projection = d3
   .geoOrthographic()
   .scale(250)
   .translate([width / 2, height / 2])
-  .rotate([0, 0, 23.5]); // Tilt Earth's axis by -23.5° (negative means tilting towards us)
+  // Tilt Earth's axis by -23.5° (negative means tilting towards us)
+  .rotate([0, 0, 23.5]);
 
 const path = d3.geoPath(projection, context);
-
-let rotation = [0, 0, 23.5]; // Initial rotation with tilt
-let speed = 0.2; // Rotation speed
+// Initial rotation with tilt
+let rotation = [0, 0, 23.5];
+// Rotation speed
+let speed = 0.2;
 
 d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
   .then((world) => {
     const land = topojson.feature(world, world.objects.land);
     const countries = topojson.feature(world, world.objects.countries);
-    const graticule = d3.geoGraticule10(); // Graticule for lat/lon lines
+    // Graticule for lat/lon lines
+    const graticule = d3.geoGraticule10();
 
     function render() {
       context.clearRect(0, 0, width, height);
 
       // Draw the water background (sphere)
       context.beginPath();
-      context.fillStyle = "#000204"; // Dark background for water
+      // Dark background for water
+      context.fillStyle = "#000204";
       path({ type: "Sphere" });
       context.fill();
 
       // Draw graticule (latitude/longitude lines)
       context.beginPath();
-      context.strokeStyle = "#444"; // Gray lat/lon lines
+      // Gray lat/lon lines
+      context.strokeStyle = "#444";
       path(graticule);
       context.stroke();
 
       // Draw the land
       context.beginPath();
-      context.fillStyle = "#71B98A"; // Green land
+      // Green land
+      context.fillStyle = "#71B98A";
       path(land);
       context.fill();
 
       // Draw country borders
       context.beginPath();
-      context.strokeStyle = "#ffffff"; // White borders
+      // White borders
+      context.strokeStyle = "#ffffff";
       path(countries);
       context.stroke();
     }
 
     function rotate() {
-      rotation[0] += speed; // Rotate along X-axis
+      // Rotate along X-axis
+      rotation[0] += speed;
       projection.rotate(rotation);
       render();
       requestAnimationFrame(rotate);
