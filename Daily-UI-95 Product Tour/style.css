@@ -29,3 +29,22 @@ body {
     skewX(0deg) skewY(0deg); */
   /* filter: drop-shadow(40px 31px 15px #000000); */
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  height: 45rem;
+  width: 18rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.line {
+  position: absolute;
+  bottom: 0;
+}
+.circle-small {
+  margin-bottom: 5px;
+}
