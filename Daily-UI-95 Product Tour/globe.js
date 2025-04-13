@@ -6,11 +6,12 @@ const projection = d3
   .geoOrthographic()
   .scale(size / 2.5)
   .translate([size / 2, size / 2])
-  .rotate([0, -23.5, 0]); // Maintain Earth's axial tilt
+  .rotate([100, -23.5, 0]); // Maintain Earth's axial tilt
 
 const path = d3.geoPath(projection, context);
 
-let rotation = [0, -23.5, 0]; // Initial rotation with tilt
+// let rotation = [0, -23.5, 0]; // Initial rotation with tilt
+let rotation = [100, -23.5, 0]; // Initial rotation with tilt
 let dragging = false;
 let lastX, lastY;
 
