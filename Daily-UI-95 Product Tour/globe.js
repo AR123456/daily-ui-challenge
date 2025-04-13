@@ -1,4 +1,4 @@
-const size = 18 * 16; // 18rem in pixels
+const size = 20 * 18; // 18rem in pixels
 const canvas = d3.select("#globe").attr("width", size).attr("height", size);
 const context = canvas.node().getContext("2d");
 
@@ -6,19 +6,22 @@ const projection = d3
   .geoOrthographic()
   .scale(size / 2.5)
   .translate([size / 2, size / 2])
-  .rotate([100, -23.5, 0]); // Maintain Earth's axial tilt
+  .rotate([100, -23.5, 0]); // Ensure the US is visible initially
 
 const path = d3.geoPath(projection, context);
 
-// let rotation = [0, -23.5, 0]; // Initial rotation with tilt
 let rotation = [100, -23.5, 0]; // Initial rotation with tilt
 let dragging = false;
 let lastX, lastY;
 
-d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
-  .then((world) => {
+Promise.all([
+  d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json"),
+  d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"),
+])
+  .then(([world, usStates]) => {
     const land = topojson.feature(world, world.objects.land);
     const countries = topojson.feature(world, world.objects.countries);
+    const states = topojson.feature(usStates, usStates.objects.states);
     const graticule = d3.geoGraticule10();
 
     function render() {
@@ -45,8 +48,15 @@ d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json")
       // Draw country borders
       context.beginPath();
       context.strokeStyle = "#ffffff";
-      context.lineWidth = 0.5;
+      context.lineWidth = 1;
       path(countries);
+      context.stroke();
+
+      // Draw U.S. state borders in a slightly different color
+      context.beginPath();
+      context.strokeStyle = "#bbbbbb"; // Lighter gray for states
+      context.lineWidth = 0.8;
+      path(states);
       context.stroke();
     }
 
