@@ -1,4 +1,4 @@
-const size = 20 * 18; // 18rem in pixels
+const size = 20 * 16; // 20rem in pixels
 const canvas = d3.select("#globe").attr("width", size).attr("height", size);
 const context = canvas.node().getContext("2d");
 
