@@ -65,6 +65,7 @@ Promise.all([
     // Mouse drag interaction for rotation
     canvas
       .on("mousedown", (event) => {
+        event.preventDefault(); // Prevent unintended selections
         dragging = true;
         [lastX, lastY] = d3.pointer(event);
       })
@@ -78,7 +79,7 @@ Promise.all([
 
         rotation[0] += dx * 0.5; // Rotate horizontally
         rotation[1] = Math.max(-90, Math.min(90, rotation[1] - dy * 0.5)); // Tilt within realistic range
-        projection.rotate(rotation);
+        projection.rotate([...rotation]);
         render();
       })
       .on("mouseup", () => (dragging = false))
