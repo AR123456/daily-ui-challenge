@@ -6,15 +6,15 @@ const projection = d3
   .geoOrthographic()
   .scale(size / 2.5)
   .translate([size / 2, size / 2])
-  .rotate([100, -23.5, 0]); // Ensure the US is visible initially
+  .rotate([100, -23.5, 0]); // US is visible initially
 
 const path = d3.geoPath(projection, context);
 
-let rotation = [100, -23.5, 0]; // Initial rotation with tilt
+let rotation = [100, -23.5, 0]; // Initial rotation
 let dragging = false;
 let lastX, lastY;
-// Rotation speed
-let speed = 0.2;
+let autoRotate = true; // Flag to control auto-rotation
+
 Promise.all([
   d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json"),
   d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"),
@@ -55,7 +55,7 @@ Promise.all([
 
       // Draw U.S. state borders in a slightly different color
       context.beginPath();
-      context.strokeStyle = "#bbbbbb"; // Lighter gray for states
+      context.strokeStyle = "#bbbbbb";
       context.lineWidth = 0.8;
       path(states);
       context.stroke();
@@ -63,11 +63,20 @@ Promise.all([
 
     render(); // Initial render
 
-    // Mouse drag interaction for rotation
+    // 🔄 Auto-Rotation
+    setInterval(() => {
+      if (autoRotate) {
+        rotation[0] -= 0.2; // Slowly rotate left
+        projection.rotate(rotation);
+        render();
+      }
+    }, 50); // Adjust speed (lower = faster)
+
+    // 🎯 Mouse Drag Interaction
     canvas
       .on("mousedown", (event) => {
-        event.preventDefault(); // Prevent unintended selections
         dragging = true;
+        autoRotate = false; // Stop auto-rotation when dragging
         [lastX, lastY] = d3.pointer(event);
       })
       .on("mousemove", (event) => {
@@ -80,10 +89,16 @@ Promise.all([
 
         rotation[0] += dx * 0.5; // Rotate horizontally
         rotation[1] = Math.max(-90, Math.min(90, rotation[1] - dy * 0.5)); // Tilt within realistic range
-        projection.rotate([...rotation]);
+        projection.rotate(rotation);
         render();
       })
-      .on("mouseup", () => (dragging = false))
-      .on("mouseleave", () => (dragging = false));
+      .on("mouseup", () => {
+        dragging = false;
+        autoRotate = true; // Resume auto-rotation after dragging
+      })
+      .on("mouseleave", () => {
+        dragging = false;
+        autoRotate = true; // Resume auto-rotation if the mouse leaves
+      });
   })
   .catch((error) => console.error("Error loading world data:", error));
