@@ -6,7 +6,7 @@ const projection = d3
   .geoOrthographic()
   .scale(size / 2.5)
   .translate([size / 2, size / 2])
-  .rotate([100, -23.5, 0]); // Ensure the US is visible initially
+  .rotate([100, -33.5, 0]); // Ensure the US is visible initially
 
 const path = d3.geoPath(projection, context);
 
