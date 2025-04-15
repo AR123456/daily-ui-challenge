@@ -16,19 +16,20 @@ body {
 
 .container {
 }
-.card {
+.table-wrapper {
   overflow: auto;
   width: 100%;
 }
 
 table {
   border: 1px solid #dededf;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 1px;
   text-align: left;
+  margin-left: 5%;
 }
 
 caption {
@@ -48,4 +49,8 @@ td {
   background-color: #ffffff;
   color: #000000;
   padding: 5px;
+}
+.prod-widget {
+}
+.sales-widget {
 }
