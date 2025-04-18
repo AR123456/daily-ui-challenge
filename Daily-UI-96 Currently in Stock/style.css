@@ -50,9 +50,7 @@ td {
   color: #000000;
   padding: 5px;
 }
-.perform {
-  width: 12rem;
-}
+
 .prod-widget {
   width: 12rem;
   display: flex;
@@ -61,8 +59,19 @@ td {
   justify-content: left;
   margin-left: 5px;
 }
-.prod-widget img {
-  margin-right: 1rem;
+
+.prod-inner-widget {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.prod-img {
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.perform {
+  width: 12rem;
 }
 .sales-widget {
   width: 12rem;
@@ -98,11 +107,4 @@ td {
   flex-direction: row;
   align-items: row;
   justify-content: left;
-}
-
-.prod-inner-widget {
-  text-align: center;
-}
-.rating {
-  text-align: center;
 }
