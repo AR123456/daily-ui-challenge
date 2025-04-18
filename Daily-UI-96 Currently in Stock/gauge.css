@@ -1,5 +1,5 @@
 :root {
-  --rotation: 120deg;
+  --rotation: 12deg;
   --color: #5cb85c;
   --background: #e9ecef;
 }
@@ -9,7 +9,7 @@
   background-color: var(--color, #a22);
   overflow: hidden;
   /* width: 200px; */
-  width: 50%;
+  width: 6rem;
 }
 .gauge:before {
   content: "";
