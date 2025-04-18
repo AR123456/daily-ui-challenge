@@ -1,5 +1,5 @@
 :root {
-  --rotation: 99deg;
+  --rotation: 12deg;
   --color: #5cb85c;
   --background: #e9ecef;
 }
@@ -40,9 +40,9 @@
   transform-origin: bottom center;
   transition-duration: 600;
 }
-/* .gauge:hover {
+.gauge:hover {
   --rotation: 100deg;
-} */
+}
 .gauge .value {
   position: absolute;
   bottom: 0%;
