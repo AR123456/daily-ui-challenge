@@ -71,13 +71,20 @@ td {
   border-radius: 5px;
 }
 .perform {
-  width: 12rem;
+  /* width: 10rem; */
+  margin-bottom: 3px;
 }
 .sales-widget {
-  width: 12rem;
+  /* width: 12rem; */
   display: flex;
   flex-direction: column;
   align-items: column;
+  justify-content: left;
+}
+.sales-inner-widget {
+  display: flex;
+  flex-direction: row;
+  align-items: row;
   justify-content: left;
 }
 .avg-perform-widget {
@@ -89,20 +96,14 @@ td {
   margin-left: 1rem;
 }
 .in-stock-widget {
-  width: 12rem;
+  /* width: 12rem; */
   display: flex;
   flex-direction: row;
   align-items: row;
   justify-content: left;
 }
 .prod-price-widget {
-  width: 12rem;
-  display: flex;
-  flex-direction: row;
-  align-items: row;
-  justify-content: left;
-}
-.sales-inner-widget {
+  /* width: 12rem; */
   display: flex;
   flex-direction: row;
   align-items: row;
