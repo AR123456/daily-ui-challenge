@@ -16,6 +16,7 @@ body {
 header {
   margin-top: 5rem;
 }
+
 input[type="text"] {
   background: #dededf url("./search24.svg") 77% 50% no-repeat;
 
@@ -41,7 +42,8 @@ input[type="text"] {
   overflow: auto;
   width: 100%;
 }
-
+caption {
+}
 table {
   border: 1px solid #dededf;
   height: 90%;
@@ -131,4 +133,8 @@ td {
   flex-direction: row;
   align-items: row;
   justify-content: left;
+}
+footer {
+  width: 100%;
+  height: 20rem;
 }
