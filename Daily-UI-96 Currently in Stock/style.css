@@ -17,9 +17,11 @@ header {
   margin-top: 5rem;
 }
 input[type="text"] {
-  background: #dededf url() 77% 50% no-repeat;
+  background: #dededf url("./search24.svg") 77% 50% no-repeat;
 
   padding: 12px 10px;
+  height: 40px;
+  width: 100%;
   margin-top: 8px;
   display: inline-block;
   border: 1px solid #ccc;
