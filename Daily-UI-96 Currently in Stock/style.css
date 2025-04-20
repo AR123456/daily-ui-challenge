@@ -101,6 +101,8 @@ td {
   flex-direction: row;
   align-items: row;
   justify-content: left;
+  gap: 20px;
+  margin-left: 15px;
 }
 .prod-price-widget {
   /* width: 12rem; */
