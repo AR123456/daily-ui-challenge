@@ -1,3 +1,5 @@
+// https://www.w3schools.com/css/css3_variables_javascript.asp
+
 let r = document.querySelector(":root");
 const stock = document.querySelector(".num-stock").innerHTML;
 const percentage = document.querySelector(".percentage").clientWidth;
@@ -8,9 +10,12 @@ console.log(percentage);
 console.log(mask);
 
 function gageVal_get() {
-  let gagePercent = stock;
+  let rs = getComputedStyle(r);
+  console.log(rs);
+  console.log(rs.getPropertyValue("--rotation"));
 }
+gageVal_get();
 function gageVal_set() {
-  r.style.setProperty("-- --rotation", stock);
+  r.style.setProperty("--rotation", "stock");
 }
-gageVal_set();
+// gageVal_set();
