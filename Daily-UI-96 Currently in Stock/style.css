@@ -39,7 +39,7 @@ input[type="text"] {
   overflow: hidden;
 }
 .table-wrapper {
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
 }
 caption {
