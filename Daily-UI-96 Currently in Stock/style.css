@@ -112,6 +112,12 @@ td {
   align-items: row;
   justify-content: left;
 }
+.trend-graph img {
+  margin-left: 5px;
+}
+.total-sales img {
+  margin-left: 10px;
+}
 .avg-perform-widget {
   width: 5rem;
   display: flex;
