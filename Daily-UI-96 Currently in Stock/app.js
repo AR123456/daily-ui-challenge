@@ -11,11 +11,13 @@ console.log(mask);
 
 function gageVal_get() {
   let rs = getComputedStyle(r);
-  console.log(rs);
-  console.log(rs.getPropertyValue("--rotation"));
+  // console.log(rs);
+  console.log(rs.getPropertyValue("--rotation").slice(0, 2));
 }
-gageVal_get();
+// gageVal_get();
 function gageVal_set() {
+  let rs = getComputedStyle(r);
+  console.log(rs.getPropertyValue("--rotation").slice(0, 2));
   r.style.setProperty("--rotation", "stock");
 }
-// gageVal_set();
+gageVal_set();
