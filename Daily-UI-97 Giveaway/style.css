@@ -14,15 +14,21 @@ body {
   color: #770016;
 }
 .container {
-  /* display: flex;
+  display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: end;
-  border: 5px solid red; */
+  border: 5px solid red;
 }
 .card {
   border: 5px solid blue;
   height: 45rem;
   width: 33rem;
   margin-right: 3rem;
+}
+button {
+  height: 40px;
+  width: 280px;
+  margin-left: 7rem;
+  margin-top: 10rem;
 }
