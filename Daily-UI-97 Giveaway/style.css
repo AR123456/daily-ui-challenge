@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-
+  background-color: rgb(87, 52, 43, 0.4);
   border: 5px solid red;
   height: 100%;
 }
@@ -26,6 +26,7 @@ body {
   height: 55rem;
   width: 33rem;
   margin-right: 3rem;
+  text-align: center;
 }
 button {
   height: 40px;
@@ -33,6 +34,8 @@ button {
   margin-left: 7rem;
   margin-top: 10rem;
   border-radius: 5px;
+  background-color: rgb(166, 176, 186);
+  letter-spacing: 2px;
 }
 button:hover {
   background-color: #cf182f;
