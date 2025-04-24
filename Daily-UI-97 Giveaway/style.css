@@ -18,7 +18,8 @@ body {
   flex-direction: row;
   align-items: flex-end;
   background-color: rgb(87, 52, 43, 0.4);
-  border: 5px solid red;
+
+  border-radius: 5px;
   height: 100%;
 }
 .card {
