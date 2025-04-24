@@ -17,12 +17,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: end;
+
   border: 5px solid red;
+  height: 100%;
 }
 .card {
   border: 5px solid blue;
-  height: 45rem;
+  height: 55rem;
   width: 33rem;
   margin-right: 3rem;
 }
@@ -31,4 +32,10 @@ button {
   width: 280px;
   margin-left: 7rem;
   margin-top: 10rem;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #cf182f;
+  color: white;
+  border: white;
 }
