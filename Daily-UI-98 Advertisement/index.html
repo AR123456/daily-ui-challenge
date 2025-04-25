@@ -7,9 +7,63 @@
     <title>Advertisement</title>
   </head>
   <body>
-    <header></header>
-    <div class="container">
-      <div class="card">Advertisement</div>
+    <div class="psst">
+      <div class="container">This is an important announcement</div>
     </div>
+
+    <nav class="navbar is-sticky">
+      <div class="container mx-auto flex items-center p-6">
+        <a class="inline-block h-8 mr-auto" href="#">
+          <img
+            class="inline-block h-full w-auto"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/255716/acme.svg"
+          />
+        </a>
+
+        <ul class="flex items-center">
+          <li class="ml-6">
+            <a class="text-blue-500 hover:text-blue-800" href="#">Home</a>
+          </li>
+          <li class="ml-6">
+            <a class="text-blue-500 hover:text-blue-800" href="#">Blog</a>
+          </li>
+          <li class="ml-6">
+            <a class="text-blue-500 hover:text-blue-800" href="#">Events</a>
+          </li>
+          <li class="ml-6">
+            <a class="text-blue-500 hover:text-blue-800" href="#">Contact</a>
+          </li>
+          <li class="ml-6">
+            <a class="text-blue-500 hover:text-blue-800" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div
+        class="container my-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <div class="article">
+          <div
+            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+          >
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <img
+                src="https://source.unsplash.com/collection/225/800x600"
+                class="h-40 w-full rounded-t pb-4 object-cover"
+              />
+              <div class="w-full font-bold text-xl text-gray-900 px-4">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <p class="text-gray-800 font-serif text-base px-6 mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
