@@ -11,14 +11,14 @@ body {
   overflow: hidden;
   height: 100vh;
   background: url("./mt-bike.jpg") center/cover no-repeat;
-  color: #770016;
+
   color: white;
 }
 .container {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  /* background-color: rgb(87, 52, 43, 0.4); */
+
   border-radius: 5px;
   height: 100%;
 }
@@ -31,7 +31,7 @@ body {
 button {
   height: 40px;
   width: 280px;
-  /* margin-left: 4rem; */
+
   margin-top: 5rem;
   border-radius: 5px;
   background-color: rgb(166, 176, 186);
