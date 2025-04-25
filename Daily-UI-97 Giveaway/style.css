@@ -12,19 +12,18 @@ body {
   height: 100vh;
   background: url("./mt-bike.jpg") center/cover no-repeat;
   color: #770016;
+  color: white;
 }
 .container {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  background-color: rgb(87, 52, 43, 0.4);
-
+  /* background-color: rgb(87, 52, 43, 0.4); */
   border-radius: 5px;
   height: 100%;
 }
 .card {
-  border: 5px solid blue;
-  height: 55rem;
+  height: 35rem;
   width: 33rem;
   margin-right: 3rem;
   text-align: center;
@@ -32,8 +31,8 @@ body {
 button {
   height: 40px;
   width: 280px;
-  margin-left: 7rem;
-  margin-top: 10rem;
+  /* margin-left: 4rem; */
+  margin-top: 5rem;
   border-radius: 5px;
   background-color: rgb(166, 176, 186);
   letter-spacing: 2px;
