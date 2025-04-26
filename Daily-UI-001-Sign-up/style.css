@@ -1,7 +1,5 @@
 body {
-  background-image: url("./vol.jpg");
-  background-position: cover;
-}
-.container {
-  width: 33%;
+  /* background-image: url("./vol.jpg"); */
+  /* background-position: center; */
+  background: url("./vol.jpg");
 }
