@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.2/tailwind.min.css"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>Advertisement</title>
+    <title>Document</title>
   </head>
   <body>
     <div class="psst">
@@ -16,51 +12,35 @@
     </div>
 
     <nav class="navbar is-sticky">
-      <div class="container mx-auto flex items-center p-6">
-        <a class="inline-block h-8 mr-auto" href="#">
+      <div class="container nav-container">
+        <a class="logo" href="#">
           <img
-            class="inline-block h-full w-auto"
             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/255716/acme.svg"
+            alt="Logo"
           />
         </a>
 
-        <ul class="flex items-center">
-          <li class="ml-6">
-            <a class="text-blue-500 hover:text-blue-800" href="#">Home</a>
-          </li>
-          <li class="ml-6">
-            <a class="text-blue-500 hover:text-blue-800" href="#">Blog</a>
-          </li>
-          <li class="ml-6">
-            <a class="text-blue-500 hover:text-blue-800" href="#">Events</a>
-          </li>
-          <li class="ml-6">
-            <a class="text-blue-500 hover:text-blue-800" href="#">Contact</a>
-          </li>
-          <li class="ml-6">
-            <a class="text-blue-500 hover:text-blue-800" href="#">About</a>
-          </li>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="main">
-      <div
-        class="container my-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-      >
+      <div class="container article-grid">
         <div class="article">
-          <div
-            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
-          >
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+          <div class="article-card">
+            <a href="#">
               <img
                 src="https://source.unsplash.com/collection/225/800x600"
-                class="h-40 w-full rounded-t pb-4 object-cover"
+                alt="Article image"
               />
-              <div class="w-full font-bold text-xl text-gray-900 px-4">
-                Lorem ipsum dolor sit amet.
-              </div>
-              <p class="text-gray-800 font-serif text-base px-6 mb-5">
+              <div class="title">Lorem ipsum dolor sit amet.</div>
+              <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 at ipsum eu nunc commodo posuere et sit amet ligula.
               </p>
@@ -69,6 +49,7 @@
         </div>
       </div>
     </main>
+
     <script src="app.js"></script>
   </body>
 </html>
