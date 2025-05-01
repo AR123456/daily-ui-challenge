@@ -37,4 +37,11 @@ body {
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   opacity: 0;
+
+  /* transition the opacity on focus  */
+  transition: opacity 150ms ease-in-out;
+}
+/* for testing will add js later */
+.dropdown > .link:focus + .dropdown-menu {
+  opacity: 1;
 }
