@@ -21,7 +21,8 @@ body {
   cursor: pointer;
   padding: 0;
 }
-
+/* apply black color to when drop down is dropped  */
+.dropdown.active > .link,
 .link:hover {
   color: black;
 }
@@ -45,7 +46,7 @@ body {
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 /* for testing will add js later */
-.dropdown > .link:focus + .dropdown-menu {
+.dropdown.active > .link + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
   /* when the dropdown is visible allow pointer events so the link can be selected behind the drop down menu  */

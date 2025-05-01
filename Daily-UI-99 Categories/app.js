@@ -1,15 +1,18 @@
-//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
+document.addEventListener("click", (e) => {
+  const isDropdownButton = e.target.matches("[data-dropdown-button]");
+  //   setting up the toggle if we are clicking the button button toggle dropdown open, if clicking inside the dropdown keep it open but if outside button close it
+  // are we in a dropdown, if so ignore
+  // in a drop down that is has a parent of data dropdown  ignore
+  if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
+  // otherwise if clicking dropdown the dropdown we are clicking , find its class list and toggle it.
+  let currentDropdown;
+  if (isDropdownButton) {
+    currentDropdown = e.target.closest("[data-dropdown]");
+    currentDropdown.classList.toggle("active");
+  }
+  // get rid of all the dropdowns that are not already open
+  document.querySelectorAll("[data-dropdown].active").forEach((dropdown) => {
+    if (dropdown === currentDropdown) return;
+    dropdown.classList.remove("active");
   });
-}
+});
