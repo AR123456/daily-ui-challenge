@@ -47,7 +47,18 @@
       </div>
 
       <a href="#" class="link">Pricing</a>
-      <button class="link" data-dropdown-button>Login</button>
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Login</button>
+        <div class="dropdown-menu">
+          <form class="login-form">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>

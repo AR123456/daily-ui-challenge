@@ -63,3 +63,7 @@ body {
   flex-direction: column;
   gap: 0.25rem;
 }
+/*  */
+.login-form > input {
+  margin-bottom: 0.5rem;
+}
