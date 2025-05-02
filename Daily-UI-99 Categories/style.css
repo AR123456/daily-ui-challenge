@@ -52,3 +52,14 @@ body {
   /* when the dropdown is visible allow pointer events so the link can be selected behind the drop down menu  */
   pointer-events: auto;
 }
+.information-grid {
+  display: grid;
+  /* 2 col as wide as it can be */
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
