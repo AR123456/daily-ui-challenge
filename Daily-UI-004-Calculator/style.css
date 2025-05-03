@@ -1,51 +1,67 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
-.libre-bodoni {
-  font-family: "Libre Bodoni", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 52px;
-  color: white !important;
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-  /* background: linear-gradient(
-      to bottom,
-      rgba(9, 9, 9, 0.82),
-      rgba(228, 220, 220, 0.63)
-    ),
-    url(./cool-owl2.jpg);
-  background-position: 10% 10%;
-  background-repeat: no-repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #8bc6ec;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.eyes {
-  color: #e0c353; */
-
-  background: linear-gradient(
-      to bottom,
-      rgba(9, 9, 9, 0.82),
-      rgba(228, 220, 220, 0.63)
-    ),
-    url(./cool-owl2.jpg);
-  background-position: 10% 10%;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  font-family: "Libre Bodoni", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 52px;
-  color: white !important;
+.container {
+  background: #000000;
+  padding: 25px;
+  width: 350px;
+  border-radius: 10px;
 }
-.col {
-  height: 30px;
-  width: 30px;
-  font-family: "Libre Bodoni", serif;
-  color: white !important;
+.calc-text {
+  margin-bottom: 20px;
+  padding-left: 5px;
 }
-.answer {
-  height: 60px;
+.calc-text p {
+  width: 100%;
+  font-size: 3.5rem;
+  text-align: end;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Wrapping_breaking_text */
+  word-wrap: break-word;
+  word-break: break-all;
 }
-.btn-outline-dark {
-  border-color: #e0c353;
+button {
+  background: #333333;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 70%;
+  height: 65px;
+  width: 65px;
+}
+button:active,
+button:focus {
+  filter: brightness(120%);
+}
+.calc-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 15px;
+  grid-column-gap: 10px;
+}
+.key-zero {
+  grid-column: span 2;
+  width: 100%;
+  border-radius: 30px;
+}
+.key-operate {
+  background: #ff9501;
+}
+.key-others {
+  background: #a6a7a6;
+  color: #000000;
 }
