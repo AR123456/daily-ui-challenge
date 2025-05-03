@@ -18,3 +18,19 @@ body {
   width: 350px;
   border-radius: 10px;
 }
+.calc-text {
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+.calc-text p {
+  width: 100%;
+  font-size: 3.5rem;
+  text-align: end;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Wrapping_breaking_text */
+  word-wrap: break-word;
+  word-break: break-all;
+}
