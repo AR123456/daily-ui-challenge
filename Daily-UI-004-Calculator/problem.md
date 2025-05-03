@@ -14,8 +14,3 @@ url(./cool-owl2.jpg);
 .btn-outline-dark {
 border-color: #e0c353;
 }
-
-Poor example very glichy
-https://medium.com/@sharathchandark/how-to-create-a-calculator-using-html-css-javascript-simple-calculator-in-javascript-f88c264de03a
-
-https://www.youtube.com/watch?v=j59qQ7YWLxw&list=PLZlA0Gpn_vH8DWL14Wud_m8NeNNbYKOkj
