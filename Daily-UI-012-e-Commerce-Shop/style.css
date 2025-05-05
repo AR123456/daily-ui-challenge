@@ -36,9 +36,10 @@ svg {
 }
 
 text {
-  fill: #d1390d;
+  fill: black;
   font-family: "Libre Bodoni", serif;
   font-weight: 700;
   font-size: 20px;
   text-anchor: middle;
+  letter-spacing: 2px;
 }
