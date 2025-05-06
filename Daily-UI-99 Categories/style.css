@@ -1,4 +1,3 @@
-/*  trying another way  */
 body {
   margin: 0;
 }
@@ -28,7 +27,7 @@ h1 {
 .dropdown-heading {
   margin-bottom: 4px;
 }
-/* apply black color to when drop down is dropped  */
+
 .dropdown.active > .link,
 .link:hover {
   color: black;
