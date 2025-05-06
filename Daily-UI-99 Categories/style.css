@@ -2,7 +2,9 @@
 body {
   margin: 0;
 }
-
+h1 {
+  margin: 5rem;
+}
 .header {
   background-color: #f3f3f3;
   display: flex;
@@ -20,7 +22,11 @@ body {
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
+  margin: 5px;
   padding: 0;
+}
+.dropdown-heading {
+  margin-bottom: 4px;
 }
 /* apply black color to when drop down is dropped  */
 .dropdown.active > .link,
