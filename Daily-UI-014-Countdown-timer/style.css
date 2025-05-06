@@ -6,6 +6,10 @@
   font-size: xx-large;
   font-size: 4rem;
 }
+*,
+html {
+  box-sizing: border-box;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -16,19 +20,54 @@ body {
 }
 .container {
   background-color: rgb(248, 244, 244);
-  height: 40rem;
+  height: 42rem;
   width: 22rem;
   border-radius: 35px;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* groove */
+  box-shadow: 1px 1px 1px #555;
+  /* this tilts phone-  */
+  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg); */
+  /* shadow around phone */
+  filter: drop-shadow(40px 31px 15px #000000);
+}
+/* works with transform in container 
+this will kick out the bottom of the phone a bit */
+/* .wrapper {
+  perspective: 1474px;
+  perspective-origin: 54% 192%;
+} */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  height: 45rem;
+  width: 20rem;
+  border-radius: 25px;
+  margin-bottom: 1em;
+  position: relative;
+}
+.line {
+  position: absolute;
+  bottom: 0;
+}
+.circle-small {
+  margin-bottom: 5px;
 }
 .clock {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 50vh;
-  gap: 10px;
 }
 .hours,
 .minutes,
@@ -38,5 +77,6 @@ body {
   padding: 5px;
 }
 .pause {
+  margin-top: 5rem;
   text-align: center;
 }
