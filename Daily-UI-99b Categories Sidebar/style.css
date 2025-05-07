@@ -21,10 +21,10 @@ h1 {
   text-decoration: none;
   color: #777;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 1rem;
   cursor: pointer;
-  margin: 5px;
-  padding: 0;
+  padding: 0.5rem;
+  width: 100%;
 }
 .dropdown-heading {
   margin-bottom: 4px;
