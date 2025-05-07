@@ -39,8 +39,9 @@ h1 {
 }
 .dropdown-menu {
   position: absolute;
-  left: 0;
-  top: calc(100% * 0.25rem);
+  left: 100%;
+  /* top: calc(100% * 0.25rem); */
+  top: 0;
   background-color: white;
   padding: 0.75rem;
   border-radius: 0.25rem;
@@ -52,6 +53,9 @@ h1 {
   transform: translateY(-10px);
   /* transition the opacity on focus  */
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  white-space: nowrap;
+  z-index: 1000;
+  min-width: 200px;
 }
 /* for testing will add js later */
 .dropdown.active > .link + .dropdown-menu {
@@ -61,10 +65,10 @@ h1 {
   pointer-events: auto;
 }
 .information-grid {
-  display: grid;
+  /* display: grid; */
   /* 2 col as wide as it can be */
-  grid-template-columns: repeat(2, max-content);
-  gap: 2rem;
+  /* grid-template-columns: repeat(2, max-content); */
+  /* gap: 2rem; */
 }
 .dropdown-links {
   display: flex;
