@@ -1,16 +1,18 @@
 body {
   margin: 0;
+  display: flex;
 }
 h1 {
   margin: 5rem;
 }
-.header {
+.sidebar {
+  width: 200px;
   background-color: #f3f3f3;
   display: flex;
-  align-items: baseline;
-  padding: 0.5rem;
-  gap: 4rem;
-  padding-left: 1rem;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  gap: 1rem;
+  height: 100vh;
 }
 
 .link {
