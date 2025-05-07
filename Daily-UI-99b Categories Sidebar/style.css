@@ -55,7 +55,8 @@ h1 {
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   white-space: nowrap;
   z-index: 1000;
-  min-width: 200px;
+  min-width: none;
+  width: auto;
 }
 /* for testing will add js later */
 .dropdown.active > .link + .dropdown-menu {
@@ -69,7 +70,12 @@ h1 {
   /* 2 col as wide as it can be */
   /* grid-template-columns: repeat(2, max-content); */
   /* gap: 2rem; */
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  white-space: nowrap;
 }
+
 .dropdown-links {
   display: flex;
   flex-direction: column;
