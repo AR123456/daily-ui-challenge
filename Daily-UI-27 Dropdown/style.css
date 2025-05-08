@@ -13,7 +13,7 @@
   min-height: 100vh;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   /* background-color: #000204; */
   background: #57bb86;
@@ -38,17 +38,17 @@ header {
 }
 .toggle {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   background: url("./menu-up.svg");
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 60px;
   background-position: center;
 }
 .toggle.active {
   background: url("./menu-down.svg");
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 60px;
   background-position: center;
 }
 
@@ -68,10 +68,9 @@ header {
 .nav-menu-expanded {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0px;
   width: 200px;
   height: 100%;
-
   display: flex;
   align-items: center;
   justify-content: left;
