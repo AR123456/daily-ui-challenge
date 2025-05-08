@@ -38,6 +38,7 @@ h1 {
 }
 .dropdown {
   position: relative;
+  height: 3rem;
 }
 .dropdown-menu {
   position: absolute;
