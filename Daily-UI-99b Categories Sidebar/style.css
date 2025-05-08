@@ -28,6 +28,9 @@ h1 {
 }
 .dropdown-heading {
   margin-bottom: 4px;
+  white-space: nowrap;
+  font-weight: bold;
+  padding-right: 0.5rem;
 }
 
 .dropdown.active > .link,
@@ -66,20 +69,21 @@ h1 {
   pointer-events: auto;
 }
 .information-grid {
-  /* display: grid; */
-  /* 2 col as wide as it can be */
-  /* grid-template-columns: repeat(2, max-content); */
-  /* gap: 2rem; */
   display: flex;
   flex-direction: row;
   gap: 2rem;
   white-space: nowrap;
 }
-
+.information-grid > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
 .dropdown-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 /*  */
 .login-form > input {
