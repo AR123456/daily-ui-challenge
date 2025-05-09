@@ -37,7 +37,7 @@ body {
 }
 .wrapper {
   perspective: 1474px;
-  perspective-origin: 54% 192%;
+  perspective-origin: 54% 2%;
 }
 .card {
   background: url("./estes.jpg");
