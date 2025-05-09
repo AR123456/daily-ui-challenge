@@ -1,6 +1,7 @@
-Contact Page
+Prompt: Crowdfunding
 
-Is it for customer support? A purchase inquiry? To schedule an appointment? Is it a full page or just a form? Imagine a scenario and the most important feature it would require.
+Keep in mind the purpose... raising funds. It's important to make a design simple and compelling if you're seeking money. Is it for startups to raise money from investors? (Such as on WeFunder, Republic, StartEngine)
 
-Contact pages are some of the most visited pages on websites so it's important to have the most critical information, but not so much that people get lost.
-rgb(154, 151, 151);
+Or raising funds for a community cause like funding the restoration of a historical monument?
+
+So what's really important? The number of contributors, the total amount raised, campaign details, and highlights? Also consider size, imagery, placement, slogans, etc.
