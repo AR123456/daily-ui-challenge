@@ -30,10 +30,24 @@ body {
   /* shadow around phone */
   filter: drop-shadow(40px 31px 15px #000000);
 }
+/* works with transform in container 
+this will kick out the bottom of the phone a bit */
+.wrapper {
+  perspective: 1474px;
+  perspective-origin: 54% 192%;
+}
 .card {
-  border: solid 5px black;
-  border-radius: 5px;
-  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  height: 45rem;
+  width: 18rem;
+  border-radius: 25px;
+  margin-bottom: 1em;
+  position: relative;
 }
 h1 {
   text-align: center;
