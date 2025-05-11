@@ -11,6 +11,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: url("./streaks.jpg");
 }
 .container {
 }
