@@ -25,7 +25,7 @@ body {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-right: 30rem;
   margin-top: 30px;
   /* groove and box shadow for roundish outer edge */
   box-shadow: 1px 1px 5px #555;
@@ -57,6 +57,7 @@ this will kick out the bottom of the phone a bit */
   height: 45rem;
   width: 21rem;
   border-radius: 25px;
+  margin-left: 0.8rem;
   margin-bottom: 1em;
   position: relative;
 }
@@ -66,6 +67,7 @@ this will kick out the bottom of the phone a bit */
   bottom: 0;
 }
 .circle-small {
+  margin-left: 11rem;
   margin-bottom: 5px;
 }
 .eyes {
