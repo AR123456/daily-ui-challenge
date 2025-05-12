@@ -40,17 +40,23 @@ body {
 
 .centered {
   font-weight: bold;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+  margin-left: 60px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* position: absolute; */
+  /* top: 20%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 img {
-  margin-left: 4px;
-  border-radius: 25px 25px 0px 0px;
-  height: 276px;
-  width: 276px;
+  margin-left: 43px;
+  border-radius: 25px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.pic {
 }
 .info {
   margin-left: 4px;
@@ -77,6 +83,7 @@ img {
 }
 .toggle-prep {
   width: 100%;
+  margin-top: 5px;
   margin-left: 8px;
   font-size: 13px;
   display: flex;
