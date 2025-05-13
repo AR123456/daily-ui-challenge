@@ -118,8 +118,8 @@ input[type="submit"]:hover {
 /* double circle overairport divs */
 .switch {
   position: absolute; /* Allows the image to be freely positioned */
-  top: 28px; /* Adjust the vertical position of the SVG */
-  left: 138px; /* Adjust the horizontal position of the SVG */
+  top: 78px; /* Adjust the vertical position of the SVG */
+  left: 88px; /* Adjust the horizontal position of the SVG */
   width: 40px; /* Adjust width as necessary */
   height: 40px; /* Adjust height as necessary */
   cursor: pointer; /* Optional: makes the SVG clickable */
