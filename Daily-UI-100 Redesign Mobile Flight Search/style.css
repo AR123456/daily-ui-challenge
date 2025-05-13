@@ -47,7 +47,15 @@ this will kick out the bottom of the phone a bit */
   width: 18rem;
   border-radius: 25px;
   margin-bottom: 1em;
-  position: relative;
+  /* position: relative; */
+}
+.line {
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 0;
+}
+.circle-small {
+  margin-bottom: 5px;
 }
 h1 {
   text-align: center;
