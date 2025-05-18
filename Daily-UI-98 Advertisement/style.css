@@ -11,7 +11,9 @@ body {
 }
 
 .psst {
-  background: #2a4365;
+  /* background: #2a4365; */
+  background: url("./ad.jpg") top/contain no-repeat;
+  height: 160px;
   padding: 0.75rem 0;
   text-align: center;
   font-weight: bold;
@@ -19,7 +21,7 @@ body {
 }
 
 .navbar.is-sticky {
-  background: #ffffff;
+  background: #f1efef;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
