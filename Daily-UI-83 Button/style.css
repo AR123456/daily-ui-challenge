@@ -28,7 +28,7 @@ body {
   object-fit: cover;
   display: block;
 }
-
+/* faking it with shadows */
 /* Icon wrapper with cut-out effect */
 .icon {
   position: absolute;
