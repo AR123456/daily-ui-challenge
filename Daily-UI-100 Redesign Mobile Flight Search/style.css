@@ -10,6 +10,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: url("./asfalt-dark.png");
 }
 /* phone */
 .container {
