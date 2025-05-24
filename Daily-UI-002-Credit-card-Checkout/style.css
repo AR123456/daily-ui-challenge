@@ -5,9 +5,9 @@ body {
       rgba(252, 251, 251, 0.82),
       rgba(228, 220, 220, 0.83)
     ),
-    url("./cool-owl2.jpg");
+    url("./orange-marble.jpg");
 
-  background-position: 1% 1%; /* Move the image's center to the lower right corner */
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
