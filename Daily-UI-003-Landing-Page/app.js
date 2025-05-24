@@ -9,7 +9,8 @@ let currentVideoIndex = 0;
 
 video.addEventListener("ended", () => {
   currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
-  video.scr = videoSources[currentVideoIndex];
+  console.log(currentVideoIndex);
+  video.src = videoSources[currentVideoIndex];
   video.load();
   video.play();
 });
