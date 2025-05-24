@@ -8,11 +8,20 @@ const videoSources = [
 let currentVideoIndex = 0;
 
 video.addEventListener("ended", () => {
-  currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
-  console.log(currentVideoIndex);
-  video.src = videoSources[currentVideoIndex];
-  video.load();
-  video.play();
+  // Fade out
+  video.style.opacity = 0;
+  // Wait for the fade to finish before changing video
+  setTimeout(() => {
+    currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
+    video.src = videoSources[currentVideoIndex];
+    video.load();
+    video.play();
+
+    // Fade back in
+    setTimeout(() => {
+      video.style.opacity = 1;
+    }, 100); // short delay to allow browser to repaint
+  }, 1000); // match the CSS transition time
 });
 
 const pauseFunction = () => {
