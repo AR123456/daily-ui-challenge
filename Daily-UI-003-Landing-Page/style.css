@@ -27,3 +27,14 @@ video {
   width: 100%;
   padding: 20px;
 }
+button {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #fff;
+}
+button:hover {
+  background: #ddd;
+  color: black;
+}
