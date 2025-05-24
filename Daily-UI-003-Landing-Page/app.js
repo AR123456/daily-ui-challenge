@@ -10,3 +10,5 @@ const pauseFunction = () => {
     button.innerHTML = "Play";
   }
 };
+
+button.addEventListener("click", pauseFunction);
