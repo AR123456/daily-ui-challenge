@@ -1,37 +1,46 @@
-const video = document.getElementById("theVideo");
+const videoA = document.getElementById("videoA");
+const videoB = document.getElementById("videoB");
 const button = document.getElementById("theBtn");
-const videoSources = [
+
+const sources = [
   "./newFLY.mp4",
   "./TreesFlyover.mp4",
   "./Boardwalk_Slowerish_3.mp4",
 ];
-let currentVideoIndex = 0;
 
-video.addEventListener("ended", () => {
-  // Fade out
-  video.style.opacity = 0;
-  // Wait for the fade to finish before changing video
-  setTimeout(() => {
-    currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
-    video.src = videoSources[currentVideoIndex];
-    video.load();
-    video.play();
+let current = 0;
+let activeVideo = videoA;
+let hiddenVideo = videoB;
 
-    // Fade back in
-    setTimeout(() => {
-      video.style.opacity = 1;
-    }, 100); // short delay to allow browser to repaint
-  }, 1000); // match the CSS transition time
-});
+function playNextVideo() {
+  current = (current + 1) % sources.length;
+  hiddenVideo.src = sources[current];
+  hiddenVideo.load();
+  hiddenVideo.oncanplay = () => {
+    hiddenVideo.play();
+    hiddenVideo.classList.add("active");
+    activeVideo.classList.remove("active");
 
-const pauseFunction = () => {
-  if (video.paused) {
-    video.play();
-    button.innerHTML = "Pause";
+    // Swap video refs
+    [activeVideo, hiddenVideo] = [hiddenVideo, activeVideo];
+
+    // Re-attach ended listener to the new active video
+    activeVideo.onended = playNextVideo;
+  };
+}
+
+// Initialize
+activeVideo.src = sources[current];
+activeVideo.classList.add("active");
+activeVideo.onended = playNextVideo;
+
+// Pause/play toggle
+button.addEventListener("click", () => {
+  if (activeVideo.paused) {
+    activeVideo.play();
+    button.textContent = "Pause";
   } else {
-    video.pause();
-    button.innerHTML = "Play";
+    activeVideo.pause();
+    button.textContent = "Play";
   }
-};
-
-button.addEventListener("click", pauseFunction);
+});

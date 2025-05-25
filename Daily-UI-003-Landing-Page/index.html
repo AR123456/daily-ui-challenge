@@ -7,20 +7,19 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <h1>Best Landing Page Ever</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          dignissimos quae sapiente mollitia quo officia qui sed blanditiis,
-          magni, voluptatem ab nulla assumenda veniam! At sint repudiandae amet
-          possimus quibusdam.
-        </p>
-        <button id="theBtn">Pause</button>
-      </div>
-      <video autoplay muted id="theVideo">
-        <source src="./newFLY.mp4" type="video/mp4" />
-      </video>
+    <div class="video-container">
+      <video id="videoA" autoplay muted playsinline></video>
+      <video id="videoB" autoplay muted playsinline></video>
+    </div>
+
+    <div class="card">
+      <h1>Best Landing Page Ever</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+        dignissimos quae sapiente mollitia quo officia qui sed blanditiis,
+        magni, voluptatem ab nulla assumenda veniam!
+      </p>
+      <button id="theBtn">Pause</button>
     </div>
     <script src="app.js"></script>
   </body>
