@@ -1,6 +1,11 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: url("./old-map.png") center/cover no-repeat;
+  background: linear-gradient(
+      to bottom,
+      rgba(127, 126, 126, 0.52),
+      rgba(251, 250, 250, 0.53)
+    ),
+    url("./rice-paper-3.png") center/cover no-repeat;
 
   background-repeat: no-repeat;
 
@@ -25,11 +30,11 @@ body {
   /* groove and box shadow for roundish outer edge */
   box-shadow: 1px 1px 5px #555;
   /* this tilts phone-  */
-  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
     rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
-    skewX(0deg) skewY(0deg); */
+    skewX(0deg) skewY(0deg);
   /* shadow around phone */
-  /* filter: drop-shadow(40px 31px 15px #000000); */
+  filter: drop-shadow(40px 31px 15px #000000);
 }
 /* works with transform in container 
 this will kick out the bottom of the phone a bit */
