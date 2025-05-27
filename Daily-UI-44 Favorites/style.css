@@ -9,4 +9,8 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background: url("./purty-wood.png");
+}
+img {
+  border-radius: 25px;
 }
