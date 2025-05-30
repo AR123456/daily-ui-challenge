@@ -19,3 +19,10 @@ li {
 li:nth-child(even) {
   background-color: cyan;
 }
+/* set up scroll snapping */
+ul {
+  /* scroll is set on the <ul> so that its content will scroll horizontally within the list, rather than the entire viewport scrolling */
+  overflow-x: scroll;
+  /* snap each page to snapped horizontally */
+  scroll-snap-type: x mandatory;
+}
