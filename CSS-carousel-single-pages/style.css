@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 1.7rem;
+}
 /* ul is flex container  */
 ul {
   width: 100vw;
@@ -29,4 +40,30 @@ ul {
 li {
   /* when scrolled, snap to center of each li */
   scroll-snap-align: center;
+}
+/*  CSS created scroll buttons  */
+ul::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: rgb(0 0 0 / 0.7);
+  cursor: pointer;
+}
+ul::scroll-button(*):hover,
+uL::scroll-button(*):focus {
+  color: rgb(0 0 0 / 0.1);
+}
+ul::scroll-button(*):active {
+  translate: 1px 1px;
+}
+ul::scroll-button(*):disabled {
+  color: rgb(0 0 0 / 0.2);
+  cursor: unset;
+}
+/* add icon with content property */
+ul::scroll-button(left) {
+  content: "◄";
+}
+ul::scroll-button(right) {
+  content: "►";
 }
