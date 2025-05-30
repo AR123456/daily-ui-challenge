@@ -15,3 +15,7 @@ li {
   /*forces each item to be as wide as the container (the <ul>). content will overflow container - viewport will scroll horizontally */
   flex: 0 0 100%;
 }
+/* every other li blue  */
+li:nth-child(even) {
+  background-color: cyan;
+}
