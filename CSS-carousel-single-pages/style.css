@@ -9,4 +9,9 @@ ul {
 }
 li {
   list-style-type: none;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 20px;
+  /*forces each item to be as wide as the container (the <ul>). content will overflow container - viewport will scroll horizontally */
+  flex: 0 0 100%;
 }
