@@ -26,3 +26,7 @@ ul {
   /* snap each page to snapped horizontally */
   scroll-snap-type: x mandatory;
 }
+li {
+  /* when scrolled, snap to center of each li */
+  scroll-snap-align: center;
+}
