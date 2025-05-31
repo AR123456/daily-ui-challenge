@@ -41,7 +41,7 @@ li {
   /* when scrolled, snap to center of each li */
   scroll-snap-align: center;
 }
-/*  CSS created scroll buttons  */
+/*  style scroll buttons  */
 ul::scroll-button(*) {
   border: 0;
   font-size: 2rem;
@@ -66,4 +66,12 @@ ul::scroll-button(left) {
 }
 ul::scroll-button(right) {
   content: "►";
+}
+/* position scroll buttons relative to carousel  */
+ul {
+  anchor-name: --myCarousel;
+}
+ul::scroll-button(*) {
+  position: absolute;
+  position-anchor: --myCarousel;
 }
