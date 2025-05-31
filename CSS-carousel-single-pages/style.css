@@ -108,3 +108,7 @@ li::scroll-marker {
   border: 2px solid black;
   border-radius: 50%;
 }
+/* style the marker of visible page filled in black */
+li::scroll-marker:target-current {
+  background-color: black;
+}
