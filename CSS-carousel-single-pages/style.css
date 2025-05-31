@@ -75,3 +75,12 @@ ul::scroll-button(*) {
   position: absolute;
   position-anchor: --myCarousel;
 }
+ul::scroll-button(left) {
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+ul::scroll-button(right) {
+  left: calc(anchor(right) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
