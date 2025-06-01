@@ -44,6 +44,17 @@ ul::column {
   /* snap to each complete column rather than every individual list item, showing all new items with each scroll action */
   scroll-snap-align: center;
 }
+/*  the scroll buttons */
+ul::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: rgb(0 0 0 / 01.7);
+}
+ul::scroll-button(*):hover,
+ul::scorll-button(*):focus {
+  color: rgb(0 0 0 /1);
+}
 /* the scroll markers are created on the generated ::column scroll markers rather than the list items */
 ul::column::scroll-marker {
   content: "";
@@ -52,4 +63,7 @@ ul::column::scroll-marker {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 10px;
+}
+ul::column::scroll-marker:target-current {
+  background-color: black;
 }
