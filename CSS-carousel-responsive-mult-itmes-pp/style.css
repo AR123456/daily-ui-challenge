@@ -110,3 +110,4 @@ ul::column::scroll-marker {
 ul::column::scroll-marker:target-current {
   background-color: black;
 }
+/* may not be compatible with all browsers  */
