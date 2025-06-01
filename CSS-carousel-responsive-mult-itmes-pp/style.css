@@ -59,8 +59,10 @@ ul::scroll-button(*):focus {
 ul::scroll-button(*):active {
   translate: 1px 1px;
 }
+
 ul::scroll-button(*):disabled {
   color: rgb(0 0 0 / 0.2);
+  cursor: unset;
 }
 ul::scroll-button(left) {
   content: "◄";
@@ -74,6 +76,27 @@ ul {
 ul::scroll-button(*) {
   position: absolute;
   position-anchor: --myCarousel;
+}
+ul::scroll-button(left) {
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+ul::scroll-button(right) {
+  left: calc(anchor(right) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+/* scroll marker group  */
+ul {
+  scroll-marker-group: after;
+}
+ul::scroll-marker-group {
+  position: absolute;
+  position-anchor: --myCarousel;
+  top: calc(anchor(bottom) - 70px);
+  justify-self: anchor-center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 /* the scroll markers are created on the generated ::column scroll markers rather than the list items */
 ul::column::scroll-marker {
