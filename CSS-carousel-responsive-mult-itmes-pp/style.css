@@ -41,5 +41,15 @@ li:nth-child(even) {
   background-color: cyan;
 }
 ul::column {
+  /* snap to each complete column rather than every individual list item, showing all new items with each scroll action */
   scroll-snap-align: center;
+}
+/* the scroll markers are created on the generated ::column scroll markers rather than the list items */
+ul::column::scroll-marker {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
 }
