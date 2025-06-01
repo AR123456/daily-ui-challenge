@@ -16,89 +16,30 @@ ul {
   padding: 10px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  /* force each colum tobe full widht */
   columns: 1;
+  /* force contenst to align with center of list */
   text-align: center;
 }
+/* allow items to fit single content column, depending on the viewport width. number dynamically changes as the list gets wider or narrower */
 li {
   list-style-type: none;
+  /* force the list items to sit alongside one another and make the list scroll horizontally. */
+  display: inline-block;
+  height: 100%;
+  /* control their sizing, meaning one or more will fit in a column that grows and shrinks along with the width of the viewport. */
+  width: 200px;
   background-color: #eee;
   border: 1px solid #ddd;
   padding: 20px;
-  flex: 0 0 100%;
+  margin: 0 10px;
+  /* left is set on them to override the text-align: center set on the parent container, so the item content will be left-aligned */
+  text-align: left;
 }
 
 li:nth-child(even) {
   background-color: cyan;
 }
-
-ul {
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-li {
+ul::column {
   scroll-snap-align: center;
-}
-ul::scroll-button(*) {
-  border: 0;
-  font-size: 2rem;
-  background: none;
-  color: rgb(0 0 0 / 0.7);
-  cursor: pointer;
-}
-ul::scroll-button(*):hover,
-uL::scroll-button(*):focus {
-  color: rgb(0 0 0 / 0.1);
-}
-ul::scroll-button(*):active {
-  translate: 1px 1px;
-}
-ul::scroll-button(*):disabled {
-  color: rgb(0 0 0 / 0.2);
-  cursor: unset;
-}
-ul::scroll-button(left) {
-  content: "◄";
-}
-ul::scroll-button(right) {
-  content: "►";
-}
-ul {
-  anchor-name: --myCarousel;
-}
-ul::scroll-button(*) {
-  position: absolute;
-  position-anchor: --myCarousel;
-}
-ul::scroll-button(left) {
-  right: calc(anchor(left) - 70px);
-  bottom: calc(anchor(top) + 13px);
-}
-
-ul::scroll-button(right) {
-  left: calc(anchor(right) - 70px);
-  bottom: calc(anchor(top) + 13px);
-}
-ul {
-  scroll-marker-group: after;
-}
-ul::scroll-marker-group {
-  position: absolute;
-  position-anchor: --myCarousel;
-  top: calc(anchor(bottom) - 70px);
-  justify-self: anchor-center;
-
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-li::scroll-marker {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
-  border: 2px solid black;
-  border-radius: 50%;
-}
-li::scroll-marker:target-current {
-  background-color: black;
 }
