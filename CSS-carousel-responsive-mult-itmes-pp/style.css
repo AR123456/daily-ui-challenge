@@ -9,13 +9,15 @@ h1 {
   text-align: center;
   font-size: 1.7rem;
 }
-
+/* using css multicolumn layout  */
 ul {
   width: 100vw;
   height: 300px;
-  padding: 20px;
-  display: flex;
-  gap: 4vw;
+  padding: 10px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  columns: 1;
+  text-align: center;
 }
 li {
   list-style-type: none;
