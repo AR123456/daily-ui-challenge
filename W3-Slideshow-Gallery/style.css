@@ -8,14 +8,19 @@ body {
 }
 
 img {
-  vertical-align: middle;
+  /* vertical-align: middle;
   width: 100%;
-  height: 100%; /* Fill the container's height */
-  object-fit: cover; /* or "contain" if you want full image with borders */
+  height: 100%;
+  object-fit: cover;
   overflow-clip-margin: content-box;
-  overflow: clip;
+  overflow: clip; */
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: block;
+}
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
