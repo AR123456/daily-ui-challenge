@@ -10,6 +10,9 @@ body {
 img {
   vertical-align: middle;
   width: 100%;
+  /* still skewed in gallery */
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
