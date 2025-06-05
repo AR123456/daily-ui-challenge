@@ -42,7 +42,6 @@ img {
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 
 .next {
@@ -57,8 +56,7 @@ img {
 
 .numbertext {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
+  font-size: 16px;
   padding: 6px 12px;
   border-radius: 12px;
   position: absolute;
@@ -66,8 +64,11 @@ img {
   left: 16px;
   z-index: 10;
   font-weight: 600;
+  transition: background-color 0.3s ease; /* Smooth background transition */
 }
-
+.numbertext:hover {
+  background-color: rgba(0, 0, 0, 1); /* Slightly darker on hover */
+}
 /* Container for image text */
 .caption-container {
   text-align: center;
