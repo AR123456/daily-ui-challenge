@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carousel Gallery</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">Slideshow Gallery</h2>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./D026-subscribe.jpg" alt="The Woods" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./D040-recipe.jpg" alt="Cinque Terre" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./D062-workout.jpg" alt="Mountains and fjords" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./D070-event.jpg" alt="Northern Lights" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./D097-giveaway.jpg" alt="Nature and sunrise" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="./D026-subscribe.jpg" alt="Snowy Mountains" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="./D026-subscribe.jpg"
+            onclick="currentSlide(1)"
+            alt="The Woods"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="./D040-recipe.jpg"
+            onclick="currentSlide(2)"
+            alt="Cinque Terre"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="./D062-workout.jpg"
+            onclick="currentSlide(3)"
+            alt="Mountains and fjords"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="./D070-event.jpg"
+            onclick="currentSlide(4)"
+            alt="Northern Lights"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="./D097-giveaway.jpg"
+            onclick="currentSlide(5)"
+            alt="Nature and sunrise"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="./D026-subscribe.jpg"
+            onclick="currentSlide(6)"
+            alt="Snowy Mountains"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
