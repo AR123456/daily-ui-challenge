@@ -1,6 +1,13 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+document.querySelector(".prev").addEventListener("click", () => {
+  plusSlides(-1);
+});
+document.querySelector(".next").addEventListener("click", () => {
+  plusSlides(1);
+});
+
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
