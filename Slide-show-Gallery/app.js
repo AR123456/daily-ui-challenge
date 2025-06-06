@@ -7,7 +7,12 @@ document.querySelector(".prev").addEventListener("click", () => {
 document.querySelector(".next").addEventListener("click", () => {
   plusSlides(1);
 });
-
+const thumbs = document.querySelector(".thumb");
+thumbs.forEach((thumb, index) => {
+  thumb.addEventListener("click", () => {
+    currentSlide(index + 1);
+  });
+});
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
