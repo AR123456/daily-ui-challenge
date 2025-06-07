@@ -62,17 +62,15 @@ body {
 
 .nav-number.active {
   color: #fff;
-  background: url("./chick.svg") center / cover no-repeat;
+
   height: 3rem;
   width: 3rem;
-  /* border: 2px solid; */
+  border: 2px solid;
   color: pink;
 }
 .nav-number {
-  background: url("./egg_24.svg") center / cover no-repeat;
 }
 .nav-number:hover {
-  background: url("./chick.svg") center / cover no-repeat;
 }
 
 ul {
