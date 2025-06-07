@@ -14,21 +14,65 @@
     <title>Pagination</title>
   </head>
   <body>
-    <div class="container">
-      <ul id="paginated-list"></ul>
+    <div class="album bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                class="bd-placeholder-img card-img-top"
+                src="./thumbs/D001-vol.jpg"
+                alt="volunteer"
+              />
 
-      <nav class="nav-container">
-        <button class="nav-button" id="prev-button" title="Previous page">
-          &lt;
-        </button>
+              <div class="card-body">
+                <p class="card-text">Day 1 Sign Up Page</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="./shows/01-sign-up/index.html"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                    </a>
+                  </div>
+                  <!-- <small class="text-body-secondary">9 mins</small> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul id="paginated-list"></ul>
 
-        <div id="nav-numbers"></div>
+        <nav class="nav-container">
+          <button class="nav-button" id="prev-button" title="Previous page">
+            &lt;
+          </button>
 
-        <button class="nav-button" id="next-button" title="Next page">
-          &gt;
-        </button>
-      </nav>
+          <div id="nav-numbers"></div>
+
+          <button class="nav-button" id="next-button" title="Next page">
+            &gt;
+          </button>
+        </nav>
+      </div>
     </div>
     <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    ></script>
   </body>
 </html>
