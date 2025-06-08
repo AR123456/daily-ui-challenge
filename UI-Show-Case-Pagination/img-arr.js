@@ -1,4 +1,4 @@
-const images = [
+const imgArr = [
   "D001-vol.jpg",
   "D002-ck-out.jpg",
   "D003-landing.jpg",
@@ -105,4 +105,4 @@ const images = [
   "D100-flt-search-mob.jpg",
   "D108-quote.jpg",
 ];
-export default imageFiles;
+export default imgArr;
