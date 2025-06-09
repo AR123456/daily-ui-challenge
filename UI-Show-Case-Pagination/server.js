@@ -7,4 +7,4 @@ const images = fs.readdirSync(folderPath).filter((file) => {
 });
 console.log(images);
 const imageArray = `const images=${JSON.stringify(images, null, 2)}`;
-fs.writeFileSync(path.join(__dirname));
+fs.writeFileSync(path.join(__dirname, "img-arr.js"), imageArray, "utf8");
