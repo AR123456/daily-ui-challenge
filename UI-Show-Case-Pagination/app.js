@@ -3,8 +3,11 @@ const paginatedList = document.getElementById("paginated-list");
 
 const nextButton = document.getElementById("next-button");
 const prevButton = document.getElementById("prev-button");
-// Generate list items dynamically
-const totalItems = 50;
+
+// create array of thumbnails
+
+const totalItems = 100;
+const images = "./thumbs";
 for (let i = 1; i <= totalItems; i++) {
   const listItem = document.createElement("li");
 
@@ -13,7 +16,7 @@ for (let i = 1; i <= totalItems; i++) {
   // Add class for text color adjustment
   listItem.classList.add("dynamic-text");
 
-  const imageUrl = `https://picsum.photos/150?random=${i}`;
+  const imageUrl = `${images}/image${i}.jpg`;
   listItem.style.backgroundImage = `url(${imageUrl})`;
   paginatedList.appendChild(listItem);
   // Adjust text color dynamically
