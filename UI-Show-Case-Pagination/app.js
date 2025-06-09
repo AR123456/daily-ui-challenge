@@ -1,3 +1,4 @@
+import imgArr from "./img-arr.js";
 const paginationNumbers = document.getElementById("nav-numbers");
 const paginatedList = document.getElementById("paginated-list");
 
@@ -6,19 +7,22 @@ const prevButton = document.getElementById("prev-button");
 
 // create array of thumbnails
 
-const totalItems = 100;
-const images = "./thumbs";
-for (let i = 1; i <= totalItems; i++) {
+const totalItems = imgArr.length;
+for (let i = 0; i < totalItems; i++) {
   const listItem = document.createElement("li");
 
-  listItem.textContent = `${i}`;
-  console.log(listItem.textContent);
+  listItem.textContent = `${i + 1}`;
+  // console.log(listItem.textContent);
+
   // Add class for text color adjustment
   listItem.classList.add("dynamic-text");
 
-  const imageUrl = `${images}/image${i}.jpg`;
+  const imageUrl = `thumbs/${imgArr[i]}`;
+  console.log(imageUrl);
   listItem.style.backgroundImage = `url(${imageUrl})`;
+
   paginatedList.appendChild(listItem);
+
   // Adjust text color dynamically
   updateTextColor(imageUrl, listItem);
 }
