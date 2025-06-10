@@ -1,67 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #27253d;
   background: #e6f3f8;
 }
 
+.container {
+  position: relative;
+  padding: 1rem 1rem 3rem;
+  height: 60rem;
+  width: 90rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .nav-container {
+  width: 35rem;
+  height: 50px;
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 0;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 .nav-number,
 .nav-button {
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: none;
-  margin: 0 0.25rem;
+  margin: 0.25rem 0.25rem;
   cursor: pointer;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 0.2rem;
   color: green;
 }
 
+.nav-number:hover,
+
+/* :not(.disabled) ensures that the rule only applies to .nav-button elements that do not have the .disabled class */
+.nav-button:not(.disabled):hover {
+  background: #fff;
+}
+
 .nav-number.active {
-  color: pink;
+  color: #fff;
+
+  height: 3rem;
+  width: 3rem;
   border: 2px solid;
+  color: pink;
+}
+.nav-number {
+}
+.nav-number:hover {
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 90rem;
 }
 
 li {
-  list-style: none;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 40px;
+  border-radius: 25px;
+  color: #e6f3f8; /* Default text color */
+  font-weight: bold;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  aspect-ratio: 1 / 1; /* Keep images square */
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
 
+  position: relative; /* Ensures absolute positioning inside */
+}
 .text-background {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* Make it a circle */
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 
+  /* Fix font size to match original text */
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1; /* Prevents vertical misalignment */
   text-align: center;
 
+  /* Subtle blur effect */
   backdrop-filter: blur(6px);
+  padding: 0.5rem;
+
+  /* Soft blurred shadow */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  /* Background gradient for smooth blending */
   background: radial-gradient(
     circle,
     rgba(0, 0, 0, 0.15) 30%,
     rgba(0, 0, 0, 0) 80%
   );
+}
+
+.text-background::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: blur(6px);
+  z-index: -1;
+}
+.long-row {
+  width: 60%;
 }
