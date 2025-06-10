@@ -22,8 +22,8 @@ body {
 .container {
   position: relative;
   padding: 1rem 1rem 3rem;
-  height: 50rem;
-  width: 40rem;
+  height: 60rem;
+  width: 90rem;
 }
 
 .hidden {
@@ -76,12 +76,13 @@ body {
 ul {
   list-style-type: none;
   padding: 0;
+  width: 90rem;
 }
 
 li {
   display: inline-block;
-  height: 150px;
-  width: 150px;
+  height: 20rem;
+  width: 20rem;
   margin: 1rem;
   font-size: 2rem;
   text-align: center;
@@ -143,4 +144,7 @@ li {
   );
   filter: blur(6px);
   z-index: -1;
+}
+.long-row {
+  width: 60%;
 }
