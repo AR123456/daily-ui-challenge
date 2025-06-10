@@ -5,24 +5,17 @@ const paginatedList = document.getElementById("paginated-list");
 const nextButton = document.getElementById("next-button");
 const prevButton = document.getElementById("prev-button");
 
-// create array of thumbnails
-
 const totalItems = imgArr.length;
 for (let i = 0; i < totalItems; i++) {
   const listItem = document.createElement("li");
 
   listItem.textContent = `${i + 1}`;
   // console.log(listItem.textContent);
-
-  // Add class for text color adjustment
   listItem.classList.add("dynamic-text");
 
   const imageUrl = `thumbs/${imgArr[i]}`;
-  console.log(imageUrl);
   listItem.style.backgroundImage = `url(${imageUrl})`;
-
   paginatedList.appendChild(listItem);
-
   // Adjust text color dynamically
   updateTextColor(imageUrl, listItem);
 }
@@ -61,7 +54,7 @@ const setCurrentPage = (pageNum) => {
     );
   });
 };
-// oops through the total page count and creates a button for each page.
+// loops through the total page count and creates a button for each page.
 const createPagination = () => {
   for (let i = 1; i <= pageCount; i++) {
     const pageNumber = document.createElement("button");
@@ -117,7 +110,7 @@ function updateTextColor(imageUrl, element) {
     }
     const averageBrightness = brightnessSum / pixelCount;
     // trouble shooting
-    console.log(`Image Brightness: ${averageBrightness}, URL: ${imageUrl}`);
+    // console.log(`Image Brightness: ${averageBrightness}, URL: ${imageUrl}`);
     // Adjustable threshold for better detection
     const brightnessThreshold = 150;
     // Ensure a wrapper span exists
