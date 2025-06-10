@@ -76,26 +76,18 @@ body {
 ul {
   list-style-type: none;
   padding: 0;
-  width: 90rem;
+  margin: 0;
 }
 
 li {
-  display: inline-block;
-  height: 20rem;
-  width: 20rem;
-  margin: 1rem;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 40px;
-  border-radius: 25px;
-  color: #e6f3f8; /* Default text color */
-  font-weight: bold;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  position: relative; /* Ensures absolute positioning inside */
+  height: 20rem; /* Adjust as needed */
+  border-radius: 25px;
+  position: relative;
 }
+
 .text-background {
   position: absolute;
   left: 50%;
