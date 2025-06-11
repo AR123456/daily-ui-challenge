@@ -26,22 +26,38 @@ if (thumbs.length !== shows.length) {
   console.error("Mismatch between thumbs and shows count!");
   process.exit(1);
 }
-//build items array
+
+// Build items array
 const items = thumbs.map((thumb, index) => {
+  // Generate alt text by removing extension and replacing dashes/underscores with spaces
+  const altText = path
+    .basename(thumb, path.extname(thumb))
+    .replace(/[-_]/g, " ");
+
+  // Generate text (for now, using placeholder or numbering)
+  const displayText = `Item ${index + 1}`;
+
   return {
-    image: "./thumbs/" + thumb,
-    alt: "#",
-    text: "#",
-    href: "./shows/" + shows[index] + "/index.html",
+    image: `./thumbs/${thumb}`,
+    alt: altText,
+    text: displayText,
+    href: `./shows/${shows[index]}/index.html`,
   };
 });
 // create js file with array
-const output = `const items = ${JSON.stringify(
-  items,
-  null,
-  2
-)};\n\nexport default items;\n`;
+const output = `const items = [\n${items
+  .map(
+    (item) =>
+      `  {\n` +
+      `    image: "${item.image}",\n` +
+      `    alt: "${item.alt}",\n` +
+      `    text: "${item.text}",\n` +
+      `    href: "${item.href}",\n` +
+      `  },`
+  )
+  .join("\n")}\n];\n`;
 
+// Write to items-arr.js
 fs.writeFileSync("items-arr.js", output);
 
 console.log("✅ items-arr.js generated!");
