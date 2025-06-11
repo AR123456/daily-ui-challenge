@@ -9,24 +9,28 @@ const path = require("path");
 // const imageArray = `const images=${JSON.stringify(images, null, 2)}`;
 // fs.writeFileSync(path.join(__dirname, "thumb-arr.js"), imageArray, "utf8");
 
-//directories
+// JS to create a json object referencing the thumbs and shows
+
+// Get thumbs and shows directories
 const thumbsDir = path.join(__dirname, "thumbs");
 const showsDir = path.join(__dirname, "shows");
+// Read thumbs
+const thumbs = fs.readdirSync(thumbsDir).filter((file) => {
+  return /\.(jpg|jpeg|png|gif)$/i.test(file);
+});
 
-// read thumbs
-const thumbs = fs
-  .readdirSync(thumbsDir)
-  .filter((file) => /\.(jpg|jpeg|png|gif)$/i.test(file));
-// read shows
+// Read shows
 const shows = fs.readdirSync(showsDir).filter((dir) => {
   return fs.statSync(path.join(showsDir, dir)).isDirectory();
 });
-// ensure same length
+
+// Ensure same length
 if (thumbs.length !== shows.length) {
   console.error("Mismatch between thumbs and shows count!");
   process.exit(1);
 }
-//build items array
+
+// Build items
 const items = thumbs.map((thumb, index) => {
   return {
     image: "./thumbs/" + thumb,
@@ -35,13 +39,6 @@ const items = thumbs.map((thumb, index) => {
     href: "./shows/" + shows[index] + "/index.html",
   };
 });
-// create js file with array
-const output = `const items = ${JSON.stringify(
-  items,
-  null,
-  2
-)};\n\nexport default items;\n`;
 
-fs.writeFileSync("items-arr.js", output);
-
-console.log("✅ items-arr.js generated!");
+// Write to JSON file (optional)
+fs.writeFileSync("items.json", JSON.stringify(items, null, 2));
