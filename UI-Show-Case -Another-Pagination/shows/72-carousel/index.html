@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Slideshow container -->
+    <div class="slideshow">
+      <!-- Full-width images with number and caption text -->
+      <div class="my-slides fade">
+        <div class="number-text">1 / 5</div>
+        <img src="./posts.jpg" />
+        <div class="text">Sea Posts</div>
+      </div>
+
+      <div class="my-slides fade">
+        <div class="number-text">2 / 5</div>
+        <img src="./Kayakers.jpg" />
+        <div class="text">Kayaking</div>
+      </div>
+
+      <div class="my-slides fade">
+        <div class="number-text">3 / 5</div>
+        <img src="./owl.jpg" />
+        <div class="text">Owl</div>
+      </div>
+      <div class="my-slides fade">
+        <div class="number-text">4 / 5</div>
+        <img src="./pelican.jpg" />
+        <div class="text">Pelican</div>
+      </div>
+      <div class="my-slides fade">
+        <div class="number-text">5 / 5</div>
+        <img src="./sand-pipers.jpg" />
+        <div class="text">Sand Pipers</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <br />
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

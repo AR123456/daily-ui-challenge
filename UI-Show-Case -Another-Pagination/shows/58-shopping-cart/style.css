@@ -1,0 +1,131 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(117, 223, 117);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  background-color: rgb(248, 244, 244);
+
+  height: 42rem;
+  width: 20rem;
+  border-radius: 35px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  box-shadow: 1px 1px 5px #555;
+  /* shadow around phone */
+  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg); */
+  /* filter: drop-shadow(40px 31px 15px #000000); */
+}
+.wrapper {
+  /* perspective: 1474px;
+  perspective-origin: 54% 192%; */
+}
+.card {
+  /* making the card flex box for stuff withing it */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* groove and box shadow for  sunken effect around edge of phone screen */
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  /* can add an image here  */
+  /* background: url("./estes.jpg"); */
+  height: 45rem;
+  width: 18rem;
+  border-radius: 25px;
+  margin-bottom: 1em;
+  position: relative;
+  background-color: rgb(117, 223, 117, 0.3);
+}
+.line {
+  /* push to bottom of the card  */
+  position: absolute;
+  bottom: 0;
+}
+
+.circle-small {
+  margin-bottom: 5px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+  height: 3em;
+  width: 16em;
+  margin-top: 1em;
+}
+
+.nav img {
+  background-color: rgb(28, 30, 28);
+  border-radius: 5px;
+}
+.cart {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
+.hamburger {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
+.phone-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 26em;
+  width: 16em;
+  background: url("./images/apple-small.jpg") center/cover no-repeat;
+  margin-bottom: 1em;
+}
+.phone-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  height: 3em;
+  width: 16em;
+  margin-bottom: 3em;
+}
+.phone-bottom img {
+  height: 30px;
+  width: 30px;
+}
+.phone-bottom button {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  width: 150px;
+  height: 3em;
+  font-size: 16px;
+  color: rgb(117, 223, 117);
+  background-color: rgb(28, 30, 28);
+}
+.phone-main,
+h1 {
+  margin-top: 3em;
+}

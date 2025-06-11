@@ -1,0 +1,14 @@
+svg {
+  /* margin: 10px;
+  height: 24px;
+  width: 24px; */
+}
+.back {
+  height: 3rem;
+  background-color: rgb(211, 204, 204);
+}
+#scroll-to-bottom {
+}
+a {
+  text-decoration: none;
+}

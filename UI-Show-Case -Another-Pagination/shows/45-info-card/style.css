@@ -1,0 +1,46 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #69bbf3;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+  background-color: #dde1e7;
+  border-radius: 5px;
+  box-shadow: 0.8px 1.6px 1.6px hsl(0deg 0% 0% / 0.48);
+}
+#myVideo {
+  height: 600px;
+  width: 500px;
+  margin-left: 50px;
+  margin-bottom: 460px;
+}
+.image-div {
+  background: url("./icons8-owl-600.png");
+  height: 600px;
+  width: 500px;
+  mask: url("./icons8-owl-600.png");
+}
+.image-border {
+  background: url("./icons8-owl-600.png");
+  height: 605px;
+  width: 505px;
+}
+.text {
+  margin-right: 30px;
+  height: 600px;
+  width: 200px;
+}

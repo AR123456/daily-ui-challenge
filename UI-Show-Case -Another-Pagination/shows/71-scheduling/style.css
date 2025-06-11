@@ -1,0 +1,67 @@
+*,
+html {
+  /* ets all elements and the HTML root element to border-box sizing, which makes width and height properties include padding and border. This simplifies layout calculations by preventing elements from overflowing their containers when padding or borders are added. */
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* background: linear-gradient(top, #fad961, #f76d1d); */
+  /* background-attachment: fixed keeps the background in place when scrolling. */
+  background-attachment: fixed;
+}
+/* 7 equal columns for each day of the week */
+.month {
+  /* makes .month a grid container, allowing it to control the layout of its direct child elements (the .day elements) in rows and columns. */
+  display: grid;
+  /* This defines the structure of the columns within the grid container. */
+  /* repeat(7, 1fr) means the grid will have 7 equal-width columns, with each column taking up 1fr (one fraction of the available space). */
+  grid-template-columns: repeat(7, 1fr);
+  /* his constrains the width of the .month container to 560 pixels, ensuring that the calendar doesn’t stretch too wide on larger screens, keeping it compact and centered.
+The choice of 560px makes each day cell roughly 80px wide, given 7 columns, which balances readability with a manageable size for a calendar. */
+  max-width: 560px;
+  /* This centers the .month container horizontally within its parent and provides a top and bottom margin of 20px.
+By setting margin to auto horizontally, the container aligns itself centrally on the page, keeping the layout clean and balanced. */
+  margin: 20px auto;
+}
+
+.day {
+  height: 60px;
+  padding: 5px;
+  color: rgb(249, 137, 9);
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: -1px -1px #f9a440, inset -1px -1px 0 0 #f9a440;
+}
+/* Move the first day to start on Wednesday */
+.day:nth-child(1) {
+  grid-column: 3; /* Start day 1 in the 3rd  column (Tuesday) */
+}
+.container {
+  background-color: black;
+}
+.pic {
+  height: 33em;
+  background: linear-gradient(rgba(251, 227, 200, 0), rgba(249, 137, 9, 0.7)),
+    url("./jackolanterns.jpg") center/cover no-repeat;
+}
+.bones {
+  background: url("./thinkingbones.jpg") center/cover no-repeat;
+}
+.bones:hover {
+  /* background-position: top;
+  height: 145px;
+  width: 145px; */
+  transform: scale(1.5);
+@media (max-width: 600px) {
+  .month {
+    max-width: 100%; /* Makes calendar width responsive */
+    transform: scale(0.8); /* Shrinks the entire calendar to 80% */
+    transform-origin: top center; /* Centers the scale transformation */
+  }
+}
+
+@media (max-width: 400px) {
+  .month {
+    transform: scale(0.6); /* Shrinks further on very small screens */
+  }
+}

@@ -1,0 +1,51 @@
+*,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+      rgba(241, 236, 235, 0.9),
+      rgba(241, 236, 235, 0.7)
+    ),
+    url("./orange-marble.jpg") bottom / cover no-repeat;
+  /* background: url("./orange-marble.jpg") bottom / cover no-repeat; */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 33em;
+  width: 33em;
+  background: url("./textured-paper.jpg") bottom / cover no-repeat;
+  box-shadow: 3.8px 7.5px 7.5px hsl(0deg 0% 0% / 0.38);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25em;
+  width: 25em;
+  border-radius: 50%;
+  background: rgb(239, 220, 208);
+  box-shadow: 0.6px 1.2px 1.2px hsl(0deg 0% 0% / 0.47);
+  color: #663830;
+}
+button {
+  height: 25px;
+  width: 80px;
+  background: #663830;
+  color: rgb(239, 220, 208);
+}
+button:hover {
+  background: rgb(239, 220, 208);
+  color: #663830;
+}

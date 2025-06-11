@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100vh;
+  overflow: hidden;
+
+  background: url("./map-bg.jpg") bottom / cover no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40em;
+  width: 30em;
+}
+.card {
+  height: 15rem;
+  width: 33rem;
+  color: #851718;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.share {
+  width: 20rem;
+  background: linear-gradient(
+    to top,
+    rgba(194, 189, 189, 0.52),
+    rgba(247, 244, 244, 0.53)
+  );
+  border-radius: 5%;
+  box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
+}
+h1 {
+  margin-bottom: 30px;
+}
+.button-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+}
+button {
+  height: 40px;
+  width: 120px;
+  border-radius: 15px;
+  box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
+  letter-spacing: 1px;
+  font-size: 15px;
+}

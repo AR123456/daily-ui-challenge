@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Best of!</title>
+  </head>
+  <body>
+    <!-- Container for the image gallery -->
+    <div class="container">
+      <h1>Best Recipes Of The Year</h1>
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <!-- https://natashaskitchen.com/chicken-marsala-recipe/ -->
+        <img
+          src="https://natashaskitchen.com/wp-content/uploads/2020/01/Chicken-Marsala-SQ.jpg"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <!-- https://natashaskitchen.com/beef-stroganoff/ -->
+        <img
+          src="https://natashaskitchen.com/wp-content/uploads/2019/04/Beef-Stroganoff-6-794x794.jpg"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <!-- https://www.allrecipes.com/crockpot-italian-chicken-recipe-7501402 -->
+        <img
+          src="https://www.allrecipes.com/thmb/X0atYjaPMtnDLNQREIYwMO1DHis=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7501402crockpot-italian-chicken-recipe-fabeveryday4x3-223051c7188841cb8fd7189958c62f3d.jpg"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <!-- https://www.allrecipes.com/baked-caesar-chicken-recipe-7499125 -->
+        <img
+          src="https://www.allrecipes.com/thmb/AYZbeG_jbkslFw0ZdVap62wD86Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7499125-baked-caesar-chicken-DDMFS-beauty-4x3-BG-9353-6aae9a89fac546a8b5f3ed38c3f44cb8.jpg"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <!-- https://underatinroof.com/blog/roast-beef-french-dip-sandwiches -->
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/62ec1fc995263d65f21175de/e32f8079-30bc-4a1a-935d-ed0ea6bcc84c/Juicy+Roast+Beef+French+Dip+Sandwiches%3A+Caramelized+Onions+and+French+Bread?format=1500w"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <!-- https://underatinroof.com/blog/the-best-roasted-chicken-noodle-soup -->
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/62ec1fc995263d65f21175de/f4feeef9-35ee-493c-9cdf-9cffa50f7200/The+Best+Roasted+Chicken+Noodle+Soup%3A+From+Scratch+Roasted+Chicken+and+Noodles?format=1500w"
+        />
+      </div>
+      <!-- Next and previous buttons -->
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+      <a class="prev" onclick="plusSlides(-1)">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          height="24px"
+          width="24px"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-320c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3l0 41.7 0 41.7L459.5 440.6zM256 352l0-96 0-128 0-32c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-64z"
+          />
+        </svg>
+      </a>
+      <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+      <a class="next" onclick="plusSlides(1)"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          width="24px"
+          viewBox="0 0 512 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416L0 96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3l0 41.7 0 41.7L52.5 440.6zM256 352l0-96 0-128 0-32c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29l0-64z"
+          />
+        </svg>
+      </a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="https://natashaskitchen.com/wp-content/uploads/2020/01/Chicken-Marsala-SQ.jpg"
+            onclick="currentSlide(1)"
+            alt="Chicken Marsala"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="https://natashaskitchen.com/wp-content/uploads/2019/04/Beef-Stroganoff-6-794x794.jpg"
+            onclick="currentSlide(2)"
+            alt="Beef Stroganoff"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="https://www.allrecipes.com/thmb/X0atYjaPMtnDLNQREIYwMO1DHis=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7501402crockpot-italian-chicken-recipe-fabeveryday4x3-223051c7188841cb8fd7189958c62f3d.jpg"
+            onclick="currentSlide(3)"
+            alt="Crockpot Italian Chicken"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="https://www.allrecipes.com/thmb/AYZbeG_jbkslFw0ZdVap62wD86Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7499125-baked-caesar-chicken-DDMFS-beauty-4x3-BG-9353-6aae9a89fac546a8b5f3ed38c3f44cb8.jpg"
+            onclick="currentSlide(4)"
+            alt="Baked Caesar Chicken"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="https://images.squarespace-cdn.com/content/v1/62ec1fc995263d65f21175de/e32f8079-30bc-4a1a-935d-ed0ea6bcc84c/Juicy+Roast+Beef+French+Dip+Sandwiches%3A+Caramelized+Onions+and+French+Bread?format=1500w"
+            onclick="currentSlide(5)"
+            alt="Roast Beef French Dip"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="thumb cursor"
+            src="https://images.squarespace-cdn.com/content/v1/62ec1fc995263d65f21175de/f4feeef9-35ee-493c-9cdf-9cffa50f7200/The+Best+Roasted+Chicken+Noodle+Soup%3A+From+Scratch+Roasted+Chicken+and+Noodles?format=1500w"
+            onclick="currentSlide(6)"
+            alt="Chicken Noodle Soup"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
