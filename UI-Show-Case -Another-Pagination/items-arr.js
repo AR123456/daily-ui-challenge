@@ -1,4 +1,4 @@
-const items = [
+export const items = [
   {
     image: "./thumbs/D001-vol.jpg",
     alt: "D001 vol",
