@@ -9,27 +9,21 @@ const path = require("path");
 // const imageArray = `const images=${JSON.stringify(images, null, 2)}`;
 // fs.writeFileSync(path.join(__dirname, "thumb-arr.js"), imageArray, "utf8");
 
-// Directories
+//directories
 const thumbsDir = path.join(__dirname, "thumbs");
 const showsDir = path.join(__dirname, "shows");
 
-// Read thumbs (filtering by common image extensions)
+// read thumbs
 const thumbs = fs
   .readdirSync(thumbsDir)
-  .filter((file) => /\.(jpg|jpeg|png|gif)$/i.test(file))
-  .sort(); // Sort to keep order consistent
-
-// Read shows (filtering only folders)
-const shows = fs
-  .readdirSync(showsDir)
-  .filter((dir) => fs.statSync(path.join(showsDir, dir)).isDirectory())
-  .sort(); // Sort to keep order consistent
-
-// Ensure same length
+  .filter((file) => /\.(jpg|jpeg|png|gif)$/i.test(file));
+// read shows
+const shows = fs.readdirSync(showsDir).filter((dir) => {
+  return fs.statSync(path.join(showsDir, dir)).isDirectory();
+});
+// ensure same length
 if (thumbs.length !== shows.length) {
-  console.error(
-    `❌ Mismatch between thumbs (${thumbs.length}) and shows (${shows.length})!`
-  );
+  console.error("Mismatch between thumbs and shows count!");
   process.exit(1);
 }
 
@@ -50,8 +44,7 @@ const items = thumbs.map((thumb, index) => {
     href: `./shows/${shows[index]}/index.html`,
   };
 });
-
-// Generate JS content with correct trailing commas
+// create js file with array
 const output = `const items = [\n${items
   .map(
     (item) =>

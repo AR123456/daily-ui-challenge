@@ -10,9 +10,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>The Daily UI Project</title></head
-  >cut-listen="true"
-  <body cz-short>
+    <title>The Daily UI Project</title>
+  </head>
+  <body cz-shortcut-listen="true">
     <!-- Div at bottom of page to toggle theme -->
     <div
       class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
@@ -148,7 +148,9 @@
 
             <strong></strong>
           </a>
-
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            <a href="#" id="scroll-to-bottom">Scroll to bottom</a>
+          </button>
           <button
             class="navbar-toggler"
             type="button"
@@ -166,49 +168,3412 @@
 
     <main>
       <section class="text-center container">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">100 or so User Interface examples</h1>
-          <p class="lead text-body-secondary">
-            My journey through the daily user interface challenge.
-          </p>
-          <p></p>
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">100 or so User Interface examples</h1>
+            <p class="lead text-body-secondary">
+              My journey through the daily user interface challenge.
+            </p>
+            <p></p>
+          </div>
         </div>
       </section>
       <!-- album is a wrapper around center container -->
       <div class="album bg-body-tertiary">
         <!-- container wraps the rows of cards  -->
         <div class="container">
-          <div
-            id="pagination-row"
-            class="d-flex justify-content-between align-items-center my-4"
-          >
-            <button id="prev-button" class="btn btn-outline-secondary">
-              &laquo; Previous
-            </button>
-            <div
-              id="card-container"
-              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
-            >
-              <!-- Cards dynamically injected here -->
+          <!-- long row of cards that wraps at the third to make 3 columns  -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!-- first row -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D001-vol.jpg"
+                  alt="volunteer"
+                />
+
+                <div class="card-body">
+                  <p class="card-text">Day 1 Sign Up Page</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/01-sign-up/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button>
+                      </a>
+                    </div>
+                    <!-- <small class="text-body-secondary">9 mins</small> -->
+                  </div>
+                </div>
+              </div>
             </div>
-            <button id="next-button" class="btn btn-outline-secondary">
-              Next &raquo;
-            </button>
+            <!-- d2 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D002-ck-out.jpg"
+                  alt="sign-up"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 2 Check out page</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/02-checkout/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d3 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D003-landing.jpg"
+                  alt="sign-up"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 3 Landing page</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/03-landing/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary">s</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row , row 2 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D004-calc.jpg"
+                  alt="calculator"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 4 Calculator</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/04-calculator/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d5 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D005-icon.jpg"
+                  alt="sign-up"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 5 Icon</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/05-icon/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d6 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D006-user-profile.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 6 User Profile</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/06-user/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d7 -->
+            <!-- next row, row 3  -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D007-settings.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 7 Settings</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/07-settings/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d8 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D008-404-er.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 8 404</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/08-404/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d9 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D009-music.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 9 Music Player</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/09-music/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row , row 4  -->
+            <!-- d10 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D010-social.jpg "
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 10 Social</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/11-flsh-msg/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d11 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D011-flsh.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 11 Flash Message</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/11-flsh-msg/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d12 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D012-ecom.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 12 E Commerce Shop</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/12-ecom/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row , row 5  -->
+            <!-- d13 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D013-dirmsg.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 13 Direct Messaging App</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/13-dir-msg/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d14 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D014-countdown.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 14 Countdown</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/14-count-dwn/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d15 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D015-switch.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 15 On Off Switch</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/15-switch/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row, row 6 -->
+            <!-- d16 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D016-overlay.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 16 Pop Up Overlay</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/16-pop up overlay/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d17 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D017-receipt.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 17 Receipt</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/17-receipt/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d18 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D018-chart.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 18 Analytics Chart</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/18-analytics chart/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 7 -->
+            <!-- d19 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D019-leader.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 17 Leader Board</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/19-leaderboard/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d20 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D020-location.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 20 Share Location?</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/20-location/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d21 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D021-home-dash.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 21 Home Dashboard</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/21-home-dash/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 8 -->
+            <!-- d22 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D022-search.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 22 Search</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/22-search/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d23 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D023-onboard.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 23 Onboard</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/23-onboard/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d24 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D024-boarding-pass.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 24 Boarding Pass</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/24-boarding-pass/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 9 -->
+            <!-- d25 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D025-TV-app.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 25 TV App <Search></Search></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/25-television/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d26 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D026-subscribe.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 26 Subscribe</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/26-subscribe/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d27 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D027-dropdown.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 27 Expanding Menu</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/27-dropdown/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 10 -->
+            <!-- d28 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D028-map-mob.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 28 Map</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/28-map/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d29 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D029-contact-mob.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 29 Contact</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/29-contact/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d30 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D030-pricing.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 30 Pricing</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/30-pricing/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 11 -->
+            <!-- d31 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D031-upload.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">31 Upload</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/31-upload/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d32 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D032-crowd.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 32 Crowdfunding</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/32-crowdfunding/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d33 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D033-cust-prd.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 33 Customize Product</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/33-customize/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 12 -->
+            <!-- d34 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D034-car.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">34 Car Interface</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/34-car-inteface/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d35 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D035-blog.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 35 Blog</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/35-blog/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d36 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D036-offer.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 33 Customize Product</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/36-special-offer/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 13 -->
+            <!-- d37 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D037-weather.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">37 Weather App</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/37-weather/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d38 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D038-calendar.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 38 Calendar</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/38-calendar/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d39 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D039-testimonial.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 39 Testimonial</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/39-testimonial/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 14 -->
+            <!-- d40 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D040-recipe.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">40 Recipe</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/40-recipe/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d41 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D041-exercise.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 41 Work Out App</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/41-exercise/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d42 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D042-todo.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 42 ToDo</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/42-todo/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 15 -->
+            <!-- d43 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D043-menu.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">43 Food Menu</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/43-food-menu/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d44 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D044-favs.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 44 Favorites</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/44-favorites/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d45 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D045-info.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 45 Information Card</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/45-info-card/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 16 -->
+            <!-- d46 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D046-invoice.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">46 Invoice</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/46-invoice/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d47 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D047-activity.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 47 Activity Feed</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/47-activity-feed/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d48 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D048-soon.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 48 Coming Soon</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/48-coming-soon/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 17 -->
+            <!-- d49 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D049-notification.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">49 Notification</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/49-notification/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d50 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D050-job.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 50 Job Listing</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/50-job/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d51 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D051-press-page.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 51 press Page</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/51-press-page/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 18 -->
+            <!-- d52 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D052-logo-design.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">52 Logo Design</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/52-logo/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d53 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D053-nav-bar.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 53 Navigation</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/53-navigation/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d54 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D054-confirm.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 51 press Page</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/54-confirmation/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 19 -->
+            <!-- d55 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D055-icon-set.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">55 Icon Set</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/55-icon-set/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d56 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D056-breadcrumbs.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 56 Breadcrumbs</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/56-breadcrumbs/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d57 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D057-video-player.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 57 Video Player</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/57-video-player/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 20 -->
+            <!-- d58 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D058-shopping-cart.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">58 Shopping Cart</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/58-shopping-cart/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d59 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D059-background.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 59 Background</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/59-background/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d60 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D060-color-picker.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 60 Color Picker</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/60-color-picker/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 21 -->
+            <!-- d61 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D061-redeem-cupon.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">61 Redeem Coupon</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/61-redeem-coupon/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d62 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D062-workout.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 62 Work Out Of The Day</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/62-workout-of-day/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d63 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D063-best-of.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 63 Best Of</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/63-best-of/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 22 -->
+            <!-- d64 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D064-use-select.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">64 User Select</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/64-user-selection/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d65 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D065-notes.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 65 Notes</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/65-notes/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d66 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D066-statistics.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 66 Statistics</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/66-statistics/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 23 -->
+            <!-- d67 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D067-home-rental.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">67 Home Rental</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/67-home-rental/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d68 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D068-flight-search.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 68-Flight Search</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/68-flight-search/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d69 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D069-trending.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 69 Trending</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/69-trending/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 24 -->
+            <!-- d70 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D070-event.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">70 Event Listing</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/70-event-list/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d71 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D071-schedling.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 71 Scheduling App</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/71-scheduling/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d72c -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D072-carousel-sldier.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 72 Carousel</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/72-carousel/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 25 -->
+            <!-- d72 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D072-slide-mouseover.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">72 Slide on Mouse Over</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/72-slide-on-mouse/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d73 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D073-vr.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 73 Virtual Reality</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/73-vr/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d74 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D074-download.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 74 Download</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/74-download/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 26 -->
+            <!-- d75 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D075-pre-ord.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">75 Pre Order</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/75-pre-ord/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d76 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D076-loading.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 76 Loading</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/76-loading/"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d76 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D076-load-snowman.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 76 Loading Snowman</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/76-load-snow/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 27 -->
+            <!-- d77 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D077-thankyou.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">77 Thankyou</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/77-thankyou/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d78 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D078-invitation.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 78 Invitation</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/78-invitation/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d79 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D079-itinerary.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 79 Itinerary</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/79-itinerary/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 28 -->
+            <!-- d79b -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D079-itinerary-mobile.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">79 Itinerary Mobile</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/79-itinerary-mobile/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d80 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D080-date-picker.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 80 Date Picker</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/80-date-picker/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d81 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D081-status-update.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 81 Status Update</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/81-status-update/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 29 -->
+            <!-- d82 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D082-forms.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 82 Forms</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/82-forms/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d83 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D083-button.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 83 Button</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/83-button/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d84 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D084-badge.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 84 Badge</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/84-badge/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 30 -->
+            <!-- d85 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D085-pagination.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 85 Pagination</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/85-pagination/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d86 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D086-progress.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 86 Progress</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/86-progress/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d87 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D087-tooltip.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 87 Tooltip</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/87-tooltip/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 31 -->
+            <!-- d88 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D088-avatar.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 88 Avatar</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/88-avatar/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d89 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D089-agree.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 89 Agree to Terms</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/89-agree/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d90 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D090-create-new.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 90 Create New</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/90-create/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 32 -->
+            <!-- d91 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D091-curated.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 91 Curated</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/91-curated/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d92 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D092-faq.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 92 FAQ</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/92-faq/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d93 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D093-splash.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 93 Splash Screen</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/93-splash/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 33 -->
+            <!-- d94 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D094-news.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 94 News</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/94-news/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d95 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D095-product-tour.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 95 Product Tour</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/95-product-tour/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d96 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D096-in-stock.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 96 In Stock</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/96-in-stock/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 34 -->
+            <!-- d97 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D097-giveaway.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 97 Giveaway</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/97-giveaway/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d98 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D098-ad.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 98 Ad</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/98-advertisement/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d99 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D099-categories.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 99 Categories</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/99-categories/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next row row 35 -->
+            <!-- d99b -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D099-categories-side.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 99 Categories Sidebar</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/99b-categories-sidebar/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d100 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D100-flt-search-mob.jpg"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 100 Mobile Flight Search</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/100-redesign-flt-search/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- d108 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  src="./thumbs/D108-quote.jpg"
+                  alt="profile"
+                />
+                <div class="card-body">
+                  <p class="card-text">Day 101 Quote</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="./shows/108-quote/index.html"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View
+                        </button></a
+                      >
+                    </div>
+                    <small class="text-body-secondary"> </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end rows -->
           </div>
+          <!-- end container -->
         </div>
       </div>
     </main>
+    <br /><br /><br /><br /><br />
 
     <!-- footer -->
     <footer class="text-body-secondary py-5 fixed-bottom">
-      <!-- Pagination Controls -->
-      <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center mt-4" id="pagination">
-          <!-- Buttons will be injected here -->
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="back">
+          <p id="bottom" class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-1">
+            <a href="#">Back to top</a>
+          </p>
+        </div>
+      </div>
     </footer>
-    <script src="items-arr.js" type="module"></script>
+    <script src="thumb-arr.js" type="module"></script>
     <script src="app.js" type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
