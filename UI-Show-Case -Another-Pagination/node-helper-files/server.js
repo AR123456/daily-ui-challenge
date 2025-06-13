@@ -29,7 +29,7 @@ function extractTitle(filePath) {
   try {
     const htmlContent = fs.readFileSync(filePath, "utf-8");
     const match = htmlContent.match(/<title>(.*?)<\/title>/i);
-    return match ? match[1].trim() : null;
+    return match ? match[i].trim() : null;
   } catch (error) {
     console.warn(`⚠️ Could not read ${filePath}:`, error.message);
     return null;
@@ -37,38 +37,20 @@ function extractTitle(filePath) {
 }
 
 // Build items array
-const items = thumbs.map((thumb) => {
-  // Extract day number from filename (e.g., "D011-flsh.jpg" -> 11)
-  const match = thumb.match(/^D(\d+)[-_]/i);
-  const dayNumber = match ? parseInt(match[1], 10) : null;
-
-  // Try to find matching folder in `shows` that starts with the same number
-  const showFolder = shows.find((folder) => {
-    const folderMatch = folder.match(/^(\d+)[-_]/);
-    return folderMatch && parseInt(folderMatch[1], 10) === dayNumber;
-  });
-
-  if (!showFolder) {
-    console.warn(`⚠️ No matching show folder found for ${thumb}`);
-  }
-
-  // Extract title from the corresponding index.html file
-  const indexPath = showFolder
-    ? path.join(showsDir, showFolder, "index.html")
-    : null;
-  const title = indexPath ? extractTitle(indexPath) : null;
-
-  const displayText = `Day ${dayNumber} ${title || ""}`.trim();
-
+const items = thumbs.map((thumb, index) => {
+  // Generate alt text by removing extension and replacing dashes/underscores with spaces
   const altText = path
     .basename(thumb, path.extname(thumb))
     .replace(/[-_]/g, " ");
+
+  // Generate text (for now, using placeholder or numbering)
+  const displayText = `Day ${index + 1}`;
 
   return {
     image: `./thumbs/${thumb}`,
     alt: altText,
     text: displayText,
-    href: showFolder ? `./shows/${showFolder}/index.html` : "#", // fallback to '#' if not found
+    href: `./shows/${shows[index]}/index.html`,
   };
 });
 
