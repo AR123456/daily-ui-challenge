@@ -1,8 +1,8 @@
 import { items } from "./items-arr.js";
 
-// document.getElementById("scroll-to-bottom").addEventListener("click", () => {
-//   document.body.scrollIntoView(false);
-// });
+document.getElementById("scroll-to-bottom").addEventListener("click", () => {
+  document.body.scrollIntoView(false);
+});
 
 const container = document.querySelector(
   ".row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3"
