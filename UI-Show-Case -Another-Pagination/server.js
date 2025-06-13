@@ -1,14 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-// const folderPath = path.join(__dirname, "thumbs");
-// const images = fs.readdirSync(folderPath).filter((file) => {
-//   return /\.(jpe?g|png|gif|webp)$/i.test(file);
-// });
-// console.log(images);
-// const imageArray = `const images=${JSON.stringify(images, null, 2)}`;
-// fs.writeFileSync(path.join(__dirname, "thumb-arr.js"), imageArray, "utf8");
-
 // Directories
 const thumbsDir = path.join(__dirname, "thumbs");
 const showsDir = path.join(__dirname, "shows");
@@ -25,12 +17,23 @@ const shows = fs
   .filter((dir) => fs.statSync(path.join(showsDir, dir)).isDirectory())
   .sort(); // Sort to keep order consistent
 
-// Ensure same length
+// Validate  same length
 if (thumbs.length !== shows.length) {
   console.error(
     `❌ Mismatch between thumbs (${thumbs.length}) and shows (${shows.length})!`
   );
   process.exit(1);
+}
+// Helper function to extract <title> from HTML file
+function extractTitle(filePath) {
+  try {
+    const htmlContent = fs.readFileSync(filePath, "utf-8");
+    const match = htmlContent.match(/<title>(.*?)<\/title>/i);
+    return match ? match[i].trim() : null;
+  } catch (error) {
+    console.warn(`⚠️ Could not read ${filePath}:`, error.message);
+    return null;
+  }
 }
 
 // Build items array

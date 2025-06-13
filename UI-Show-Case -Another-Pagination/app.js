@@ -1,4 +1,4 @@
-import { items } from "./items-arr.js";
+import { items } from "./node-helper-files/day-items-arr.js";
 
 document.getElementById("scroll-to-bottom").addEventListener("click", () => {
   document.body.scrollIntoView(false);
