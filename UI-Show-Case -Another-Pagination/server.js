@@ -37,15 +37,29 @@ function extractTitle(filePath) {
 }
 
 // Build items array
-const items = thumbs.map((thumb, index) => {
-  const showFolder = shows[index];
-  const indexPath = path.join(showsDir, showFolder, "index.html");
-  const title = extractTitle(indexPath);
+const items = thumbs.map((thumb) => {
+  // Extract day number from filename (e.g., "D011-flsh.jpg" -> 11)
+  const match = thumb.match(/^D(\d+)[-_]/i);
+  const dayNumber = match ? parseInt(match[1], 10) : null;
 
-  // Fallback if no title found
-  const displayText = `Day ${index + 1} ${title || ""}`.trim();
+  // Try to find matching folder in `shows` that starts with the same number
+  const showFolder = shows.find((folder) => {
+    const folderMatch = folder.match(/^(\d+)[-_]/);
+    return folderMatch && parseInt(folderMatch[1], 10) === dayNumber;
+  });
 
-  // Generate alt text by removing extension and replacing dashes/underscores with spaces
+  if (!showFolder) {
+    console.warn(`⚠️ No matching show folder found for ${thumb}`);
+  }
+
+  // Extract title from the corresponding index.html file
+  const indexPath = showFolder
+    ? path.join(showsDir, showFolder, "index.html")
+    : null;
+  const title = indexPath ? extractTitle(indexPath) : null;
+
+  const displayText = `Day ${dayNumber} ${title || ""}`.trim();
+
   const altText = path
     .basename(thumb, path.extname(thumb))
     .replace(/[-_]/g, " ");
@@ -54,7 +68,7 @@ const items = thumbs.map((thumb, index) => {
     image: `./thumbs/${thumb}`,
     alt: altText,
     text: displayText,
-    href: `./shows/${showFolder}/index.html`,
+    href: showFolder ? `./shows/${showFolder}/index.html` : "#", // fallback to '#' if not found
   };
 });
 
