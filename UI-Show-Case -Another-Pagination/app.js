@@ -8,8 +8,8 @@ let currentPage = 1;
 const totalPages = Math.ceil(items.length / itemsPerPage);
 
 function renderCards(page) {
-  container.innerHTML = ""; // Clear existing cards
-
+  // Clear existing cards
+  container.innerHTML = "";
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, items.length);
   const pageItems = items.slice(startIndex, endIndex);
@@ -49,7 +49,8 @@ function renderCards(page) {
 }
 
 function renderPagination() {
-  pagination.innerHTML = ""; // Clear existing pagination
+  // Clear existing pagination
+  pagination.innerHTML = "";
 
   // Previous Button
   const prevLi = document.createElement("li");
@@ -101,7 +102,23 @@ function renderPagination() {
 function updateDisplay() {
   renderCards(currentPage);
   renderPagination();
+  // Disable/Enable top buttons
+  topPrevButton.disabled = currentPage === 1;
+  topNextButton.disabled = currentPage === totalPages;
 }
+// Hook up top buttons
+topPrevButton.addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updateDisplay();
+  }
+});
 
+topNextButton.addEventListener("click", () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    updateDisplay();
+  }
+});
 // Initial load
 updateDisplay();
