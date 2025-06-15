@@ -178,12 +178,23 @@
       <div class="album bg-body-tertiary">
         <!-- container wraps the rows of cards  -->
         <div class="container">
-          <!-- long row of cards that wraps at the third to make 3 columns  -->
           <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
-            id="card-container"
+            id="pagination-row"
+            class="d-flex justify-content-between align-items-center my-4"
           >
-            <!-- content being dynamically generated in app.js -->
+            <button id="prev-button" class="btn btn-outline-secondary">
+              &laquo; Previous
+            </button>
+            <!-- long row of cards that wraps at the third to make 3 columns  -->
+            <div
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+              id="card-container"
+            >
+              <!-- content being dynamically generated in app.js -->
+            </div>
+            <button id="next-button" class="btn btn-outline-secondary">
+              Next &raquo;
+            </button>
           </div>
           <!-- end container -->
         </div>
