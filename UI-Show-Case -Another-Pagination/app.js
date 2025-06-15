@@ -3,7 +3,7 @@ import { items } from "./items-arr.js"; // ES module import
 const container = document.getElementById("card-container");
 const pagination = document.getElementById("pagination");
 
-const itemsPerPage = 9;
+const itemsPerPage = 6;
 let currentPage = 1;
 const totalPages = Math.ceil(items.length / itemsPerPage);
 
