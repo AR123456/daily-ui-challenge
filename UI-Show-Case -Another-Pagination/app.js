@@ -2,8 +2,10 @@ import { items } from "./items-arr.js"; // ES module import
 
 const container = document.getElementById("card-container");
 const pagination = document.getElementById("pagination");
+const topPrevButton = document.getElementById("prev-button");
+const topNextButton = document.getElementById("next-button");
 
-const itemsPerPage = 9;
+const itemsPerPage = 6;
 let currentPage = 1;
 const totalPages = Math.ceil(items.length / itemsPerPage);
 
@@ -102,6 +104,9 @@ function renderPagination() {
 function updateDisplay() {
   renderCards(currentPage);
   renderPagination();
+  updateTopButtons();
+}
+function updateTopButtons() {
   // Disable/Enable top buttons
   topPrevButton.disabled = currentPage === 1;
   topNextButton.disabled = currentPage === totalPages;
