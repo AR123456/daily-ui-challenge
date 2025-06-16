@@ -1,0 +1,93 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: url("./colored-pencils.jpg") bottom/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* phone */
+.container {
+  background-color: rgb(248, 244, 244);
+  height: 42rem;
+  width: 20rem;
+  border-radius: 35px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* groove and box shadow for roundish outer edge */
+  box-shadow: 1px 1px 5px #555;
+  /* this tilts phone  */
+  /* transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg); */
+  /* shadow around phone */
+  filter: drop-shadow(40px 31px 15px #000000);
+}
+/* this will kick out the bottom of the phone a bit */
+.wrapper {
+  /* perspective: 1474px;
+  perspective-origin: 54% 192%; */
+  margin-bottom: 150px;
+}
+/* phone screen */
+.card {
+  /* making the card flex box for stuff withing it */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* groove and box shadow for  sunken effect around edge of phone screen */
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  /* can add an image here  */
+  /* background: url("./estes.jpg"); */
+  height: 45rem;
+  width: 18rem;
+  border-radius: 25px;
+  margin-bottom: 1em;
+  position: relative;
+}
+.line {
+  /* push to bottom of the card  */
+  position: absolute;
+  bottom: 0;
+}
+.circle-small {
+  margin-bottom: 5px;
+}
+button {
+  margin-top: 20px;
+  height: 50px;
+  width: 150px;
+  background: brown;
+  color: white;
+  border-radius: 5px;
+}
+table {
+  border: 2px solid brown;
+  background: yellow;
+  border-radius: 5px;
+}
+
+thead {
+  background: brown;
+  height: 50px;
+  color: white;
+}
+th,
+td {
+  border-bottom: 2px solid green;
+  width: 260px;
+  height: 26px;
+}

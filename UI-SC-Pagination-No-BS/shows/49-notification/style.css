@@ -1,0 +1,302 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+/* phone */
+.container {
+  background-color: rgb(248, 244, 244);
+  height: 42rem;
+  width: 20rem;
+  border-radius: 35px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* groove and box shadow for roundish outer edge */
+  /* box-shadow: 1px 1px 5px #555; */
+  /* shadow around phone */
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg);
+  filter: drop-shadow(40px 31px 15px #000000);
+}
+/* this will kick out the bottom of the phone a bit */
+.wrapper {
+  /* perspective: 1474px;
+  perspective-origin: 54% 192%; */
+}
+/* phone screen */
+.card {
+  /* making the card flex box for stuff withing it */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* groove and box shadow for  sunken effect around edge of phone screen */
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  /* can add an image here  */
+
+  background: linear-gradient(rgba(216, 241, 216, 0.9), rgba(76, 126, 76, 0.7));
+
+  height: 45rem;
+  width: 18rem;
+  border-radius: 25px;
+}
+.circle {
+  padding: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.circle-small {
+  margin-bottom: 5px;
+}
+/*  med div */
+
+/*  Bell animations css  */
+
+.bell .material-icons {
+  /* font-size:12rem !important; */
+  /* font-size:36px !important; */
+  font-size: 1rem !important;
+}
+
+.bell {
+  position: relative;
+  display: inline-block;
+  /* border: dashed 1px rgba(0, 0, 0, 0.25); */
+  margin: 0;
+  padding: 0;
+}
+
+.bell .anchor {
+  transform-origin: center top;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.bell .layer-1 {
+  color: #1d1e22;
+  z-index: 9;
+  animation: animation-layer-1 5000ms infinite;
+  opacity: 0;
+}
+
+.bell .layer-2 {
+  color: #1d1e22;
+  z-index: 8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animation-layer-2 5000ms infinite;
+}
+
+.bell .layer-3 {
+  color: #333642;
+  z-index: 7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animation-layer-3 5000ms infinite;
+}
+
+@keyframes animation-layer-1 {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  8.0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  12.0% {
+    transform: rotate(42deg);
+    opacity: 0.5;
+  }
+  16.0% {
+    transform: rotate(-35deg);
+    opacity: 0.4;
+  }
+  20.0% {
+    transform: rotate(0deg);
+    opacity: 0.1;
+  }
+  23.0% {
+    transform: rotate(28deg);
+    opacity: 0.3;
+  }
+  26.0% {
+    transform: rotate(-20deg);
+    opacity: 0.2;
+  }
+  29.0% {
+    transform: rotate(0deg);
+    opacity: 0.1;
+  }
+  31.0% {
+    transform: rotate(16deg);
+    opacity: 0;
+  }
+  33.0% {
+    transform: rotate(-12deg);
+    opacity: 0;
+  }
+  35.0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  37.0% {
+    transform: rotate(-6deg);
+    opacity: 0;
+  }
+  39.0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animation-layer-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  8.0% {
+    transform: rotate(0deg);
+  }
+  12.0% {
+    transform: rotate(42deg);
+  }
+  16.0% {
+    transform: rotate(-35deg);
+  }
+  20.0% {
+    transform: rotate(0deg);
+  }
+  23.0% {
+    transform: rotate(28deg);
+  }
+  26.0% {
+    transform: rotate(-20deg);
+  }
+  29.0% {
+    transform: rotate(0deg);
+  }
+  31.0% {
+    transform: rotate(16deg);
+  }
+  33.0% {
+    transform: rotate(-12deg);
+  }
+  35.0% {
+    transform: rotate(0deg);
+  }
+  37.0% {
+    transform: rotate(-6deg);
+  }
+  39.0% {
+    transform: rotate(0deg);
+  }
+  40.0% {
+    transform: rotate(6deg);
+  }
+  44.0% {
+    transform: rotate(-3deg);
+  }
+  49.0% {
+    transform: rotate(2deg);
+  }
+  55.0% {
+    transform: rotate(0deg);
+  }
+  62.0% {
+    transform: rotate(1deg);
+  }
+  70.0% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animation-layer-3 {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  8.0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  12.0% {
+    transform: rotate(52deg);
+    opacity: 0.5;
+  }
+  16.0% {
+    transform: rotate(-48deg);
+    opacity: 0.4;
+  }
+  20.0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  23.0% {
+    transform: rotate(42deg);
+    opacity: 0.3;
+  }
+  26.0% {
+    transform: rotate(-30deg);
+    opacity: 0.2;
+  }
+  29.0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  31.0% {
+    transform: rotate(26deg);
+    opacity: 0.15;
+  }
+  33.0% {
+    transform: rotate(-18deg);
+    opacity: 0.1;
+  }
+  35.0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  37.0% {
+    transform: rotate(-12deg);
+    opacity: 0.8;
+  }
+  40.0% {
+    transform: rotate(6deg);
+    opacity: 1;
+  }
+  44.0% {
+    transform: rotate(-3deg);
+    opacity: 0.8;
+  }
+  49.0% {
+    transform: rotate(2deg);
+    opacity: 1;
+  }
+  55.0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  62.0% {
+    transform: rotate(1deg);
+    opacity: 1;
+  }
+  70.0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}

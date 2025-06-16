@@ -1,0 +1,50 @@
+/* font for trust humanist type  */
+* html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #3dcc97;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25em;
+  width: 20em;
+  background-color: mintcream;
+  border-radius: 15px;
+  /* color: #6bdab5; */
+  box-shadow: 1.4px 2.9px 2.9px hsl(0deg 0% 0% / 0.46);
+  /* transition: height 0.5s ease, width 0.5s ease, box-shadow 0.5s ease; */
+  /* Custom cubic-bezier transition */
+  transition: 
+  /* height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+    width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), */ box-shadow
+    0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.card:hover {
+  /* height: 25.1em;
+  width: 20.1em; */
+  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+}
+.icon,
+.who,
+.price,
+.description {
+  margin: 0.5em;
+  text-align: center;
+}

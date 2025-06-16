@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8fa;
+  color: #333;
+}
+h1.fw-light {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.25rem;
+  color: #5c757d;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: 1px solid #6c757d;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #6c757d;
+  color: white;
+}
+svg {
+  /* margin: 10px;
+  height: 24px;
+  width: 24px; */
+}
+.back {
+  height: 3rem;
+  background-color: rgb(211, 204, 204);
+}
+#scroll-to-bottom {
+}
+a {
+  text-decoration: none;
+}

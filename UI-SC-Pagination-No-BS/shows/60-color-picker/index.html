@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <table>
+          <caption>
+            Color Picker
+          </caption>
+          <tbody>
+            <tr id="RGB">
+              <th class="tooltip">
+                RGB:
+                <p class="tooltiptext">
+                  RGB defines a given color according to its red, green, blue
+                  and alpha (transparency) components.
+                </p>
+              </th>
+              <td>rgb(84 217 184)</td>
+            </tr>
+            <tr id="HEX">
+              <th class="tooltip">
+                HEX:
+                <p class="tooltiptext">
+                  Hexadecimal color representation of an sRGB color using its
+                  primary color components (red, green, blue) written as
+                  hexadecimal numbers, as well as its transparency.
+                </p>
+              </th>
+              <td>#54d9b8</td>
+            </tr>
+            <tr id="HSL">
+              <th class="tooltip">
+                HSL:
+                <p class="tooltiptext">
+                  HSL defines a given color according to its hue, saturation,
+                  lightness and alpha (transparency) components.
+                </p>
+              </th>
+              <td>hsl(165 63.6% 59%)</td>
+            </tr>
+            <tr id="HWB">
+              <th class="tooltip">
+                HWB:
+                <p class="tooltiptext">
+                  HWB functional notation expresses a color in the sRGB color
+                  space according to its hue, whiteness, and blackness. An
+                  optional alpha component represents the color's transparency.
+                </p>
+              </th>
+              <td>hwb(165 32.9% 14.9%)</td>
+            </tr>
+            <tr id="colorfunc">
+              <th class="tooltip">
+                color():
+                <p class="tooltiptext">
+                  color() defines a color in the given color space.
+                </p>
+              </th>
+              <td>color(srgb 0.33 0.85 0.72)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <label for="color">Pick a color:</label>
+          <input
+            type="color"
+            name="color"
+            id="color"
+            value="#54d9b8"
+            style="accent-color: rgb(84, 217, 184)"
+          />
+        </p>
+        <p>
+          <label for="opacity">Opacity</label>
+          <input
+            type="range"
+            name="opacity"
+            id="opacity"
+            value="1"
+            style="accent-color: rgb(84 217 184)"
+            min="0"
+            max="1"
+            step="0.1"
+          />
+        </p>
+        <div class="colors">
+          <div id="red">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              class="bi bi-droplet-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"
+              />
+            </svg>
+          </div>
+          <div id="green">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              class="bi bi-droplet-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"
+              />
+            </svg>
+          </div>
+          <div id="blue">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              class="bi bi-droplet-half"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

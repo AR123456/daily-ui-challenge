@@ -1,0 +1,71 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.breadcrumb {
+  padding: 0 0.5rem;
+  margin-top: 1em;
+}
+.breadcrumb ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* gap: 2em; */
+  list-style: none;
+}
+
+li {
+  background: hsl(261, 45%, 90%);
+  margin: 0.44em;
+  padding: 0.5em;
+  height: 60px;
+  /* outline-offset: 3px; */
+  transform: skew(-20deg);
+}
+li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  font: 30px/1 sans-serif;
+  /* UNSKEW */
+  transform: skew(20deg);
+}
+/* https://stackoverflow.com/questions/40803277/skew-one-side-only-of-an-element */
+.home {
+  background: hsl(260, 57%, 83%);
+}
+.shape {
+  background: hsl(260, 57%, 83%);
+  box-sizing: border-box;
+  margin-top: 7px;
+  height: 60px;
+  padding: 12px 36px;
+  position: relative;
+  width: 200px;
+  font: 30px/1 sans-serif;
+}
+
+.shape:after {
+  background: hsl(260, 57%, 83%);
+  content: "";
+  height: 48px;
+  position: absolute;
+  right: -13px;
+  top: 0;
+  transform: skew(-20deg);
+  width: 23px;
+}

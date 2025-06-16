@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+  /* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+  font-family: "Inter", sans-serif;
+  color: #232a31;
+}
+
+.headline {
+}
+/* Remove the click behavior on the dropdown */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Add hover behavior for the dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: adjust as needed */
+}
+
+.nav-item.dropdown:hover .nav-link {
+  color: #000; /* Optional: adjust as needed */
+}
+button {
+  background: url("./search.svg") center no-repeat;
+
+  filter: invert();
+  font-size: 18px;
+  line-height: 30px;
+}
+ul {
+  list-style-type: none;
+}
+.inner-header,
+.outer-header {
+  margin: 2em;
+}
+.horizontal-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-left: 60px;
+  margin-top: 2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+.blog-pic {
+  width: 20em;
+}
+.blog-text {
+  width: 30em;
+}
+.ad-holder {
+  width: 30em;
+}
+img {
+  border-radius: 8px;
+}
+.blog-title {
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+.author {
+  margin-bottom: 1em;
+}
+.blog-name {
+  /* differ font  */
+  margin-left: 60px;
+}
+.top-nav {
+  height: 5em;
+}
+.page-title {
+  font-size: 52px;
+  line-height: 60px;
+  margin-left: 60px;
+}
+.page-title-2 {
+  font-size: 32px;
+  line-height: 34px;
+  margin-left: 60px;
+}
+.headline {
+  font-size: 16px;
+  line-height: 24px;
+}

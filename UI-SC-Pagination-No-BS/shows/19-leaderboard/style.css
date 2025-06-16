@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(247, 244, 240);
+}
+.container {
+  display: flex;
+  gap: 1;
+}
+.card {
+  margin: 1rem;
+  height: 40rem;
+  width: 20rem;
+}
+.racer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50rem;
+  width: 30rem;
+  background: url("./bike-racer.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 3%;
+  box-shadow: 3.4px 6.7px 6.7px hsl(0deg 0% 0% / 0.48);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./paris.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0.5;
+  border-radius: 3%;
+}
+.leaders {
+  display: flex;
+  align-items: center;
+}
+li {
+  margin-top: 1rem;
+}

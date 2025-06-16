@@ -1,0 +1,67 @@
+*,
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: url("./streaks.jpg");
+}
+.container {
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 33em;
+  width: 33em;
+  color: blue;
+  box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
+}
+
+.divDate {
+  width: 22em;
+  text-align: center;
+  margin: 3em;
+  border-bottom: 4px solid blue;
+  padding-bottom: 8px;
+}
+
+.sale-percent {
+  color: blue;
+  /* 50% */
+  font-size: 12em;
+}
+
+.text-small {
+  /* % off */
+  margin-top: 3em;
+  font-size: x-large;
+}
+.text-med {
+  /* entire store large spaces between */
+  font-size: large;
+  font-weight: 400;
+  letter-spacing: 0.6rem;
+  margin-bottom: 3em;
+}
+.mid-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  height: 50px;
+  width: 180px;
+  border-radius: 25px;
+  border: none;
+  /* shadow same as card */
+  box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
+}

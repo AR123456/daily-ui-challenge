@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+.card {
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  height: 40em;
+  width: 20em;
+  border-radius: 15px;
+  border: 1em solid white;
+  background-color: rgb(235, 232, 232);
+  box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
+  transform: scaleX(1) scaleY(1) scaleZ(0.9) rotateX(20deg) rotateY(-11deg)
+    rotateZ(16deg) translateX(2px) translateY(0px) translateZ(0px) skewX(0deg)
+    skewY(0deg);
+}
+.wrap {
+  perspective: 1777px;
+  perspective-origin: 75% 95%;
+}
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(235, 232, 232);
+}
+label {
+  /* change the black svg color to grey  */
+  filter: invert(75%);
+}
+
+img {
+  vertical-align: middle;
+}
+button {
+  margin: 10px;
+  margin-left: 70px;
+  padding: 5px;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 0.5px 1px 1px hsl(0deg 0% 0% / 0.49);
+}
