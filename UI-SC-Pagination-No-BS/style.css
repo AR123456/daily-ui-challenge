@@ -39,6 +39,21 @@ h1.fw-light {
   background-color: #6c757d;
   color: white;
 }
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+/* Album */
+.album {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+/* Cards */
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
 svg {
   /* margin: 10px;
   height: 24px;
