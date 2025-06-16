@@ -54,6 +54,26 @@ h1.fw-light {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-text {
+  margin-bottom: 1rem;
+}
 svg {
   /* margin: 10px;
   height: 24px;
