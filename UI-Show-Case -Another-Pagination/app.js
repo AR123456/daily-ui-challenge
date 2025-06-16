@@ -106,6 +106,7 @@ function updateDisplay() {
   renderPagination();
   updateTopButtons();
 }
+// side buttons
 function updateTopButtons() {
   // Disable/Enable top buttons
   topPrevButton.disabled = currentPage === 1;

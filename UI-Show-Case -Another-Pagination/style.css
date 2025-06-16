@@ -12,3 +12,12 @@ svg {
 a {
   text-decoration: none;
 }
+#next-button {
+  margin-left: 1rem;
+}
+#prev-button {
+  margin-right: 1rem;
+}
+#pagination {
+  margin-bottom: -1rem;
+}
