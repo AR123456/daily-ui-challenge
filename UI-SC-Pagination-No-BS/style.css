@@ -74,6 +74,32 @@ h1.fw-light {
 .card-text {
   margin-bottom: 1rem;
 }
+
+/* Pagination Row */
+#pagination-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5rem;
+}
+.pagination li {
+  display: inline;
+}
 svg {
   /* margin: 10px;
   height: 24px;
