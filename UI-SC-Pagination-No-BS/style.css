@@ -100,6 +100,30 @@ footer {
 .pagination li {
   display: inline;
 }
+/* page stuff being injected with js  */
+.page-item {
+  display: inline;
+}
+.page-link {
+  border: 1px solid #6c757d;
+  padding: 0.3rem 0.6rem;
+  text-decoration: none;
+  color: #6c757d;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.2s, color 0.2s;
+}
+.page-link:hover,
+.page-link:focus {
+  background-color: #6c757d;
+  color: white;
+}
+.page-item.active .page-link {
+  background-color: #6c757d;
+  color: white;
+}
+
 svg {
   /* margin: 10px;
   height: 24px;
