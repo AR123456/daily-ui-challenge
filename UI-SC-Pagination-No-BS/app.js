@@ -64,8 +64,7 @@ function renderPagination() {
   `;
   prevLi.querySelector("button").addEventListener("click", () => {
     if (currentPage > 1) {
-      currentPage--;
-      updateDisplay();
+      changePage(currentPage - 1);
     }
   });
   pagination.appendChild(prevLi);
@@ -76,8 +75,7 @@ function renderPagination() {
     li.className = `page-item ${i === currentPage ? "active" : ""}`;
     li.innerHTML = `<button class="page-link">${i}</button>`;
     li.querySelector("button").addEventListener("click", () => {
-      currentPage = i;
-      updateDisplay();
+      changePage(i);
     });
     pagination.appendChild(li);
   }
@@ -94,8 +92,7 @@ function renderPagination() {
   `;
   nextLi.querySelector("button").addEventListener("click", () => {
     if (currentPage < totalPages) {
-      currentPage++;
-      updateDisplay();
+      changePage(currentPage + 1);
     }
   });
   pagination.appendChild(nextLi);
@@ -106,24 +103,35 @@ function updateDisplay() {
   renderPagination();
   updateTopButtons();
 }
+
 function updateTopButtons() {
   // Disable/Enable top buttons
   topPrevButton.disabled = currentPage === 1;
   topNextButton.disabled = currentPage === totalPages;
 }
+
+//  Add a fade transition when changing pages
+function changePage(newPage) {
+  container.classList.add("fade-out");
+  setTimeout(() => {
+    currentPage = newPage;
+    updateDisplay();
+    container.classList.remove("fade-out");
+  }, 300); // match CSS transition duration
+}
+
 // Hook up top buttons
 topPrevButton.addEventListener("click", () => {
   if (currentPage > 1) {
-    currentPage--;
-    updateDisplay();
+    changePage(currentPage - 1);
   }
 });
 
 topNextButton.addEventListener("click", () => {
   if (currentPage < totalPages) {
-    currentPage++;
-    updateDisplay();
+    changePage(currentPage + 1);
   }
 });
+
 // Initial load
 updateDisplay();
