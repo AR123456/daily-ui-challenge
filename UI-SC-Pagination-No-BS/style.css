@@ -51,10 +51,19 @@ body {
 }
 /* navbar row */
 .navbar {
+  background-color: #343a49;
+  color: white;
+  padding: 0.75rem 1rem;
 }
 .navbar .btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 .navbar .btn:hover {
+  text-decoration: underline;
 }
 /* toggle button - hamburger */
 #toggleHeader {
