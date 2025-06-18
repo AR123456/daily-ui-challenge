@@ -12,14 +12,63 @@
   padding: 1rem;
 }
 
-/* Typography */
 body {
   font-family: system-ui, sans-serif;
   line-height: 1.6;
   background-color: #f8f9fa;
   color: #333;
 }
+/* === Navbar Header Panel (hidden by default) === */
+#navbarHeader {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 1rem;
+}
+#navbarHeader h4 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+#navbarHeader p,
+#navbarHeader ul {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+#navbarHeader ul {
+  list-style: none;
+  padding: 0;
+}
+#navbarHeader li {
+  margin-bottom: 0.5rem;
+}
+#navbarHeader a {
+  text-decoration: none;
+  color: #0077cc;
+  margin-right: 0.5rem;
+}
+#navbarHeader a:hover {
+  text-decoration: underline;
+}
+/* navbar row */
+.navbar {
+}
+.navbar .btn {
+}
+.navbar .btn:hover {
+}
+/* toggle button - hamburger */
+#toggleHeader {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
 
+#toggleHeader:hover {
+  opacity: 0.75;
+}
 /* Headings */
 h1.fw-light {
   font-size: 2rem;
