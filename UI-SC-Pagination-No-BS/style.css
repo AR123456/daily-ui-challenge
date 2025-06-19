@@ -20,15 +20,27 @@ body {
 }
 /* === Navbar Header Panel (hidden by default) === */
 #navbarHeader {
-  display: none;
+  position: absolute;
+  top: 60px; /* Adjust based on navbar height */
+  left: 0;
+  width: 100%;
   background-color: #f8f9fa;
   border-bottom: 1px solid #ddd;
   padding: 1.5rem 1rem;
+  overflow: hidden;
+  z-index: 1000;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+#navbarHeader.open {
+  max-height: 400px; /* Adjust based on content */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 #navbarHeader h4 {
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
+
 #navbarHeader p,
 #navbarHeader ul {
   margin: 0 0 1rem;
@@ -52,6 +64,8 @@ body {
 }
 /* navbar row */
 .navbar {
+  position: relative;
+  z-index: 1100;
   background-color: #343a49;
   color: white;
   padding: 0.75rem 1rem;
