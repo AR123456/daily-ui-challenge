@@ -20,6 +20,7 @@ body {
 }
 /* === Navbar Header Panel (hidden by default) === */
 #navbarHeader {
+  display: none;
   background-color: #f8f9fa;
   border-bottom: 1px solid #ddd;
   padding: 1.5rem 1rem;
@@ -62,6 +63,7 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
 }
+/* TODO remove underline is annoying */
 .navbar .btn:hover {
   text-decoration: underline;
 }
@@ -74,7 +76,7 @@ body {
   cursor: pointer;
   margin-left: auto;
 }
-
+/* goggle the hamberger  */
 #toggleHeader:hover {
   opacity: 0.75;
 }

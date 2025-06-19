@@ -4,10 +4,19 @@ const container = document.getElementById("card-container");
 const pagination = document.getElementById("pagination");
 const topPrevButton = document.getElementById("prev-button");
 const topNextButton = document.getElementById("next-button");
-
+const toggleButton = document.getElementById("toggleHeader");
+const navbarButton = document.getElementById("navbarHeader");
 const itemsPerPage = 6;
 let currentPage = 1;
 const totalPages = Math.ceil(items.length / itemsPerPage);
+
+toggleButton.addEventListener("click", () => {
+  if (navbarHeader.style.display === "block") {
+    navbarHeader.style.display = "none";
+  } else {
+    navbarHeader.style.display = "block";
+  }
+});
 
 function renderCards(page) {
   // Clear existing cards
