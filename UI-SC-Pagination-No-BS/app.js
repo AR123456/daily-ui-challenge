@@ -4,27 +4,11 @@ const container = document.getElementById("card-container");
 const pagination = document.getElementById("pagination");
 const topPrevButton = document.getElementById("prev-button");
 const topNextButton = document.getElementById("next-button");
-const toggleButton = document.getElementById("toggleHeader");
-const navbarHeader = document.getElementById("navbarHeader");
-const navbarToggler = document.querySelector(".navbar-toggler");
 
 const itemsPerPage = 6;
 let currentPage = 1;
 const totalPages = Math.ceil(items.length / itemsPerPage);
 
-// Collapse on page load
-navbarHeader.classList.remove("open");
-
-toggleButton.addEventListener("click", () => {
-  if (navbarHeader.style.display === "block") {
-    navbarHeader.style.display = "none";
-  } else {
-    navbarHeader.style.display = "block";
-  }
-});
-navbarToggler.addEventListener("click", () => {
-  navbarHeader.classList.toggle("open");
-});
 function renderCards(page) {
   // Clear existing cards
   container.innerHTML = "";
