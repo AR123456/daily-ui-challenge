@@ -1,0 +1,149 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  margin-top: 5rem;
+}
+
+input[type="text"] {
+  background: #dededf url("./search24.svg") 77% 50% no-repeat;
+
+  padding: 12px 10px;
+  height: 40px;
+  width: 100%;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.table-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+caption {
+  margin-bottom: 20px;
+}
+table {
+  border: 1px solid #dededf;
+  height: 90%;
+  width: 90%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
+  margin-left: 5%;
+  overflow: hidden;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+}
+
+th {
+  border: 1px solid #dededf;
+  background-color: #eceff1;
+  color: #000000;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid #dededf;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px;
+}
+
+.prod-widget {
+  width: 12rem;
+  display: flex;
+  flex-direction: row;
+  align-items: row;
+  justify-content: left;
+  margin-left: 5px;
+}
+
+.prod-inner-widget {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.prod-img {
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.perform {
+  /* width: 10rem; */
+  margin-bottom: 3px;
+}
+.sales-widget {
+  /* width: 12rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  justify-content: left;
+}
+.sales-inner-widget {
+  display: flex;
+  flex-direction: row;
+  align-items: row;
+  justify-content: left;
+}
+.trend-graph img {
+  margin-left: 5px;
+}
+.total-sales img {
+  margin-left: 10px;
+}
+.avg-perform-widget {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+  margin-left: 1rem;
+}
+.in-stock-widget {
+  /* width: 12rem; */
+  display: flex;
+  flex-direction: row;
+  align-items: row;
+  justify-content: left;
+  gap: 20px;
+  margin-left: 15px;
+}
+.prod-price-widget {
+  /* width: 12rem; */
+  display: flex;
+  flex-direction: row;
+  align-items: row;
+  justify-content: left;
+}
+
+footer {
+  width: 100%;
+  height: 20rem;
+}

@@ -1,0 +1,93 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  /* background: rgba(195, 241, 240,1); */
+  background: linear-gradient(
+    317deg,
+    rgba(195, 241, 240, 1) 0%,
+    rgb(224, 255, 243) 100%
+  );
+}
+.container {
+  background-color: #004e4d;
+  height: 42em;
+  width: 20em;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  margin-top: 30px;
+  border: 5px solid black;
+  /* groove and box shadow for dip around screen */
+  border-style: groove;
+  box-shadow: 1px 1px 5px #555 inset;
+  /* transform to rotate as if holding and filter to add depth  */
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(8deg) rotateY(355deg)
+    rotateZ(-13deg) translateX(-5px) translateY(-4px) translateZ(-17px)
+    skewX(0deg) skewY(0deg);
+  filter: drop-shadow(40px 31px 15px #7c7b7b);
+}
+
+.card {
+  /*  top #004E4D */
+  /* bottom  #6BD2CC */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45em;
+  width: 18em;
+  border-radius: 25px;
+  border-style: groove;
+  /* sunken effect around edge of phone screen */
+  box-shadow: 1px 1px 5px #555 inset;
+  color: #004e4d;
+  background: url("./day.svg");
+}
+.inner-card {
+}
+.forcast {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.list-row {
+  width: 17em;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 3px;
+  border-bottom: #004e4d 1px solid;
+}
+.day {
+  padding-left: 10px;
+  width: 45%;
+}
+.day-deg {
+  width: 30%;
+  text-align: end;
+}
+.day-icon {
+  width: 10%;
+  text-align: end;
+  color: #004e4d;
+}
+.fade {
+  opacity: 0.3;
+}

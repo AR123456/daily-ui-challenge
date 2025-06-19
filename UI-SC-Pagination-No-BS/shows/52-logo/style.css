@@ -1,0 +1,42 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ebd3f8;
+}
+
+.logo {
+  position: relative;
+  width: 10em; /* Keep it the same as the SVG width */
+  height: 10em; /* Same height as the SVGs */
+}
+
+.logo svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+svg {
+  height: 10em;
+  width: 10em;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+#start {
+  transition: opacity 0.5s ease; /* Smooth opacity transitions */
+}
+#up,
+#start-up {
+  transition: opacity 0.5s ease; /* Smooth opacity transitions */
+  opacity: 0; /* Initially hidden */
+  display: none; /* Initially not shown */
+}

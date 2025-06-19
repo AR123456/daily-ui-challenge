@@ -1,0 +1,72 @@
+*,
+html {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+.avatar {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: url("./snowflake2.jpg") center / cover no-repeat;
+  position: relative;
+}
+/* psudo element can before or after this style will be for both   */
+.avatar::before,
+.avatar::after {
+  --scale: 0;
+  --tooltip-color: #333;
+  --arrow-size: 10px;
+  position: absolute;
+
+  /*  position the tooltip */
+  top: -0.25rem;
+  /* positions left edge at horizontal midpoint of the .avatar container. */
+  left: 50%;
+  /* define the var for translate y here with fall back of 0 */
+  transform: translate(-50%, var(--translate-y, 0)) scale(var(--scale));
+  /* animate the scale */
+  transition: 250ms transform;
+  transform-origin: bottom center;
+}
+/* just the before  */
+.avatar::before {
+  /* set translate y to 100% here, the calc is used to keep arrow or boarder in syc with rest of tooltip */
+
+  /* --translate-y: -100%; */
+  /* calc for arrow size  */
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip);
+  color: white;
+  /* text will determine size of div but add some padding */
+  padding: 0.5rem;
+  /* make the div wider if a lot of content  */
+  width: max-content;
+  /* dont let the content push the width beyond the avatar image */
+  max-width: 100%;
+  text-align: center;
+  background-color: var(--tooltip-color);
+  border-radius: 0.3rem;
+}
+
+/* psudo element can before or after   */
+/* scale up on hover */
+.avatar:hover::before,
+.avatar:hover::after {
+  --scale: 1;
+}
+/* make it look more like a speech  bubble  */
+.avatar::after {
+  /* translate the arrow in opposite direction  */
+  --translate-y: calc(-1 * var(--arrow-size));
+  content: "";
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}

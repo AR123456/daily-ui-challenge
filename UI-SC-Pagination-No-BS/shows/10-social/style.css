@@ -1,0 +1,60 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+      to bottom,
+      rgba(224, 195, 83, 0.12),
+      rgba(228, 220, 220, 0.53)
+    ),
+    url("./concrete-wall.png");
+  background-position: 0% 15%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.container {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  border-radius: 15px;
+  height: 75px;
+}
+
+.socials-row {
+  flex: 1 0 21%;
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  text-align: center;
+}
+a {
+  color: rgb(224, 195, 83);
+  height: 50px;
+  width: 20px;
+  text-align: center;
+}
+.eyes {
+  color: #e0c353;
+}
+h1 {
+  color: #e0c353;
+  margin-bottom: 5rem;
+  font-size: 60px;
+}
+svg {
+  /* margin-left: 35px;
+  margin-top: 20px; */
+
+  height: 50px;
+  width: 50px;
+}
+svg:hover {
+  /*  */
+  height: 60px;
+  width: 60px;
+}

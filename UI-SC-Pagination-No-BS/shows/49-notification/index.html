@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Notification</title>
+  </head>
+  <body>
+    <!-- wrapper to allow use of perspective if needed -->
+    <div class="wrapper">
+      <!-- the phone -->
+      <div class="container">
+        <!-- camera circle -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          fill="black"
+          class="bi bi-circle"
+          viewBox="0 0 16 17"
+        >
+          <path
+            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+          />
+        </svg>
+        <!-- the phone screen -->
+        <div class="card">
+          <div class="bell" id="bell-1">
+            <div class="anchor material-icons layer-1">
+              <img src="./bell.svg" alt="bell" />
+            </div>
+            <div class="anchor material-icons layer-2">
+              <img src="./bell.svg" alt="bell" />
+            </div>
+            <div class="anchor material-icons layer-3">
+              <img src="./bell.svg" alt="bell" />
+            </div>
+          </div>
+          <div class="med-due">
+            <span> Time to take your Multi Vitamin</span>
+          </div>
+          <div class="complete">
+            <img src="./pill.svg" alt="pill" />
+          </div>
+        </div>
+        <!-- command button at bottom of screen -->
+        <div class="circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="currentColor"
+            class="bi bi-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

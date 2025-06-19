@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flight search</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Flight search</h1>
+        <form action="">
+          <div class="form-group">
+            <label for="depart">Depart</label>
+            <input type="text" id="depart" name="depart" value="IND" />
+          </div>
+          <img src="./circle_arrows.svg" alt="switch" class="switch" />
+          <div class="form-group">
+            <label for="arrive">Return</label>
+            <input type="text" id="arrive" name="arrive" value="MCO" />
+          </div>
+          <div class="form-group">
+            <label for="depart-date">Departure Date</label>
+            <input type="date" id="depart-date" name="depart-date" />
+          </div>
+          <div class="form-group">
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date" name="return-date" />
+          </div>
+          <div class="form-group">
+            <label for="passengers">Passengers</label>
+            <input
+              type="number"
+              id="passengers"
+              name="passengers"
+              value="1"
+              min="1"
+              max="99"
+            />
+          </div>
+          <div class="row">
+            <input type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
