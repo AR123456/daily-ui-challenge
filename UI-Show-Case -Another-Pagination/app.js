@@ -6,8 +6,11 @@ const topPrevButton = document.getElementById("prev-button");
 const topNextButton = document.getElementById("next-button");
 
 const itemsPerPage = 6;
-let currentPage = 6;
+
 const totalPages = Math.ceil(items.length / itemsPerPage);
+// let currentPage = 6;
+// on page load go to a random showcase page
+let currentPage = Math.floor(Math.random() * (totalPages - 1) + 1);
 
 function renderCards(page) {
   // Clear existing cards
