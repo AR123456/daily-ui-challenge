@@ -1,3 +1,7 @@
+body {
+  background-image: url("./paper-fibers.png");
+}
+
 .back {
   height: 3rem;
   background-color: rgb(211, 204, 204);
@@ -30,4 +34,9 @@ button.page-link:hover {
   /* background-color: var(--bs-pagination-active-bg); */
   background-color: red;
   border-color: var(--bs-pagination-active-border-color);
+}
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  /* background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important; */
+  background-color: transparent !important;
 }
