@@ -21,10 +21,10 @@ a {
 }
 
 button.page-link {
-  color: green;
+  color: #8ba5a5;
 }
 button.page-link:hover {
-  color: darkgreen;
+  color: #8ba5a5;
 }
 
 .active > .page-link,
@@ -32,7 +32,7 @@ button.page-link:hover {
   z-index: 3;
   color: var(--bs-pagination-active-color);
   /* background-color: var(--bs-pagination-active-bg); */
-  background-color: red;
+  background-color: #8ba5a5;
   border-color: var(--bs-pagination-active-border-color);
 }
 .bg-body-tertiary {
